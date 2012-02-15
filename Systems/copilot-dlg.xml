@@ -76,6 +76,15 @@
 			<live>false</live>
 		</checkbox>
 
+<checkbox>
+			<label>Control Altimeter Setting</label>
+			<property>controls/switches/copilot/altimeter</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>false</live>
+		</checkbox>
+
 	<hrule />
 
 		<group>
