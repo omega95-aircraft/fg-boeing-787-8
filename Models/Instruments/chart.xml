@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--158x212-->
+
+<PropertyList>
+    <name>Airport Chart</name>
+    <background>transparent.png</background>
+    <w>512</w>
+    <h>512</h>
+
+    <instruments>
+
+        <instrument include="airport-display.xml">
+            <condition>
+                <greater-than>
+                    <property>systems/electrical/outputs/efis</property>
+                    <value>15</value>
+                </greater-than>
+				<equals>
+					<property>/</property>
+					<value>airport_display</value>
+				</equals>				
+            </condition>
+            <name>Chart</name>
+            <x>256</x>
+            <y>256</y>
+            <w>512</w>
+            <h>512</h>
+        </instrument>
+
+    </instruments>
+
+</PropertyList>

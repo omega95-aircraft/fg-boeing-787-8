@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<!-- Vertical Navigation System -->
+
+<PropertyList>
+
+  <pid-controller>
+    <name>Vertical Navigation</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/altitude</prop>
+      <value>vnav</value>
+    </enable>
+    <input>
+      <prop>/velocities/vertical-speed-fps</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/vnav/vertical-speed-fps</prop>
+    </reference>
+    <output>
+      <prop>/controls/flight/elevator-trim</prop>
+    </output>
+    <config>
+      <Kp>-0.005</Kp>     
+      <beta>1.0</beta>    
+      <alpha>0.1</alpha>  
+	  <gamma>0.0</gamma>
+      <Ti>10.0</Ti>       <!-- integrator time -->
+      <Td>0.0000001</Td>    <!-- derivator time -->
+      <u_min>-1.0</u_min> <!-- minimum output clamp -->
+      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+    </config>
+  </pid-controller>
+
+</PropertyList>
