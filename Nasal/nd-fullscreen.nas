@@ -4,6 +4,7 @@
             me.loopid = 0;
 
 			setprop("/instrumentation/ndfull/range", 100);
+			setprop("/instrumentation/groundradar/range", 100);
 			setprop("/instrumentation/ndfull/show-vor1", 0);
 			setprop("/instrumentation/ndfull/show-vor2", 0);
 
@@ -12,6 +13,8 @@
             me.reset();
     },
        update : func {
+
+setprop("/instrumentation/groundradar/range", getprop("/instrumentation/ndfull/range"));
 
 if (getprop("/instrumentation/ndfull/active") == 1) {
 

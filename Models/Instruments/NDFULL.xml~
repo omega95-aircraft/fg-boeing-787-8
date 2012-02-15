@@ -6310,23 +6310,6 @@
 
 <!-- Ground Radar -->
 
-    <panel>
-        <path>chart.xml</path>
-        <bottom-left>
-            <x-m>0.003</x-m>
-            <y-m>-0.078</y-m>
-            <z-m>-0.104</z-m>
-        </bottom-left>
-        <bottom-right>
-            <x-m>0.003</x-m>
-            <y-m>0.078</y-m>
-            <z-m>-0.104</z-m>
-        </bottom-right>
-        <top-left>
-            <x-m>0.003</x-m>
-            <y-m>-0.078</y-m>
-            <z-m>0.104</z-m>
-        </top-left>
-    </panel>
+
 
 </PropertyList>

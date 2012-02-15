@@ -6,7 +6,7 @@
 		<description>Boeing 787-8</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-8</aero>
-		<authors>Omega Pilot (Cockpit 3D, Systems, FDM), Joshua Wilson (3D), Dwayne Gable (FDM)</authors>
+		<authors>Narendran Muraleedharan, Dwayne Gable, Joshua Wilson</authors>
 		<engine>trent_1000</engine>
 
 		<model>
