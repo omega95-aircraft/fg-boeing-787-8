@@ -587,7 +587,7 @@
 				<flaps type="bool">false</flaps>
 				<gear type="bool">false</gear>
 				<announce type="bool">true</announce>
-				<active type="bool">true</active>
+				<active type="bool">false</active>
 			</copilot>
 		</switches>
 	</controls>
