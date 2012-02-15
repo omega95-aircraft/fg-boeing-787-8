@@ -461,7 +461,7 @@
 			<binding>
 				<command>property-adjust</command>
 				<property>/instrumentation/ndfull/range</property>
-				<step type="double">5</step>
+				<step type="double">1</step>
 				<max>250</max>
 			</binding>
 		</action>
@@ -476,8 +476,8 @@
 			<binding>
 				<command>property-adjust</command>
 				<property>/instrumentation/ndfull/range</property>
-				<step type="double">-5</step>
-				<min>5</min>
+				<step type="double">-1</step>
+				<min>1</min>
 			</binding>
 		</action>
 	</animation>
@@ -6311,21 +6311,21 @@
 <!-- Ground Radar -->
 
     <panel>
-        <path>chart.xml</path>
+        <path>Aircraft/787-8/Models/Instruments/chart.xml</path>
         <bottom-left>
-            <x-m>0.003</x-m>
-            <y-m>-0.078</y-m>
-            <z-m>-0.104</z-m>
+            <x-m>0.001</x-m>
+            <y-m>-0.0806</y-m>
+            <z-m>-0.1444</z-m>
         </bottom-left>
         <bottom-right>
-            <x-m>0.003</x-m>
-            <y-m>0.078</y-m>
-            <z-m>-0.104</z-m>
+            <x-m>0.001</x-m>
+            <y-m>0.2541</y-m>
+            <z-m>-0.1444</z-m>
         </bottom-right>
         <top-left>
-            <x-m>0.003</x-m>
-            <y-m>-0.078</y-m>
-            <z-m>0.104</z-m>
+            <x-m>0.001</x-m>
+            <y-m>-0.0806</y-m>
+            <z-m>0.1068</z-m>
         </top-left>
     </panel>
 

@@ -3,8 +3,8 @@
 
 <PropertyList>
     <name>Airport Chart</name>
-    <background>transparent.png</background>
-    <w>512</w>
+    <background>Aircraft/787-8/Models/Instruments/transparent.png</background>
+    <w>600</w>
     <h>512</h>
 
     <instruments>
@@ -13,17 +13,13 @@
             <condition>
                 <greater-than>
                     <property>systems/electrical/outputs/efis</property>
-                    <value>15</value>
-                </greater-than>
-				<equals>
-					<property>/</property>
-					<value>airport_display</value>
-				</equals>				
+                    <value>9</value>
+                </greater-than>		
             </condition>
             <name>Chart</name>
-            <x>256</x>
-            <y>256</y>
-            <w>512</w>
+            <x>300</x>
+            <y>182</y>
+            <w>600</w>
             <h>512</h>
         </instrument>
 

@@ -35,6 +35,8 @@ props.globals.getNode("sim/sound/landflaps20").setBoolValue(0);
 props.globals.getNode("sim/sound/landflaps30").setBoolValue(0);
 props.globals.getNode("sim/sound/landflapsfull").setBoolValue(0);
 
+setprop("controls/switches/copilot/slow",0);
+
 # Copilot Settings
 	var flaps = getprop("controls/switches/copilot/flaps");
 	var gear = getprop("controls/switches/copilot/gear");
@@ -208,27 +210,27 @@ if ((me.flightphase == 1) and (rollspeed >= 5) and (me.touchdown == 0)) {
 reversethrust.togglereverser();
 setprop("/controls/engines/engine/throttle", 1);
 setprop("/controls/engines/engine[1]/throttle", 1);
-screen.log.write("Copilot: Touchdown! Engaging Thrust Reversers and Speedbrakes", 0, 0.584, 1);
+screen.log.write("Copilot: Touchdown! Engaging Thrust Reversers #and Speedbrakes", 0, 0.584, 1);
 props.globals.getNode("sim/sound/touchdown").setBoolValue(1);
 me.touchdown = 1;
 }
 
 # Disengage Reversers and Spoilers under 60 knots after Touchdown
-if ((airspeed <= 60) and (me.touchdown == 1) and (me.under60 == 0)) {
-reversethrust.togglereverser();
-setprop("/controls/engines/engine/throttle", 0);
-setprop("/controls/engines/engine[1]/throttle", 0);
-screen.log.write("Copilot: 60 knots, Disengaging Thrust Reversers and Retracting Speedbrakes", 0, 0.584, 1);
-props.globals.getNode("sim/sound/under60").setBoolValue(1);
-me.under60 = 1;
-}
+ if ((airspeed <= 60) and (me.touchdown == 1) and (me.under60 == 0)) {
+ reversethrust.togglereverser();
+ setprop("/controls/engines/engine/throttle", 0);
+ setprop("/controls/engines/engine[1]/throttle", 0);
+ screen.log.write("Copilot: 60 knots, Disengaging Thrust Reversers and Retracting Speedbrakes", 0, 0.584, 1);
+ props.globals.getNode("sim/sound/under60").setBoolValue(1);
+ me.under60 = 1;
+ }
 
-if ((airspeed <= 10) and (me.under60 ==1)) {
-setprop("/controls/flight/flaps", 0);
-setprop("/controls/switches/copilot/active", 0);
-screen.log.write("Virtual Co-pilot Deactivated...", 1, 1, 1);
-props.globals.getNode("sim/sound/off").setBoolValue(1);
-}
+ if ((airspeed <= 10) and (me.under60 ==1)) {
+ setprop("/controls/flight/flaps", 0);
+ setprop("/controls/switches/copilot/active", 0);
+ screen.log.write("Virtual Co-pilot Deactivated...", 1, 1, 1);
+ props.globals.getNode("sim/sound/off").setBoolValue(1);
+ }
 
 }
 
@@ -268,6 +270,16 @@ setprop("controls/pneumatic/engine[1]/bleed",0);
 }
 }
 
+# Control Altimeter
+if (getprop("/controls/switches/copilot/altimeter") == 1){
+
+if (getprop("/instrumentation/altimeter/indicated-altitude-ft") < 18000){
+setprop("/instrumentation/altimeter/setting-inhg", getprop("/environment/pressure-sea-level-inhg"));
+}
+else {
+setprop("/instrumentation/altimeter/setting-inhg", 29.92);
+}
+}
 },
 	announce : func(msg) {
         screen.log.write(msg, 1, 0, 0);

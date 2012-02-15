@@ -10,6 +10,8 @@
 
        		me.loopnum = 1;
 
+			me.nearestairport = "";
+
             me.reset();
     },
        update : func {
@@ -30,6 +32,35 @@ if (getprop("/instrumentation/ndfull/active") == 1) {
 
 	var xcoord = poslon * 60;
 	var ycoord = poslat * 60;
+
+	## Airport Diagram
+
+	if (getprop("/sim/airport/closest-airport-id") != nil) {
+	if (getprop("/sim/airport/closest-airport-id") != me.nearestairport) {
+
+	me.nearestairport = getprop("/sim/airport/closest-airport-id");
+
+	setprop("/instrumentation/gps[1]/scratch/query", me.nearestairport);
+	setprop("/instrumentation/gps[1]/scratch/type", "airport");
+
+	setprop("/instrumentation/gps[1]/command", "search");
+
+	}
+	}
+
+	if (getprop("/instrumentation/gps[1]/scratch/longitude-deg") != nil) {
+
+	var naxcoord = 60 * getprop("/instrumentation/gps[1]/scratch/longitude-deg");
+	var naycoord = 0.24 + (60 * getprop("/instrumentation/gps[1]/scratch/latitude-deg"));
+
+	var xoffset = (naxcoord - xcoord) * (100 / ytop);
+	var yoffset = (naycoord - ycoord) * (100 / ytop);
+
+setprop("/instrumentation/ndfull/airport/xoffset", xoffset);
+
+setprop("/instrumentation/ndfull/airport/yoffset", yoffset);
+
+	}	
 
 	# RADIAL CALCULATIONS
 

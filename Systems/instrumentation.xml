@@ -136,6 +136,11 @@ file, these values will be used (they are hardcoded).
 		<number>0</number>
 	</gps>
 
+	<gps>
+		<name>gps</name>
+		<number>1</number>
+	</gps>
+
 	<radar>
 		<name>wxradar</name>
 		<number>0</number>
