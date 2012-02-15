@@ -8,6 +8,9 @@ var vnav = {
         me.UPDATE_INTERVAL = 0.001; 
         me.loopid = 0; 
 
+		setprop("/controls/cdu/vnav/cruise-mode", 0);
+		setprop("/autopilot/vnav/vnav-mode", "wp-mode");
+
         me.reset(); 
 }, 
 	update : func {
@@ -16,7 +19,26 @@ var altitudeft = getprop("/instrumentation/altimeter/indicated-altitude-ft");
 
 var targetaltft = getprop("/controls/navigation/vnav/wp1alt");
 
+# VNAV Autopilot Properties
 
+if ((getprop("/autopilot/locks/altitude") == "vnav") and (getprop("/autopilot/vnav/vnav-mode") == "crz-altitude-hold")) setprop("/autopilot/locks/vnav", "crz");
+elsif ((getprop("/autopilot/locks/altitude") == "vnav") and (getprop("/autopilot/vnav/vnav-mode") == "wp-mode")) setprop("/autopilot/locks/vnav", "wp");
+else setprop("/autopilot/locks/vnav", "");
+
+# Check for Cruise Mode
+
+if (getprop("/controls/cdu/vnav/start-crz") == getprop("/controls/navigation/vnav/wp1id")) {
+setprop("/autopilot/vnav/vnav-mode", "crz-altitude-hold");
+}
+
+if (getprop("/autopilot/vnav/vnav-mode") == "crz-altitude-hold") {
+
+if (getprop("/controls/cdu/vnav/end-crz") == getprop("/controls/navigation/vnav/wp1id")) {
+setprop("/autopilot/vnav/vnav-mode", "wp-mode");
+}
+}
+
+if (getprop("/autopilot/vnav/vnav-mode") == "wp-mode") {
 if (getprop("/controls/navigation/vnav/wp1alt") != nil) {
 if (getprop("/controls/navigation/vnav/wp1alt") <= 0) {
 setprop("/autopilot/vnav/vertical-speed-fps", 0);
@@ -28,6 +50,7 @@ if (getprop("/autopilot/vnav/vertical-speed-fps") > 50){
 setprop("/autopilot/vnav/vertical-speed-fps", 50);
 }
 } else setprop("/autopilot/vnav/vertical-speed-fps", 0);
+}
 }
 }
 

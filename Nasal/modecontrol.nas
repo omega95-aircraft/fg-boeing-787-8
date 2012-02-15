@@ -45,7 +45,7 @@ if (getprop("/autopilot/panel/master") == 1) {
 		setprop("/autopilot/locks/altitude", "altitude-hold");
 	} elsif (getprop("/autopilot/panel/alt") == "vs") {
 		setprop("/autopilot/locks/altitude", "vertical-speed-hold");
-	} elsif (getprop("/autopilot/panel/atl") == "vnav") {
+	} elsif (getprop("/autopilot/panel/alt") == "vnav") {
 		setprop("/autopilot/locks/altitude", "vnav");
 	} elsif (getprop("/autopilot/panel/alt") == "app") {
 		setprop("/autopilot/locks/altitude", "gs1-hold");

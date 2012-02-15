@@ -5,6 +5,12 @@ var cdu = {
 
 # Initialize display and other CDU properties
 
+## VNAV Config Properties
+
+setprop("/controls/cdu/vnav/crz-altitude-ft", 10000);
+setprop("/controls/cdu/vnav/start-crz", "");
+setprop("/controls/cdu/vnav/end-crz", "");
+
 ## Root Properties
 
 setprop("/controls/cdu/flightnum", "");
@@ -1506,13 +1512,13 @@ setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/l1", "");
 setprop("/controls/cdu/display/r1", "");
 
-setprop("/controls/cdu/display/l2", "");
+setprop("/controls/cdu/display/l2", getprop("/controls/cdu/vnav/crz-altitude-ft"));
 setprop("/controls/cdu/display/r2", "");
 
-setprop("/controls/cdu/display/l3", "");
+setprop("/controls/cdu/display/l3", getprop("/controls/cdu/vnav/start-crz"));
 setprop("/controls/cdu/display/r3", "");
 
-setprop("/controls/cdu/display/l4", "");
+setprop("/controls/cdu/display/l4", getprop("/controls/cdu/vnav/end-crz"));
 setprop("/controls/cdu/display/r4", "");
 
 setprop("/controls/cdu/display/l5", "");
@@ -1528,6 +1534,27 @@ setprop("/controls/cdu/display/r7", "");
 
 if (keypress == "l7") {
 page = "INDEX";
+keypress = "";
+}
+
+if ((keypress == "l2") and (cduinput != "")) {
+setprop("/controls/cdu/vnav/crz-altitude-ft", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l3") and (cduinput != "")) {
+setprop("/controls/cdu/vnav/start-crz", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l4") and (cduinput != "")) {
+setprop("/controls/cdu/vnav/end-crz", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
 keypress = "";
 }
 

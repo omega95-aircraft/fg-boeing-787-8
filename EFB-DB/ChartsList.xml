@@ -41,6 +41,14 @@
 		<IAPs type="int">2</IAPs>
 	</KIAH>
 
+	<VABB>
+		<SID-0 type="string">EKPOSxA</SID-0>
+		<SIDs type="int">1</SIDs>
+		<IAP-0 type="string">09-ILS-DME</IAP-0>
+		<IAP-1 type="string">14-ILS-DME</IAP-1>
+		<IAPs type="int">2</IAPs>
+	</VABB>
+
 </chartsDB>
 
 </PropertyList>
