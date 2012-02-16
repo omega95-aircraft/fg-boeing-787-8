@@ -49,8 +49,8 @@
         <ixx unit="SLUG*FT2"> 7675399.200088156 </ixx> <!-- Values from YASIM Solver (old 787 FDM) -->
         <iyy unit="SLUG*FT2"> 6595543.304209171 </iyy> <!-- Values from YASIM Solver (old 787 FDM) -->
         <izz unit="SLUG*FT2"> 12197429.613714606 </izz> <!-- Values from YASIM Solver (old 787 FDM) -->
-	<ixy unit="SLUG*FT2"> −0.015488805 </ixy> <!-- Values from YASIM Solver (old 787 FDM) -->
-	<ixz unit="SLUG*FT2"> −0.015488805 </ixz> <!-- Values from YASIM Solver (old 787 FDM) -->
+	<ixy unit="SLUG*FT2"> 0.015488805 </ixy> <!-- Values from YASIM Solver (old 787 FDM) -->
+	<ixz unit="SLUG*FT2"> 0.015488805 </ixz> <!-- Values from YASIM Solver (old 787 FDM) -->
 	<iyz unit="SLUG*FT2">         0 </iyz>
    <emptywt unit="LBS" > 220000 </emptywt> <!-- Supposed to be 242000 but the plane acts too heavy with that setting -->
    <location name="CG" unit="IN"> <!-- Values from YASIM Solver (old 787 FDM) -->
@@ -336,6 +336,7 @@
 
 </propulsion>
 
+    <system file="Defines"/>
     <system file="pushback"/>
 
 <flight_control name="FCS: 787-8">
@@ -610,15 +611,15 @@
                           <independentVar lookup="row">aero/alpha-rad</independentVar>
 <!--                          <independentVar lookup="column">/velocities/mach</independentVar> -->
                           <tableData>
-	                         -0.2000   -0.6800
+	                     -0.1000   -0.900
                               0.0000	0.2000
                               0.0400	0.6400
-                              0.2300	1.0500
+                              0.2300	2.7000
                               0.6000	0.5000
                           </tableData>
 <!--                          <tableData>
-										0.0000 	  0.2500	0.8500	 1.0000
-	                         -0.2000    0.0000	 -0.3500   -0.6800	-0.7000
+			                0.0000 	  0.2500	0.8500	 1.0000
+	                     -0.2000    0.0000	 -0.3500       -0.6800	-0.7000
                               0.0000	0.0000	  0.3000	0.2000	 0.2000
                               0.0400	0.0000	  0.7200	0.6400	 0.6000
                               0.2300	0.0000	  1.0700	1.0500   1.0000
