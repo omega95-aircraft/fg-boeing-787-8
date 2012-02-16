@@ -459,7 +459,7 @@
         <value>gs1-hold</value>
       </enable>
       <type>exponential</type>
-      <filter-time>0.1</filter-time>
+      <filter-time>0.05</filter-time>
       <input>autopilot/internal/elevator-filter</input>
       <output>/fdm/jsbsim/fcs/elevator-fbw-output</output>
     </filter>
