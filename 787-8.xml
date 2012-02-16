@@ -48,7 +48,7 @@
 <mass_balance>
         <ixx unit="SLUG*FT2"> 7675399.200088156 </ixx> <!-- Values from YASIM Solver (old 787 FDM) -->
         <iyy unit="SLUG*FT2"> 6595543.304209171 </iyy> <!-- Values from YASIM Solver (old 787 FDM) -->
-        <izz unit="SLUG*FT2"> 12197429.613714606 </izz> <!-- Values from YASIM Solver (old 787 FDM) -->
+        <izz unit="SLUG*FT2"> 22197429.613714606 </izz> <!-- Values from YASIM Solver (old 787 FDM) -->
 	<ixy unit="SLUG*FT2"> −0.015488805 </ixy> <!-- Values from YASIM Solver (old 787 FDM) -->
 	<ixz unit="SLUG*FT2"> −0.015488805 </ixz> <!-- Values from YASIM Solver (old 787 FDM) -->
 	<iyz unit="SLUG*FT2">         0 </iyz>
@@ -431,8 +431,8 @@
       <input>fcs/rudder-fbw-output</input>
       <input>fcs/yaw-trim-cmd-norm</input>
       <clipto>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
+        <min> -0.25 </min>
+        <max>  0.25 </max>
       </clipto>
    </summer>
 
@@ -490,8 +490,8 @@
    <aerosurface_scale name="Rudder Control">
       <input>fcs/rudder-sum</input>
       <range>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
+        <min> -0.25 </min>
+        <max>  0.25 </max>
       </range>
       <output>fcs/rudder-pos-rad</output>
    </aerosurface_scale>
@@ -499,8 +499,8 @@
    <aerosurface_scale name="rudder normalization">
       <input>fcs/rudder-pos-rad</input>
       <domain>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
+        <min> -0.25 </min>
+        <max>  0.25 </max>
       </domain>
       <range>
         <min> -1 </min>
@@ -612,10 +612,10 @@
                           <independentVar lookup="row">aero/alpha-rad</independentVar>
 <!--                          <independentVar lookup="column">/velocities/mach</independentVar> -->
    							<tableData>
-							 -0.2000   -0.3000
-                              0.0000	0.5400
-                              0.0400	0.6900
-							  0.1740	1.0654
+							 -0.2000   -0.8000
+                              0.0000	0.3400
+                              0.0400	0.5700
+							  0.1740	1.0054
                               0.3000	1.3400
                               0.4500	1.2500
                               0.6000	0.8000

@@ -1602,7 +1602,7 @@
   <object-name>taxilight</object-name>
   <object-name>noselanding</object-name>
   <property>/fdm/jsbsim/fcs/rudder-fbw-output</property>
-  <factor>20</factor>
+  <factor>60</factor>
   <offset-deg>0</offset-deg>   
   <center>
    <x-m>-20.576</x-m>
