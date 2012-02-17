@@ -8,6 +8,7 @@ var hold = {
 	init : func { 
         me.UPDATE_INTERVAL = 0.001; 
         me.loopid = 0; 
+		setprop(htree ~"track-magnetic-deg", 0);
 		setprop(htree ~"corrected-hold-time", 60);
 		me.timer_started = 0;
 		me.start_time = 0;
@@ -28,6 +29,10 @@ var hold = {
 	var diff2 = brg - hold_radial;
 	var dist = getprop("/instrumentation/gps[2]/scratch/distance-nm");
 	#var corrected_hold_time = getprop(htree ~"corrected-hold-time");
+	
+	setprop(htree ~"track-error-deg", getprop(htree ~"track-magnetic-deg") - hdg);
+	setprop(htree ~"brg-error-deg", brg - hdg);
+	
 	var hdgdiff = hdg - hold_radial;
 	
 	if (hold_radial > 270)
@@ -73,7 +78,6 @@ var hold = {
 		if (phase == 0){
 			if ((diff1 <= 110) or (diff2 <= 70)){
 				entry = 0;
-				phase = 1;
 				}
 			elsif ((diff1 > 110) and (diff2 <= 180)){
 				entry = 2;
@@ -84,6 +88,8 @@ var hold = {
 				phase = 5;
 				}
 			setprop(htree ~"entry", entry);
+			if (entry == 0)
+				phase = 1;
 		}
 		elsif (phase == 5){
 			if (entry == 1){
@@ -100,6 +106,9 @@ var hold = {
 						me.time_started = 0;
 					}
 				}
+			}
+			else{
+				phase = 1;
 			}
 		}
 		elsif ((phase == 1) and (dist <= 0.3))

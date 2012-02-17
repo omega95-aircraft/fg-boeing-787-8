@@ -36,8 +36,8 @@ setprop("/controls/fbw/rudder", 1);
 setprop("/controls/fbw/yaw-damper", 1);
 setprop("/controls/fbw/bank-limit", 35);
 
-setprop("/contrtols/fbw/alpha-protect", 0);
-setprop("/contrtols/fbw/alpha-limit", 0);
+setprop("/controls/fbw/alpha-protect", 0);
+setprop("/controls/fbw/alpha-limit", 0);
 
 ## Initialize Control Surfaces
 
@@ -159,7 +159,7 @@ setprop("/controls/fbw/stabroll-deg", roll);
 me.stabilize = 1;
 }
 
-if ((airspeedkt >= 220) and (altitudeagl >= 3500) and (getprop("/autopilot/panel/master") != 1) and (getprop("/connection/fgfscopilot/connected") != 1)) {
+if ((airspeedkt >= 220) and (altitudeagl >= 3500) and (getprop("/autopilot/panel/master") != 1) and (getprop("/autopilot/hold/enable") != 1) and (getprop("/connection/fgfscopilot/connected") != 1)) {
 setprop("/controls/fbw/autostable", 1);
 } else {
 setprop("/controls/fbw/autostable", 0);
@@ -273,7 +273,7 @@ setprop("/controls/fbw/alpha-limit", -10);
 ## PROTECTION END TRIM FIX
 
 if (getprop("/controls/flight/elevator-trim") != nil) {
-if ((getprop("/controls/fbw/alpha-protect") == 0) and (getprop("/autopilot/panel/master") != 1) and (getprop("/connection/fgfscopilot/connected") != 1)) {
+if ((getprop("/controls/fbw/alpha-protect") == 0) and (getprop("/autopilot/panel/master") != 1) and (getprop("/autopilot/hold/enable") != 1) and (getprop("/connection/fgfscopilot/connected") != 1)) {
 if (getprop("/controls/flight/elevator-trim") < 0) {
 setprop("/controls/flight/elevator-trim", getprop("/controls/flight/elevator-trim") + 0.005);
 } elsif (getprop("/controls/flight/elevator-trim") > 0) {

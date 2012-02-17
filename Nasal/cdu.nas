@@ -1588,7 +1588,7 @@ setprop("/controls/cdu/l1-type", "disp");
 setprop("/controls/cdu/l2-type", "click");
 setprop("/controls/cdu/l3-type", "click");
 setprop("/controls/cdu/l4-type", "click");
-setprop("/controls/cdu/l5-type", "disp");
+setprop("/controls/cdu/l5-type", "click");
 setprop("/controls/cdu/l6-type", "disp");
 setprop("/controls/cdu/l7-type", "click");
 
