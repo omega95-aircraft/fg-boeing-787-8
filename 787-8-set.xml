@@ -6,7 +6,7 @@
 		<description>Boeing 787-8</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-8</aero>
-		<authors>Narendran Muraleedharan, Dwayne Gable, Joshua Wilson</authors>
+		<authors>Narendran Muraleedharan, Hooray, Ron Jenson, Thorsten ,Dwayne Gable, Joshua Wilson</authors>
 		<engine>trent_1000</engine>
 
 		<model>
