@@ -121,7 +121,7 @@
    </tcas>
 
 	<wxradar>
-		<serviceable type="bool">true</servicable>
+		<serviceable type="bool">true</serviceable>
 		<multi-scan type="bool">true</multi-scan>
 		<tilt type="int">0</tilt>
 		<precip type="bool">true</precip>
@@ -863,6 +863,7 @@
 			<file>Aircraft/787-8/Nasal/warnings.nas</file>
 			<file>Aircraft/787-8/Nasal/lighting.nas</file>
 			<file>Aircraft/787-8/Nasal/wxradar.nas</file>
+			<file>Aircraft/787-8/Nasal/holding-pattern.nas</file>
 <!--			<file>Aircraft/787-8/DualControl/dualcontrol_main.nas</file> -->
 		</b787>
         <dialogs>
