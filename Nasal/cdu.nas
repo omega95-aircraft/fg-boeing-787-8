@@ -203,7 +203,7 @@ keypress = "";
 
 setprop("/controls/cdu/l1-type", "disp");
 setprop("/controls/cdu/l2-type", "disp");
-setprop("/controls/cdu/l3-type", "disp");
+setprop("/controls/cdu/l3-type", "click");
 setprop("/controls/cdu/l4-type", "click");
 setprop("/controls/cdu/l5-type", "click");
 setprop("/controls/cdu/l6-type", "click");
@@ -240,10 +240,10 @@ setprop("/controls/cdu/display/r1", "");
 setprop("/controls/cdu/display/l2", "");
 setprop("/controls/cdu/display/r2", "");
 
-setprop("/controls/cdu/display/l3", "");
-setprop("/controls/cdu/display/r3", "IDENT");
+setprop("/controls/cdu/display/l3", "IDENT");
+setprop("/controls/cdu/display/r3", "HOLD CONFIG");
 
-setprop("/controls/cdu/display/l4", "VNAV");
+setprop("/controls/cdu/display/l4", "VNAV CONFIG");
 setprop("/controls/cdu/display/r4", "EFB INPUT");
 
 setprop("/controls/cdu/display/l5", "FBW CONFIG");
@@ -257,8 +257,13 @@ setprop("/controls/cdu/display/r7", "APPROACH");
 
 #### Menu Presses
 
-if (keypress == "r3") {
+if (keypress == "l3") {
 page = "IDENT";
+keypress = "";
+}
+
+if (keypress == "r3") {
+page = "HOLD CONFIG";
 keypress = "";
 }
 

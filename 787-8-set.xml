@@ -120,6 +120,14 @@
 
    </tcas>
 
+	<wxradar>
+		<serviceable type="bool">true</servicable>
+		<multi-scan type="bool">true</multi-scan>
+		<tilt type="int">0</tilt>
+		<precip type="bool">true</precip>
+		<range type="int">30</range>
+	</wxradar>
+
 		</instrumentation>
 
 		<alarms>
@@ -854,11 +862,17 @@
 			<file>Aircraft/787-8/Nasal/modecontrol.nas</file>
 			<file>Aircraft/787-8/Nasal/warnings.nas</file>
 			<file>Aircraft/787-8/Nasal/lighting.nas</file>
+			<file>Aircraft/787-8/Nasal/wxradar.nas</file>
 <!--			<file>Aircraft/787-8/DualControl/dualcontrol_main.nas</file> -->
 		</b787>
         <dialogs>
             <file>Aircraft/787-8/Nasal/radio.nas</file>
         </dialogs>
+<!-- WXRADAR Animations Creator -->
+		<wxr>
+<!--			<file>Aircraft/787-8/Devel/wxradar-echo-animations.nas</file> -->
+			<file>Aircraft/787-8/Devel/wxradar-pixel-animations.nas</file>
+		</wxr>
 	</nasal>
 
 </PropertyList>

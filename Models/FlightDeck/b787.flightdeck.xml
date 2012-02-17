@@ -2697,4 +2697,169 @@
 		</condition>
 	</animation>
 
+<!-- WXRADAR Panel -->
+
+	<animation>
+		<type>pick</type>
+		<object-name>wxradar-tilt</object-name>
+		<action>
+			<button>0</button>
+			<button>3</button>
+			<repeatable type="bool">true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>/instrumentation/wxradar/tilt</property>
+				<step>1</step>
+				<max>15</max>
+			</binding>
+		</action>
+		<action>
+			<button>1</button>
+			<button>4</button>
+			<repeatable type="bool">true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>/instrumentation/wxradar/tilt</property>
+				<step>-1</step>
+				<min>-15</min>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wxradar-tilt</object-name>
+		<property>/instrumentation/wxradar/tilt</property>
+		<interpolation>
+			<entry><ind>-1</ind><dep>-16</dep></entry>
+			<entry><ind>-2</ind><dep>-32</dep></entry>
+			<entry><ind>-3</ind><dep>-48</dep></entry>
+			<entry><ind>-4</ind><dep>-64</dep></entry>
+			<entry><ind>-5</ind><dep>-80</dep></entry>
+			<entry><ind>-6</ind><dep>-84</dep></entry>
+			<entry><ind>-7</ind><dep>-88</dep></entry>
+			<entry><ind>-8</ind><dep>-92</dep></entry>
+			<entry><ind>-9</ind><dep>-96</dep></entry>
+			<entry><ind>-10</ind><dep>-100</dep></entry>
+			<entry><ind>-11</ind><dep>-104</dep></entry>
+			<entry><ind>-12</ind><dep>-108</dep></entry>
+			<entry><ind>-13</ind><dep>-112</dep></entry>
+			<entry><ind>-14</ind><dep>-116</dep></entry>
+			<entry><ind>-15</ind><dep>-120</dep></entry>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>16</dep></entry>
+			<entry><ind>2</ind><dep>32</dep></entry>
+			<entry><ind>3</ind><dep>48</dep></entry>
+			<entry><ind>4</ind><dep>64</dep></entry>
+			<entry><ind>5</ind><dep>80</dep></entry>
+			<entry><ind>6</ind><dep>84</dep></entry>
+			<entry><ind>7</ind><dep>88</dep></entry>
+			<entry><ind>8</ind><dep>92</dep></entry>
+			<entry><ind>9</ind><dep>96</dep></entry>
+			<entry><ind>10</ind><dep>100</dep></entry>
+			<entry><ind>11</ind><dep>104</dep></entry>
+			<entry><ind>12</ind><dep>108</dep></entry>
+			<entry><ind>13</ind><dep>112</dep></entry>
+			<entry><ind>14</ind><dep>116</dep></entry>
+			<entry><ind>15</ind><dep>120</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>-
+		<center>
+			<x-m>-22.8038</x-m>
+			<y-m>-0.1589</y-m>
+			<z-m>0.000</z-m>
+		</center>
+	</animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>wxradar-master</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>/instrumentation/wxradar/servicable</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>wxradar-precip</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>/instrumentation/wxradar/precip</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>wxradar-multi-scan</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>/instrumentation/wxradar/multi-scan</property>
+            </binding>
+        </action>
+    </animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wxradar-master</object-name>
+		<property>/instrumentation/wxradar/serviceable</property>
+		<factor>60</factor>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>0</x-m>
+			<y-m>-0.1985</y-m>
+			<z-m>1.3484</z-m>
+		</center>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wxradar-multi-scan</object-name>
+		<property>/instrumentation/wxradar/multi-scan</property>
+		<factor>60</factor>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>0</x-m>
+			<y-m>-0.1082</y-m>
+			<z-m>1.3484</z-m>
+		</center>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wxradar-precip</object-name>
+		<property>/instrumentation/wxradar/precip</property>
+		<factor>40</factor>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-22.7939</x-m>
+			<y-m>0</y-m>
+			<z-m>1.347</z-m>
+		</center>
+	</animation>
+
 </PropertyList>
