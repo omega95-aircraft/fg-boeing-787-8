@@ -2,7 +2,7 @@ var copilot = {
 	init : func { 
         me.UPDATE_INTERVAL = 1.73; 
         me.loopid = 0; 
-		# Initialize state variables.
+		# Initialize state variables
 		me.V1announced = 0;
 		me.VRannounced = 0;
 		me.V2announced = 0;

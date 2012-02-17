@@ -8,16 +8,9 @@ var hold = {
 	init : func { 
         me.UPDATE_INTERVAL = 0.001; 
         me.loopid = 0; 
-		setprop(htree ~"hold-time", 60);
-		setprop(htree ~"hold-direction", 0);	# 0 = right, 1 = left
-		setprop(htree ~"hold-radial", 0);
-		setprop(htree ~"altitude", 5000);
-		setprop(htree ~"active", 0);
-		setprop(htree ~"entry", 0);	#0 = direct, 1 = parallel, 2 = teardrop
-		setprop(htree ~"phase", 0);	#0 = define entry, 1 = inbound leg, 2 = outbound turn, 3 = outbound leg, 4 = inbound turn, 5 = fly entry
-		setprop(htree ~"entry-phase", 0) #0 = parallel - fly to fix, 1 =  fly parallel, 2 = turn inbound, 3 intercept inbound leg
-		setprop(htree ~"fix", "");
-		setprop(htree ~"nav-type", "vor");
+		setprop(htree ~"corrected-hold-time", 60);
+		me.timer_started = 0;
+		me.start_time = 0;
         me.reset(); 
 }, 
 	update : func {
@@ -30,20 +23,51 @@ var hold = {
 	var phase = getprop(htree ~"phase");
 	var hdg = getprop("/orientation/heading-magnetic-deg");
 	var fix = getprop(htree ~"fix");
-	var brg = getprop("/instrumentation/gps/scratch/mag-bearing-deg");
+	var brg = getprop("/instrumentation/gps[2]/scratch/mag-bearing-deg");
 	var diff1 = hold_radial - brg;
 	var diff2 = brg - hold_radial;
+	var dist = getprop("/instrumentation/gps[2]/scratch/distance-nm");
+	#var corrected_hold_time = getprop(htree ~"corrected-hold-time");
+	var hdgdiff = hdg - hold_radial;
 	
+	if (hold_radial > 270)
+		var holddiff2 = 360 - hold_radial;
+	else
+		var holddiff2 = hold_radial;
+	if (hdg > 270)
+		var hdgdiff3 = 360 - hdg;
+	else
+		var hdgdiff3 = hdg;
+	if ((hdgdiff) < 0)
+		hdgdiff = 360 - math.abs(hdgdiff);
+	if (hold_radial < 90)
+		var holddiff = 360 + hold_radial;
+	else
+		var holddiff = hold_radial;
+	if (hdg < 90)
+		var hdgdiff2 = 360 + hdg;
+	else
+		var hdgdiff2 = hdg;
 	if (diff1 <= 0)
 		diff1 = 360 - math.abs(diff1);
 	if (diff2 <= 0)
 		diff2 = 360 - math.abs(diff2);
-	if (active == 0)
+	if (active == 0){
 		phase = 0;
+		setprop(htree ~"phase-enable", 0);
+	}
 	else{
 		setprop("/autopilot/panel/master", 0);
 		setprop("/autopilot/locks/altitude", "");
 		setprop("/autopilot/locks/heading", "");
+		if (phase == 1)
+			setprop(htree ~"phase-enable", 1);
+		elsif (phase == 2)
+			setprop(htree ~"phase-enable", 2);
+		elsif (phase == 3)
+			setprop(htree ~"phase-enable", 2);
+		elsif (phase == 4)
+			setprop(htree ~"phase-enable", 2);
 	}
 	if (fix != ""){
 		if (phase == 0){
@@ -66,8 +90,43 @@ var hold = {
 				
 			}
 			if (entry == 2){
-				
+				if (me.timer_started == 0){
+					me.timer_started = 1;
+					me.start_time = getprop("/sim/time/elapsed-sec");
+				}
+				else{
+					if ((getprop("/sim/time/elapsed-sec") - me.start_time) >= hold_time){
+						phase = 4;
+						me.time_started = 0;
+					}
+				}
 			}
+		}
+		elsif ((phase == 1) and (dist <= 0.3))
+			phase = 2;
+		elsif (phase == 2){
+			if (hdgdiff3 < holddiff2 + 90)
+				setprop(htree ~"track-magnetic-deg", holddiff2 + 90);
+			else
+				phase = 3;
+		}
+		elsif (phase == 3){
+			if (me.timer_started == 0){
+					me.timer_started = 1;
+					me.start_time = getprop("/sim/time/elapsed-sec");
+				}
+				else{
+					if ((getprop("/sim/time/elapsed-sec") - me.start_time) >= hold_time){
+						phase = 4;
+						me.time_started = 0;
+					}
+				}
+		}
+		elsif (phase == 4){
+			if (hdgdiff2 < holddiff - 90)
+				setprop(htree ~"track-magnetic-deg", holddiff - 90);
+			else
+				phase = 1;
 		}
 	}
 },
@@ -87,4 +146,5 @@ setlistener("sim/signals/fdm-initialized", func
  {
  hold.init();
  });
+
 
