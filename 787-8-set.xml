@@ -78,6 +78,12 @@
 		<autopilot>
 			<path>Aircraft/787-8/Systems/vnav.xml</path>
 		</autopilot>
+
+		<!-- Automatic Holding Pattern PID Controller -->
+
+		<autopilot>
+			<path>Aircraft/787-8/Systems/holding-pattern.xml</path>
+		</autopilot>
 	
 		<!-- Fly-By-Wire Auto Stabilize PID Controller -->
 
