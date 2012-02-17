@@ -256,16 +256,16 @@ elevatorout += 0.02;
 
 if ((getprop("/orientation/alpha-deg") != nil) and (getprop("/position/altitude-agl-ft") >= 1000)) {
 
-if (getprop("/orientation/alpha-deg") > 20) {
+if (getprop("/orientation/alpha-deg") > 10) {
 setprop("/controls/fbw/alpha-protect", 1);
-setprop("/controls/fbw/alpha-limit", 20);
+setprop("/controls/fbw/alpha-limit", 10);
 
 throttle0 = 1;
 throttle1 = 1;
 
-} elsif (getprop("/orientation/alpha-deg") < -20) {
+} elsif (getprop("/orientation/alpha-deg") < -10) {
 setprop("/controls/fbw/alpha-protect", 1);
-setprop("/controls/fbw/alpha-limit", -20);
+setprop("/controls/fbw/alpha-limit", -10);
 } else setprop("/controls/fbw/alpha-protect", 0);
 
 } else setprop("/controls/fbw/alpha-protect", 0);
