@@ -1597,7 +1597,7 @@ setprop("/controls/cdu/r2-type", "disp");
 setprop("/controls/cdu/r3-type", "disp");
 setprop("/controls/cdu/r4-type", "disp");
 setprop("/controls/cdu/r5-type", "disp");
-setprop("/controls/cdu/r6-type", "disp");
+setprop("/controls/cdu/r6-type", "click");
 setprop("/controls/cdu/r7-type", "click");
 
 #### Field Values
@@ -1637,7 +1637,7 @@ setprop("/controls/cdu/display/r6", "");
 
 setprop("/controls/cdu/display/l7", "< INDEX");
 
-if (getprop("/controls/hold/found") == 1) {
+if (getprop("/controls/cdu/hold/found") == 1) {
 setprop("/controls/cdu/display/r6", "");
 if (getprop("/autopilot/hold/active") == 0) setprop("/controls/cdu/display/r7", "ENTER HOLD >");
 else setprop("/controls/cdu/display/r7", "EXIT HOLD >");
@@ -1678,6 +1678,8 @@ setprop("/instrumentation/gps[2]/scratch/query", getprop("/autopilot/hold/fix"))
 setprop("/instrumentation/gps[2]/scratch/type", getprop("/autopilot/hold/nav-type"));
 
 setprop("/instrumentation/gps[2]/command", "search");
+
+setprop("/controls/cdu/hold/found", 1);
 
 keypress = "";
 }
