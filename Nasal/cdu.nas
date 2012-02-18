@@ -1689,6 +1689,8 @@ if (keypress == "r7") {
 if (getprop("/autopilot/hold/active") == 0) setprop("/autopilot/hold/active", 1);
 else setprop("/autopilot/hold/active", 0);
 
+keypress = "";
+
 }
 
 if ((keypress == "l4") and (cduinput != "")) {
