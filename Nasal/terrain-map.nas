@@ -5,6 +5,9 @@ var terrain = "/instrumentation/terrain-map/pixels/";
             me.UPDATE_INTERVAL = 0.01;
             me.loopid = 0;
 			me.sweepdegree = 0;
+
+			setprop("/controls/mfd/terrain-map/range", 30);
+
 			me.radarradius = 0;
             me.reset();
     },
@@ -16,24 +19,26 @@ var pos_lon = getprop("/position/longitude-deg");
 var pos_lat = getprop("/position/latitude-deg");
 var heading = getprop("orientation/heading-magnetic-deg");
 
-## To convert Distance and Bearing to Point as a new Latitude and Longitude
+var range = getprop("/controls/mfd/terrain-map/range");
+
+## range convert Distance and Bearing to Point as a new Latitude and Longitude
 
 var getDeg = heading - 60 + (me.sweepdegree * 2);
 
-var y0 = (((me.radarradius * 5) + 11) * math.cos(getDeg) / 60) + pos_lat;
-var x0 = (((me.radarradius * 5) + 11) * math.sin(getDeg) / 60) + pos_lon;
+var y0 = (((me.radarradius * 5) + 11) * (range/30) * math.cos(getDeg) / 60) + pos_lat;
+var x0 = (((me.radarradius * 5) + 11) * (range/30) * math.sin(getDeg) / 60) + pos_lon;
 
-var y1 = (((me.radarradius * 5) + 12) * math.cos(getDeg) / 60) + pos_lat;
-var x1 = (((me.radarradius * 5) + 12) * math.sin(getDeg) / 60) + pos_lon;
+var y1 = (((me.radarradius * 5) + 12) * (range/30) * math.cos(getDeg) / 60) + pos_lat;
+var x1 = (((me.radarradius * 5) + 12) * (range/30) * math.sin(getDeg) / 60) + pos_lon;
 
-var y2 = (((me.radarradius * 5) + 13) * math.cos(getDeg) / 60) + pos_lat;
-var x2 = (((me.radarradius * 5) + 13) * math.sin(getDeg) / 60) + pos_lon;
+var y2 = (((me.radarradius * 5) + 13) * (range/30) * math.cos(getDeg) / 60) + pos_lat;
+var x2 = (((me.radarradius * 5) + 13) * (range/30) * math.sin(getDeg) / 60) + pos_lon;
 
-var y3 = (((me.radarradius * 5) + 14) * math.cos(getDeg) / 60) + pos_lat;
-var x3 = (((me.radarradius * 5) + 14) * math.sin(getDeg) / 60) + pos_lon;
+var y3 = (((me.radarradius * 5) + 14) * (range/30) * math.cos(getDeg) / 60) + pos_lat;
+var x3 = (((me.radarradius * 5) + 14) * (range/30) * math.sin(getDeg) / 60) + pos_lon;
 
-var y4 = (((me.radarradius * 5) + 15) * math.cos(getDeg) / 60) + pos_lat;
-var x4 = (((me.radarradius * 5) + 15) * math.sin(getDeg) / 60) + pos_lon;
+var y4 = (((me.radarradius * 5) + 15) * (range/30) * math.cos(getDeg) / 60) + pos_lat;
+var x4 = (((me.radarradius * 5) + 15) * (range/30) * math.sin(getDeg) / 60) + pos_lon;
 
 setprop(terrain ~ "deg[" ~ me.sweepdegree ~ "]/dist[" ~ (me.radarradius * 5) ~ "]/elevation", get_elevation(y0, x0));
 
