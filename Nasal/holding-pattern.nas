@@ -148,7 +148,7 @@ var flyto = func(target_lat, target_lon) {
  
  # Calculate Required Track for leg
 
- var track_deg = 180 + (57.2957795 * math.atan2(target_lat - pos_lat, target_lon - pos_lon));
+ var track_deg = 90 + (57.2957795 * math.atan2(target_lat - pos_lat, target_lon - pos_lon));
 
  setprop("/autopilot/auto-hold/track-deg", track_deg);
  setprop("/autopilot/auto-hold/enable-track", 1);

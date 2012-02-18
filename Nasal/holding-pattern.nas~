@@ -29,8 +29,8 @@ var hold = {
 	var diff2 = brg - hold_radial;
 	var dist = getprop("/instrumentation/gps[2]/scratch/distance-nm");
 	var gs = getprop("/velocities/groundspeed-kt");
-	var leg_distance = gs * (hold_time / 3600)
-	var turn_diameter = gs * (60 / 3600 * math.pi)
+	var leg_distance = gs * (hold_time / 3600);
+	var turn_diameter = gs * (60 / 3600 * math.pi);
 	var right1 = 45 + hold_radial;
 	var right2 = 90 + hold_radial;
 	var right3 = 180 + hold_radial;
@@ -148,7 +148,7 @@ var flyto = func(target_lat, target_lon) {
  
  # Calculate Required Track for leg
 
- var track_deg = 57.2957795 * math.atan2(target_lat - pos_lat, target_lon - pos_lon);
+ var track_deg = 180 + (57.2957795 * math.atan2(target_lat - pos_lat, target_lon - pos_lon));
 
  setprop("/autopilot/auto-hold/track-deg", track_deg);
  setprop("/autopilot/auto-hold/enable-track", 1);
