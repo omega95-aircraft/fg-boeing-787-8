@@ -1049,7 +1049,7 @@
             <binding>
                 <command>property-cycle</command>
                 <property>controls/cdu/keypress</property>
-		<value>T</value>
+		<value>U</value>
             </binding>
         </action>
     </animation>
