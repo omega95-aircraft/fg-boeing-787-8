@@ -6,7 +6,7 @@
 		<description>Boeing 787-8</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-8</aero>
-		<authors>Narendran Muraleedharan, Dwayne Gable, Joshua Wilson</authors>
+		<authors>Narendran Muraleedharan, Hooray, Ron Jenson, Thorsten ,Dwayne Gable, Joshua Wilson</authors>
 		<engine>trent_1000</engine>
 
 		<model>
@@ -78,6 +78,12 @@
 		<autopilot>
 			<path>Aircraft/787-8/Systems/vnav.xml</path>
 		</autopilot>
+
+		<!-- Automatic Holding Pattern PID Controller -->
+
+		<autopilot>
+			<path>Aircraft/787-8/Systems/holding-pattern.xml</path>
+		</autopilot>
 	
 		<!-- Fly-By-Wire Auto Stabilize PID Controller -->
 
@@ -119,6 +125,14 @@
      </speaker>
 
    </tcas>
+
+	<wxradar>
+		<serviceable type="bool">true</serviceable>
+		<multi-scan type="bool">true</multi-scan>
+		<tilt type="int">0</tilt>
+		<precip type="bool">true</precip>
+		<range type="int">30</range>
+	</wxradar>
 
 		</instrumentation>
 
@@ -854,11 +868,18 @@
 			<file>Aircraft/787-8/Nasal/modecontrol.nas</file>
 			<file>Aircraft/787-8/Nasal/warnings.nas</file>
 			<file>Aircraft/787-8/Nasal/lighting.nas</file>
+			<file>Aircraft/787-8/Nasal/wxradar.nas</file>
+			<file>Aircraft/787-8/Nasal/holding-pattern.nas</file>
 <!--			<file>Aircraft/787-8/DualControl/dualcontrol_main.nas</file> -->
 		</b787>
         <dialogs>
             <file>Aircraft/787-8/Nasal/radio.nas</file>
         </dialogs>
+<!-- WXRADAR Animations Creator -->
+		<wxr>
+<!--			<file>Aircraft/787-8/Devel/wxradar-echo-animations.nas</file> -->
+			<file>Aircraft/787-8/Devel/wxradar-pixel-animations.nas</file>
+		</wxr>
 	</nasal>
 
 </PropertyList>

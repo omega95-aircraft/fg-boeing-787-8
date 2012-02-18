@@ -5,6 +5,29 @@ var cdu = {
 
 # Initialize display and other CDU properties
 
+## VNAV Config Properties
+
+setprop("/controls/cdu/vnav/crz-altitude-ft", 10000);
+setprop("/controls/cdu/vnav/start-crz", "");
+setprop("/controls/cdu/vnav/end-crz", "");
+
+## HOLD Config Properties
+
+setprop("/controls/cdu/hold/found", 0);
+
+var htree = "/autopilot/hold/";
+
+setprop(htree ~"hold-time", 60);
+setprop(htree ~"hold-direction", 0); # 0 = right, 1 = left
+setprop(htree ~"hold-radial", 0);
+setprop(htree ~"altitude", 5000);
+setprop(htree ~"active", 0);
+setprop(htree ~"entry", 0); #0 = direct, 1 = parallel, 2 = teardrop
+setprop(htree ~"phase", 0); #0 = define entry, 1 = inbound leg, 2 = outbound turn, 3 = outbound leg, 4 = inbound turn, 5 = fly entry
+setprop(htree ~"entry-phase", 0); #0 = parallel - fly to fix, 1 =  fly parallel, 2 = turn inbound, 3 intercept inbound leg
+setprop(htree ~"fix", "");
+setprop(htree ~"nav-type", "vor");
+
 ## Root Properties
 
 setprop("/controls/cdu/flightnum", "");
@@ -197,7 +220,7 @@ keypress = "";
 
 setprop("/controls/cdu/l1-type", "disp");
 setprop("/controls/cdu/l2-type", "disp");
-setprop("/controls/cdu/l3-type", "disp");
+setprop("/controls/cdu/l3-type", "click");
 setprop("/controls/cdu/l4-type", "click");
 setprop("/controls/cdu/l5-type", "click");
 setprop("/controls/cdu/l6-type", "click");
@@ -234,10 +257,10 @@ setprop("/controls/cdu/display/r1", "");
 setprop("/controls/cdu/display/l2", "");
 setprop("/controls/cdu/display/r2", "");
 
-setprop("/controls/cdu/display/l3", "");
-setprop("/controls/cdu/display/r3", "IDENT");
+setprop("/controls/cdu/display/l3", "IDENT");
+setprop("/controls/cdu/display/r3", "HOLD CONFIG");
 
-setprop("/controls/cdu/display/l4", "VNAV");
+setprop("/controls/cdu/display/l4", "VNAV CONFIG");
 setprop("/controls/cdu/display/r4", "EFB INPUT");
 
 setprop("/controls/cdu/display/l5", "FBW CONFIG");
@@ -251,8 +274,13 @@ setprop("/controls/cdu/display/r7", "APPROACH");
 
 #### Menu Presses
 
-if (keypress == "r3") {
+if (keypress == "l3") {
 page = "IDENT";
+keypress = "";
+}
+
+if (keypress == "r3") {
+page = "HOLD CONFIG";
 keypress = "";
 }
 
@@ -1506,13 +1534,13 @@ setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/l1", "");
 setprop("/controls/cdu/display/r1", "");
 
-setprop("/controls/cdu/display/l2", "");
+setprop("/controls/cdu/display/l2", getprop("/controls/cdu/vnav/crz-altitude-ft"));
 setprop("/controls/cdu/display/r2", "");
 
-setprop("/controls/cdu/display/l3", "");
+setprop("/controls/cdu/display/l3", getprop("/controls/cdu/vnav/start-crz"));
 setprop("/controls/cdu/display/r3", "");
 
-setprop("/controls/cdu/display/l4", "");
+setprop("/controls/cdu/display/l4", getprop("/controls/cdu/vnav/end-crz"));
 setprop("/controls/cdu/display/r4", "");
 
 setprop("/controls/cdu/display/l5", "");
@@ -1528,6 +1556,143 @@ setprop("/controls/cdu/display/r7", "");
 
 if (keypress == "l7") {
 page = "INDEX";
+keypress = "";
+}
+
+if ((keypress == "l2") and (cduinput != "")) {
+setprop("/controls/cdu/vnav/crz-altitude-ft", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l3") and (cduinput != "")) {
+setprop("/controls/cdu/vnav/start-crz", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l4") and (cduinput != "")) {
+setprop("/controls/cdu/vnav/end-crz", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+} elsif (page == "HOLD CONFIG") {
+
+#### Field types
+
+setprop("/controls/cdu/l1-type", "disp");
+setprop("/controls/cdu/l2-type", "click");
+setprop("/controls/cdu/l3-type", "click");
+setprop("/controls/cdu/l4-type", "click");
+setprop("/controls/cdu/l5-type", "disp");
+setprop("/controls/cdu/l6-type", "disp");
+setprop("/controls/cdu/l7-type", "click");
+
+setprop("/controls/cdu/r1-type", "disp");
+setprop("/controls/cdu/r2-type", "disp");
+setprop("/controls/cdu/r3-type", "disp");
+setprop("/controls/cdu/r4-type", "disp");
+setprop("/controls/cdu/r5-type", "disp");
+setprop("/controls/cdu/r6-type", "disp");
+setprop("/controls/cdu/r7-type", "click");
+
+#### Field Values
+
+setprop("/controls/cdu/display/l1-label", "");
+setprop("/controls/cdu/display/l2-label", "Holding Navaid");
+setprop("/controls/cdu/display/l3-label", "Holding Navaid Type");
+setprop("/controls/cdu/display/l4-label", "Holding Radial");
+setprop("/controls/cdu/display/l5-label", "Holding Altitude");
+setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/r7-label", "");
+setprop("/controls/cdu/display/r1-label", "");
+setprop("/controls/cdu/display/r2-label", "");
+setprop("/controls/cdu/display/r3-label", "");
+setprop("/controls/cdu/display/r4-label", "");
+setprop("/controls/cdu/display/r5-label", "");
+setprop("/controls/cdu/display/r6-label", "");
+setprop("/controls/cdu/display/r7-label", "");
+
+setprop("/controls/cdu/display/l1", "");
+setprop("/controls/cdu/display/r1", "");
+
+setprop("/controls/cdu/display/l2", getprop("/autopilot/hold/fix"));
+setprop("/controls/cdu/display/r2", "");
+
+setprop("/controls/cdu/display/l5", getprop("/autopilot/hold/nav-type"));
+setprop("/controls/cdu/display/r5", "");
+
+setprop("/controls/cdu/display/l4", getprop("/autopilot/hold/hold-radial"));
+setprop("/controls/cdu/display/r4", "");
+
+setprop("/controls/cdu/display/l5", getprop("/autopilot/hold/altitude"));
+setprop("/controls/cdu/display/r5", "");
+
+setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/r6", "");
+
+setprop("/controls/cdu/display/l7", "< INDEX");
+
+if (getprop("/controls/hold/found") == 1) {
+setprop("/controls/cdu/display/r6", "");
+if (getprop("/autopilot/hold/active") == 0) setprop("/controls/cdu/display/r7", "ENTER HOLD >");
+else setprop("/controls/cdu/display/r7", "EXIT HOLD >");
+} else {
+setprop("/controls/cdu/display/r6", "SEARCH NAVAID >");
+setprop("/controls/cdu/display/l7", "");
+setprop("/controls/cdu/display/r7", "");
+}
+
+# MENU PRESSES
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+}
+
+if ((keypress == "l2") and (cduinput != "")) {
+setprop("/autopilot/hold/fix", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if (keypress == "l3") {
+
+var nav_type = getprop("/autopilot/hold/nav-type");
+
+if (nav_type == "vor") setprop("/autopilot/hold/nav-type", "ndb");
+elsif (nav_type == "ndb") setprop("/autopilot/hold/nav-type", "fix");
+else setprop("/autopilot/hold/nav-type", "vor");
+
+keypress = "";
+}
+
+if (keypress == "r6") {
+
+setprop("/instrumentation/gps[2]/scratch/query", getprop("/autopilot/hold/fix"));
+setprop("/instrumentation/gps[2]/scratch/type", getprop("/autopilot/hold/nav-type"));
+
+setprop("/instrumentation/gps[2]/command", "search");
+
+keypress = "";
+}
+
+if ((keypress == "l4") and (cduinput != "")) {
+setprop("/autopilot/hold/hold-radial", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l5") and (cduinput != "")) {
+setprop("/autopilot/hold/altitude", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
 keypress = "";
 }
 

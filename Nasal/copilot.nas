@@ -2,7 +2,7 @@ var copilot = {
 	init : func { 
         me.UPDATE_INTERVAL = 1.73; 
         me.loopid = 0; 
-		# Initialize state variables.
+		# Initialize state variables
 		me.V1announced = 0;
 		me.VRannounced = 0;
 		me.V2announced = 0;
@@ -76,9 +76,9 @@ if (active == 1) {
         var flapspos = getprop("/controls/flight/flaps");
         var altitude = getprop("/position/altitude-agl-ft");
 	var gearpos = getprop("/controls/gear/gear-down");
-		var V1 = 140;
-		var V2 = 160;
-		var VR = 150;
+		var V1 = getprop("/instrumentation/fmc/vspeeds/V1");
+		var V2 = getprop("/instrumentation/fmc/vspeeds/V2");
+		var VR = getprop("/instrumentation/fmc/vspeeds/VR");
 
 # Copilot Settings
 	var announce = getprop("controls/switches/copilot/announce");
