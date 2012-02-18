@@ -118,7 +118,7 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron-trim</prop>
+      <prop>/controls/flight/aileron</prop>
     </output>
     <config>
       <Kp>0.1</Kp>        <!-- proportional gain -->
