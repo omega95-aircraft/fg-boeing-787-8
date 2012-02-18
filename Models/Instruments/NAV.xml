@@ -12891,4 +12891,24 @@
 		</center>
 	</animation>
 
+<!-- Terrain Map
+
+<model>
+ <path>terrain-map.xml</path>
+ <condition>
+ <and>
+  <greater-than>
+   <property>systems/electrical/outputs/efis</property>
+   <value>9</value>
+  </greater-than>
+ </and>
+ <and>
+  <equals>
+   <property>controls/mfd/extra</property>
+   <value>terr</value>
+  </equals>
+ </and>
+ </condition>
+</model> -->
+
 </PropertyList>

@@ -870,6 +870,7 @@
 			<file>Aircraft/787-8/Nasal/lighting.nas</file>
 			<file>Aircraft/787-8/Nasal/wxradar.nas</file>
 			<file>Aircraft/787-8/Nasal/holding-pattern.nas</file>
+<!--			<file>Aircraft/787-8/Nasal/terrain-map.nas</file> -->
 <!--			<file>Aircraft/787-8/DualControl/dualcontrol_main.nas</file> -->
 		</b787>
         <dialogs>
