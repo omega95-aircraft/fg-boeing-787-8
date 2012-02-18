@@ -10,7 +10,7 @@ kids 55
 OBJECT poly
 name "r7"
 loc -0.0408011 0.00286102 -0.126313
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 0.00248568 2.26498e-06 0.162643
@@ -29,7 +29,7 @@ kids 0
 OBJECT poly
 name "r6"
 loc -0.0575513 0.00284624 -0.126313
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 -0.0107229 -9.65595e-06 0.162643
@@ -48,7 +48,7 @@ kids 0
 OBJECT poly
 name "r5"
 loc -0.0747552 0.00284648 -0.126313
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 0.00248404 2.6226e-06 0.162643
@@ -67,7 +67,7 @@ kids 0
 OBJECT poly
 name "r4"
 loc -0.0924928 0.00282133 -0.126313
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 0.00248568 1.78814e-06 0.162643
@@ -86,7 +86,7 @@ kids 0
 OBJECT poly
 name "r3"
 loc -0.109776 0.00278032 -0.126313
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 -0.0107245 -1.0252e-05 0.162643
@@ -105,7 +105,7 @@ kids 0
 OBJECT poly
 name "r2"
 loc -0.127433 0.00278568 -0.126313
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 -0.0107245 -1.04904e-05 0.162643
@@ -124,7 +124,7 @@ kids 0
 OBJECT poly
 name "r1"
 loc -0.144718 0.00275421 -0.126313
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 0.0024873 3.45707e-06 0.162643
@@ -143,7 +143,7 @@ kids 0
 OBJECT poly
 name "l7"
 loc -0.0408011 0.00286102 -0.0521156
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 -0.0107229 -9.77516e-06 0.162643
@@ -162,7 +162,7 @@ kids 0
 OBJECT poly
 name "l6"
 loc -0.0575513 0.00284624 -0.0521156
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 0.00248731 3.45707e-06 0.162643
@@ -181,7 +181,7 @@ kids 0
 OBJECT poly
 name "l5"
 loc -0.0747552 0.00284648 -0.0521156
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 -0.0107245 -9.65595e-06 0.162643
@@ -200,7 +200,7 @@ kids 0
 OBJECT poly
 name "l4"
 loc -0.0924928 0.00282133 -0.0521156
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 -0.0107229 -1.03712e-05 0.162643
@@ -219,7 +219,7 @@ kids 0
 OBJECT poly
 name "l3"
 loc -0.109776 0.00278032 -0.0521156
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 0.00248568 2.38419e-06 0.162643
@@ -238,7 +238,7 @@ kids 0
 OBJECT poly
 name "l2"
 loc -0.127433 0.00278568 -0.0521156
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 0.00248568 2.02656e-06 0.162643
@@ -257,7 +257,7 @@ kids 0
 OBJECT poly
 name "l1"
 loc -0.144718 0.00275421 -0.0521156
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/FlightDeck/mainpanel.png"
+texture "mainpanel.png"
 crease 45.000000
 numvert 4
 -0.0107229 -8.82149e-06 0.162643

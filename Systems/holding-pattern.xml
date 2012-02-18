@@ -16,7 +16,7 @@
     <name>Hold Alt Stage 1</name>
     <debug>false</debug>
     <enable>
-      <prop>/autopilot/hold/enable</prop>
+      <prop>/autopilot/hold/active</prop>
 	  <value>1</value>
     </enable>
     <input>
@@ -41,7 +41,7 @@
     <name>Hold Alt Stage 2</name>
     <debug>false</debug>
     <enable>
-      <prop>/autopilot/hold/enable</prop>
+      <prop>/autopilot/hold/active</prop>
 	  <value>1</value>
     </enable>
     <input>
@@ -82,10 +82,10 @@
       <value>1</value>
     </enable>
     <input>
-      <prop>/instrumentation/gps[2]/scratch/mag-heading-deg</prop>
+      <prop>/instrumentation/gps[2]/scratch/mag-bearing-deg</prop>
     </input>
     <reference>
-      <value>/orientation/heading-magnetic-deg</value>
+      <prop>/orientation/heading-magnetic-deg</prop>
     </reference>
     <output>
       <prop>/autopilot/internal/target-roll-deg</prop>
@@ -148,7 +148,7 @@
       <prop>/autopilot/hold/track-magnetic-deg</prop>
     </input>
     <reference>
-      <value>/orientation/track-magnetic-deg</value>
+      <prop>/orientation/heading-magnetic-deg</prop>
     </reference>
     <output>
       <prop>/autopilot/internal/target-roll-deg</prop>

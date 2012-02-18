@@ -96195,7 +96195,7 @@ kids 0
 OBJECT poly
 name "separator"
 loc -23.6426 1.63441 -0.00192033
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/Instruments/clock.png"
+texture "clock.png"
 crease 45.000000
 numvert 8
 0.181122 -0.206022 0.000532344
@@ -96979,7 +96979,7 @@ kids 0
 OBJECT poly
 name "separatormfd2"
 loc -23.6426 1.63441 -0.00192033
-texture "/usr/local/src/fgdata-2.4/Aircraft/787-8/Models/Instruments/clock.png"
+texture "clock.png"
 crease 45.000000
 numvert 4
 -0.0944061 -0.0827866 -0.244507
