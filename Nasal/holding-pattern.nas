@@ -12,6 +12,7 @@ var hold = {
 		setprop(htree ~"corrected-hold-time", 60);
 		me.timer_started = 0;
 		me.start_time = 0;
+		me.count = 0;
         me.reset(); 
 }, 
 	update : func {
@@ -34,9 +35,11 @@ var hold = {
 	var right1 = 45 + hold_radial;
 	var right2 = 90 + hold_radial;
 	var right3 = 180 + hold_radial;
-
+	var left1 = hold_radial - 90;
+	
 	if (active != 1) {
 		setprop("/autopilot/auto-hold/enable-track", 0);
+		me.count = 0;
 	}
 
 	if ((fix != "") and (active == 1)) {
@@ -46,6 +49,8 @@ var hold = {
 			right2 = right2 - 360;
 		if (right3 > 360)
 			right3 = right3 - 360;
+		if (left1 < 0)
+			left1 = 360 - math.abs(left1);
 		var x = getprop("/instrumentation/gps[2]/scratch/longitude-deg");
 		var y = getprop("/instrumentation/gps[2]/scratch/latitude-deg");
 		var x1 = x + (turn_diameter * math.sqrt(2)) * math.sin(right1 * DEG2RAD);
@@ -58,6 +63,12 @@ var hold = {
 		var y4 = y1 + (leg_distance + 2 * turn_diameter) * math.cos(right3 * DEG2RAD);
 		var x5 = x + leg_distance * math.sin(right3 * DEG2RAD);
 		var y5 = y + leg_distance * math.cos(right3 * DEG2RAD);
+		var x6 = x5 + turn_diameter * sin(left1 * DEG2RAD);
+		var y6 = y5 + turn_diameter * cos(left1 * DEG2RAD);
+		var x7 = x5 + turn_diameter * sin(right2 * DEG2RAD);
+		var y7 = y5 + turn_diameter * cos(right2 * DEG2RAD);
+		var x8 = x5 + (leg_distance / 2) * sin(hold_radial);
+		var y8 = y5 + (leg_distance / 2) * cos(hold_radial);
 
 		setprop("/autopilot/auto-hold/point[0]/x", x);
 		setprop("/autopilot/auto-hold/point[0]/y", y);
@@ -102,16 +113,17 @@ var hold = {
 		}
 		elsif (phase == 7) { ## Fly Entry Phase
 			
-#			if (entry == 1) { ## Parallel Entry
+			if (entry == 1) { ## Parallel Entry
+				if (flyto(y,x) == 1)
+				setprop(htree ~"phase", 8);
 
-######################## COME BACK LATER ########################
 
-#			} else { ## Teardrop (entry 2)
+			} else { ## Teardrop (entry 2)
 
 				if (flyto(y, x) == 1)
 					setprop(htree ~"phase", 4);
 
-#			}
+			}
 
 		}
 
@@ -122,8 +134,10 @@ var hold = {
 ################################
 
 		elsif (phase == 1) { ## Fly to Fix
-			if (flyto(y,x) == 1)
+			if (flyto(y,x) == 1){
 				setprop(htree ~"phase", 3);
+				me.count += 1;
+			}
 		}
 		elsif (phase == 2) { ## Fly to point 1
 			if (flyto(y1,x1) == 1)
@@ -145,8 +159,18 @@ var hold = {
 			if (flyto(y5,x5) == 1)
 				setprop(htree ~"phase", 1);
 		}
-	
-		
+		elsif (phase == 8){
+			if (flyto(y6, x6) == 1)
+				setprop(htree ~"phase", 9);
+		}
+		elsif (phase == 9){
+			if (flyto(y7, x7) == 1)
+				setprop(htree ~"phase", 10);
+		}
+		elsif (phase == 10){
+			if (flyto(y8, x8) == 1)
+				setprop(htree ~"phase", 1);
+		}
 	}
 },
     reset : func {
