@@ -30,7 +30,7 @@ var hold = {
 	var dist = getprop("/instrumentation/gps[2]/scratch/distance-nm");
 	var gs = getprop("/velocities/groundspeed-kt");
 	var leg_distance = (gs * (hold_time / 3600)) / 60;
-	var turn_diameter = (gs * (60 / 3600 * math.pi)) / 60;
+	turn_diameter = ((gs * 120) / (3600 * math.pi)) / 60;
 	var right1 = 45 + hold_radial;
 	var right2 = 90 + hold_radial;
 	var right3 = 180 + hold_radial;
@@ -43,17 +43,31 @@ var hold = {
 			right3 = right3 - 360;
 		var x = getprop("/instrumentation/gps[2]/scratch/longitude-deg");
 		var y = getprop("/instrumentation/gps[2]/scratch/latitude-deg");
-		var x1 = x + ((turn_diameter / math.sqrt(2)) * math.sin(right1)) / 2;
-		var y1 = y + ((turn_diameter / math.sqrt(2)) * math.cos(right1)) / 2;
-		var x2 = x + (turn_diameter * math.sin(right2)) / 2;
-		var y2 = y + (turn_diameter * math.cos(right2)) / 2;
-		var x3 = x2 + leg_distance * math.sin(right3);
-		var y3 = y2 + leg_distance * math.cos(right3);
-		var x4 = x1 + leg_distance * math.sin(right3);
-		var y4 = y1 + leg_distance * math.cos(right3);
-		var x5 = x + leg_distance * math.sin(right3);
-		var y5 = y + leg_distance * math.cos(right3);
+		var x1 = x + (turn_diameter * math.sqrt(2)) * math.sin(right1 * DEG2RAD);
+		var y1 = y + (turn_diameter * math.sqrt(2)) * math.cos(right1 * DEG2RAD);
+		var x2 = x + 2 * turn_diameter * math.sin(right2 * DEG2RAD);
+		var y2 = y + 2 * turn_diameter * math.cos(right2 * DEG2RAD);
+		var x3 = x2 + leg_distance * math.sin(right3 * DEG2RAD);
+		var y3 = y2 + leg_distance * math.cos(right3 * DEG2RAD);
+		var x4 = x1 + (leg_distance + 2 * turn_diameter) * math.sin(right3 * DEG2RAD);
+		var y4 = y1 + (leg_distance + 2 * turn_diameter) * math.cos(right3 * DEG2RAD);
+		var x5 = x + leg_distance * math.sin(right3 * DEG2RAD);
+		var y5 = y + leg_distance * math.cos(right3 * DEG2RAD);
 
+		setprop("/autopilot/auto-hold/point[0]/x", x);
+		setprop("/autopilot/auto-hold/point[0]/y", y);
+		setprop("/autopilot/auto-hold/point[1]/x", x1);
+		setprop("/autopilot/auto-hold/point[1]/y", y1);
+		setprop("/autopilot/auto-hold/point[2]/x", x2);
+		setprop("/autopilot/auto-hold/point[2]/y", y2);
+		setprop("/autopilot/auto-hold/point[3]/x", x3);
+		setprop("/autopilot/auto-hold/point[3]/y", y3);
+		setprop("/autopilot/auto-hold/point[4]/x", x4);
+		setprop("/autopilot/auto-hold/point[4]/y", y4);
+		setprop("/autopilot/auto-hold/point[5]/x", x5);
+		setprop("/autopilot/auto-hold/point[5]/y", y5);
+		
+		
 		if (diff1 <= 0)
 			diff1 = 360 - math.abs(diff1);
 		if (diff2 <= 0)
@@ -103,7 +117,7 @@ var hold = {
 
 		elsif (phase == 1) { ## Fly to Fix
 			if (flyto(y,x) == 1)
-				setprop(htree ~"phase", 2);
+				setprop(htree ~"phase", 3);
 		}
 		elsif (phase == 2) { ## Fly to point 1
 			if (flyto(y1,x1) == 1)
@@ -115,7 +129,7 @@ var hold = {
 		}
 		elsif (phase == 4) { ## Fly to point 3
 			if (flyto(y3,x3) == 1)
-				setprop(htree ~"phase", 5);
+				setprop(htree ~"phase", 6);
 		}
 		elsif (phase == 5) { ## Fly to point 4
 			if (flyto(y4,x4) == 1)
@@ -152,11 +166,12 @@ var flyto = func(target_lat, target_lon) {
 
  if (track_deg < 0)
 	track_deg = 360 + track_deg;
-var track = getprop("instrumentation/gps/indicated-track-magnetic-deg");
- var track_error_deg = track_deg - track;
- if ((track_error_deg < 0) and (track > 180))
-	track_error_deg = math.abs(track_error_deg) - 180;
- setprop("/autopilot/auto-hold/track-error-deg", track_error_deg);
+#var track = getprop("instrumentation/gps/indicated-track-magnetic-deg");
+ #var track_error_deg = track_deg - track;
+ #if ((track_error_deg < 0) and (track > 180))
+#	track_error_deg = math.abs(track_error_deg) - 180;
+ setprop("/autopilot/auto-hold/track-error-deg", -Deflection(track_deg, 180));
+ setprop("/autopilot/auto-hold/track", track_deg);
  setprop("/autopilot/auto-hold/enable-track", 1);
 
  # Check if Target is Reached
@@ -167,7 +182,27 @@ var track = getprop("instrumentation/gps/indicated-track-magnetic-deg");
  } else return 0; # Return 0 is not reached
 
 }
+var plot_hold = func(){
+		var x = getprop("/autopilot/auto-hold/point[0]/x");
+		var y = getprop("/autopilot/auto-hold/point[0]/y");
+		var x1 = getprop("/autopilot/auto-hold/point[1]/x");
+		var y1 = getprop("/autopilot/auto-hold/point[1]/y");
+		var x2 = getprop("/autopilot/auto-hold/point[2]/x");
+		var y2 = getprop("/autopilot/auto-hold/point[2]/y");
+		var x3 = getprop("/autopilot/auto-hold/point[3]/x");
+		var y3 = getprop("/autopilot/auto-hold/point[3]/y");
+		var x4 = getprop("/autopilot/auto-hold/point[4]/x");
+		var y4 = getprop("/autopilot/auto-hold/point[4]/y");
+		var x5 = getprop("/autopilot/auto-hold/point[5]/x");
+		var y5 = getprop("/autopilot/auto-hold/point[5]/y");
 
+		setprop("/autopilot/route-manager/input", "@INSERT99:" ~ x ~"," ~y);
+		setprop("/autopilot/route-manager/input", "@INSERT99:" ~ x1 ~"," ~y1);
+		setprop("/autopilot/route-manager/input", "@INSERT99:" ~ x2 ~"," ~y2);
+		setprop("/autopilot/route-manager/input", "@INSERT99:" ~ x3 ~"," ~y3);
+		setprop("/autopilot/route-manager/input", "@INSERT99:" ~ x4 ~"," ~y4);
+		setprop("/autopilot/route-manager/input", "@INSERT99:" ~ x5 ~"," ~y5);
+}
 setlistener("sim/signals/fdm-initialized", func
  {
  hold.init();
