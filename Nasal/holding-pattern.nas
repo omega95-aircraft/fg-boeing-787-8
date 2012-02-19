@@ -34,6 +34,11 @@ var hold = {
 	var right1 = 45 + hold_radial;
 	var right2 = 90 + hold_radial;
 	var right3 = 180 + hold_radial;
+
+	if (active != 1) {
+		setprop("/autopilot/auto-hold/enable-track", 0);
+	}
+
 	if ((fix != "") and (active == 1)) {
 		if (right1 > 360)
 			right1 = right1 - 360;
@@ -93,6 +98,7 @@ var hold = {
 				setprop(htree ~ "phase", 7);	
 				}
 			setprop(htree ~"entry", entry);
+
 		}
 		elsif (phase == 7) { ## Fly Entry Phase
 			
