@@ -1607,7 +1607,7 @@ setprop("/controls/cdu/display/l2-label", "Holding Navaid");
 setprop("/controls/cdu/display/l3-label", "Holding Navaid Type");
 setprop("/controls/cdu/display/l4-label", "Holding Radial");
 setprop("/controls/cdu/display/l5-label", "Holding Altitude");
-setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/l6-label", "Holding Time (sec)");
 setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/r1-label", "");
 setprop("/controls/cdu/display/r2-label", "");
@@ -1632,7 +1632,7 @@ setprop("/controls/cdu/display/r4", "");
 setprop("/controls/cdu/display/l5", getprop("/autopilot/hold/altitude"));
 setprop("/controls/cdu/display/r5", "");
 
-setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/l6", getprop("/autopilot/hold/hold-time"));
 setprop("/controls/cdu/display/r6", "");
 
 setprop("/controls/cdu/display/l7", "< INDEX");
@@ -1656,6 +1656,13 @@ keypress = "";
 
 if ((keypress == "l2") and (cduinput != "")) {
 setprop("/autopilot/hold/fix", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l6") and (cduinput != "")) {
+setprop("/autopilot/hold/hold-time", cduinput);
 cduinput = "";
 setprop("/controls/cdu/input", "");
 keypress = "";
