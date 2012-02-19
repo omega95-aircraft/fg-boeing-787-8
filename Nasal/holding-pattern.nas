@@ -63,12 +63,12 @@ var hold = {
 		var y4 = y1 + (leg_distance + 2 * turn_diameter) * math.cos(right3 * DEG2RAD);
 		var x5 = x + leg_distance * math.sin(right3 * DEG2RAD);
 		var y5 = y + leg_distance * math.cos(right3 * DEG2RAD);
-		var x6 = x5 + turn_diameter * sin(left1 * DEG2RAD);
-		var y6 = y5 + turn_diameter * cos(left1 * DEG2RAD);
-		var x7 = x5 + turn_diameter * sin(right2 * DEG2RAD);
-		var y7 = y5 + turn_diameter * cos(right2 * DEG2RAD);
-		var x8 = x5 + (leg_distance / 2) * sin(hold_radial);
-		var y8 = y5 + (leg_distance / 2) * cos(hold_radial);
+		var x6 = x5 + turn_diameter * math.sin(left1 * DEG2RAD);
+		var y6 = y5 + turn_diameter * math.cos(left1 * DEG2RAD);
+		var x7 = x5 + turn_diameter * math.sin(right2 * DEG2RAD);
+		var y7 = y5 + turn_diameter * math.cos(right2 * DEG2RAD);
+		var x8 = x5 + (leg_distance / 2) * math.sin(hold_radial);
+		var y8 = y5 + (leg_distance / 2) * math.cos(hold_radial);
 
 		setprop("/autopilot/auto-hold/point[0]/x", x);
 		setprop("/autopilot/auto-hold/point[0]/y", y);
@@ -114,8 +114,8 @@ var hold = {
 		elsif (phase == 7) { ## Fly Entry Phase
 			
 			if (entry == 1) { ## Parallel Entry
-				if (flyto(y,x) == 1)
-				setprop(htree ~"phase", 8);
+				if (flyto(y, x) == 1)
+					setprop(htree ~"phase", 8);
 
 
 			} else { ## Teardrop (entry 2)
