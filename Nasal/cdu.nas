@@ -1589,7 +1589,7 @@ setprop("/controls/cdu/l2-type", "click");
 setprop("/controls/cdu/l3-type", "click");
 setprop("/controls/cdu/l4-type", "click");
 setprop("/controls/cdu/l5-type", "click");
-setprop("/controls/cdu/l6-type", "disp");
+setprop("/controls/cdu/l6-type", "click");
 setprop("/controls/cdu/l7-type", "click");
 
 setprop("/controls/cdu/r1-type", "disp");
@@ -1643,7 +1643,6 @@ if (getprop("/autopilot/hold/active") == 0) setprop("/controls/cdu/display/r7", 
 else setprop("/controls/cdu/display/r7", "EXIT HOLD >");
 } else {
 setprop("/controls/cdu/display/r6", "SEARCH NAVAID >");
-setprop("/controls/cdu/display/l7", "");
 setprop("/controls/cdu/display/r7", "");
 }
 
@@ -1694,7 +1693,10 @@ keypress = "";
 if (keypress == "r7") {
 
 if (getprop("/autopilot/hold/active") == 0) setprop("/autopilot/hold/active", 1);
-else setprop("/autopilot/hold/active", 0);
+else {
+setprop("/autopilot/hold/active", 0);
+setprop("/controls/cdu/hold/found", 0);
+}
 
 keypress = "";
 
