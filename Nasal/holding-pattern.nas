@@ -29,8 +29,8 @@ var hold = {
 	var diff2 = brg - hold_radial;
 	var dist = getprop("/instrumentation/gps[2]/scratch/distance-nm");
 	var gs = getprop("/velocities/groundspeed-kt");
-	var leg_distance = gs * (hold_time / 3600);
-	var turn_diameter = gs * (60 / 3600 * math.pi);
+	var leg_distance = (gs * (hold_time / 3600)) / 60;
+	var turn_diameter = (gs * (60 / 3600 * math.pi)) / 60;
 	var right1 = 45 + hold_radial;
 	var right2 = 90 + hold_radial;
 	var right3 = 180 + hold_radial;
@@ -43,14 +43,14 @@ var hold = {
 			right3 = right3 - 360;
 		var x = getprop("/instrumentation/gps[2]/scratch/longitude-deg");
 		var y = getprop("/instrumentation/gps[2]/scratch/latitude-deg");
-		var x1 = x + turn_diameter * math.sqrt(2) * math.sin(right1);
-		var y1 = y + turn_diameter * math.sqrt(2) * math.cos(right1);
-		var x2 = x + turn_diameter * math.sin(right2);
-		var y2 = y + turn_diameter * math.cos(right2);
+		var x1 = x + ((turn_diameter / math.sqrt(2)) * math.sin(right1)) / 2;
+		var y1 = y + ((turn_diameter / math.sqrt(2)) * math.cos(right1)) / 2;
+		var x2 = x + (turn_diameter * math.sin(right2)) / 2;
+		var y2 = y + (turn_diameter * math.cos(right2)) / 2;
 		var x3 = x2 + leg_distance * math.sin(right3);
 		var y3 = y2 + leg_distance * math.cos(right3);
-		var x4 = x1 + turn_diameter * math.sin(right3);
-		var y4 = y1 + turn_diameter * math.cos(right3);
+		var x4 = x1 + leg_distance * math.sin(right3);
+		var y4 = y1 + leg_distance * math.cos(right3);
 		var x5 = x + leg_distance * math.sin(right3);
 		var y5 = y + leg_distance * math.cos(right3);
 
@@ -119,7 +119,7 @@ var hold = {
 		}
 		elsif (phase == 5) { ## Fly to point 4
 			if (flyto(y4,x4) == 1)
-				setprop(htree ~"phase", 6);
+				setprop(htree ~"phase", 1);
 		}
 		elsif (phase == 6) { ## Fly to point 5
 			if (flyto(y5,x5) == 1)
@@ -150,12 +150,18 @@ var flyto = func(target_lat, target_lon) {
 
  var track_deg = 90 - (57.2957795 * math.atan2(target_lat - pos_lat, target_lon - pos_lon));
 
- setprop("/autopilot/auto-hold/track-deg", track_deg);
+ if (track_deg < 0)
+	track_deg = 360 + track_deg;
+var track = getprop("instrumentation/gps/indicated-track-magnetic-deg");
+ var track_error_deg = track_deg - track;
+ if ((track_error_deg < 0) and (track > 180))
+	track_error_deg = math.abs(track_error_deg) - 180;
+ setprop("/autopilot/auto-hold/track-error-deg", track_error_deg);
  setprop("/autopilot/auto-hold/enable-track", 1);
 
  # Check if Target is Reached
 
- if ((pos_lat <= target_lat + 0.005) and (pos_lat >= target_lat - 0.005) and (pos_lon <= target_lon + 0.005) and (pos_lon >= target_lon - 0.005)) {
+ if ((pos_lat <= target_lat + 0.01) and (pos_lat >= target_lat - 0.01) and (pos_lon <= target_lon + 0.01) and (pos_lon >= target_lon - 0.01)) {
   return 1; # Return 1 if reached
   setprop("/autopilot/auto-hold/enable-track", 0);
  } else return 0; # Return 0 is not reached

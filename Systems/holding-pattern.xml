@@ -82,10 +82,10 @@
       <value>1</value>
     </enable>
     <input>
-      <prop>/autopilot/auto-hold/track-deg</prop>
+      <prop>/autopilot/auto-hold/track-error-deg</prop>
     </input>
     <reference>
-      <prop>/orientation/heading-magnetic-deg</prop>
+      <value>0</value>
     </reference>
     <output>
       <prop>/autopilot/internal/target-roll-deg</prop>
