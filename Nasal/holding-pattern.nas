@@ -12,7 +12,7 @@ var hold = {
 		setprop(htree ~"corrected-hold-time", 60);
 		me.timer_started = 0;
 		me.start_time = 0;
-		me.count = 0;
+		setprop(htree ~"count", 0);
         me.reset(); 
 }, 
 	update : func {
@@ -36,10 +36,11 @@ var hold = {
 	var right2 = 90 + hold_radial;
 	var right3 = 180 + hold_radial;
 	var left1 = hold_radial - 90;
+	var count = getprop(htree ~"count");
 	
 	if (active != 1) {
 		setprop("/autopilot/auto-hold/enable-track", 0);
-		me.count = 0;
+		setprop(htree ~"count", 0);
 	}
 
 	if ((fix != "") and (active == 1)) {
@@ -95,7 +96,7 @@ var hold = {
 		setprop("/autopilot/locks/altitude", "");
 		setprop("/autopilot/locks/heading", "");
 
-		if (phase == 0) {
+		if ((phase == 0) or (count == 0)) {
 			if ((diff1 <= 110) or (diff2 <= 70)) {
 				entry = 0; ## Direct Entry
 				setprop(htree ~ "phase", 1);
@@ -136,12 +137,13 @@ var hold = {
 		elsif (phase == 1) { ## Fly to Fix
 			if (flyto(y,x) == 1){
 				setprop(htree ~"phase", 3);
-				me.count += 1;
 			}
 		}
 		elsif (phase == 2) { ## Fly to point 1
+		setprop(htree ~"count", 1);
 			if (flyto(y1,x1) == 1)
 				setprop(htree ~"phase", 3);
+				
 		}
 		elsif (phase == 3) { ## Fly to point 2
 			if (flyto(y2,x2) == 1)
