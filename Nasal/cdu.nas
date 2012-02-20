@@ -18,7 +18,7 @@ setprop("/controls/cdu/hold/found", 0);
 var htree = "/autopilot/hold/";
 
 setprop(htree ~"hold-time", 60);
-setprop(htree ~"hold-direction", 0); # 0 = right, 1 = left
+setprop(htree ~"hold-direction", "Right");
 setprop(htree ~"hold-radial", 0);
 setprop(htree ~"altitude", 5000);
 setprop(htree ~"active", 0);
@@ -1593,7 +1593,7 @@ setprop("/controls/cdu/l6-type", "click");
 setprop("/controls/cdu/l7-type", "click");
 
 setprop("/controls/cdu/r1-type", "disp");
-setprop("/controls/cdu/r2-type", "disp");
+setprop("/controls/cdu/r2-type", "click");
 setprop("/controls/cdu/r3-type", "disp");
 setprop("/controls/cdu/r4-type", "disp");
 setprop("/controls/cdu/r5-type", "disp");
@@ -1610,7 +1610,7 @@ setprop("/controls/cdu/display/l5-label", "Holding Altitude");
 setprop("/controls/cdu/display/l6-label", "Holding Time (sec)");
 setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/r1-label", "");
-setprop("/controls/cdu/display/r2-label", "");
+setprop("/controls/cdu/display/r2-label", "Turn Direction");
 setprop("/controls/cdu/display/r3-label", "");
 setprop("/controls/cdu/display/r4-label", "");
 setprop("/controls/cdu/display/r5-label", "");
@@ -1621,7 +1621,7 @@ setprop("/controls/cdu/display/l1", "");
 setprop("/controls/cdu/display/r1", "");
 
 setprop("/controls/cdu/display/l2", getprop("/autopilot/hold/fix"));
-setprop("/controls/cdu/display/r2", "");
+setprop("/controls/cdu/display/r2", getprop("/autopilot/hold/hold-direction"));
 
 setprop("/controls/cdu/display/l3", getprop("/autopilot/hold/nav-type"));
 setprop("/controls/cdu/display/r3", "");
@@ -1660,10 +1660,18 @@ setprop("/controls/cdu/input", "");
 keypress = "";
 }
 
-if ((keypress == "l6") and (cduinput != "")) {
-setprop("/autopilot/hold/hold-time", cduinput);
+if (keypress == "r2") {
+setprop("/autopilot/hold/fix", cduinput);
 cduinput = "";
 setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l6") and (cduinput != "")) {
+
+if (getprop("/autopilot/hold/hold-direction") == "Left") setprop("/autopilot/hold/hold-direction", "Right");
+else setprop("/autopilot/hold/hold-direction", "Left");
+
 keypress = "";
 }
 
