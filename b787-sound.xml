@@ -915,6 +915,89 @@
         <max-dist>10.0</max-dist>
     </gear1>
 
+<!-- Wheels -->
+
+<wheels1>
+<name>touchdown</name>
+ <path>Aircraft/787-8/Sounds/touchdown.wav</path>
+ <mode>once</mode>
+ <condition>
+	<or>
+		<property>/gear/gear[0]/wow</property>
+		<property>/gear/gear[1]/wow</property>
+    	<property>/gear/gear[2]/wow</property>
+	</or>
+ </condition>
+        <volume>
+            <factor>1</factor>
+        </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</wheels1>
+
+<wheels2>
+<name>slowroll</name>
+ <path>Aircraft/787-8/Sounds/rumble.wav</path>
+ <mode>looped</mode>
+ <condition>
+	<and>
+		<or>
+			<property>/gear/gear[0]/wow</property>
+			<property>/gear/gear[1]/wow</property>
+    		<property>/gear/gear[2]/wow</property>
+		</or>
+		<greater-than>
+			<property>/velocities/groundspeed-kt</property>
+			<value>3</value>
+		</greater-than>
+	</and>
+ </condition>
+        <volume>
+            <factor>1</factor>
+        </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</wheels2>
+<!--
+<wheels3>
+<name>fastroll</name>
+ <path>Aircraft/787-8/Sounds/roll.wav</path>
+ <mode>looped</mode>
+ <condition>
+	<and>
+		<or>
+			<property>/gear/gear[0]/wow</property>
+			<property>/gear/gear[1]/wow</property>
+    		<property>/gear/gear[2]/wow</property>
+		</or>
+		<greater-than>
+			<property>/velocities/groundspeed-kt</property>
+			<value>50</value>
+		</greater-than>
+	</and>
+ </condition>
+        <volume>
+            <factor>1</factor>
+        </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</wheels3> -->
+
 <foo include="Sounds/copilot.xml" omit-node="y" />
 
 <foo include="Sounds/tcas.xml" omit-node="y" />

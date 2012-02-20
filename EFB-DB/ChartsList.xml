@@ -49,6 +49,13 @@
 		<IAPs type="int">2</IAPs>
 	</VABB>
 
+	<KMEM>
+		<STAR-0 type="string">BEERT4</STAR-0>
+		<STARs type="int">1</STARs>
+		<IAP-0 type="string">09-ILS-LOC</IAP-0>
+		<IAPs type="int">1</IAPs>
+	</KMEM>
+
 </chartsDB>
 
 </PropertyList>
