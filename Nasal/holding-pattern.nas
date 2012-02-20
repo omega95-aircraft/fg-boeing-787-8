@@ -41,6 +41,7 @@ var hold = {
 	if (active != 1) {
 		setprop("/autopilot/auto-hold/enable-track", 0);
 		setprop(htree ~"count", 0);
+		setprop(htree ~"phase", 0);
 	}
 
 	if ((fix != "") and (active == 1)) {
@@ -96,7 +97,7 @@ var hold = {
 		setprop("/autopilot/locks/altitude", "");
 		setprop("/autopilot/locks/heading", "");
 
-		if ((phase == 0) or (count == 0)) {
+		if (phase == 0) {
 			if ((diff1 <= 110) or (diff2 <= 70)) {
 				entry = 0; ## Direct Entry
 				setprop(htree ~ "phase", 1);
@@ -113,7 +114,21 @@ var hold = {
 
 		}
 		elsif (phase == 7) { ## Fly Entry Phase
-			
+			if (flyto(y,x) == 0){
+				if ((diff1 <= 110) or (diff2 <= 70)) {
+					entry = 0; ## Direct Entry
+					setprop(htree ~ "phase", 1);
+					}
+				elsif ((diff1 > 110) and (diff2 <= 180)) {
+					entry = 2; ## Teardrop Entry
+					setprop(htree ~ "phase", 7);
+					}
+				else{
+					entry = 1; ## Parallel Entry
+					setprop(htree ~ "phase", 7);	
+					}
+				setprop(htree ~"entry", entry);
+			}
 			if (entry == 1) { ## Parallel Entry
 				if (flyto(y, x) == 1)
 					setprop(htree ~"phase", 8);
@@ -135,6 +150,21 @@ var hold = {
 ################################
 
 		elsif (phase == 1) { ## Fly to Fix
+		if (flyto(y,x) == 0){
+				if ((diff1 <= 110) or (diff2 <= 70)) {
+					entry = 0; ## Direct Entry
+					setprop(htree ~ "phase", 1);
+					}
+				elsif ((diff1 > 110) and (diff2 <= 180)) {
+					entry = 2; ## Teardrop Entry
+					setprop(htree ~ "phase", 7);
+					}
+				else{
+					entry = 1; ## Parallel Entry
+					setprop(htree ~ "phase", 7);	
+					}
+				setprop(htree ~"entry", entry);
+			}
 			if (flyto(y,x) == 1){
 				setprop(htree ~"phase", 3);
 			}
@@ -150,6 +180,7 @@ var hold = {
 				setprop(htree ~"phase", 4);
 		}
 		elsif (phase == 4) { ## Fly to point 3
+		setprop(htree ~"count", 1);
 			if (flyto(y3,x3) == 1)
 				setprop(htree ~"phase", 6);
 		}
@@ -162,6 +193,7 @@ var hold = {
 				setprop(htree ~"phase", 1);
 		}
 		elsif (phase == 8){
+		setprop(htree ~"count", 1);
 			if (flyto(y6, x6) == 1)
 				setprop(htree ~"phase", 9);
 		}
