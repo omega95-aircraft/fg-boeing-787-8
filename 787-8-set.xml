@@ -935,16 +935,19 @@
 			<file>Aircraft/787-8/Nasal/wxradar.nas</file>
 			<file>Aircraft/787-8/Nasal/holding-pattern.nas</file>
 <!--			<file>Aircraft/787-8/Nasal/terrain-map.nas</file> -->
-<!--			<file>Aircraft/787-8/DualControl/dualcontrol_main.nas</file> -->
 		</b787>
+		<dualcontrol>
+			<file>Aircraft/787-8/DualControl/DualControl_base.nas</file>
+		</dualcontrol>
         <dialogs>
             <file>Aircraft/787-8/Nasal/radio.nas</file>
         </dialogs>
-<!-- WXRADAR Animations Creator -->
-		<wxr>
+<!-- Animations Creators -->
+		<helpers>
 <!--			<file>Aircraft/787-8/Devel/wxradar-echo-animations.nas</file> -->
 			<file>Aircraft/787-8/Devel/wxradar-pixel-animations.nas</file>
-		</wxr>
+			<file>Aircraft/787-8/Devel/tcas-animations-helper.nas</file>
+		</helpers>
 	</nasal>
 
 </PropertyList>

@@ -541,6 +541,86 @@
 		<object-name>mp10level</object-name>
 		<object-name>mp10up</object-name>
 		<object-name>mp10down</object-name>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
 		<object-name>ai1text</object-name>
 		<object-name>ai1level</object-name>
 		<object-name>ai1up</object-name>
@@ -581,6 +661,46 @@
 		<object-name>ai10level</object-name>
 		<object-name>ai10up</object-name>
 		<object-name>ai10down</object-name>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
 		<object-name>wp1pos</object-name>
 		<object-name>wp2pos</object-name>
 		<object-name>wp3pos</object-name>
@@ -3838,6 +3958,4726 @@
    		</axis>
 	</animation>
 
+<!-- mp1 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp11level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp11up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp11text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[10]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp11text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[10]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp11text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[10]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[10]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+   		<property>instrumentation/mptcas/mp[10]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+   		<property>instrumentation/mptcas/mp[10]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp2 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp12level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp12up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp12text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[11]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp12text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[11]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp12text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[11]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[11]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+   		<property>instrumentation/mptcas/mp[11]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+   		<property>instrumentation/mptcas/mp[11]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp3 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp13level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp13up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp13text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[12]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp13text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[12]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp13text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[12]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[12]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+   		<property>instrumentation/mptcas/mp[12]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+   		<property>instrumentation/mptcas/mp[12]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp4 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp14level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp14up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp14text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[13]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp14text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[13]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp14text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[13]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[13]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+   		<property>instrumentation/mptcas/mp[13]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+   		<property>instrumentation/mptcas/mp[13]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp5 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp15level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp15up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp15text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[14]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp15text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[14]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp15text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[14]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[14]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+   		<property>instrumentation/mptcas/mp[14]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+   		<property>instrumentation/mptcas/mp[14]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp6 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp16level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp16up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp16text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[15]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp16text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[15]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp16text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[15]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[15]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+   		<property>instrumentation/mptcas/mp[15]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+   		<property>instrumentation/mptcas/mp[15]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp7 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp17level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp17up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp17text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[16]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp17text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[16]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp17text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[16]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[16]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+   		<property>instrumentation/mptcas/mp[16]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+   		<property>instrumentation/mptcas/mp[16]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp8 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp18level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp18up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp18text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[17]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp18text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[17]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp18text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[17]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[17]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+   		<property>instrumentation/mptcas/mp[17]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+   		<property>instrumentation/mptcas/mp[17]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp9 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp19level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp19up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp19text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[18]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp19text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[18]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp19text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[18]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[18]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+   		<property>instrumentation/mptcas/mp[18]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+   		<property>instrumentation/mptcas/mp[18]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp10 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp20level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp20up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp20text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[19]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp20text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[19]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp20text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[19]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[19]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+   		<property>instrumentation/mptcas/mp[19]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+   		<property>instrumentation/mptcas/mp[19]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp1 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp21level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp21down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp21up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp21text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[20]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp21text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[20]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp21text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[20]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[20]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+   		<property>instrumentation/mptcas/mp[20]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+   		<property>instrumentation/mptcas/mp[20]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp2 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp22level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp22down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp22up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp22text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[21]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp22text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[21]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp22text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[21]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[21]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+   		<property>instrumentation/mptcas/mp[21]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+   		<property>instrumentation/mptcas/mp[21]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp3 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp23level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp23down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp23up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp23text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[22]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp23text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[22]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp23text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[22]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[22]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+   		<property>instrumentation/mptcas/mp[22]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+   		<property>instrumentation/mptcas/mp[22]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp4 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp24level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp24down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp24up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp24text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[23]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp24text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[23]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp24text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[23]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[23]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+   		<property>instrumentation/mptcas/mp[23]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+   		<property>instrumentation/mptcas/mp[23]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp5 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp25level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp25down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp25up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp25text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[24]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp25text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[24]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp25text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[24]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[24]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+   		<property>instrumentation/mptcas/mp[24]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+   		<property>instrumentation/mptcas/mp[24]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp6 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp26level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp26down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp26up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp26text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[25]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp26text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[25]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp26text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[25]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[25]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+   		<property>instrumentation/mptcas/mp[25]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+   		<property>instrumentation/mptcas/mp[25]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp7 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp27level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp27down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp27up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp27text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[26]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp27text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[26]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp27text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[26]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[26]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+   		<property>instrumentation/mptcas/mp[26]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+   		<property>instrumentation/mptcas/mp[26]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp8 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp28level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp28down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp28up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp28text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[27]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp28text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[27]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp28text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[27]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[27]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+   		<property>instrumentation/mptcas/mp[27]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+   		<property>instrumentation/mptcas/mp[27]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp9 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp29level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp29down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp29up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp29text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[28]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp29text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[28]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp29text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[28]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[28]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+   		<property>instrumentation/mptcas/mp[28]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+   		<property>instrumentation/mptcas/mp[28]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- mp10 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp30level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp30down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>mp30up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>mp30text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/mp[29]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp30text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/mp[29]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>mp30text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/mp[29]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/mp[29]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
+   		<property>instrumentation/mptcas/mp[29]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
+   		<property>instrumentation/mptcas/mp[29]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
 <!-- AI AIRCRAFT -->
 
 <!-- ai1 -->
@@ -6200,6 +11040,2366 @@
    		</axis>
 	</animation>
 
+<!-- ai1 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai11level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai11up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai1text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[10]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai1text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[10]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai1text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[10]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[10]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+   		<property>instrumentation/mptcas/ai[10]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+   		<property>instrumentation/mptcas/ai[10]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai2 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai12level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai12up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai2text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[11]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai2text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[11]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai2text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[11]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[11]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+   		<property>instrumentation/mptcas/ai[11]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+   		<property>instrumentation/mptcas/ai[11]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai3 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai13level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai13up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai3text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[12]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai3text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[12]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai3text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[12]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[12]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+   		<property>instrumentation/mptcas/ai[12]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+   		<property>instrumentation/mptcas/ai[12]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai4 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai14level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai14up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai4text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[13]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai4text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[13]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai4text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[13]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[13]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+   		<property>instrumentation/mptcas/ai[13]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+   		<property>instrumentation/mptcas/ai[13]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai5 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai15level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai15up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai5text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[14]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai5text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[14]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai5text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[14]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[14]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+   		<property>instrumentation/mptcas/ai[14]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+   		<property>instrumentation/mptcas/ai[14]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai6 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai16level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai16up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai6text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[15]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai6text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[15]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai6text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[15]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[15]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+   		<property>instrumentation/mptcas/ai[15]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+   		<property>instrumentation/mptcas/ai[15]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai7 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai17level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai17up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai7text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[16]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai7text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[16]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai7text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[16]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[16]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+   		<property>instrumentation/mptcas/ai[16]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+   		<property>instrumentation/mptcas/ai[16]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai8 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai18level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai18up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai8text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[17]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai8text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[17]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai8text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[17]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[17]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+   		<property>instrumentation/mptcas/ai[17]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+   		<property>instrumentation/mptcas/ai[17]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai9 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai19level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai19up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai9text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[18]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai9text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[18]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai9text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[18]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[18]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+   		<property>instrumentation/mptcas/ai[18]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+   		<property>instrumentation/mptcas/ai[18]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
+<!-- ai10 -->
+
+	<animation>
+		<type>select</type>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/show-ndfull</property>
+					<value>1</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai20level</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/phase</property>
+					<value>level</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/phase</property>
+					<value>descend</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>ai20up</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/phase</property>
+					<value>climb</value>
+				</equals>
+		</condition>
+	</animation>
+
+	<text>
+		<name>ai10text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0452</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">%s</format>
+		<property>instrumentation/mptcas/ai[19]/callsign</property>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai10text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.05</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f ft</format>
+		<property>instrumentation/mptcas/ai[19]/altitude-ft</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>ai10text</name>
+		<offsets>
+			<x-m>0.0001</x-m>
+			<y-m>0.0915</y-m>
+			<z-m>-0.0548</z-m>
+		</offsets>
+		<alignment>left-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.0f kts</format>
+		<property>instrumentation/mptcas/ai[19]/tas-kt</property>
+		<scale>0.5924838</scale>
+		<font>courier-bold.txf</font>
+		<character-size>0.006</character-size>
+		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/color</property>
+					<value>red</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/color</property>
+					<value>orange</value>
+				</equals>
+		</condition>
+		<emission>
+		<diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</diffuse>
+			<red>1</red>
+			<green>0.5</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/color</property>
+					<value>yellow</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>0</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
+		<condition>
+				<equals>
+					<property>instrumentation/mptcas/ai[19]/color</property>
+					<value>cyan</value>
+				</equals>
+		</condition>
+		<diffuse>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</diffuse>
+		<emission>
+			<red>0</red>
+			<green>1</green>
+			<blue>1</blue>
+		</emission>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
+   		<property>instrumentation/mptcas/ai[19]/xoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<y>1.0</y>
+   		</axis>
+	</animation>
+
+	<animation>
+  	 	<type>translate</type>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
+   		<property>instrumentation/mptcas/ai[19]/yoffset</property>
+   		<factor>0.001</factor>
+    	 <axis>
+    	 	<z>1.0</z>
+   		</axis>
+	</animation>
+
 <!-- Fix Text and Marker Rotations -->
 
 	<animation>
@@ -6244,6 +13444,86 @@
 		<object-name>mp10level</object-name>
 		<object-name>mp10up</object-name>
 		<object-name>mp10down</object-name>
+		<object-name>mp11text</object-name>
+		<object-name>mp11level</object-name>
+		<object-name>mp11up</object-name>
+		<object-name>mp11down</object-name>
+		<object-name>mp12text</object-name>
+		<object-name>mp12level</object-name>
+		<object-name>mp12up</object-name>
+		<object-name>mp12down</object-name>
+		<object-name>mp13text</object-name>
+		<object-name>mp13level</object-name>
+		<object-name>mp13up</object-name>
+		<object-name>mp13down</object-name>
+		<object-name>mp14text</object-name>
+		<object-name>mp14level</object-name>
+		<object-name>mp14up</object-name>
+		<object-name>mp14down</object-name>
+		<object-name>mp15text</object-name>
+		<object-name>mp15level</object-name>
+		<object-name>mp15up</object-name>
+		<object-name>mp15down</object-name>
+		<object-name>mp16text</object-name>
+		<object-name>mp16level</object-name>
+		<object-name>mp16up</object-name>
+		<object-name>mp16down</object-name>
+		<object-name>mp17text</object-name>
+		<object-name>mp17level</object-name>
+		<object-name>mp17up</object-name>
+		<object-name>mp17down</object-name>
+		<object-name>mp18text</object-name>
+		<object-name>mp18level</object-name>
+		<object-name>mp18up</object-name>
+		<object-name>mp18down</object-name>
+		<object-name>mp19text</object-name>
+		<object-name>mp19level</object-name>
+		<object-name>mp19up</object-name>
+		<object-name>mp19down</object-name>
+		<object-name>mp20text</object-name>
+		<object-name>mp20level</object-name>
+		<object-name>mp20up</object-name>
+		<object-name>mp20down</object-name>
+		<object-name>mp21text</object-name>
+		<object-name>mp21level</object-name>
+		<object-name>mp21up</object-name>
+		<object-name>mp21down</object-name>
+		<object-name>mp22text</object-name>
+		<object-name>mp22level</object-name>
+		<object-name>mp22up</object-name>
+		<object-name>mp22down</object-name>
+		<object-name>mp23text</object-name>
+		<object-name>mp23level</object-name>
+		<object-name>mp23up</object-name>
+		<object-name>mp23down</object-name>
+		<object-name>mp24text</object-name>
+		<object-name>mp24level</object-name>
+		<object-name>mp24up</object-name>
+		<object-name>mp24down</object-name>
+		<object-name>mp25text</object-name>
+		<object-name>mp25level</object-name>
+		<object-name>mp25up</object-name>
+		<object-name>mp25down</object-name>
+		<object-name>mp26text</object-name>
+		<object-name>mp26level</object-name>
+		<object-name>mp26up</object-name>
+		<object-name>mp26down</object-name>
+		<object-name>mp27text</object-name>
+		<object-name>mp27level</object-name>
+		<object-name>mp27up</object-name>
+		<object-name>mp27down</object-name>
+		<object-name>mp28text</object-name>
+		<object-name>mp28level</object-name>
+		<object-name>mp28up</object-name>
+		<object-name>mp28down</object-name>
+		<object-name>mp29text</object-name>
+		<object-name>mp29level</object-name>
+		<object-name>mp29up</object-name>
+		<object-name>mp29down</object-name>
+		<object-name>mp30text</object-name>
+		<object-name>mp30level</object-name>
+		<object-name>mp30up</object-name>
+		<object-name>mp30down</object-name>
 		<object-name>ai1text</object-name>
 		<object-name>ai1level</object-name>
 		<object-name>ai1up</object-name>
@@ -6284,6 +13564,46 @@
 		<object-name>ai10level</object-name>
 		<object-name>ai10up</object-name>
 		<object-name>ai10down</object-name>
+		<object-name>ai11text</object-name>
+		<object-name>ai11level</object-name>
+		<object-name>ai11up</object-name>
+		<object-name>ai11down</object-name>
+		<object-name>ai12text</object-name>
+		<object-name>ai12level</object-name>
+		<object-name>ai12up</object-name>
+		<object-name>ai12down</object-name>
+		<object-name>ai13text</object-name>
+		<object-name>ai13level</object-name>
+		<object-name>ai13up</object-name>
+		<object-name>ai13down</object-name>
+		<object-name>ai14text</object-name>
+		<object-name>ai14level</object-name>
+		<object-name>ai14up</object-name>
+		<object-name>ai14down</object-name>
+		<object-name>ai15text</object-name>
+		<object-name>ai15level</object-name>
+		<object-name>ai15up</object-name>
+		<object-name>ai15down</object-name>
+		<object-name>ai16text</object-name>
+		<object-name>ai16level</object-name>
+		<object-name>ai16up</object-name>
+		<object-name>ai16down</object-name>
+		<object-name>ai17text</object-name>
+		<object-name>ai17level</object-name>
+		<object-name>ai17up</object-name>
+		<object-name>ai17down</object-name>
+		<object-name>ai18text</object-name>
+		<object-name>ai18level</object-name>
+		<object-name>ai18up</object-name>
+		<object-name>ai18down</object-name>
+		<object-name>ai19text</object-name>
+		<object-name>ai19level</object-name>
+		<object-name>ai19up</object-name>
+		<object-name>ai19down</object-name>
+		<object-name>ai20text</object-name>
+		<object-name>ai20level</object-name>
+		<object-name>ai20up</object-name>
+		<object-name>ai20down</object-name>
 		<object-name>wp1pos</object-name>
 		<object-name>wp2pos</object-name>
 		<object-name>wp3pos</object-name>
@@ -6294,6 +13614,16 @@
 		<object-name>wp8pos</object-name>
 		<object-name>wp9pos</object-name>
 		<object-name>wp10pos</object-name>
+		<object-name>wp1path</object-name>
+		<object-name>wp2path</object-name>
+		<object-name>wp3path</object-name>
+		<object-name>wp4path</object-name>
+		<object-name>wp5path</object-name>
+		<object-name>wp6path</object-name>
+		<object-name>wp7path</object-name>
+		<object-name>wp8path</object-name>
+		<object-name>wp9path</object-name>
+		<object-name>wp10path</object-name>
 		<property>orientation/heading-magnetic-deg</property>
 		<factor>-1</factor>
 		<axis>

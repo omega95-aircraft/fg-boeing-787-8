@@ -29,7 +29,7 @@ if (getprop("/instrumentation/ndfull/active") == 1) {
 var closestmpn = 0;
 var closestain = 0;
 
-for (var n = 0; n < 10; n = n + 1) {
+for (var n = 0; n < 30; n = n + 1) {
 
 if (getprop("ai/models/multiplayer[" ~ n ~ "]/valid") and (getprop("ai/models/multiplayer[" ~ n ~ "]/callsign") != nil)) {
 
@@ -123,7 +123,7 @@ closestmpn = n;
 
 }
 
-for (var n = 0; n < 10; n = n + 1) {
+for (var n = 0; n < 20; n = n + 1) {
 
 if (getprop("ai/models/aircraft[" ~ n ~ "]/callsign") != nil) {
 
