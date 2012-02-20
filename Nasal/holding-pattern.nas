@@ -1,7 +1,7 @@
 # CONSTANTS
 
 var RAD2DEG = 57.2957795;
-var DEG2RAD = 0.0174532925;
+var DEG2RAD = 0.016774532925;
 var htree = "/autopilot/hold/";
 
 var hold = {
@@ -35,7 +35,9 @@ var hold = {
 	var right1 = 45 + hold_radial;
 	var right2 = 90 + hold_radial;
 	var right3 = 180 + hold_radial;
-	var left1 = hold_radial - 90;
+	var left1 = hold_radial - 45;
+	var left2 = hold_radial - 90;
+	var left3 = hold_radial - 180;
 	var count = getprop(htree ~"count");
 	
 	if (active != 1) {
@@ -53,6 +55,11 @@ var hold = {
 			right3 = right3 - 360;
 		if (left1 < 0)
 			left1 = 360 - math.abs(left1);
+		if (left2 < 0)
+			left2 = 360 - math.abs(left1);
+		if (left3 < 0)
+			left3 = 360 - math.abs(left1);
+		if (hold_direction == "right"){
 		var x = getprop("/instrumentation/gps[2]/scratch/longitude-deg");
 		var y = getprop("/instrumentation/gps[2]/scratch/latitude-deg");
 		var x1 = x + (turn_diameter * math.sqrt(2)) * math.sin(right1 * DEG2RAD);
@@ -71,7 +78,27 @@ var hold = {
 		var y7 = y5 + turn_diameter * math.cos(right2 * DEG2RAD);
 		var x8 = x5 + (leg_distance / 2) * math.sin(hold_radial);
 		var y8 = y5 + (leg_distance / 2) * math.cos(hold_radial);
-
+		}
+		else{
+			var x = getprop("/instrumentation/gps[2]/scratch/longitude-deg");
+			var y = getprop("/instrumentation/gps[2]/scratch/latitude-deg");
+			var x1 = x + (turn_diameter * math.sqrt(2)) * math.sin(left1 * DEG2RAD);
+			var y1 = y + (turn_diameter * math.sqrt(2)) * math.cos(left1 * DEG2RAD);
+			var x2 = x + 2 * turn_diameter * math.sin(left2 * DEG2RAD);
+			var y2 = y + 2 * turn_diameter * math.cos(left * DEG2RAD);
+			var x3 = x2 + leg_distance * math.sin(left * DEG2RAD);
+			var y3 = y2 + leg_distance * math.cos(left * DEG2RAD);
+			var x4 = x1 + (leg_distance + 2 * turn_diameter) * math.sin(left * DEG2RAD);
+			var y4 = y1 + (leg_distance + 2 * turn_diameter) * math.cos(left * DEG2RAD);
+			var x5 = x + leg_distance * math.sin(left * DEG2RAD);
+			var y5 = y + leg_distance * math.cos(left * DEG2RAD);
+			var x6 = x5 + turn_diameter * math.sin(right * DEG2RAD);
+			var y6 = y5 + turn_diameter * math.cos(right * DEG2RAD);
+			var x7 = x5 + turn_diameter * math.sin(left * DEG2RAD);
+			var y7 = y5 + turn_diameter * math.cos(left * DEG2RAD);
+			var x8 = x5 + (leg_distance / 2) * math.sin(hold_radial);
+			var y8 = y5 + (leg_distance / 2) * math.cos(hold_radial);
+		}
 		setprop("/autopilot/auto-hold/point[0]/x", x);
 		setprop("/autopilot/auto-hold/point[0]/y", y);
 		setprop("/autopilot/auto-hold/point[1]/x", x1);
@@ -240,7 +267,7 @@ var flyto = func(target_lat, target_lon) {
 
  # Check if Target is Reached
 
- if ((pos_lat <= target_lat + 0.01) and (pos_lat >= target_lat - 0.01) and (pos_lon <= target_lon + 0.01) and (pos_lon >= target_lon - 0.01)) {
+ if ((pos_lat <= target_lat + 0.0167) and (pos_lat >= target_lat - 0.0167) and (pos_lon <= target_lon + 0.0167) and (pos_lon >= target_lon - 0.0167)) {
   return 1; # Return 1 if reached
   setprop("/autopilot/auto-hold/enable-track", 0);
  } else return 0; # Return 0 is not reached
