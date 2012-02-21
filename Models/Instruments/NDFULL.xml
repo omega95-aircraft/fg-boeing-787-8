@@ -13638,6 +13638,24 @@
 		</center>
 	</animation>
 
+<!-- Terrain Map Pixels Method -->
+
+<model>
+ <path>terrain-map-full.xml</path>
+ <condition>
+ <and>
+  <greater-than>
+   <property>systems/electrical/outputs/efis</property>
+   <value>9</value>
+  </greater-than>
+  <equals>
+   <property>controls/mfd/extra</property>
+   <value>terr</value>
+  </equals>
+ </and>
+ </condition>
+</model>
+
 <!-- Ground Radar -->
 
     <panel>

@@ -17,12 +17,12 @@ var row = 0;
 var RAD2DEG = 57.2957795;
 var DEG2RAD = 0.016774532925;
 var terrain = "/instrumentation/terrain-map/pixels/";
+var terrain_full = "/instrumentation/terrain-map[1]/pixels/";
 
     var terrain_map = {
        init : func {
             me.UPDATE_INTERVAL = 0.025;
             me.loopid = 0;
-			setprop("/controls/mfd/terrain-map/range", 30);
 
             me.reset();
     },
@@ -34,6 +34,8 @@ var pos_lon = getprop("/position/longitude-deg");
 var pos_lat = getprop("/position/latitude-deg");
 var heading = getprop("orientation/heading-magnetic-deg");
 
+setprop("/controls/mfd/terrain-map/range", getprop("/instrumentation/ndfull/range"));
+
 var range = getprop("/controls/mfd/terrain-map/range");
 
 # for (var row = 0; row < 32; row += 2)
@@ -44,11 +46,11 @@ var range = getprop("/controls/mfd/terrain-map/range");
 for (var col = 1; col <= 32; col += 2)
 {
 	
-var proj_lon = pos_lon + ((-1 * col * (range/30) * math.sin(DEG2RAD * (heading - 90))) / 60);
-var proj_lat = pos_lat + ((-1 * col * (range/30) * math.cos(DEG2RAD * (heading - 90))) / 60);
+var proj_lon = pos_lon + (-1 * col * math.sin(DEG2RAD * (heading - 90)) / 60);
+var proj_lat = pos_lat + (-1 * col * math.cos(DEG2RAD * (heading - 90)) / 60);
 
-var point_lon = proj_lon + ((row * (range/30) / 60) * math.sin(DEG2RAD * heading));
-var point_lat = proj_lat + ((row * (range/30) / 60) * math.cos(DEG2RAD * heading));
+var point_lon = proj_lon + ((row / 60) * math.sin(DEG2RAD * heading));
+var point_lat = proj_lat + ((row / 60) * math.cos(DEG2RAD * heading));
 
 setprop(terrain ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", get_elevation(point_lat, point_lon));
 
@@ -67,8 +69,38 @@ setprop(terrain ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", elevation);
 
 }
 
-
 # }
+
+
+### Same calculations but for the fullscreen ND, that means RANGE matters
+
+# First get all the points (16x16)
+
+for (var col = 1; col <= 32; col += 2)
+{
+	
+var proj_lon = pos_lon + ((-1 * col * (range/30) * math.sin(DEG2RAD * (heading - 90))) / 60);
+var proj_lat = pos_lat + ((-1 * col * (range/30) * math.cos(DEG2RAD * (heading - 90))) / 60);
+
+var point_lon = proj_lon + ((row * (range/30) / 60) * math.sin(DEG2RAD * heading));
+var point_lat = proj_lat + ((row * (range/30) / 60) * math.cos(DEG2RAD * heading));
+
+setprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", get_elevation(point_lat, point_lon));
+
+}
+
+# Interpolate the rest of the points in each column
+
+for (var col = 2; col <= 31; col += 2)
+{
+
+var elev_prev = getprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ (col - 1) ~ "]/elevation-ft");
+var elev_next = getprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ (col + 1) ~ "]/elevation-ft");
+var elevation = (elev_prev + elev_next) / 2;
+
+setprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", elevation);
+
+}
 
 row += 1;
 
