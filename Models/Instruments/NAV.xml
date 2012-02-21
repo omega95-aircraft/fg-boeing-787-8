@@ -21854,4 +21854,58 @@
  </condition>
 </model> -->
 
+<!-- Terrain Map Pixels Method -->
+
+
+<model>
+ <path>terrain-map-pixel.xml</path>
+ <condition>
+ <and>
+  <greater-than>
+   <property>systems/electrical/outputs/efis</property>
+   <value>9</value>
+  </greater-than>
+ </and>
+ <and>
+  <equals>
+   <property>controls/mfd/extra</property>
+   <value>terr</value>
+  </equals>
+ </and>
+ </condition>
+</model>
+
+<!-- Collins WXR-2100 -->
+
+    <panel>
+        <path>Aircraft/787-8/Models/Instruments/wxr-base.xml</path>
+		 <condition>
+		 <and>
+		  <greater-than>
+		   <property>systems/electrical/outputs/efis</property>
+		   <value>9</value>
+		  </greater-than>
+		  <equals>
+		   <property>controls/mfd/extra</property>
+		   <value>wxradar</value>
+		  </equals>
+		 </and>
+		 </condition>
+        <bottom-left>
+            <x-m>0.000</x-m>
+            <y-m>-0.0806</y-m>
+            <z-m>-0.569</z-m>
+        </bottom-left>
+        <bottom-right>
+            <x-m>0.000</x-m>
+            <y-m>0.825</y-m>
+            <z-m>-0.569</z-m>
+        </bottom-right>
+        <top-left>
+            <x-m>0.000</x-m>
+            <y-m>-0.0806</y-m>
+            <z-m>0.0895</z-m>
+        </top-left>
+    </panel>
+
 </PropertyList>
