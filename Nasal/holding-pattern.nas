@@ -59,7 +59,7 @@ var hold = {
 			left2 = 360 - math.abs(left1);
 		if (left3 < 0)
 			left3 = 360 - math.abs(left1);
-		if (hold_direction == "right"){
+		if (hold_direction == "Right"){
 		var x = getprop("/instrumentation/gps[2]/scratch/longitude-deg");
 		var y = getprop("/instrumentation/gps[2]/scratch/latitude-deg");
 		var x1 = x + (turn_diameter * math.sqrt(2)) * math.sin(right1 * DEG2RAD);
@@ -85,17 +85,17 @@ var hold = {
 			var x1 = x + (turn_diameter * math.sqrt(2)) * math.sin(left1 * DEG2RAD);
 			var y1 = y + (turn_diameter * math.sqrt(2)) * math.cos(left1 * DEG2RAD);
 			var x2 = x + 2 * turn_diameter * math.sin(left2 * DEG2RAD);
-			var y2 = y + 2 * turn_diameter * math.cos(left * DEG2RAD);
-			var x3 = x2 + leg_distance * math.sin(left * DEG2RAD);
-			var y3 = y2 + leg_distance * math.cos(left * DEG2RAD);
-			var x4 = x1 + (leg_distance + 2 * turn_diameter) * math.sin(left * DEG2RAD);
-			var y4 = y1 + (leg_distance + 2 * turn_diameter) * math.cos(left * DEG2RAD);
-			var x5 = x + leg_distance * math.sin(left * DEG2RAD);
-			var y5 = y + leg_distance * math.cos(left * DEG2RAD);
-			var x6 = x5 + turn_diameter * math.sin(right * DEG2RAD);
-			var y6 = y5 + turn_diameter * math.cos(right * DEG2RAD);
-			var x7 = x5 + turn_diameter * math.sin(left * DEG2RAD);
-			var y7 = y5 + turn_diameter * math.cos(left * DEG2RAD);
+			var y2 = y + 2 * turn_diameter * math.cos(left2 * DEG2RAD);
+			var x3 = x2 + leg_distance * math.sin(left3 * DEG2RAD);
+			var y3 = y2 + leg_distance * math.cos(left3 * DEG2RAD);
+			var x4 = x1 + (leg_distance + 2 * turn_diameter) * math.sin(left3 * DEG2RAD);
+			var y4 = y1 + (leg_distance + 2 * turn_diameter) * math.cos(left3 * DEG2RAD);
+			var x5 = x + leg_distance * math.sin(left3 * DEG2RAD);
+			var y5 = y + leg_distance * math.cos(left3 * DEG2RAD);
+			var x6 = x5 + turn_diameter * math.sin(right1 * DEG2RAD);
+			var y6 = y5 + turn_diameter * math.cos(right1 * DEG2RAD);
+			var x7 = x5 + turn_diameter * math.sin(left2 * DEG2RAD);
+			var y7 = y5 + turn_diameter * math.cos(left2 * DEG2RAD);
 			var x8 = x5 + (leg_distance / 2) * math.sin(hold_radial);
 			var y8 = y5 + (leg_distance / 2) * math.cos(hold_radial);
 		}
