@@ -13614,16 +13614,6 @@
 		<object-name>wp8pos</object-name>
 		<object-name>wp9pos</object-name>
 		<object-name>wp10pos</object-name>
-		<object-name>wp1path</object-name>
-		<object-name>wp2path</object-name>
-		<object-name>wp3path</object-name>
-		<object-name>wp4path</object-name>
-		<object-name>wp5path</object-name>
-		<object-name>wp6path</object-name>
-		<object-name>wp7path</object-name>
-		<object-name>wp8path</object-name>
-		<object-name>wp9path</object-name>
-		<object-name>wp10path</object-name>
 		<property>orientation/heading-magnetic-deg</property>
 		<factor>-1</factor>
 		<axis>
