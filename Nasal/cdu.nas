@@ -1660,14 +1660,14 @@ setprop("/controls/cdu/input", "");
 keypress = "";
 }
 
-if (keypress == "r2") {
-setprop("/autopilot/hold/fix", cduinput);
+if ((keypress == "l6") and (cduinput != "")) {
+setprop("/autopilot/hold/hold-time", cduinput);
 cduinput = "";
 setprop("/controls/cdu/input", "");
 keypress = "";
 }
 
-if ((keypress == "l6") and (cduinput != "")) {
+if ((keypress == "r2") and (cduinput != "")) {
 
 if (getprop("/autopilot/hold/hold-direction") == "Left") setprop("/autopilot/hold/hold-direction", "Right");
 else setprop("/autopilot/hold/hold-direction", "Left");
