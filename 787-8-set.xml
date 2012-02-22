@@ -936,6 +936,7 @@
 			<file>Aircraft/787-8/Nasal/wxradar-ndfull.nas</file>
 			<file>Aircraft/787-8/Nasal/holding-pattern.nas</file>
 			<file>Aircraft/787-8/Nasal/terrain-map.nas</file>
+			<file>Aircraft/787-8/Nasal/world-map.nas</file>
 		</b787>
 		<dualcontrol>
 			<file>Aircraft/787-8/DualControl/DualControl_base.nas</file>

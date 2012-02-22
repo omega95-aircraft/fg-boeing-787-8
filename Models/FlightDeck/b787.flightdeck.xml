@@ -2890,6 +2890,18 @@
     </animation>
     <animation>
         <type>pick</type>
+        <object-name>wmap</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/mfd/extra</property>
+				<value>wmap</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>pick</type>
         <object-name>clear.btn</object-name>
         <action>
             <button>0</button>

@@ -21874,6 +21874,314 @@
  </condition>
 </model>
 
+<!-- World Map -->
+
+<animation>
+	<type>select</type>
+	<object-name>wmap</object-name>
+	<object-name>wmap_label</object-name>
+	<object-name>wmap_sprite</object-name>
+	<object-name>wmap_1</object-name>
+	<object-name>wmap_2</object-name>
+	<object-name>wmap_3</object-name>
+	<object-name>wmap_4</object-name>
+	<object-name>wmap_5</object-name>
+	<object-name>wmap_6</object-name>
+	<object-name>wmap_7</object-name>
+	<object-name>wmap_8</object-name>
+	<object-name>wmap_9</object-name>
+	 <condition>
+	 <and>
+	  <greater-than>
+	   <property>systems/electrical/outputs/efis</property>
+	   <value>9</value>
+	  </greater-than>
+	 </and>
+	 <and>
+	  <equals>
+	   <property>controls/mfd/extra</property>
+	   <value>wmap</value>
+	  </equals>
+	 </and>
+	 </condition>
+</animation>
+
+	<animation>
+		<type>rotate</type>
+	<object-name>wmap_sprite</object-name>
+		<property>/orientation/heading-deg</property>
+		<factor>-1</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0.0202</z-m>
+		</center>
+	</animation>
+
+<animation>
+  <type>texmultiple</type>
+  <object-name>wmap</object-name>
+  <transform>
+    <property>/position/latitude-deg</property>
+    <subtype>textranslate</subtype>
+    <factor>0.0065</factor>
+    <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+  </transform>
+  <transform>
+    <property>/position/longitude-deg</property>
+    <subtype>textranslate</subtype>
+    <factor>0.00277</factor>
+    <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+  </transform>
+ </animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_1</object-name>
+	<object-name>wmap_2</object-name>
+	<object-name>wmap_3</object-name>
+	<object-name>wmap_4</object-name>
+	<object-name>wmap_5</object-name>
+	<object-name>wmap_6</object-name>
+	<object-name>wmap_7</object-name>
+	<object-name>wmap_8</object-name>
+	<object-name>wmap_9</object-name>
+	<property>/position/latitude-deg</property>
+	<factor>-0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_1</object-name>
+	<object-name>wmap_2</object-name>
+	<object-name>wmap_3</object-name>
+	<object-name>wmap_4</object-name>
+	<object-name>wmap_5</object-name>
+	<object-name>wmap_6</object-name>
+	<object-name>wmap_7</object-name>
+	<object-name>wmap_8</object-name>
+	<object-name>wmap_9</object-name>
+	<property>/position/longitude-deg</property>
+	<factor>-0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<!-- WMAP_1 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_1</object-name>
+	<property>/instrumentation/world-map/wmap[1]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_1</object-name>
+	<property>/instrumentation/world-map/wmap[1]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_2 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_2</object-name>
+	<property>/instrumentation/world-map/wmap[2]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_2</object-name>
+	<property>/instrumentation/world-map/wmap[2]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_3 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_3</object-name>
+	<property>/instrumentation/world-map/wmap[3]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_3</object-name>
+	<property>/instrumentation/world-map/wmap[3]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_4 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_4</object-name>
+	<property>/instrumentation/world-map/wmap[4]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_4</object-name>
+	<property>/instrumentation/world-map/wmap[4]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_5 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_5</object-name>
+	<property>/instrumentation/world-map/wmap[5]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_5</object-name>
+	<property>/instrumentation/world-map/wmap[5]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_6 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_6</object-name>
+	<property>/instrumentation/world-map/wmap[6]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_6</object-name>
+	<property>/instrumentation/world-map/wmap[6]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_7 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_7</object-name>
+	<property>/instrumentation/world-map/wmap[7]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_7</object-name>
+	<property>/instrumentation/world-map/wmap[7]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_8 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_8</object-name>
+	<property>/instrumentation/world-map/wmap[8]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_8</object-name>
+	<property>/instrumentation/world-map/wmap[8]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
+<!-- WMAP_9 -->
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_9</object-name>
+	<property>/instrumentation/world-map/wmap[9]/longitude-deg</property>
+	<factor>0.018555556</factor>
+	<axis>
+		<y>1</y>
+	</axis>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>wmap_9</object-name>
+	<property>/instrumentation/world-map/wmap[9]/latitude-deg</property>
+	<factor>0.018266666</factor>
+	<axis>
+		<z>1</z>
+	</axis>
+</animation>
+
 <!-- Collins WXR-2100 -->
 
     <panel>
