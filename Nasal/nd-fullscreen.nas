@@ -110,7 +110,7 @@ if (getprop("instrumentation/ndfull/vor2-dist") <= ytop) {
 var currentwp = getprop("/autopilot/route-manager/current-wp");
 var numberofwps = getprop("/autopilot/route-manager/route/num");
 
-for (var n = 1; n <= 10; n = n + 1) {
+for (var n = 1; n <= 10; n += 1) {
 
 if (numberofwps - currentwp > n - 1) {
 
@@ -157,8 +157,9 @@ setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
 setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
 }
 
+} else {
+setprop("/instrumentation/ndfull/route/wp[" ~ (currentwp + n) ~ "]/show", 0);
 }
-
 }
 
 }   },

@@ -1667,7 +1667,7 @@ setprop("/controls/cdu/input", "");
 keypress = "";
 }
 
-if ((keypress == "r2") and (cduinput != "")) {
+if (keypress == "r2") {
 
 if (getprop("/autopilot/hold/hold-direction") == "Left") setprop("/autopilot/hold/hold-direction", "Right");
 else setprop("/autopilot/hold/hold-direction", "Left");
