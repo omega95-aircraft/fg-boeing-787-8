@@ -34,12 +34,80 @@ var fmc = {
 	},
 	parse_flightsDB: func {
 	
-		
+		io.read_properties(getprop("/sim/aircraft-dir") ~ "/FMC-DB/FMC_Flights.xml", "/instrumentation/b787-fmc");
 	
 	},
-	select_flight: func {
+	search_flight: func(flightnum) {
 	
+		var flightsDB = "/instrumentation/b787-fmc/flightsDB/" ~ flightnum ~ "/";
+	
+		# Check if the flight exists
+		if (getprop(flightsDB ~ "depicao") != nil) {
+			
+			# Display Flight Data in the CDU
+			setprop("/controls/cdu/display/l1", flightnum);
+			setprop("/controls/cdu/display/l2", getprop(flightsDB ~ "depicao"));
+			setprop("/controls/cdu/display/l3", getprop(flightsDB ~ "arricao"));
+			setprop("/controls/cdu/display/l4", getprop(flightsDB ~ "reg"));
+			setprop("/controls/cdu/display/l5", getprop(flightsDB ~ "flight-time"));
+			
+			# Whether route is available
+			
+			if (getprop(flightsDB ~ "route/pre") == 1) {
+				setprop("/controls/cdu/display/l6", "Available");
+			} else {
+				setprop("/controls/cdu/display/l6", "Unavailable");
+			}	
+
+		} else {
+			setprop("/controls/cdu/display/page", "DEP/ARR");
+		}
+	
+	},
+	confirm_flight: func(flightnum) {
+	
+		var flightsDB = "/instrumentation/b787-fmc/flightsDB/" ~ flightnum ~ "/";
+	
+	
+		# Used to clear the current route entered
+		setprop("/autopilot/route-manager/input", "@CLEAR");
 		
+		if (getprop(flightsDB ~ "route/pre") == 1) {
+			# Enter Route from the Database
+			var n = 0;
+			while(getprop(flightsDB ~ "route/wp[" ~ n ~ "]/id") != nil) {
+		
+				# If VNAV is available, enter VNAV altitudes too
+				if (getprop(flightsDB ~ "route/vnav") == 1) {
+				
+					setprop("/autopilot/route-manager/input", "@INSERT999:" ~ getprop(flightsDB ~ "route/wp[" ~ n ~ "]/id") ~ "@" ~ getprop(flightsDB ~ "route/wp[" ~ n ~ "]/alt"));
+				
+				} else { # If not, just put in the waypoints
+			
+					setprop("/autopilot/route-manager/input", "@INSERT999:" ~ getprop(flightsDB ~ "route/wp[" ~ n ~ "]/id"));
+			
+				}
+		
+				n += 1;
+			}
+		}
+		
+		# If VNAV is enabled, enter crz altitude and crz wps
+		
+		if (getprop(flightsDB ~ "route/vnav") == 1) {
+			setprop("/controls/cdu/vnav/crz-altitude-ft", getprop(flightsDB ~ "route/crz-altitude-ft"));
+			setprop("/controls/cdu/vnav/start-crz", getprop(flightsDB ~ "route/start-crz"));
+			setprop("/controls/cdu/vnav/end-crz", getprop(flightsDB ~ "route/end-crz"));
+		}
+		
+		# Set Departure and Arrival Airport
+		setprop("/autopilot/route-manager/departure/airport", getprop(flightsDB ~ "depicao"));
+		setprop("/autopilot/route-manager/destination/airport", getprop(flightsDB ~ "arricao"));
+		
+		# If a preset route doesn't exist, generate a route
+		
+		if (getprop(flightsDB ~ "route/pre") != 1)
+			setprop("/autopilot/route-manager/input", "@ROUTE1")		
 	
 	}
 };

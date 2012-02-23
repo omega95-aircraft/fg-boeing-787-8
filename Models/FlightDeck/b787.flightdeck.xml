@@ -2343,7 +2343,7 @@
     <animation>
         <type>pick</type>
         <object-name>APalt</object-name>
-        <object-name>ALT.toggle</object-name>
+        <object-name>FLCH.toggle</object-name>
         <action>
             <button>0</button>
             <binding>
@@ -2351,6 +2351,22 @@
                 <property>/autopilot/panel/alt</property>
 				<value>alt</value>
 				<value></value>
+            </binding>
+        </action>
+    </animation>
+    
+        <animation>
+        <type>pick</type>
+        <object-name>ALThold</object-name>
+        <object-name>ALT.toggle</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+ 				<script>
+ 					setprop("/autopilot/settings/target-altitude-ft", getprop("/instrumentation/altimeter/indicated-altitude-ft"));
+ 					setprop("/autopilot/panel/alt", "alt");
+ 				</script>
             </binding>
         </action>
     </animation>
@@ -2420,8 +2436,19 @@
 		<object-name>ALT.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
-				<value>alt</value>
+				<property>/autopilot/panel/alt-ind</property>
+				<value>hold</value>
+			</equals>
+		</condition>
+	</animation>
+	
+		<animation>
+		<type>select</type>
+		<object-name>FLCH.toggle</object-name>
+		<condition>
+			<equals>
+				<property>/autopilot/panel/alt-ind</property>
+				<value>flch</value>
 			</equals>
 		</condition>
 	</animation>

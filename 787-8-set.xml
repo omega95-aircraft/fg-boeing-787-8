@@ -6,7 +6,7 @@
 		<description>Boeing 787-8</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-8</aero>
-		<authors>Narendran Muraleedharan, Hooray, Ron Jenson, Thorsten ,Dwayne Gable, Joshua Wilson</authors>
+		<authors>Narendran Muraleedharan, Dwayne Gable, Scott Hamilton, Hooray, Ron Jenson, Thorsten, Joshua Wilson</authors>
 		<engine>trent_1000</engine>
 
 		<model>
@@ -922,6 +922,7 @@
 			<file>Aircraft/787-8/Nasal/surge.nas</file>
 			<file>Aircraft/787-8/Nasal/autobrake.nas</file>
 			<file>Aircraft/787-8/Nasal/cdu.nas</file>
+			<file>Aircraft/787-8/Nasal/cdu1.nas</file>
 			<file>Aircraft/787-8/Nasal/mfd-navigation.nas</file>
 			<file>Aircraft/787-8/Nasal/nd-fullscreen.nas</file>
 			<file>Aircraft/787-8/Nasal/tcas.nas</file>
@@ -938,6 +939,10 @@
 			<file>Aircraft/787-8/Nasal/terrain-map.nas</file>
 			<file>Aircraft/787-8/Nasal/world-map.nas</file>
 			<file>Aircraft/787-8/Nasal/fmc.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsDB.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsWP.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsTP.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsTransition.nas</file>
 		</b787>
 		<dualcontrol>
 			<file>Aircraft/787-8/DualControl/DualControl_base.nas</file>

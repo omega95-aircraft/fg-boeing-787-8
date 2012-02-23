@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<flightsDB>
+	
+		<airline>Merlion</airline>
+
+		<MIA101>
+			<depicao>WSSS</depicao>
+			<arricao>KLAX</arricao>
+			<reg>S-QBLA</reg>
+			<flight-time>17.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+				<!-- <crz-altitude-ft>41000</crz-altitude-ft>
+				<start-crz>LEBIN</start-crz>
+				<end-crz>PIRAT</end-crz>
+				<wp>
+					<id>VMR</id>
+					<alt>8000</alt>
+				</wp>
+				<wp>
+					<id>LEBIN</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>LUSMO</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>MEVIN</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>MAGMA</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>MYC</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>POMAS</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>MJE</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>KAGIS</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>LEPKI</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>40,160</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>41,170</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>42,180</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>43,-170</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>43,-160</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>43,-150</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>43,-140</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>40,-130</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>DACEM</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>PAINT</id>
+					<alt>41000</alt>
+				</wp>
+				<wp>
+					<id>PIRAT</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>AVE</id>
+					<alt>26000</alt>
+				</wp>
+				<wp>
+					<id>FIM</id>
+					<alt>10000</alt>
+				</wp> -->
+			</route>
+		</MIA101>
+		
+		<MIA102>
+			<depicao>KLAX</depicao>
+			<arricao>KJFK</arricao>
+			<reg>S-QBLA</reg>
+			<fl>350</fl>
+			<flight-time>3.15</flight-time>
+			<route>
+				<vnav>1</vnav>
+				<pre>1</pre>
+				<crz-altitude-ft>35000</crz-altitude-ft>
+				<start-crz>TNP</start-crz>
+				<end-crz>LVZ</end-crz>
+				<wp>
+					<id>PIONE</id>
+					<alt>28000</alt>
+				</wp>
+				<wp>
+					<id>TNP</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>PKE</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>DRK</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>LBL</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>BUM</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>ROD</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>DJB</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>JHW</id>
+					<alt>35000</alt>
+				</wp>
+				<wp>
+					<id>LVZ</id>
+					<alt>29000</alt>
+				</wp>
+			</route>
+		</MIA102>
+		
+		<MIA103>
+			<depicao>KJFK</depicao>
+			<arricao>EGKK</arricao>
+			<reg>S-QBLA</reg>
+			<flight-time>6.30</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA103>
+		
+		<MIA104>
+			<depicao>EGKK</depicao>
+			<arricao>WSSS</arricao>
+			<reg>S-QBLA</reg>
+			<flight-time>13.10</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA104>
+		
+		<MIA105>
+			<depicao>WSSS</depicao>
+			<arricao>EGKK</arricao>
+			<reg>S-QBLA</reg>
+			<flight-time>13.15</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA105>
+		
+		<MIA106>
+			<depicao>EGKK</depicao>
+			<arricao>KJFK</arricao>
+			<reg>S-QBLA</reg>
+			<flight-time>7.35</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA106>
+		
+		<MIA107>
+			<depicao>KJFK</depicao>
+			<arricao>KLAX</arricao>
+			<reg>S-QBLA</reg>
+			<flight-time>3.45</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA107>
+		
+		<MIA108>
+			<depicao>KLAX</depicao>
+			<arricao>WSSS</arricao>
+			<reg>S-QBLA</reg>
+			<flight-time>17.15</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA108>
+		
+		<MIA109>
+			<depicao>WSSS</depicao>
+			<arricao>VABB</arricao>
+			<reg>S-QBLB</reg>
+			<flight-time>4.05</flight-time>
+			<route>
+				<vnav>1</vnav>
+				<pre>1</pre>
+				<crz-altitude-ft>36000</crz-altitude-ft>
+				<start-crz></start-crz>
+				<end-crz></end-crz>
+				<wp>
+					<id></id>
+					<alt></alt>
+				</wp>
+			</route>
+		</MIA109>
+		
+		<MIA110>
+			<depicao>VABB</depicao>
+			<arricao>WSSS</arricao>
+			<reg>S-QBLB</reg>
+			<flight-time>4.15</flight-time>
+			<route>
+				<vnav>1</vnav>
+				<pre>1</pre>
+				<crz-altitude-ft>35000</crz-altitude-ft>
+				<start-crz></start-crz>
+				<end-crz></end-crz>
+				<wp>
+					<id></id>
+					<alt></alt>
+				</wp>
+			</route>
+		</MIA110>
+		
+		<MIA111>
+			<depicao>WSSS</depicao>
+			<arricao>YBBN</arricao>
+			<reg>S-QBLB</reg>
+			<flight-time>6.15</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA111>
+		
+		<MIA112>
+			<depicao>YBBN</depicao>
+			<arricao>WSSS</arricao>
+			<reg>S-QBLB</reg>
+			<flight-time>6.25</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA112>
+		
+		<MIA113>
+			<depicao>WSSS</depicao>
+			<arricao>LIRF</arricao>
+			<reg>S-QBLC</reg>
+			<flight-time>10.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA113>
+		
+		<MIA114>
+			<depicao>LIRF</depicao>
+			<arricao>WSSS</arricao>
+			<reg>S-QBLC</reg>
+			<flight-time>10.20</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA114>
+		
+		<MIA115>
+			<depicao>YBBN</depicao>
+			<arricao>PHNL</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>9.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA115>
+		
+		<MIA116>
+			<depicao>PHNL</depicao>
+			<arricao>TNCM</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>12.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA116>
+		
+		<MIA117>
+			<depicao>TNCM</depicao>
+			<arricao>PHNL</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>12.10</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA117>
+		
+		<MIA118>
+			<depicao>PHNL</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>11.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1018>
+		
+		<MIA119>
+			<depicao>YBBN</depicao>
+			<arricao>OMDB</arricao>
+			<reg>VH-BLE</reg>
+			<flight-time>14.10</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1019>
+		
+		<MIA120>
+			<depicao>OMDB</depicao>
+			<arricao>UUDD</arricao>
+			<reg>VH-BLE</reg>
+			<flight-time>5.45</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA120>
+		
+		<MIA121>
+			<depicao>UUDD</depicao>
+			<arricao>OMDB</arricao>
+			<reg>VH-BLE</reg>
+			<flight-time>5.40</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA121>
+		
+		<MIA122>
+			<depicao>OMDB</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLE</reg>
+			<flight-time>15.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA122>
+		
+		<MIA123>
+			<depicao>YBBN</depicao>
+			<arricao>VHHH</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>9.10</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA123>
+		
+		<MIA124>
+			<depicao>VHHH</depicao>
+			<arricao>UIII</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>5.00</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA124>
+		
+		<MIA125>
+			<depicao>UIII</depicao>
+			<arricao>VHHH</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>5.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA125>
+		
+		<MIA126>
+			<depicao>VHHH</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>8.20</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA126>
+		
+		<MIA127>
+			<depicao>YBBN</depicao>
+			<arricao>YPPH</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>4.10</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA127>
+		
+		<MIA128>
+			<depicao>YPPH</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>5.25</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA128>
+		
+		<MIA129>
+			<depicao>YBBN</depicao>
+			<arricao>NZAA</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>3.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA129>
+		
+		<MIA130>
+			<depicao>NZAA</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>3.10</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA130>
+		
+		<MIA1090>
+			<depicao>YBBN</depicao>
+			<arricao>NTAA</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>7.45</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1090>
+		
+		<MIA1091>
+			<depicao>NTAA</depicao>
+			<arricao>SCEL</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>8.15</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1091>
+		
+		<MIA1092>
+			<depicao>SCEL</depicao>
+			<arricao>NTAA</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>8.30</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1092>
+		
+		<MIA1093>
+			<depicao>NTAA</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLD</reg>
+			<flight-time>7.45</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1093>
+		
+		<MIA1094>
+			<depicao>YBBN</depicao>
+			<arricao>OMDB</arricao>
+			<reg>VH-BLE</reg>
+			<flight-time>13.00</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1094>
+		
+		<MIA1095>
+			<depicao>OMDB</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLE</reg>
+			<flight-time>13.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1095>
+		
+		<MIA1096>
+			<depicao>YBBN</depicao>
+			<arricao>RJBB</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>9.10</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1096>
+		
+		<MIA1097>
+			<depicao>RJBB</depicao>
+			<arricao>YBBN</arricao>
+			<reg>VH-BLF</reg>
+			<flight-time>9.05</flight-time>
+			<route>
+				<vnav>0</vnav>
+				<pre>0</pre>
+<!--			<wp>
+					<id></id>
+				</wp> -->
+			</route>
+		</MIA1097>
+
+	</flightsDB>
+
+</PropertyList>

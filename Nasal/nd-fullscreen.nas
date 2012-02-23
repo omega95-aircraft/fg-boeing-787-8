@@ -116,6 +116,7 @@ if (numberofwps - currentwp > n - 1) {
 
 var wp = currentwp + n - 1;
 
+if (wp >= 0) {
 if (getprop("/autopilot/route-manager/route/wp[" ~ wp ~ "]/longitude-deg") != nil) {
 
 var wpxcoord = 60 * getprop("/autopilot/route-manager/route/wp[" ~ wp ~ "]/longitude-deg");
@@ -129,7 +130,8 @@ if (n == 1) {
 setprop("/instrumentation/ndfull/route/wp[1]/bearing-deg",270 + (57.2957795 * math.atan2(yoffset, xoffset)));
 } else {
 
-setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/bearing-deg",270 + (57.2957795 * math.atan2(yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"), xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
+if ((getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset") != nil) and getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset") != nil)
+	setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/bearing-deg",270 + (57.2957795 * math.atan2(yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"), xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
 
 }
 
@@ -137,7 +139,10 @@ if (n == 1) {
 setprop("/instrumentation/ndfull/route/wp[1]/line-length", math.sqrt((yoffset * yoffset) + (xoffset * xoffset)));
 } else {
 
-var linelength = math.sqrt(((yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset")) * (yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"))) + ((xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset")) * (xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
+var linelength = 0;
+
+if ((getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset") != nil) and getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset") != nil)
+	linelength = math.sqrt(((yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset")) * (yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"))) + ((xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset")) * (xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
 
 setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/line-length", linelength);
 
@@ -153,6 +158,9 @@ setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 1);
 setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
 }
 
+} else {
+setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
+}
 } else {
 setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
 }

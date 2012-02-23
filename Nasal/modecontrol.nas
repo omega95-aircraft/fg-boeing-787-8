@@ -19,7 +19,7 @@ setprop("/autopilot/settings/vertical-speed-fpm", 0);
 	update : func {
 	
 	if (getprop("/autopilot/internal/target-climb-rate-fps") != nil)
-		setprop("/autopilot/internal/climb-rate-difference", getprop("/autopilot/internal/target-climb-rate-fps") - getprop("/velocities/vertical-speed-fps"))
+		setprop("/autopilot/internal/climb-rate-difference", getprop("/autopilot/internal/target-climb-rate-fps") - getprop("/velocities/vertical-speed-fps"));
 
 # Connect L and R arms to AP throttle props
 
@@ -69,6 +69,18 @@ if (getprop("/autopilot/panel/master") == 1) {
 }
 
 }
+
+# Flight Level Change and Altitude Hold Lights
+
+if ((getprop("/autopilot/panel/alt") == "alt") and (getprop("/autopilot/settings/target-altitude-ft") != nil) and (getprop("/instrumentation/altimeter/indicated-altitude-ft") != nil)) {
+
+	if (math.abs(getprop("/autopilot/settings/target-altitude-ft") - getprop("/instrumentation/altimeter/indicated-altitude-ft")) <= 500)
+		setprop("/autopilot/panel/alt-ind", "hold");
+	else
+		setprop("/autopilot/panel/alt-ind", "flch");
+
+} else
+	setprop("/autopilot/panel/alt-ind", "");
 
 # Vertical Speed FDM Display
 
