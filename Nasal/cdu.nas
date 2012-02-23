@@ -515,13 +515,19 @@ setprop("/controls/cdu/display/r5-label", "");
 setprop("/controls/cdu/display/r6-label", "");
 setprop("/controls/cdu/display/r7-label", "");
 
-setprop("/controls/cdu/display/l1", getprop("/autopilot/route-manager/departure/airport"));
+if (getprop("/autopilot/route-manager/departure/airport") != nil)
+	setprop("/controls/cdu/display/l1", getprop("/autopilot/route-manager/departure/airport"));
+else
+	setprop("/controls/cdu/display/l1", "");
 if (getprop("/autopilot/route-manager/destination/airport") != nil)
 	setprop("/controls/cdu/display/r1", getprop("/autopilot/route-manager/destination/airport"));
 else
 	setprop("/controls/cdu/display/r1", "");
 
-setprop("/controls/cdu/display/l2", getprop("/autopilot/route-manager/departure/runway"));
+if (getprop("/autopilot/route-manager/departure/runway") != nil)
+	setprop("/controls/cdu/display/l2", getprop("/autopilot/route-manager/departure/runway"));
+else
+	setprop("/controls/cdu/display/l2", "");
 if (getprop("/autopilot/route-manager/destination/runway") != nil)
 	setprop("/controls/cdu/display/r2", getprop("/autopilot/route-manager/destination/runway"));
 else 
