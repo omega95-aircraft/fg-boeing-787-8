@@ -968,9 +968,9 @@ setprop("/controls/cdu/r7-type", "click");
 setprop("/controls/cdu/display/l1-label", "T/O Flaps");
 setprop("/controls/cdu/display/l2-label", "Climb Rate");
 setprop("/controls/cdu/display/l3-label", "Lift Pitch");
-setprop("/controls/cdu/display/l4-label", "FLAPS 5");
-setprop("/controls/cdu/display/l5-label", "FLAPS UP");
-setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/l4-label", "FLAPS 5 Degrees");
+setprop("/controls/cdu/display/l5-label", "FLAPS 1 Degree");
+setprop("/controls/cdu/display/l6-label", "FLAPS UP");
 setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/r1-label", "V1");
 setprop("/controls/cdu/display/r2-label", "VR");
@@ -981,21 +981,23 @@ setprop("/controls/cdu/display/r6-label", "");
 setprop("/controls/cdu/display/r7-label", "");
 
 setprop("/controls/cdu/display/l1", "10 Degrees");
-setprop("/controls/cdu/display/r1", "140 KIAS");
+setprop("/controls/cdu/display/r1", getprop("/instrumentation/fmc/vspeeds/V1"));
 
 setprop("/controls/cdu/display/l2", "Min. 1800 FPM");
-setprop("/controls/cdu/display/r2", "150 KIAS");
+setprop("/controls/cdu/display/r2", getprop("/instrumentation/fmc/vspeeds/VR"));
 
-setprop("/controls/cdu/display/l3", "10 Degrees");
-setprop("/controls/cdu/display/r3", "160 KIAS");
+setprop("/controls/cdu/display/l3", "12 Degrees");
+setprop("/controls/cdu/display/r3", getprop("/instrumentation/fmc/vspeeds/V2"));
 
-setprop("/controls/cdu/display/l4", "180 KIAS");
+fmc.calc_speeds();
+
+setprop("/controls/cdu/display/l4", getprop("/instrumentation/b787-fmc/speeds/flaps10"));
 setprop("/controls/cdu/display/r4", "");
 
-setprop("/controls/cdu/display/l5", "220 KIAS");
+setprop("/controls/cdu/display/l5", getprop("/instrumentation/b787-fmc/speeds/flaps5"));
 setprop("/controls/cdu/display/r5", "");
 
-setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/l6", getprop("/instrumentation/b787-fmc/speeds/flaps1"));
 setprop("/controls/cdu/display/r6", "");
 
 setprop("/controls/cdu/display/l7", "< INDEX");
@@ -1033,12 +1035,12 @@ setprop("/controls/cdu/r7-type", "disp");
 
 #### Field Values
 
-setprop("/controls/cdu/display/l1-label", "FLAPS 5");
-setprop("/controls/cdu/display/l2-label", "FLAPS 10");
-setprop("/controls/cdu/display/l3-label", "FLAPS 15");
-setprop("/controls/cdu/display/l4-label", "FLAPS 25");
-setprop("/controls/cdu/display/l5-label", "FLAPS 35");
-setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/l1-label", "FLAPS 1 Degree");
+setprop("/controls/cdu/display/l2-label", "FLAPS 5 Degrees");
+setprop("/controls/cdu/display/l3-label", "FLAPS 10 Degrees");
+setprop("/controls/cdu/display/l4-label", "FLAPS 15 Degrees");
+setprop("/controls/cdu/display/l5-label", "FLAPS 25 Degrees");
+setprop("/controls/cdu/display/l6-label", "FLAPS 35 Degrees");
 setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/r1-label", "Max. Descent Rate");
 setprop("/controls/cdu/display/r2-label", "");
@@ -1048,22 +1050,24 @@ setprop("/controls/cdu/display/r5-label", "");
 setprop("/controls/cdu/display/r6-label", "");
 setprop("/controls/cdu/display/r7-label", "");
 
-setprop("/controls/cdu/display/l1", "240 KIAS");
+fmc.calc_speeds();
+
+setprop("/controls/cdu/display/l1", getprop("/instrumentation/b787-fmc/speeds/flaps1"));
 setprop("/controls/cdu/display/r1", "-2500 FPM");
 
-setprop("/controls/cdu/display/l2", "225 KIAS");
+setprop("/controls/cdu/display/l2", getprop("/instrumentation/b787-fmc/speeds/flaps5"));
 setprop("/controls/cdu/display/r2", "");
 
-setprop("/controls/cdu/display/l3", "210 KIAS");
-setprop("/controls/cdu/display/r3", "145 KIAS");
+setprop("/controls/cdu/display/l3", getprop("/instrumentation/b787-fmc/speeds/flaps10"));
+setprop("/controls/cdu/display/r3", getprop("/instrumentation/b787-fmc/speeds/ap"));
 
-setprop("/controls/cdu/display/l4", "180 KIAS");
-setprop("/controls/cdu/display/r4", "133 KIAS");
+setprop("/controls/cdu/display/l4", getprop("/instrumentation/b787-fmc/speeds/flaps15"));
+setprop("/controls/cdu/display/r4", getprop("/instrumentation/b787-fmc/speeds/td"));
 
-setprop("/controls/cdu/display/l5", "160 KIAS");
+setprop("/controls/cdu/display/l5", getprop("/instrumentation/b787-fmc/speeds/flaps25"));
 setprop("/controls/cdu/display/r5", "");
 
-setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/l6", getprop("/instrumentation/b787-fmc/speeds/flaps35"));
 setprop("/controls/cdu/display/r6", "");
 
 setprop("/controls/cdu/display/l7", "< INDEX");

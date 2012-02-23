@@ -33,12 +33,12 @@
 <!-- Page Name -->
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.1106</x-m>
-			<y-m>-0.0125</y-m>
+			<x-m>-0.1022</x-m>
+			<y-m>0</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 			<heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>center-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -48,7 +48,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.01</character-size>
+		<character-size>0.009</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -58,12 +58,12 @@
 <!-- Active Typing -->
 	<text><name>text</name>
 		<offsets>
-			<x-m>0.0208</x-m>
-			<y-m>-0.0125</y-m>
+			<x-m>0.0100</x-m>
+			<y-m>0</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 			<heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>center-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -84,8 +84,8 @@
 <!-- Left Side Labels -->
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.1028</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0918</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -98,7 +98,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -106,8 +106,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0855</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0778</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -120,7 +120,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -128,8 +128,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0680</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0638</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -142,7 +142,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -150,8 +150,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0506</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0504</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -164,7 +164,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -172,8 +172,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0330</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0364</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -186,7 +186,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -194,8 +194,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0155</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0230</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -208,7 +208,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -216,8 +216,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0010</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.01</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -230,7 +230,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -241,11 +241,11 @@
 
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.1028</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0918</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -255,7 +255,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -263,11 +263,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0855</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0778</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -277,7 +277,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -285,11 +285,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0680</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0638</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -299,7 +299,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -307,11 +307,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0506</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0504</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -321,7 +321,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -329,11 +329,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0330</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0364</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -343,7 +343,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -351,11 +351,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0155</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0230</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -365,7 +365,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -373,11 +373,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0010</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.01</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -387,19 +387,18 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
 
-
 <!-- Left Side Values -->
 
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0946</x-m>
+			<x-m>-0.0849</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -413,7 +412,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -421,7 +420,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0770</x-m>
+			<x-m>-0.0715</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -435,7 +434,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -443,7 +442,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0590</x-m>
+			<x-m>-0.0577</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -457,7 +456,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -465,7 +464,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0415</x-m>
+			<x-m>-0.0442</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -479,7 +478,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -487,7 +486,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0240</x-m>
+			<x-m>-0.0303</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -501,7 +500,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -509,7 +508,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0070</x-m>
+			<x-m>-0.0166</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -523,7 +522,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -531,7 +530,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>0.0098</x-m>
+			<x-m>-0.0037</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -545,7 +544,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -556,11 +555,11 @@
 
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0946</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0849</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -570,7 +569,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -578,11 +577,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0770</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0715</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -592,7 +591,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -600,11 +599,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0590</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0577</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -614,7 +613,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -622,11 +621,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0415</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0442</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -636,7 +635,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -644,11 +643,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0240</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0303</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -658,7 +657,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -666,11 +665,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0070</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0166</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -680,7 +679,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -688,11 +687,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>0.0098</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0037</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -702,13 +701,12 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-
 
 <!-- Key Presses (Touchscreen here :P ) -->
 
@@ -1588,6 +1586,79 @@
                 <property>controls/cdu/keypress</property>
 		<value>r7</value>
             </binding>
+        </action>
+    </animation>
+    
+    <!-- Quick Access Pages -->
+    
+    <animation>
+        <type>pick</type>
+        <object-name>index</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/cdu/display/page</property>
+				<value>INDEX</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>rte</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/cdu/display/page</property>
+				<value>ROUTE</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>ident</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/cdu/display/page</property>
+				<value>IDENT</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <!-- Route Manager BACK/NEXT -->
+    
+    <animation>
+        <type>pick</type>
+        <object-name>next</object-name>
+        <action>
+        	<button>0</button>
+			<repeatable type="bool">true</repeatable>
+            <binding>
+				<command>property-adjust</command>
+				<property>/controls/cdu/route-manager/page</property>
+				<step type="double">1</step>
+				<max>30</max>
+			</binding>
+        </action>
+    </animation>
+    
+        <animation>
+        <type>pick</type>
+        <object-name>back</object-name>
+        <action>
+        	<button>0</button>
+			<repeatable type="bool">true</repeatable>
+            <binding>
+				<command>property-adjust</command>
+				<property>/controls/cdu/route-manager/page</property>
+				<step type="double">-1</step>
+				<min>1</min>
+			</binding>
         </action>
     </animation>
 

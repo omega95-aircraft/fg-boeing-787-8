@@ -17,6 +17,9 @@ setprop("/autopilot/settings/vertical-speed-fpm", 0);
         me.reset(); 
 }, 
 	update : func {
+	
+	if (getprop("/autopilot/internal/target-climb-rate-fps") != nil)
+		setprop("/autopilot/internal/climb-rate-difference", getprop("/autopilot/internal/target-climb-rate-fps") - getprop("/velocities/vertical-speed-fps"))
 
 # Connect L and R arms to AP throttle props
 

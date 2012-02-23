@@ -639,8 +639,8 @@
     <animation>
         <type>translate</type>
         <object-name>FD.pitch</object-name>
-        <property>/autopilot/internal/target-climb-rate-fps</property>
-        <factor>-0.0010222222</factor>
+        <property>/autopilot/internal/climb-rate-difference</property>
+        <factor>0.0010222222</factor>
         <axis>
             <x>0</x>
             <y>0</y>

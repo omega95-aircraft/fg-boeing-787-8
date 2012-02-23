@@ -1799,6 +1799,7 @@
 		<command>nasal</command>
  		<script>
 			b787.cdu.init();
+			b787.cdu1.init();
 		</script>
             </binding>
         </action>
