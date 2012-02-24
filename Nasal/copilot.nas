@@ -112,22 +112,23 @@ if (flaps == 1) {
 ## Less than 180 knots --> 20 degrees
 ## 180 to 220 knots --> 10 degrees
 ## More than 220 knots --> Full retracted
-
+###########################################
+##Above data erroneous
+##Takeoff at flaps5
 if (me.flightphase == 0) {
 
-  if ((airspeed >= 180) and (flapspos == 0.20)) {
-    setprop("/controls/flight/flaps", 0.10);
+  if ((airspeed >= 180) and (flapspos == 0.22)) {
+    setprop("/controls/flight/flaps", 0.033);
     screen.log.write("Copilot: 180 knots, Flaps set to 10 Degrees", 0, 0.584, 1); 
-    props.globals.getNode("sim/sound/toflaps10").setBoolValue(1);
 }
 
-  if ((airspeed >= 220) and (flapspos == 0.10)) {
+  if ((airspeed >= 220) and (flapspos == 0.033)) {
     setprop("/controls/flight/flaps", 0);
     screen.log.write("Copilot: 220 knots, Flaps Retracted", 0, 0.584, 1); 
     props.globals.getNode("sim/sound/toflaps0").setBoolValue(1);
 }
 
-  if ((airspeed >= 240) and (flapspos == 0) and (altitude >=10000)) {
+  if ((airspeed >= getprop("instrumentation/b787-fmc/speeds/flaps1")) and (flapspos == 0) and (altitude >=10000)) {
     me.flightphase = 1; }
 
 } else {
@@ -138,33 +139,42 @@ if (me.flightphase == 0) {
 ## 200 to 220 knots --> 20 degrees
 ## 180 to 200 knots --> 30 degrees
 ## Less than 180 knots --> Full Extended
+###########################################
+##Above values are now obsolete
+##Copilot now lowers flaps based on both speed and weight
 
-  if ((airspeed < 240) and (flapspos == 0)) {
-    setprop("/controls/flight/flaps", 0.10);
-    screen.log.write("Copilot: 250 knots, Flaps set to 10 Degrees", 0, 0.584, 1); 
-    props.globals.getNode("sim/sound/landflaps10").setBoolValue(1);
+  if ((airspeed < getprop("instrumentation/b787-fmc/speeds/flaps1")) and (flapspos == 0)) {
+    setprop("/controls/flight/flaps", 0.033);
+    screen.log.write("Copilot: Flaps set to 1 Degrees", 0, 0.584, 1);
 }
 
-  if ((airspeed < 220) and (flapspos == 0.10)) {
-    setprop("/controls/flight/flaps", 0.20);
-    screen.log.write("Copilot: 220 knots, Flaps set to 20 Degrees", 0, 0.584, 1); 
-    props.globals.getNode("sim/sound/landflaps20").setBoolValue(1);
+  if ((airspeed < getprop("instrumentation/b787-fmc/speeds/flaps5")) and (flapspos == 0.033)) {
+    setprop("/controls/flight/flaps", 0.22);
+    screen.log.write("Copilot: Flaps set to 5 Degrees", 0, 0.584, 1); 
 }
 
-  if ((airspeed < 200) and (flapspos == 0.20)) {
-    setprop("/controls/flight/flaps", 0.30);
-    screen.log.write("Copilot: 200 knots, Flaps set to 30 Degrees", 0, 0.584, 1); 
-    props.globals.getNode("sim/sound/landflaps30").setBoolValue(1);
+  if ((airspeed < getprop("instrumentation/b787-fmc/speeds/flaps10")) and (flapspos == 0.22)) {
+    setprop("/controls/flight/flaps", 0.5);
+    screen.log.write("Copilot: Flaps set to 10 Degrees", 0, 0.584, 1); 
 }
 
-  if ((airspeed < 180) and (flapspos == 0.30)) {
-    setprop("/controls/flight/flaps", 0.40);
-    screen.log.write("Copilot: 180 knots, Full Flaps Extended", 0, 0.584, 1); 
-    props.globals.getNode("sim/sound/landflapsfull").setBoolValue(1);
+  if ((airspeed < getprop("instrumentation/b787-fmc/speeds/flaps15")) and (flapspos == 0.5)) {
+    setprop("/controls/flight/flaps", 0.666);
+	screen.log.write("Copilot: Flaps set to 15 Degrees", 0, 0.584, 1);
 }
 
-  if ((airspeed < 30) and (flapspos == 0.40)) { 
-    setprop("/controls/flight/flaps", 0.20);
+if ((airspeed < getprop("instrumentation/b787-fmc/speeds/flaps25")) and (flapspos == 0.666)) {
+    setprop("/controls/flight/flaps", 0.833);
+	screen.log.write("Copilot: Flaps set to 25 Degrees", 0, 0.584, 1);
+}
+
+if ((airspeed < getprop("instrumentation/b787-fmc/speeds/flaps35")) and (flapspos == 0.833)) {
+    setprop("/controls/flight/flaps", 1);
+    screen.log.write("Copilot: Full Flaps Extended", 0, 0.584, 1); 
+}
+
+  if ((airspeed < 30) and (flapspos == 1)) { 
+    setprop("/controls/flight/flaps", 0);
     me.flightphase = 0; }
 
 } } 
@@ -177,10 +187,9 @@ screen.log.write("Copilot: Gears Up", 0, 0.584, 1);
 props.globals.getNode("sim/sound/gearsup").setBoolValue(1);
 } 
 
-if ((gear == 1) and (me.flightphase == 1) and (altitude < 2000) and (gearpos == 0)) {
+if ((gear == 1) and (me.flightphase == 1) and (altitude < 4000) and (gearpos == 0)) {
 setprop("/controls/gear/gear-down", 1); 
-screen.log.write("Copilot: 2000 ft, Gears Down", 0, 0.584, 1);
-props.globals.getNode("sim/sound/gearsdown").setBoolValue(1);
+screen.log.write("Copilot: 4000 ft, Gears Down", 0, 0.584, 1);
 } 
 
 # Control Aircraft Lighting
@@ -216,12 +225,11 @@ me.touchdown = 1;
 }
 
 # Disengage Reversers and Spoilers under 60 knots after Touchdown
- if ((airspeed <= 60) and (me.touchdown == 1) and (me.under60 == 0)) {
+ if ((airspeed <= 70) and (me.touchdown == 1) and (me.under60 == 0)) {
  reversethrust.togglereverser();
  setprop("/controls/engines/engine/throttle", 0);
  setprop("/controls/engines/engine[1]/throttle", 0);
- screen.log.write("Copilot: 60 knots, Disengaging Thrust Reversers and Retracting Speedbrakes", 0, 0.584, 1);
- props.globals.getNode("sim/sound/under60").setBoolValue(1);
+ screen.log.write("Copilot: 70 knots, Disengaging Thrust Reversers and Retracting Speedbrakes", 0, 0.584, 1);
  me.under60 = 1;
  }
 
