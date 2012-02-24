@@ -145,7 +145,7 @@
 </model>
 
 <model>
- <path>CDU.xml</path>
+ <path>CDU1.xml</path>
  <offsets>
 	<pitch-deg>90.0</pitch-deg>
  </offsets>

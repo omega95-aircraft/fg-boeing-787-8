@@ -921,8 +921,8 @@
 			<file>Aircraft/787-8/Nasal/anti-ice.nas</file>
 			<file>Aircraft/787-8/Nasal/surge.nas</file>
 			<file>Aircraft/787-8/Nasal/autobrake.nas</file>
-			<file>Aircraft/787-8/Nasal/cdu.nas</file>
 			<file>Aircraft/787-8/Nasal/cdu1.nas</file>
+			<file>Aircraft/787-8/Nasal/cdu2.nas</file>
 			<file>Aircraft/787-8/Nasal/mfd-navigation.nas</file>
 			<file>Aircraft/787-8/Nasal/nd-fullscreen.nas</file>
 			<file>Aircraft/787-8/Nasal/tcas.nas</file>

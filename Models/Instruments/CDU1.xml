@@ -2,13 +2,13 @@
 
 <PropertyList>
 
-	<path>cdu.ac</path>
+	<path>cdu1.ac</path>
 
 <!-- Come on only when there's atleast 9 volts of power -->
 
 	<animation>
 		<type>select</type>
-		<object-name>cdu</object-name>
+		<object-name>~cdu</object-name>
 		<object-name>text</object-name>
 		<condition>
 			<greater-than>
@@ -42,7 +42,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/page</property>
+		<property>/controls/cdu[1]/display/page</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -67,7 +67,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/input</property>
+		<property>/controls/cdu[1]/input</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -92,7 +92,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l1-label</property>
+		<property>/controls/cdu[1]/display/l1-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -114,7 +114,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l2-label</property>
+		<property>/controls/cdu[1]/display/l2-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -136,7 +136,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l3-label</property>
+		<property>/controls/cdu[1]/display/l3-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -158,7 +158,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l4-label</property>
+		<property>/controls/cdu[1]/display/l4-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -180,7 +180,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l5-label</property>
+		<property>/controls/cdu[1]/display/l5-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -202,7 +202,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l6-label</property>
+		<property>/controls/cdu[1]/display/l6-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -224,7 +224,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l7-label</property>
+		<property>/controls/cdu[1]/display/l7-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -249,7 +249,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r1-label</property>
+		<property>/controls/cdu[1]/display/r1-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -271,7 +271,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r2-label</property>
+		<property>/controls/cdu[1]/display/r2-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -293,7 +293,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r3-label</property>
+		<property>/controls/cdu[1]/display/r3-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -315,7 +315,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r4-label</property>
+		<property>/controls/cdu[1]/display/r4-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -337,7 +337,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r5-label</property>
+		<property>/controls/cdu[1]/display/r5-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -359,7 +359,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r6-label</property>
+		<property>/controls/cdu[1]/display/r6-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -381,7 +381,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r7-label</property>
+		<property>/controls/cdu[1]/display/r7-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -406,7 +406,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l1</property>
+		<property>/controls/cdu[1]/display/l1</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -428,7 +428,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l2</property>
+		<property>/controls/cdu[1]/display/l2</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -450,7 +450,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l3</property>
+		<property>/controls/cdu[1]/display/l3</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -472,7 +472,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l4</property>
+		<property>/controls/cdu[1]/display/l4</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -494,7 +494,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l5</property>
+		<property>/controls/cdu[1]/display/l5</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -516,7 +516,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l6</property>
+		<property>/controls/cdu[1]/display/l6</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -538,7 +538,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/l7</property>
+		<property>/controls/cdu[1]/display/l7</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -563,7 +563,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r1</property>
+		<property>/controls/cdu[1]/display/r1</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -585,7 +585,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r2</property>
+		<property>/controls/cdu[1]/display/r2</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -607,7 +607,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r3</property>
+		<property>/controls/cdu[1]/display/r3</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -629,7 +629,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r4</property>
+		<property>/controls/cdu[1]/display/r4</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -651,7 +651,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r5</property>
+		<property>/controls/cdu[1]/display/r5</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -673,7 +673,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r6</property>
+		<property>/controls/cdu[1]/display/r6</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -695,7 +695,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu/display/r7</property>
+		<property>/controls/cdu[1]/display/r7</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -714,12 +714,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu0</object-name>
+        <object-name>~cdu0</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>0</value>
             </binding>
         </action>
@@ -727,12 +727,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu1</object-name>
+        <object-name>~cdu1</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>1</value>
             </binding>
         </action>
@@ -740,12 +740,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu2</object-name>
+        <object-name>~cdu2</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>2</value>
             </binding>
         </action>
@@ -753,12 +753,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu3</object-name>
+        <object-name>~cdu3</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>3</value>
             </binding>
         </action>
@@ -766,12 +766,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu4</object-name>
+        <object-name>~cdu4</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>4</value>
             </binding>
         </action>
@@ -779,12 +779,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu5</object-name>
+        <object-name>~cdu5</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>5</value>
             </binding>
         </action>
@@ -792,12 +792,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu6</object-name>
+        <object-name>~cdu6</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>6</value>
             </binding>
         </action>
@@ -805,12 +805,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu7</object-name>
+        <object-name>~cdu7</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>7</value>
             </binding>
         </action>
@@ -818,12 +818,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu8</object-name>
+        <object-name>~cdu8</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>8</value>
             </binding>
         </action>
@@ -831,12 +831,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu9</object-name>
+        <object-name>~cdu9</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>9</value>
             </binding>
         </action>
@@ -844,12 +844,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu.</object-name>
+        <object-name>~cdu.</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>.</value>
             </binding>
         </action>
@@ -857,12 +857,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>cdu00</object-name>
+        <object-name>~cdu00</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>@</value>
             </binding>
         </action>
@@ -872,12 +872,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>exec</object-name>
+        <object-name>~exec</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>exec</value>
             </binding>
         </action>
@@ -885,26 +885,26 @@
 
     <animation>
         <type>pick</type>
-        <object-name>del</object-name>
+        <object-name>~del</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
-		<value>del</value>
+                <property>controls/cdu[1]/keypress</property>
+		<value>clr</value>
             </binding>
         </action>
     </animation>
 
     <animation>
         <type>pick</type>
-        <object-name>clr</object-name>
+        <object-name>~clr</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
-		<value>clr</value>
+                <property>controls/cdu[1]/keypress</property>
+		<value>del</value>
             </binding>
         </action>
     </animation>
@@ -913,12 +913,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>a</object-name>
+        <object-name>~a</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>A</value>
             </binding>
         </action>
@@ -926,12 +926,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>b</object-name>
+        <object-name>~b</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>B</value>
             </binding>
         </action>
@@ -939,12 +939,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>c</object-name>
+        <object-name>~c</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>C</value>
             </binding>
         </action>
@@ -952,12 +952,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>d</object-name>
+        <object-name>~d</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>D</value>
             </binding>
         </action>
@@ -965,12 +965,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>e</object-name>
+        <object-name>~e</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>E</value>
             </binding>
         </action>
@@ -978,12 +978,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>f</object-name>
+        <object-name>~f</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>F</value>
             </binding>
         </action>
@@ -991,12 +991,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>g</object-name>
+        <object-name>~g</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>G</value>
             </binding>
         </action>
@@ -1004,12 +1004,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>h</object-name>
+        <object-name>~h</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>H</value>
             </binding>
         </action>
@@ -1017,12 +1017,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>i</object-name>
+        <object-name>~i</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>I</value>
             </binding>
         </action>
@@ -1030,12 +1030,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>j</object-name>
+        <object-name>~j</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>J</value>
             </binding>
         </action>
@@ -1043,12 +1043,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>k</object-name>
+        <object-name>~k</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>K</value>
             </binding>
         </action>
@@ -1056,12 +1056,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l</object-name>
+        <object-name>~l</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>L</value>
             </binding>
         </action>
@@ -1069,12 +1069,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>m</object-name>
+        <object-name>~m</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>M</value>
             </binding>
         </action>
@@ -1082,12 +1082,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>n</object-name>
+        <object-name>~n</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>N</value>
             </binding>
         </action>
@@ -1095,12 +1095,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>o</object-name>
+        <object-name>~o</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>O</value>
             </binding>
         </action>
@@ -1108,12 +1108,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>p</object-name>
+        <object-name>~p</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>P</value>
             </binding>
         </action>
@@ -1121,12 +1121,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>q</object-name>
+        <object-name>~q</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>Q</value>
             </binding>
         </action>
@@ -1134,12 +1134,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r</object-name>
+        <object-name>~r</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>R</value>
             </binding>
         </action>
@@ -1147,12 +1147,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>s</object-name>
+        <object-name>~s</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>S</value>
             </binding>
         </action>
@@ -1160,12 +1160,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>t</object-name>
+        <object-name>~t</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>T</value>
             </binding>
         </action>
@@ -1173,12 +1173,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>u</object-name>
+        <object-name>~u</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>U</value>
             </binding>
         </action>
@@ -1186,12 +1186,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>v</object-name>
+        <object-name>~v</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>V</value>
             </binding>
         </action>
@@ -1199,12 +1199,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>w</object-name>
+        <object-name>~w</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>W</value>
             </binding>
         </action>
@@ -1212,12 +1212,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>x</object-name>
+        <object-name>~x</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>X</value>
             </binding>
         </action>
@@ -1225,12 +1225,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>y</object-name>
+        <object-name>~y</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>Y</value>
             </binding>
         </action>
@@ -1238,12 +1238,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>z</object-name>
+        <object-name>~z</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>Z</value>
             </binding>
         </action>
@@ -1253,10 +1253,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l1</object-name>
+	<object-name>~l1</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/l1-type</property>
+			<property>controls/cdu[1]/l1-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1264,10 +1264,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l2</object-name>
+	<object-name>~l2</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/l2-type</property>
+			<property>controls/cdu[1]/l2-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1275,10 +1275,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l3</object-name>
+	<object-name>~l3</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/l3-type</property>
+			<property>controls/cdu[1]/l3-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1286,10 +1286,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l4</object-name>
+	<object-name>~l4</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/l4-type</property>
+			<property>controls/cdu[1]/l4-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1297,10 +1297,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l5</object-name>
+	<object-name>~l5</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/l5-type</property>
+			<property>controls/cdu[1]/l5-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1308,10 +1308,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l6</object-name>
+	<object-name>~l6</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/l6-type</property>
+			<property>controls/cdu[1]/l6-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1319,10 +1319,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l7</object-name>
+	<object-name>~l7</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/l7-type</property>
+			<property>controls/cdu[1]/l7-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1330,10 +1330,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r1</object-name>
+	<object-name>~r1</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/r1-type</property>
+			<property>controls/cdu[1]/r1-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1341,10 +1341,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r2</object-name>
+	<object-name>~r2</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/r2-type</property>
+			<property>controls/cdu[1]/r2-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1352,10 +1352,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r3</object-name>
+	<object-name>~r3</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/r3-type</property>
+			<property>controls/cdu[1]/r3-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1363,10 +1363,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r4</object-name>
+	<object-name>~r4</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/r4-type</property>
+			<property>controls/cdu[1]/r4-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1374,10 +1374,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r5</object-name>
+	<object-name>~r5</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/r5-type</property>
+			<property>controls/cdu[1]/r5-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1385,10 +1385,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r6</object-name>
+	<object-name>~r6</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/r6-type</property>
+			<property>controls/cdu[1]/r6-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1396,10 +1396,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r7</object-name>
+	<object-name>~r7</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/r7-type</property>
+			<property>controls/cdu[1]/r7-type</property>
 			<value>click</value>
 		</equals>
 	</condition>
@@ -1409,12 +1409,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l1</object-name>
+        <object-name>~l1</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>l1</value>
             </binding>
         </action>
@@ -1422,12 +1422,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l2</object-name>
+        <object-name>~l2</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>l2</value>
             </binding>
         </action>
@@ -1435,12 +1435,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l3</object-name>
+        <object-name>~l3</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>l3</value>
             </binding>
         </action>
@@ -1448,12 +1448,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l4</object-name>
+        <object-name>~l4</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>l4</value>
             </binding>
         </action>
@@ -1461,12 +1461,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l5</object-name>
+        <object-name>~l5</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>l5</value>
             </binding>
         </action>
@@ -1474,12 +1474,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l6</object-name>
+        <object-name>~l6</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>l6</value>
             </binding>
         </action>
@@ -1487,12 +1487,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>l7</object-name>
+        <object-name>~l7</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>l7</value>
             </binding>
         </action>
@@ -1500,12 +1500,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r1</object-name>
+        <object-name>~r1</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>r1</value>
             </binding>
         </action>
@@ -1513,12 +1513,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r2</object-name>
+        <object-name>~r2</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>r2</value>
             </binding>
         </action>
@@ -1526,12 +1526,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r3</object-name>
+        <object-name>~r3</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>r3</value>
             </binding>
         </action>
@@ -1539,12 +1539,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r4</object-name>
+        <object-name>~r4</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>r4</value>
             </binding>
         </action>
@@ -1552,12 +1552,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r5</object-name>
+        <object-name>~r5</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>r5</value>
             </binding>
         </action>
@@ -1565,12 +1565,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r6</object-name>
+        <object-name>~r6</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>r6</value>
             </binding>
         </action>
@@ -1578,12 +1578,12 @@
 
     <animation>
         <type>pick</type>
-        <object-name>r7</object-name>
+        <object-name>~r7</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/keypress</property>
+                <property>controls/cdu[1]/keypress</property>
 		<value>r7</value>
             </binding>
         </action>
@@ -1593,12 +1593,12 @@
     
     <animation>
         <type>pick</type>
-        <object-name>index</object-name>
+        <object-name>~index</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/display/page</property>
+                <property>controls/cdu[1]/display/page</property>
 				<value>INDEX</value>
             </binding>
         </action>
@@ -1606,12 +1606,12 @@
     
     <animation>
         <type>pick</type>
-        <object-name>rte</object-name>
+        <object-name>~rte</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/display/page</property>
+                <property>controls/cdu[1]/display/page</property>
 				<value>ROUTE</value>
             </binding>
         </action>
@@ -1619,12 +1619,12 @@
     
     <animation>
         <type>pick</type>
-        <object-name>ident</object-name>
+        <object-name>~ident</object-name>
         <action>
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>controls/cdu/display/page</property>
+                <property>controls/cdu[1]/display/page</property>
 				<value>IDENT</value>
             </binding>
         </action>
@@ -1634,13 +1634,13 @@
     
     <animation>
         <type>pick</type>
-        <object-name>next</object-name>
+        <object-name>~next</object-name>
         <action>
         	<button>0</button>
 			<repeatable type="bool">true</repeatable>
             <binding>
 				<command>property-adjust</command>
-				<property>/controls/cdu/route-manager/page</property>
+				<property>/controls/cdu[1]/route-manager/page</property>
 				<step type="double">1</step>
 				<max>30</max>
 			</binding>
@@ -1649,27 +1649,25 @@
     
         <animation>
         <type>pick</type>
-        <object-name>back</object-name>
+        <object-name>~back</object-name>
         <action>
         	<button>0</button>
 			<repeatable type="bool">true</repeatable>
             <binding>
 				<command>property-adjust</command>
-				<property>/controls/cdu/route-manager/page</property>
+				<property>/controls/cdu[1]/route-manager/page</property>
 				<step type="double">-1</step>
 				<min>1</min>
 			</binding>
         </action>
     </animation>
     
-<!-- While clicking -->
-
-<animation>
+    <animation>
 	<type>select</type>
-	<object-name>l1p</object-name>
+	<object-name>~l1p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>l1</value>
 		</equals>
 	</condition>
@@ -1677,10 +1675,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l2p</object-name>
+	<object-name>~l2p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>l2</value>
 		</equals>
 	</condition>
@@ -1688,10 +1686,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l3p</object-name>
+	<object-name>~l3p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>l3</value>
 		</equals>
 	</condition>
@@ -1699,10 +1697,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l4p</object-name>
+	<object-name>~l4p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>l4</value>
 		</equals>
 	</condition>
@@ -1710,10 +1708,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l5p</object-name>
+	<object-name>~l5p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>l5</value>
 		</equals>
 	</condition>
@@ -1721,10 +1719,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l6p</object-name>
+	<object-name>~l6p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>l6</value>
 		</equals>
 	</condition>
@@ -1732,10 +1730,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>l7p</object-name>
+	<object-name>~l7p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>l7</value>
 		</equals>
 	</condition>
@@ -1743,10 +1741,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r1p</object-name>
+	<object-name>~r1p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>r1</value>
 		</equals>
 	</condition>
@@ -1754,10 +1752,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r2p</object-name>
+	<object-name>~r2p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>r2</value>
 		</equals>
 	</condition>
@@ -1765,10 +1763,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r3p</object-name>
+	<object-name>~r3p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>r3</value>
 		</equals>
 	</condition>
@@ -1776,10 +1774,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r4p</object-name>
+	<object-name>~r4p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>r4</value>
 		</equals>
 	</condition>
@@ -1787,10 +1785,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r5p</object-name>
+	<object-name>~r5p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>r5</value>
 		</equals>
 	</condition>
@@ -1798,10 +1796,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r6p</object-name>
+	<object-name>~r6p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>r6</value>
 		</equals>
 	</condition>
@@ -1809,10 +1807,10 @@
 
 <animation>
 	<type>select</type>
-	<object-name>r7p</object-name>
+	<object-name>~r7p</object-name>
 	<condition>
 		<equals>
-			<property>controls/cdu/keypress</property>
+			<property>controls/cdu[1]/keypress</property>
 			<value>r7</value>
 		</equals>
 	</condition>

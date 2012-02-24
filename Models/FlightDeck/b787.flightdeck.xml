@@ -523,7 +523,7 @@
 	</model>
 
 	<model>
-		<path>Aircraft/787-8/Models/Instruments/CDU.xml</path>
+		<path>Aircraft/787-8/Models/Instruments/CDU1.xml</path>
 		<offsets>
 			<x-m>-23.58</x-m>
 			<y-m>0.078</y-m>
