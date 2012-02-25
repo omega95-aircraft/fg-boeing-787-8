@@ -348,14 +348,14 @@
 <enabled type="bool">true</enabled>
 					<item>
 						<name>autostart</name>
-						<label>Autostart</label>
+						<label>Autostart Aircraft Engines</label>
 						<binding>
 							<command>property-toggle</command>
 							<property>sim/model/start-idling</property>
 						</binding>
 					</item>
 					<item>
-						<label>Select Livery</label>
+						<label>Select Aircraft Livery</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -365,7 +365,7 @@
 					</item>
 
 					<item>
-						<label>Virtual Co-pilot</label>
+						<label>Virtual Co-pilot Settings</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -375,8 +375,18 @@
 						</binding>
 					</item>
 					<item>
+						<label>Import/Export Flightplan</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							 var flightplan = gui.Dialog.new("sim/gui/dialogs/flightplan/dialog", "Aircraft/787-8/Systems/flightplan-dlg.xml");
+							 flightplan.open();
+							</script>
+						</binding>
+					</item>
+					<item>
 						<name>pushback</name>
-						<label>Pushback</label>
+						<label>Request for Pushback</label>
 						<binding>
 							<command>dialog-show</command>
 							<dialog-name>pushback</dialog-name>
@@ -384,7 +394,7 @@
 					</item>
 					<item>
 						<name>lights</name>
-						<label>Aircraft Lights</label>
+						<label>Control Aircraft Lights</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -395,7 +405,7 @@
 					</item>
 					<item>
 						<name>announcements</name>
-						<label>Announcements</label>
+						<label>Make Announcements</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -406,7 +416,7 @@
 					</item>
 					<item>
 						<name>dualcontrol</name>
-						<label>Dual Control Systems</label>
+						<label>Dual Control System Settings</label>
 						<binding>
 							<command>nasal</command>
 							<script>

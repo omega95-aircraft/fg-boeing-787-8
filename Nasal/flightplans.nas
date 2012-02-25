@@ -47,6 +47,8 @@ var fmcFP = {
 		
 		setprop(fmcFPtree~ "FPpage[0]/first", 0);
 		setprop(fmcFPtree~ "FPpage[1]/first", 0);
+		
+		setprop(fmcFPtree~ "path", getprop("/sim/fg-home/"));
 	
 	},
 
@@ -170,6 +172,20 @@ var fmcFP = {
 		
 		setprop(route~ "active", 1);
 	
+	},
+	
+	# Import/Export Flightplan
+	
+	import: func(path, plan) {
+	
+		io.read_properties(path, "/instrumentation/fmcFP/flightplan[" ~ plan ~ "]/");
+	
+	},
+	
+	export: func(path, plan) {
+	
+		io.write_properties(path, "/instrumentation/fmcFP/flightplan[" ~ plan ~ "]/");
+	
 	}
 
 };
@@ -221,12 +237,12 @@ var FPpage = func(cdu, plan) {
 	setprop("/controls/cdu[" ~ cdu ~ "]/display/r7", "FLIGHTPLANS >");
 	
 	if (getprop(fmcFPtree~ "FPpage[" ~ plan ~ "]/first") != 0)
-		setprop("/controls/cdu[" ~ cdu ~ "]/display/r5", "< SCROLL UP");
+		setprop("/controls/cdu[" ~ cdu ~ "]/display/r5", "SCROLL UP >");
 	else
 		setprop("/controls/cdu[" ~ cdu ~ "]/display/r5", "");
 		
 	if (getprop(fmcFPtree~ "FPpage[" ~ plan ~ "]/first") + 4 < getprop(fmcFPtree~ "flightplan[" ~ plan ~ "]/num"))
-		setprop("/controls/cdu[" ~ cdu ~ "]/display/r6", "< SCROLL DOWN");
+		setprop("/controls/cdu[" ~ cdu ~ "]/display/r6", "SCROLL DOWN >");
 	else
 		setprop("/controls/cdu[" ~ cdu ~ "]/display/r6", "");
 		
