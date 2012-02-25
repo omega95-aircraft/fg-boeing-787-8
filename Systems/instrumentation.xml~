@@ -25,11 +25,10 @@ file, these values will be used (they are hardcoded).
 
 <PropertyList>
 
-<!-- Not Enabling the Generic TCAS as the 787 has it's own
     	<tcas>
   		<name>tcas</name>
        		<number>0</number>
-    	</tcas> -->
+    	</tcas>
 
 	<adf>
 		<name>adf</name>

@@ -1818,4 +1818,494 @@
 	</condition>
 </animation>
 
+<!-- Keypress Lights -->
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu0p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu1p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu2p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>2</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu3p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>3</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu4p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>4</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu5p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>5</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu6p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>6</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu7p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>7</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu8p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>8</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu9p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>9</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu.p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>.</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu00p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>@</value>
+            </equals>
+        </condition>
+    </animation>
+
+<!-- Functions -->
+
+    <animation>
+        <type>select</type>
+        <object-name>execp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>exec</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>delp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>del</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>clrp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>clr</value>
+            </equals>
+        </condition>
+    </animation>
+
+<!-- Alphabets -->
+
+    <animation>
+        <type>select</type>
+        <object-name>ap</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>A</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>bp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>B</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>C</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>dp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>D</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ep</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>E</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>fp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>F</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>gp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>G</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>hp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>H</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ip</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>I</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>jp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>J</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>kp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>K</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>L</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>mp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>M</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>np</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>N</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>op</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>O</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>pp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>P</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>qp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>Q</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>rp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>R</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>sp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>S</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>tp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>T</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>up</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>U</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>vp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>V</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>wp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>W</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>xp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>X</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>yp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>Y</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>zp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>Z</value>
+            </equals>
+        </condition>
+    </animation>
+    
+        <animation>
+        <type>select</type>
+        <object-name>indexp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/display/page</property>
+				<value>INDEX</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>rtep</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/display/page</property>
+				<value>ROUTE</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>identp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/display/page</property>
+				<value>IDENT</value>
+            </equals>
+        </condition>
+    </animation>
+
 </PropertyList>

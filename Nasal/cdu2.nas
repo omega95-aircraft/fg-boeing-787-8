@@ -1,9 +1,20 @@
-var cdu1 = {
+var TPindex = 0;
+var TPmax = 0;
+var WPindex = 0;
+var TPList = [];
+var TPpressed = 0;
+
+var cdu = {
 	init : func { 
         me.UPDATE_INTERVAL = 0.1; 
         me.loopid = 0; 
 
 # Initialize display and other CDU properties
+
+## Initialize Flight Plan Management System
+
+fmcFP.init();
+print("Flightplan Manager .. Initialized");
 
 ## VNAV Config Properties
 
@@ -109,6 +120,18 @@ setprop("/controls/cdu[1]/display/r7", "");
         me.reset(); 
 }, 
 	update : func {
+	
+# Check if Flightplans are empty or ready
+
+if (getprop("/instrumentation/fmcFP/flightplan[0]/num") == 0)
+	setprop("/instrumentation/fmcFP/flightplan[0]/status", "EMPTY");
+else
+	setprop("/instrumentation/fmcFP/flightplan[0]/status", "READY");
+	
+if (getprop("/instrumentation/fmcFP/flightplan[1]/num") == 0)
+	setprop("/instrumentation/fmcFP/flightplan[1]/status", "EMPTY");
+else
+	setprop("/instrumentation/fmcFP/flightplan[1]/status", "READY");
 
 # Set Display Properties into Variables
 
@@ -269,7 +292,7 @@ setprop("/controls/cdu[1]/display/l5", "FBW CONFIG");
 setprop("/controls/cdu[1]/display/r5", "RADIOS");
 
 setprop("/controls/cdu[1]/display/l6", "DEP / ARR");
-setprop("/controls/cdu[1]/display/r6", "ROUTE");
+setprop("/controls/cdu[1]/display/r6", "FLIGHTPLAN");
 
 setprop("/controls/cdu[1]/display/l7", "TAKE OFF");
 setprop("/controls/cdu[1]/display/r7", "APPROACH");
@@ -312,7 +335,7 @@ keypress = "";
 }
 
 if (keypress == "r6") {
-page = "ROUTE";
+page = "FLIGHTPLANS";
 keypress = "";
 }
 
@@ -542,7 +565,7 @@ else
 setprop("/controls/cdu[1]/display/r6", "FLIGHT LOG >");
 
 setprop("/controls/cdu[1]/display/l7", "< INDEX");
-setprop("/controls/cdu[1]/display/r7", "ROUTE >");
+setprop("/controls/cdu[1]/display/r7", "FLIGHTPLAN >");
 
 ### Menu Presses
 
@@ -559,7 +582,7 @@ keypress = "";
 page = "PROCEDURES";
 keypress = "";
 } elsif (keypress == "r7") {
-page = "ROUTE";
+page = "FLIGHTPLANS";
 keypress = "";
 }
 
@@ -1208,7 +1231,7 @@ setprop("/controls/cdu[1]/display/l5", "");
 setprop("/controls/cdu[1]/display/r5", "");
 
 setprop("/controls/cdu[1]/display/l6", "< DEP / ARR");
-setprop("/controls/cdu[1]/display/r6", "ROUTE >");
+setprop("/controls/cdu[1]/display/r6", "FLIGHTPLAN >");
 
 setprop("/controls/cdu[1]/display/l7", "< INDEX");
 setprop("/controls/cdu[1]/display/r7", "RESET >");
@@ -1222,7 +1245,7 @@ keypress = "";
 page = "DEP/ARR";
 keypress = "";
 } elsif (keypress == "r6") {
-page = "ROUTE";
+page = "FLIGHTPLANS";
 keypress = "";
 }
 
@@ -1267,7 +1290,7 @@ setprop("/controls/cdu[1]/display/l3-label", "");
 setprop("/controls/cdu[1]/display/l4-label", "");
 setprop("/controls/cdu[1]/display/l5-label", "");
 setprop("/controls/cdu[1]/display/l6-label", "");
-setprop("/controls/cdu[1]/display/r7-label", "");
+setprop("/controls/cdu[1]/display/l7-label", "");
 setprop("/controls/cdu[1]/display/r1-label", "");
 setprop("/controls/cdu[1]/display/r2-label", "");
 setprop("/controls/cdu[1]/display/r3-label", "");
@@ -1429,7 +1452,7 @@ setprop("/controls/cdu[1]/display/r7", "");
 setprop("/controls/cdu[1]/display/l1-label", "");
 setprop("/controls/cdu[1]/display/l5-label", "");
 setprop("/controls/cdu[1]/display/l6-label", "");
-setprop("/controls/cdu[1]/display/r7-label", "");
+setprop("/controls/cdu[1]/display/l7-label", "");
 setprop("/controls/cdu[1]/display/r1-label", "");
 setprop("/controls/cdu[1]/display/r2-label", "");
 setprop("/controls/cdu[1]/display/r3-label", "");
@@ -1551,7 +1574,7 @@ setprop("/controls/cdu[1]/display/l3-label", "Start Cruise at");
 setprop("/controls/cdu[1]/display/l4-label", "End Cruise at");
 setprop("/controls/cdu[1]/display/l5-label", "");
 setprop("/controls/cdu[1]/display/l6-label", "");
-setprop("/controls/cdu[1]/display/r7-label", "");
+setprop("/controls/cdu[1]/display/l7-label", "");
 setprop("/controls/cdu[1]/display/r1-label", "");
 setprop("/controls/cdu[1]/display/r2-label", "");
 setprop("/controls/cdu[1]/display/r3-label", "");
@@ -1637,7 +1660,7 @@ setprop("/controls/cdu[1]/display/l3-label", "Holding Navaid Type");
 setprop("/controls/cdu[1]/display/l4-label", "Holding Radial");
 setprop("/controls/cdu[1]/display/l5-label", "Holding Altitude");
 setprop("/controls/cdu[1]/display/l6-label", "Holding Time (sec)");
-setprop("/controls/cdu[1]/display/r7-label", "");
+setprop("/controls/cdu[1]/display/l7-label", "");
 setprop("/controls/cdu[1]/display/r1-label", "");
 setprop("/controls/cdu[1]/display/r2-label", "Turn Direction");
 setprop("/controls/cdu[1]/display/r3-label", "");
@@ -1902,21 +1925,26 @@ keypress = "";
 
 var AptICAO = fmsDB.new(getprop("/instrumentation/b787-fmc/TPicao"));
 
+if (AptICAO != nil) {
+
 if (getprop("/instrumentation/b787-fmc/TPtype") == "SID")
 	TPList = AptICAO.getSIDList(getprop("/instrumentation/b787-fmc/TPrwy"));
 elsif (getprop("/instrumentation/b787-fmc/TPtype") == "STAR")
 	TPList = AptICAO.getSTARList(getprop("/instrumentation/b787-fmc/TPrwy"));
 else 
-	TPList = AptICAO.getIAPList(getprop("/instrumentation/b787-fmc/TPrwy"));
+	TPList = AptICAO.getApproachList(getprop("/instrumentation/b787-fmc/TPrwy"));
 	
 TPindex = 0;
-
+TPpressed = 1;
 ## Find Maximum number of Available Procedures for the runway
 
 TPmax = size(TPList);
 	
+	} else {
+		setprop("/controls/cdu[1]/input", "Can't find in Databse!");
+	}
+	
 keypress = "";
-TPpressed = 1;
 } elsif ((keypress == "l2") and (cduinput != "")) {
 setprop("/instrumentation/b787-fmc/TPicao", cduinput);
 cduinput = "";
@@ -1951,7 +1979,7 @@ setprop("/instrumentation/b787-fmc/TPrwy", cduinput);
 keypress = "";
 cduinput = "";
 setprop("/instrumentation/cdu/input", "");
-} elsif ((keypress == "r6") and (TPList[TPindex].wp_name != nil)) {
+} elsif ((keypress == "r6") and (TPList[TPindex].wp_name != nil) and (AptICAO != nil)) {
 
 if (getprop("/instrumentation/b787-fmc/TPtype") == "SID") { ## Add SID to beginning
 
@@ -1977,8 +2005,254 @@ keypress = "";
 
 }
 
+} elsif (page == "FLIGHTPLANS") {
+
+#### Field types
+
+setprop("/controls/cdu[1]/l1-type", "disp");
+setprop("/controls/cdu[1]/l2-type", "disp");
+setprop("/controls/cdu[1]/l3-type", "click");
+setprop("/controls/cdu[1]/l4-type", "click");
+setprop("/controls/cdu[1]/l5-type", "click");
+setprop("/controls/cdu[1]/l6-type", "click");
+setprop("/controls/cdu[1]/l7-type", "click");
+
+setprop("/controls/cdu[1]/r1-type", "disp");
+setprop("/controls/cdu[1]/r2-type", "disp");
+setprop("/controls/cdu[1]/r3-type", "click");
+setprop("/controls/cdu[1]/r4-type", "click");
+setprop("/controls/cdu[1]/r5-type", "click");
+setprop("/controls/cdu[1]/r6-type", "click");
+setprop("/controls/cdu[1]/r7-type", "click");
+
+#### Field Values
+
+setprop("/controls/cdu[1]/display/l1-label", "");
+setprop("/controls/cdu[1]/display/l2-label", "Flightplan Status");
+setprop("/controls/cdu[1]/display/l3-label", "");
+setprop("/controls/cdu[1]/display/l4-label", "");
+setprop("/controls/cdu[1]/display/l5-label", "Alternate Airport");
+setprop("/controls/cdu[1]/display/l6-label", "");
+setprop("/controls/cdu[1]/display/r7-label", "");
+setprop("/controls/cdu[1]/display/r1-label", "");
+setprop("/controls/cdu[1]/display/r2-label", "Flightplan Status");
+setprop("/controls/cdu[1]/display/r3-label", "");
+setprop("/controls/cdu[1]/display/r4-label", "");
+setprop("/controls/cdu[1]/display/r5-label", "");
+setprop("/controls/cdu[1]/display/r6-label", "");
+setprop("/controls/cdu[1]/display/r7-label", "");
+
+setprop("/controls/cdu[1]/display/l1", "PRIMARY FP");
+setprop("/controls/cdu[1]/display/l2", getprop("/instrumentation/fmcFP/flightplan[0]/status"));
+setprop("/controls/cdu[1]/display/l3", "< VIEW / EDIT");
+
+if (getprop("/instrumentation/fmcFP/flightplan[0]/num") > 0)
+	setprop("/controls/cdu[1]/display/l4", "< COPY TO RTE");
+else
+	setprop("/controls/cdu[1]/display/l4", "");
+	
+setprop("/controls/cdu[1]/display/l5", getprop("/instrumentation/fmcFP/alternate/icao"));
+setprop("/controls/cdu[1]/display/l6", "< DEP / ARR");
+setprop("/controls/cdu[1]/display/l7", "< INDEX");
+
+setprop("/controls/cdu[1]/display/r1", "SECONDARY FP");
+setprop("/controls/cdu[1]/display/r2",  getprop("/instrumentation/fmcFP/flightplan[1]/status"));
+setprop("/controls/cdu[1]/display/r3", "VIEW / EDIT >");
+
+if (getprop("/instrumentation/fmcFP/flightplan[1]/num") > 0)
+	setprop("/controls/cdu[1]/display/r4", "COPY TO RTE >");
+else
+	setprop("/controls/cdu[1]/display/r4", "");
+
+setprop("/controls/cdu[1]/display/r5", "DIVERT >");
+setprop("/controls/cdu[1]/display/r6", "ACTIVE RTE >");
+setprop("/controls/cdu[1]/display/r7", "PROCEDURES >");
+
+## MENU PRESSES
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif (keypress == "r7") {
+page = "PROCEDURES";
+keypress = "";
+} elsif (keypress == "l6") {
+page = "DEP/ARR";
+keypress = "";
+} elsif (keypress == "r6") {
+page = "ROUTE";
+keypress = "";
+} elsif ((keypress == "l5") and (cduinput != "")) {
+setprop("/instrumentation/fmcFP/alternate/icao", cduinput);
+keypress = "";
+cduinput = "";
+setprop("/controls/cdu[1]/input", "");
+} elsif (keypress == "r5") {
+fmcFP.divert(getprop("/instrumentation/fmcFP/alternate/icao"));
+keypress = "";
+} elsif (keypress == "l4") {
+fmcFP.copy(0);
+keypress = "";
+} elsif (keypress == "r4") {
+fmcFP.copy(1);
+keypress = "";
+} elsif (keypress == "l3") {
+page = "PRIMARY FLIGHTPLAN";
+keypress = "";
+} elsif (keypress == "r3") {
+page = "SECONDARY FLIGHTPLAN";
+keypress = "";
 }
 
+}
+
+if (page == "PRIMARY FLIGHTPLAN") {
+FPpage(1,0);
+
+	## Menu Presses
+	
+	if (keypress == "l7") {
+		page = "INDEX";
+		keypress = "";
+	} elsif (keypress == "r7") {
+		page = "FLIGHTPLANS";
+		keypress = "";
+	} elsif (keypress == "r5") {
+		setprop(fmcFPtree~ "FPpage[0]/first", getprop(fmcFPtree~ "FPpage[0]/first") - 1);
+		keypress = "";
+	} elsif (keypress == "r6") {
+		setprop(fmcFPtree~ "FPpage[0]/first", getprop(fmcFPtree~ "FPpage[0]/first") + 1);
+		keypress = "";
+	} elsif (keypress == "l5") {
+		setprop("/controls/cdu[1]/input", "REMOVE WP");
+		keypress = "";
+	} elsif (keypress == "l6") {
+		fmcFP.clear(0);
+		keypress = "";
+	} elsif (keypress == "exec") {
+		fmcFP.add(0, getprop("/controls/cdu[1]/input"), 0);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif (keypress == "r1") {
+		fmcFP.setalt(0, (getprop(fmcFPtree~ "FPpage[0]/first")),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");		
+	} elsif (keypress == "r2") {
+		fmcFP.setalt(0, (getprop(fmcFPtree~ "FPpage[0]/first") + 1),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif (keypress == "r3") {
+		fmcFP.setalt(0, (getprop(fmcFPtree~ "FPpage[0]/first") + 2),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif (keypress == "r4") {
+		fmcFP.setalt(0, (getprop(fmcFPtree~ "FPpage[0]/first") + 3),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	}
+	
+	if ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l1")) {
+		fmcFP.remove(0, getprop(fmcFPtree~ "FPpage[0]/first"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l2")) {
+		fmcFP.remove(0, getprop(fmcFPtree~ "FPpage[0]/first") + 1);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l3")) {
+		fmcFP.remove(0, getprop(fmcFPtree~ "FPpage[0]/first") + 2);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l4")) {
+		fmcFP.remove(0, getprop(fmcFPtree~ "FPpage[0]/first") + 3);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	}
+
+}
+
+if (page == "SECONDARY FLIGHTPLAN") {
+FPpage(1,1);
+
+	## Menu Presses
+	
+	if (keypress == "l7") {
+		page = "INDEX";
+		keypress = "";
+	} elsif (keypress == "r7") {
+		page = "FLIGHTPLANS";
+		keypress = "";
+	} elsif (keypress == "r5") {
+		setprop(fmcFPtree~ "FPpage[1]/first", getprop(fmcFPtree~ "FPpage[1]/first") - 1);
+		keypress = "";
+	} elsif (keypress == "r6") {
+		setprop(fmcFPtree~ "FPpage[1]/first", getprop(fmcFPtree~ "FPpage[1]/first") + 1);
+		keypress = "";
+	} elsif (keypress == "l5") {
+		setprop("/controls/cdu[1]/input", "REMOVE WP");
+		keypress = "";
+	} elsif (keypress == "l6") {
+		fmcFP.clear(1);
+		keypress = "";
+	} elsif (keypress == "exec") {
+		fmcFP.add(1, getprop("/controls/cdu[1]/input"), 0);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif (keypress == "r1") {
+		fmcFP.setalt(1, (getprop(fmcFPtree~ "FPpage[1]/first")),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif (keypress == "r2") {
+		fmcFP.setalt(1, (getprop(fmcFPtree~ "FPpage[1]/first") + 1),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif (keypress == "r3") {
+		fmcFP.setalt(1, (getprop(fmcFPtree~ "FPpage[1]/first") + 2),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif (keypress == "r4") {
+		fmcFP.setalt(1, (getprop(fmcFPtree~ "FPpage[1]/first") + 3),getprop("/controls/cdu[1]/input"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	}
+	
+	if ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l1")) {
+		fmcFP.remove(1, getprop(fmcFPtree~ "FPpage[1]/first"));
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l2")) {
+		fmcFP.remove(1, getprop(fmcFPtree~ "FPpage[1]/first") + 1);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l3")) {
+		fmcFP.remove(1, getprop(fmcFPtree~ "FPpage[1]/first") + 2);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	} elsif ((getprop("/controls/cdu[1]/input") == "REMOVE WP") and (keypress == "l4")) {
+		fmcFP.remove(1, getprop(fmcFPtree~ "FPpage[1]/first") + 3);
+		keypress = "";
+		cduinput = "";
+		setprop("/controls/cdu[1]/input", "");
+	}
+
+}
 
 ## Typing Characters and Functions
 
@@ -2026,6 +2300,8 @@ setprop("/controls/cdu[1]/keypress", "");
 
 setlistener("sim/signals/fdm-initialized", func
  {
- cdu1.init();
- print("FMS Computer 2 ...... Initialized");
+ cdu.init();
+ print("FMS Computer 1 ...... Initialized");
+ fmc.parse_flightsDB();
+ print("Merlion Database .... Initialized");
  });
