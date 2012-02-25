@@ -4,7 +4,7 @@ var WPindex = 0;
 var TPList = [];
 var TPpressed = 0;
 
-var cdu = {
+var cdu1 = {
 	init : func { 
         me.UPDATE_INTERVAL = 0.1; 
         me.loopid = 0; 
@@ -2300,7 +2300,7 @@ setprop("/controls/cdu[1]/keypress", "");
 
 setlistener("sim/signals/fdm-initialized", func
  {
- cdu.init();
+ cdu1.init();
  print("FMS Computer 1 ...... Initialized");
  fmc.parse_flightsDB();
  print("Merlion Database .... Initialized");
