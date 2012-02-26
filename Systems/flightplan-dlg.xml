@@ -12,9 +12,6 @@
 	<nasal>
 		<open>
 		
-			setprop("/sim/gui/dialogs/file-select-1/directory", getprop("/sim/aircraft-dir"));
-			setprop("/sim/gui/dialogs/file-select-2/directory", getprop("/sim/aircraft-dir"));
-			
 			var import_plan = func {
 				if (getprop("/instrumentation/fmcFP/selectedFP") == "Primary")
 					var plan = 0;
