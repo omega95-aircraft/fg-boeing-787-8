@@ -247,10 +247,6 @@ var fmcTP = {
 		me.l7 = "< INDEX";
 		me.r7_type = "click";
 		me.r7 = "PROCEDURES >";
-	
-		DepICAO = fmsDB.new(icao);
-		IAPList = DepICAO.getIAPList(rwy);
-		IAPmax = size(IAPList);
 		
 		if (IAPmax == 0) {
 			
