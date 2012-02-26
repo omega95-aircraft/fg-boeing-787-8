@@ -2301,7 +2301,7 @@ setprop("/controls/cdu[1]/keypress", "");
 setlistener("sim/signals/fdm-initialized", func
  {
  cdu1.init();
- print("FMS Computer 1 ...... Initialized");
+ print("FMS Computer 2 ...... Initialized");
  fmc.parse_flightsDB();
  print("Merlion Database .... Initialized");
  });

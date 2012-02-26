@@ -90,22 +90,6 @@
 	<layout>hbox</layout>
 
 		<button>
-			<legend>Clear</legend>
-			<default>true</default>
-			<padding>10</padding>
-			<binding>
-				<command>nasal</command>
-				<script>
-					if (getprop("/instrumentation/fmcFP/selectedFP") == "Primary")
-						var plan = 0;
-					else
-						var plan = 1;
-					b787.fmcFP.clear(plan);
-				</script>
-			</binding>
-		</button>
-
-		<button>
 			<legend>Import</legend>
 			<default>true</default>
 			<padding>10</padding>
