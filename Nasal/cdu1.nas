@@ -3,6 +3,7 @@ var TPmax = 0;
 var WPindex = 0;
 var TPList = [];
 var TPpressed = 0;
+var AptICAO = "";
 
 var cdu = {
 	init : func { 
@@ -1923,7 +1924,7 @@ keypress = "";
 } elsif ((keypress == "r7") and (getprop("/instrumentation/b787-fmc/TPicao") != nil)) {
 # Function to Get a List of available Terminal Procedures, and add it to the route.
 
-var AptICAO = fmsDB.new(getprop("/instrumentation/b787-fmc/TPicao"));
+AptICAO = fmsDB.new(getprop("/instrumentation/b787-fmc/TPicao"));
 
 if (AptICAO != nil) {
 
@@ -1953,6 +1954,8 @@ setprop("/controls/cdu/input", "");
 } elsif (keypress == "r2"){
 
 ## Toggle Through Available TPs
+
+TPmax = size(TPList);
 
 if (TPindex < TPmax)
 	TPindex += 1;

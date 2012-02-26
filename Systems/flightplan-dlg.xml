@@ -74,7 +74,7 @@
         <combo>
             <halign>left</halign>
             <name>flightplan</name>
-					    <pref-width>200</pref-width>
+					    <pref-width>300</pref-width>
    						<pref-height>20</pref-height>
             <property>/instrumentation/fmcFP/selectedFP</property>
             <editable>false</editable>

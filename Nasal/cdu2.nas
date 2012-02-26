@@ -1,9 +1,3 @@
-var TPindex = 0;
-var TPmax = 0;
-var WPindex = 0;
-var TPList = [];
-var TPpressed = 0;
-
 var cdu1 = {
 	init : func { 
         me.UPDATE_INTERVAL = 0.1; 
@@ -1953,6 +1947,8 @@ setprop("/controls/cdu[1]/input", "");
 } elsif (keypress == "r2"){
 
 ## Toggle Through Available TPs
+
+TPmax = size(TPList);
 
 if (TPindex < TPmax)
 	TPindex += 1;
