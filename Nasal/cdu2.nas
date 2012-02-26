@@ -5,11 +5,6 @@ var cdu1 = {
 
 # Initialize display and other CDU properties
 
-## Initialize Flight Plan Management System
-
-fmcFP.init();
-print("Flightplan Manager .. Initialized");
-
 ## VNAV Config Properties
 
 setprop("/controls/cdu/vnav/crz-altitude-ft", 10000);
@@ -1834,171 +1829,262 @@ keypress = "";
 
 } elsif (page == "PROCEDURES") {
 
-#### Field types
-
-setprop("/controls/cdu[1]/l1-type", "disp");
-setprop("/controls/cdu[1]/l2-type", "click");
-setprop("/controls/cdu[1]/l3-type", "click");
-setprop("/controls/cdu[1]/l4-type", "click");
-setprop("/controls/cdu[1]/l5-type", "disp");
-setprop("/controls/cdu[1]/l6-type", "disp");
-setprop("/controls/cdu[1]/l7-type", "click");
-
-setprop("/controls/cdu[1]/r1-type", "disp");
-if (TPpressed == 1) {
-if (TPList[TPindex].wp_name != nil)
-	setprop("/controls/cdu[1]/r2-type", "click");
+if ((getprop("/autopilot/route-manager/departure/airport") == nil) or (getprop("/autopilot/route-manager/departure/runway") == nil) or (getprop("/autopilot/route-manager/destination/airport") == nil) or (getprop("/autopilot/route-manager/destination/runway") == nil)) {
+page = "DEP/ARR";
 }
-else
-	setprop("/controls/cdu[1]/r2-type", "disp");
-setprop("/controls/cdu[1]/r3-type", "disp");
-setprop("/controls/cdu[1]/r4-type", "disp");
-setprop("/controls/cdu[1]/r5-type", "disp");
-if (TPpressed == 1) {
-if (TPList[TPindex].wp_name != nil)
-	setprop("/controls/cdu[1]/r6-type", "click");
-	}
-else
-	setprop("/controls/cdu[1]/r6-type", "disp");
-setprop("/controls/cdu[1]/r7-type", "click");
 
-#### Field Values
+setprop("/controls/cdu/l1-type", "disp");
+setprop("/controls/cdu/l2-type", "disp");
+setprop("/controls/cdu/l3-type", "disp");
+setprop("/controls/cdu/l4-type", "disp");
+setprop("/controls/cdu/l5-type", "disp");
+setprop("/controls/cdu/l6-type", "click");
+setprop("/controls/cdu/l7-type", "click");
 
-setprop("/controls/cdu[1]/display/l1-label", "");
-setprop("/controls/cdu[1]/display/l2-label", "Airport ICAO (Enter)");
-setprop("/controls/cdu[1]/display/l3-label", "Terminal Procedure Type (Cycle)");
-setprop("/controls/cdu[1]/display/l4-label", "To/From Runway (Enter)");
-setprop("/controls/cdu[1]/display/l5-label", "");
-setprop("/controls/cdu[1]/display/l6-label", "");
-setprop("/controls/cdu[1]/display/r7-label", "");
-setprop("/controls/cdu[1]/display/r1-label", "");
-if (TPpressed == 1) {
-if (TPList[TPindex].wp_name != nil)
-	setprop("/controls/cdu[1]/display/r2-label", "Terminal Procedure Name (Cycle)");
-	}
-else
-	setprop("/controls/cdu[1]/display/r2-label", "");
-setprop("/controls/cdu[1]/display/r3-label", "");
-setprop("/controls/cdu[1]/display/r4-label", "");
-setprop("/controls/cdu[1]/display/r5-label", "");
-setprop("/controls/cdu[1]/display/r6-label", "");
-setprop("/controls/cdu[1]/display/r7-label", "");
+setprop("/controls/cdu/r1-type", "disp");
+setprop("/controls/cdu/r2-type", "disp");
+setprop("/controls/cdu/r3-type", "click");
+setprop("/controls/cdu/r4-type", "click");
+setprop("/controls/cdu/r5-type", "click");
+setprop("/controls/cdu/r6-type", "disp");
+setprop("/controls/cdu/r7-type", "click");
 
-setprop("/controls/cdu[1]/display/l1", "");
-setprop("/controls/cdu[1]/display/l2", getprop("/instrumentation/b787-fmc/TPicao"));
-setprop("/controls/cdu[1]/display/l3", getprop("/instrumentation/b787-fmc/TPtype"));
-setprop("/controls/cdu[1]/display/l4", getprop("/instrumentation/b787-fmc/TPrwy"));
-setprop("/controls/cdu[1]/display/l5", "");
-setprop("/controls/cdu[1]/display/l6", "");
-setprop("/controls/cdu[1]/display/l7", "< INDEX");
+setprop("/controls/cdu/display/l1-label", "");
+setprop("/controls/cdu/display/l2-label", "");
+setprop("/controls/cdu/display/l3-label", "");
+setprop("/controls/cdu/display/l4-label", "");
+setprop("/controls/cdu/display/l5-label", "");
+setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/l7-label", "");
+setprop("/controls/cdu/display/r1-label", "");
+setprop("/controls/cdu/display/r2-label", "");
+setprop("/controls/cdu/display/r3-label", "");
+setprop("/controls/cdu/display/r4-label", "");
+setprop("/controls/cdu/display/r5-label", "");
+setprop("/controls/cdu/display/r6-label", "");
+setprop("/controls/cdu/display/r7-label", "");
 
-setprop("/controls/cdu[1]/display/r1", "");
-if (TPpressed == 1) {
-if (TPList[TPindex].wp_name != nil)
-	setprop("/controls/cdu[1]/display/r2", TPList[TPindex].wp_name);
-} else 
-	setprop("/controls/cdu[1]/display/r2", "");
-setprop("/controls/cdu[1]/display/r3", "");
-setprop("/controls/cdu[1]/display/r4", "");
-setprop("/controls/cdu[1]/display/r5", "");
-setprop("/controls/cdu[1]/display/r6", "");
-if (TPpressed == 1) {
-if (TPList[TPindex].wp_name != nil)
-	setprop("/controls/cdu[1]/display/r6", "ACTIVATE >");
-} else
-	setprop("/controls/cdu[1]/display/r6", "");
-setprop("/controls/cdu[1]/display/r7", "SEARCH TP >");
+setprop("/controls/cdu/display/l1", "");
+setprop("/controls/cdu/display/r1", "");
+setprop("/controls/cdu/display/l2", "");
+setprop("/controls/cdu/display/r2", "");
+setprop("/controls/cdu/display/l3", "");
+setprop("/controls/cdu/display/r3", "DEPARTURE >");
+setprop("/controls/cdu/display/l4", "");
+setprop("/controls/cdu/display/r4", "ARRIVAL >");
+setprop("/controls/cdu/display/l5", "");
+setprop("/controls/cdu/display/r5", "APPROACH >");
+setprop("/controls/cdu/display/l6", "< DEP / ARR");
+setprop("/controls/cdu/display/r6", "");
+setprop("/controls/cdu/display/l7", "< INDEX");
+setprop("/controls/cdu/display/r7", "FLIGHTPLAN >");
 
-# MENU PRESSES
+## MENU Presses
+
+if (keypress == "r3") {
+page = "DEPARTURE (SID)";
+
+		DepICAO = fmsDB.new(getprop("/autopilot/route-manager/departure/airport"));
+		SIDList = DepICAO.getSIDList(getprop("/autopilot/route-manager/departure/runway"));
+		SIDmax = size(SIDList);
+
+keypress = "";
+} elsif (keypress == "r4") {
+page = "ARRIVAL (STAR)";
+
+		ArrICAO = fmsDB.new(getprop("/autopilot/route-manager/destination/airport"));
+		STARList = ArrICAO.getSTARList(getprop("/autopilot/route-manager/destination/runway"));
+		STARmax = size(STARList);
+
+keypress = "";
+} elsif (keypress == "r5") {
+page = "APPROACH (IAP)";
+
+		AppICAO = fmsDB.new(getprop("/autopilot/route-manager/destination/airport"));
+		IAPList = AppICAO.getApproachList(getprop("/autopilot/route-manager/destination/runway"));
+		IAPmax = size(IAPList);
+
+keypress = "";
+} elsif (keypress == "l6") {
+page = "DEP/ARR";
+keypress = "";
+} elsif (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif (keypress == "r7") {
+page = "FLIGHTPLANS";
+keypress = "";
+}
+} elsif (page == "DEPARTURE (SID)") {
+
+fmcTP.selectSID(1);
+
+# Menu Presses
 
 if (keypress == "l7") {
 page = "INDEX";
 keypress = "";
-} elsif ((keypress == "r7") and (getprop("/instrumentation/b787-fmc/TPicao") != nil)) {
-# Function to Get a List of available Terminal Procedures, and add it to the route.
-
-var AptICAO = fmsDB.new(getprop("/instrumentation/b787-fmc/TPicao"));
-
-if (AptICAO != nil) {
-
-if (getprop("/instrumentation/b787-fmc/TPtype") == "SID")
-	TPList = AptICAO.getSIDList(getprop("/instrumentation/b787-fmc/TPrwy"));
-elsif (getprop("/instrumentation/b787-fmc/TPtype") == "STAR")
-	TPList = AptICAO.getSTARList(getprop("/instrumentation/b787-fmc/TPrwy"));
-else 
-	TPList = AptICAO.getApproachList(getprop("/instrumentation/b787-fmc/TPrwy"));
-	
-TPindex = 0;
-TPpressed = 1;
-## Find Maximum number of Available Procedures for the runway
-
-TPmax = size(TPList);
-	
-	} else {
-		setprop("/controls/cdu[1]/input", "Can't find in Databse!");
-	}
-	
+} elsif (keypress == "r7") {
+page = "PROCEDURES";
 keypress = "";
-} elsif ((keypress == "l2") and (cduinput != "")) {
-setprop("/instrumentation/b787-fmc/TPicao", cduinput);
-cduinput = "";
+} elsif (keypress == "l4") {
+SIDfirst = SIDfirst - 1;
 keypress = "";
-setprop("/controls/cdu[1]/input", "");
-} elsif (keypress == "r2"){
-
-## Toggle Through Available TPs
-
-TPmax = size(TPList);
-
-if (TPindex < TPmax)
-	TPindex += 1;
+} elsif (keypress == "l5") {
+SIDfirst += 1;
+keypress = "";
+} elsif (keypress == "l6") {
+fmcTP.setDep();
+keypress = "";
+} elsif (keypress == "l1") {
+if (SIDindex + 1 < SIDmax)
+	SIDindex += 1;
 else
-	TPindex = 0;
-
+	SIDindex = 0;
 keypress = "";
-} elsif (keypress == "l3") {
-
-## Toggle Through Terminal Procedure Types
-
-if (getprop("/instrumentation/b787-fmc/TPtype") == "SID")
-	setprop("/instrumentation/b787-fmc/TPtype", "STAR");
-elsif (getprop("/instrumentation/b787-fmc/TPtype") == "STAR")
-	setprop("/instrumentation/b787-fmc/TPtype", "IAP");
-else
-	setprop("/instrumentation/b787-fmc/TPtype", "SID");
-	
-keypress = "";
-} elsif ((keypress == "l4") and (cduinput != "")) {
-
-setprop("/instrumentation/b787-fmc/TPrwy", cduinput);
-
-keypress = "";
-cduinput = "";
-setprop("/instrumentation/cdu/input", "");
-} elsif ((keypress == "r6") and (TPList[TPindex].wp_name != nil) and (AptICAO != nil)) {
-
-if (getprop("/instrumentation/b787-fmc/TPtype") == "SID") { ## Add SID to beginning
-
-	while (TPList[TPindex].wpts[WPindex].wp_name != nil) {
-		
-		setprop("/autopilot/route-manager/input", "@INSERT" ~ (WPindex + 1) ~ ":" ~ TPList[TPindex].wpts[WPindex].wp_name);
-		WPindex += 1;
-		
-	}
-
-} else { ## Append STARs or IAPs to the End
-
-	while (TPList[TPindex].wpts[WPindex].wp_name != nil) {
-		
-		setprop("/autopilot/route-manager/input", "@INSERT999:" ~ TPList[TPindex].wpts[WPindex].wp_name);
-		WPindex += 1;
-		
-	}
-
 }
 
-keypress = "";
+# Waypoint Information
 
+if (keypress == "r1") {
+fmcTP.wpInfo(1, SIDfirst, SIDindex, "SID");
+page = "Waypoint Information";
+} elsif (keypress == "r2") {
+fmcTP.wpInfo(1, SIDfirst + 1, SIDindex, "SID");
+page = "Waypoint Information";
+} elsif (keypress == "r3") {
+fmcTP.wpInfo(1, SIDfirst + 2, SIDindex, "SID");
+page = "Waypoint Information";
+} elsif (keypress == "r4") {
+fmcTP.wpInfo(1, SIDfirst + 3, SIDindex, "SID");
+page = "Waypoint Information";
+} elsif (keypress == "r5") {
+fmcTP.wpInfo(1, SIDfirst + 4, SIDindex, "SID");
+page = "Waypoint Information";
+} elsif (keypress == "r6") {
+fmcTP.wpInfo(1, SIDfirst + 5, SIDindex, "SID");
+page = "Waypoint Information";
+}
+
+} elsif (page == "ARRIVAL (STAR)") {
+
+fmcTP.selectSTAR(1);
+
+# Menu Presses
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif (keypress == "r7") {
+page = "PROCEDURES";
+keypress = "";
+} elsif (keypress == "l4") {
+STARfirst = STARfirst - 1;
+keypress = "";
+} elsif (keypress == "l5") {
+STARfirst += 1;
+keypress = "";
+} elsif (keypress == "l6") {
+fmcTP.setArr();
+keypress = "";
+} elsif (keypress == "l1") {
+if (STARindex + 1 < STARmax)
+	STARindex += 1;
+else
+	STARindex = 0;
+keypress = "";
+}
+
+# Waypoint Information
+
+if (keypress == "r1") {
+fmcTP.wpInfo(1, STARfirst, STARindex, "STAR");
+page = "Waypoint Information";
+} elsif (keypress == "r2") {
+fmcTP.wpInfo(1, STARfirst + 1, STARindex, "STAR");
+page = "Waypoint Information";
+} elsif (keypress == "r3") {
+fmcTP.wpInfo(1, STARfirst + 2, STARindex, "STAR");
+page = "Waypoint Information";
+} elsif (keypress == "r4") {
+fmcTP.wpInfo(1, STARfirst + 3, STARindex, "STAR");
+page = "Waypoint Information";
+} elsif (keypress == "r5") {
+fmcTP.wpInfo(1, STARfirst + 4, STARindex, "STAR");
+page = "Waypoint Information";
+} elsif (keypress == "r6") {
+fmcTP.wpInfo(1, STARfirst + 5, STARindex, "STAR");
+page = "Waypoint Information";
+}
+
+} elsif (page == "APPROACH (IAP)") {
+
+fmcTP.selectIAP(1);
+
+# Menu Presses
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif (keypress == "r7") {
+page = "PROCEDURES";
+keypress = "";
+} elsif (keypress == "l4") {
+IAPfirst = IAPfirst - 1;
+keypress = "";
+} elsif (keypress == "l5") {
+IAPfirst += 1;
+keypress = "";
+} elsif (keypress == "l6") {
+fmcTP.setApp();
+keypress = "";
+} elsif (keypress == "l1") {
+if (IAPindex + 1 < IAPmax)
+	IAPindex += 1;
+else
+	IAPindex = 0;
+keypress = "";
+}
+
+# Waypoint Information
+
+if (keypress == "r1") {
+fmcTP.wpInfo(1, IAPfirst, IAPindex, "IAP");
+page = "Waypoint Information";
+} elsif (keypress == "r2") {
+fmcTP.wpInfo(1, IAPfirst + 1, IAPindex, "IAP");
+page = "Waypoint Information";
+} elsif (keypress == "r3") {
+fmcTP.wpInfo(1, IAPfirst + 2, IAPindex, "IAP");
+page = "Waypoint Information";
+} elsif (keypress == "r4") {
+fmcTP.wpInfo(1, IAPfirst + 3, IAPindex, "IAP");
+page = "Waypoint Information";
+} elsif (keypress == "r5") {
+fmcTP.wpInfo(1, IAPfirst + 4, IAPindex, "IAP");
+page = "Waypoint Information";
+} elsif (keypress == "r6") {
+fmcTP.wpInfo(1, IAPfirst + 5, IAPindex, "IAP");
+page = "Waypoint Information";
+}
+
+} elsif (page == "Waypoint Information") {
+
+## Page is displayed from the entry functions, this is only required for MENU presses
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif (keypress = "r7") {
+
+	if (TPtype == "SID")
+		page = "DEPARTURE (SID)";
+	elsif (TPtype == "STAR")
+		page = "ARRIVAL (STAR)";
+	else
+		page = "APPROACH (IAP)";
+
+keypress = "";
 }
 
 } elsif (page == "FLIGHTPLANS") {

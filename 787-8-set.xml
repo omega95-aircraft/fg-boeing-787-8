@@ -984,6 +984,7 @@
 			<file>Aircraft/787-8/Nasal/surge.nas</file>
 			<file>Aircraft/787-8/Nasal/autobrake.nas</file>
 			<file>Aircraft/787-8/Nasal/flightplans.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures.nas</file>
 			<file>Aircraft/787-8/Nasal/cdu1.nas</file>
 			<file>Aircraft/787-8/Nasal/cdu2.nas</file>
 			<file>Aircraft/787-8/Nasal/mfd-navigation.nas</file>
