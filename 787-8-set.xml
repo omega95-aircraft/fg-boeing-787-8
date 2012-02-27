@@ -133,6 +133,58 @@
 		<precip type="bool">true</precip>
 		<range type="int">30</range>
 	</wxradar>
+	
+		<nd-settings>
+			<wpt type="bool">true</wpt>
+			<arpt type="bool">true</arpt>
+			<vor type="bool">true</vor>
+			<ndb type="bool">true</ndb>
+			<traffic type="bool">false</traffic>
+		</nd-settings>
+		
+		<nd n="0">
+           <radar-texture-path type="string">Aircraft/787-8/Models/Instruments/od_ndradar_1.png</radar-texture-path>
+          <symbol-texture-path type="string">Aircraft/787-8/Models/Instruments/symbols_2d.png</symbol-texture-path>
+            <font>
+                <color>
+                   <red type="float">0.7</red>
+                   <green type="float">0.7</green>
+                   <blue type="float">0.7</blue>
+                   <alpha type="float">1</alpha>
+               </color>
+               <name type="string">helvetica_bold.txf</name>
+               <size type="float">14</size>
+               <line-spacing type="float">0.01</line-spacing>
+           </font>
+           <serviceable type="bool">true</serviceable>
+           <range type="int">30</range>
+           <aircraft-heading-up type="bool">true</aircraft-heading-up>
+           <heading-up-deg type="float">0.01</heading-up-deg>
+           <x-center type="float">0.499</x-center>
+           <y-center type="float">0.182</y-center>
+       </nd>
+       
+       <nd n="1">
+           <radar-texture-path type="string">Aircraft/787-8/Models/Instruments/od_ndradar_2.png</radar-texture-path>
+          <symbol-texture-path type="string">Aircraft/787-8/Models/Instruments/symbols_2d.png</symbol-texture-path>
+            <font>
+                <color>
+                   <red type="float">0.7</red>
+                   <green type="float">0.7</green>
+                   <blue type="float">0.7</blue>
+                   <alpha type="float">1</alpha>
+               </color>
+               <name type="string">helvetica_bold.txf</name>
+               <size type="float">14</size>
+               <line-spacing type="float">0.01</line-spacing>
+           </font>
+           <serviceable type="bool">true</serviceable>
+           <range type="int">100</range>
+           <aircraft-heading-up type="bool">true</aircraft-heading-up>
+           <heading-up-deg type="float">0.01</heading-up-deg>
+           <x-center type="float">0.499</x-center>
+           <y-center type="float">0.182</y-center>
+       </nd>
 
 		</instrumentation>
 
