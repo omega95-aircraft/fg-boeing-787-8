@@ -139,7 +139,7 @@
 
     <engine>
         <name>left n1</name>
-        <path>Aircraft/787-8/Sounds/lwhine.wav</path>
+        <path>Aircraft/787-8/Sounds/whine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -172,12 +172,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine>	
 
     <engine1>
         <name>right n1</name>
-        <path>Aircraft/787-8/Sounds/rwhine.wav</path>
+        <path>Aircraft/787-8/Sounds/whine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -210,12 +210,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine1>
 
     <engine2>
         <name>left n2</name>
-        <path>Aircraft/787-8/Sounds/lturbine.wav</path>
+        <path>Aircraft/787-8/Sounds/turbine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -248,12 +248,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine2>	
 
     <engine3>
         <name>right n2</name>
-        <path>Aircraft/787-8/Sounds/rturbine.wav</path>
+        <path>Aircraft/787-8/Sounds/turbine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -286,7 +286,7 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine3>	
 
 <!-- Engine Internal Sounds -->
@@ -324,7 +324,7 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei>	
 
     <enginei1>
@@ -360,7 +360,7 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei1>
 
     <enginei2>
@@ -396,12 +396,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei2>	
 
     <enginei3>
         <name>internal right n2</name>
-        <path>Aircraft/787-8/Sounds/rjet.wav</path>
+        <path>Aircraft/787-8/Sounds/jet.wav</path>
         <mode>looped</mode>
 		<condition>
 				<property>sim/current-view/internal</property>
@@ -432,7 +432,7 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei3>	
 
 
@@ -830,7 +830,7 @@
     <enginesr1>
         <name>left reverse-thrust</name>
         <mode>looped</mode>
-        <path>Aircraft/787-8/Sounds/lreverser.wav</path>
+        <path>Aircraft/787-8/Sounds/reverser.wav</path>
         <condition>
             <property>engines/engine[0]/running</property>
         </condition>
@@ -852,7 +852,7 @@
     <enginesr2>
         <name>right reverse-thrust</name>
         <mode>looped</mode>
-        <path>Aircraft/787-8/Sounds/rreverser.wav</path>
+        <path>Aircraft/787-8/Sounds/reverser.wav</path>
         <condition>
             <property>engines/engine[1]/running</property>
         </condition>
