@@ -172,11 +172,11 @@ file, these values will be used (they are hardcoded).
 	 <number>0</number>
 	</mk-viii>
 	
-<!--<navigation-display>
+	<!-- navigation-display>
         <name>nd</name>
         <number>0</number>        
         <symbols include="nav-display.xml"/>
-    </navigation-display> -->
+    </navigation-display -->
 
     <groundradar>
         <name>groundradar</name>

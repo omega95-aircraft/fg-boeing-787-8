@@ -646,6 +646,9 @@
 	</payload>
 
 	<controls>
+		<mfd>
+			<extra>0</extra>
+		</mfd>
 		<navigation>
 			<init type="double">0</init>
 		</navigation>

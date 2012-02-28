@@ -2,14 +2,14 @@
 <!--158x212-->
 
 <PropertyList>
-    <name>Airport Chart</name>
+    <name>ND0</name>
     <background>Aircraft/787-8/Models/Instruments/transparent.png</background>
     <w>512</w>
     <h>512</h>
 
     <instruments>
 
-        <instrument include="airport-display.xml">
+        <instrument include="radar.xml">
             <condition>
                 <greater-than>
                     <property>systems/electrical/outputs/efis</property>
@@ -18,9 +18,9 @@
             </condition>
             <name>Chart</name>
             <x>256</x>
-            <y>200</y>
-            <w>600</w>
-            <h>600</h>
+            <y>256</y>
+            <w>512</w>
+            <h>512</h>
         </instrument>
 
     </instruments>
