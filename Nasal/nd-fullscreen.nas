@@ -52,10 +52,10 @@ if (getprop("/instrumentation/ndfull/active") == 1) {
 	if (getprop("/instrumentation/gps[1]/scratch/longitude-deg") != nil) {
 
 	var naxcoord = 60 * getprop("/instrumentation/gps[1]/scratch/longitude-deg");
-	var naycoord = 0.24 + (60 * getprop("/instrumentation/gps[1]/scratch/latitude-deg"));
+	var naycoord = 60 * getprop("/instrumentation/gps[1]/scratch/latitude-deg");
 
-	var xoffset = (naxcoord - xcoord) * (100 / ytop);
-	var yoffset = (naycoord - ycoord) * (100 / ytop);
+	var xoffset = ((naxcoord - xcoord) / ytop) * 0.691427744;
+	var yoffset = ((naycoord - ycoord) / ytop) * 0.94274977;
 
 setprop("/instrumentation/ndfull/airport/xoffset", xoffset);
 
@@ -183,58 +183,3 @@ setprop("/instrumentation/ndfull/route/wp[" ~ (currentwp + n) ~ "]/show", 0);
         }
 
     };
-
-    var Deflection = func(bug, limit) {
-      var heading = getprop("orientation/heading-magnetic-deg");
-      var bugDeg = 0;
-
-      while (bug < 0)
-       {
-       bug += 360;
-       }
-      while (bug > 360)
-       {
-       bug -= 360;
-       }
-      if (bug < limit)
-       {
-       bug += 360;
-       }
-      if (heading < limit)
-       {
-       heading += 360;
-       }
-      # bug is adjusted normally
-      if (math.abs(heading - bug) < limit)
-       {
-       bugDeg = heading - bug;
-       }
-      elsif (heading - bug < 0)
-       {
-       # bug is on the far right
-       if (math.abs(heading - bug + 360 >= 180))
-        {
-        bugDeg = -limit;
-        }
-       # bug is on the far left
-       elsif (math.abs(heading - bug + 360 < 180))
-        {
-        bugDeg = limit;
-        }
-       }
-      else
-       {
-       # bug is on the far right
-       if (math.abs(heading - bug >= 180))
-        {
-        bugDeg = -limit;
-        }
-       # bug is on the far left
-       elsif (math.abs(heading - bug < 180))
-        {
-        bugDeg = limit;
-        }
-       }
-
-      return bugDeg;
-    }

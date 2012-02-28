@@ -3,7 +3,7 @@
 
 <PropertyList>
     <name>Airport Chart</name>
-    <w-base>600</w-base>
+    <w-base>512</w-base>
     <h-base>512</h-base>
 
     <layers>
@@ -26,12 +26,12 @@
 				<transformation>
      				<type>x-shift</type>
      				<property>/instrumentation/ndfull/airport/xoffset</property>
-     				<scale>1.76</scale>
+     				<scale>200</scale>
     			</transformation>	
 				<transformation>
      				<type>y-shift</type>
      				<property>/instrumentation/ndfull/airport/yoffset</property>
-     				<scale>1.7</scale>
+     				<scale>200</scale>
     			</transformation>
 			</transformations>
             <emissive>1</emissive>

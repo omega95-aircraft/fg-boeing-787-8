@@ -2,10 +2,637 @@ AC3Db
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0.675 0.675 0.675  spec 0.671 0.671 0.663  shi 0  trans 0
 MATERIAL "DimLight" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 0  trans 0
 OBJECT world
-kids 166
+kids 199
+OBJECT poly
+name "ai30level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00729259 0.0072481
+0 0 0
+0 0.00729259 0
+0 0 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.578262 0.590962
+2 0.578262 0.680549
+0 0.492051 0.680549
+3 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai30up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968288
+0 -0.00137234 0.00968288
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.404433 0.598774
+1 0.404433 0.674689
+3 0.320176 0.674689
+0 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai30down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968289
+0 0.00592025 0.00968289
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.488418 0.598774
+2 0.488418 0.674689
+0 0.404161 0.674689
+3 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai29level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0 0.0072481
+0 0.00729259 0
+0 0 0
+0 0.00729259 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.578262 0.590962
+1 0.578262 0.680549
+3 0.492051 0.680549
+0 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai29up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968288
+0 0.00592025 0.00968288
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.404433 0.598774
+2 0.404433 0.674689
+0 0.320176 0.674689
+3 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai29down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968289
+0 -0.00137234 0.00968289
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.488418 0.598774
+1 0.488418 0.674689
+3 0.404161 0.674689
+0 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai28level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00729259 0.0072481
+0 0 0
+0 0.00729259 0
+0 0 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.578262 0.590962
+2 0.578262 0.680549
+0 0.492051 0.680549
+3 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai28up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968288
+0 -0.00137234 0.00968288
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.404433 0.598774
+1 0.404433 0.674689
+3 0.320176 0.674689
+0 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai28down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968289
+0 0.00592025 0.00968289
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.488418 0.598774
+2 0.488418 0.674689
+0 0.404161 0.674689
+3 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai27level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0 0.0072481
+0 0.00729259 0
+0 0 0
+0 0.00729259 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.578262 0.590962
+1 0.578262 0.680549
+3 0.492051 0.680549
+0 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai27up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968288
+0 0.00592025 0.00968288
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.404433 0.598774
+2 0.404433 0.674689
+0 0.320176 0.674689
+3 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai27down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968289
+0 -0.00137234 0.00968289
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.488418 0.598774
+1 0.488418 0.674689
+3 0.404161 0.674689
+0 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai26level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00729259 0.0072481
+0 0 0
+0 0.00729259 0
+0 0 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.578262 0.590962
+2 0.578262 0.680549
+0 0.492051 0.680549
+3 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai26up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968288
+0 -0.00137234 0.00968288
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.404433 0.598774
+1 0.404433 0.674689
+3 0.320176 0.674689
+0 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai26down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968289
+0 0.00592025 0.00968289
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.488418 0.598774
+2 0.488418 0.674689
+0 0.404161 0.674689
+3 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai25level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0 0.0072481
+0 0.00729259 0
+0 0 0
+0 0.00729259 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.578262 0.590962
+1 0.578262 0.680549
+3 0.492051 0.680549
+0 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai25up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968288
+0 0.00592025 0.00968288
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.404433 0.598774
+2 0.404433 0.674689
+0 0.320176 0.674689
+3 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai25down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968289
+0 -0.00137234 0.00968289
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.488418 0.598774
+1 0.488418 0.674689
+3 0.404161 0.674689
+0 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai24level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00729259 0.0072481
+0 0 0
+0 0.00729259 0
+0 0 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.578262 0.590962
+2 0.578262 0.680549
+0 0.492051 0.680549
+3 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai24up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968288
+0 -0.00137234 0.00968288
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.404433 0.598774
+1 0.404433 0.674689
+3 0.320176 0.674689
+0 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai24down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968289
+0 0.00592025 0.00968289
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.488418 0.598774
+2 0.488418 0.674689
+0 0.404161 0.674689
+3 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai23level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0 0.0072481
+0 0.00729259 0
+0 0 0
+0 0.00729259 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.578262 0.590962
+1 0.578262 0.680549
+3 0.492051 0.680549
+0 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai23up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968288
+0 0.00592025 0.00968288
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.404433 0.598774
+2 0.404433 0.674689
+0 0.320176 0.674689
+3 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai23down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968289
+0 -0.00137234 0.00968289
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.488418 0.598774
+1 0.488418 0.674689
+3 0.404161 0.674689
+0 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai22level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00729259 0.0072481
+0 0 0
+0 0.00729259 0
+0 0 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.578262 0.590962
+2 0.578262 0.680549
+0 0.492051 0.680549
+3 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai22up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968288
+0 -0.00137234 0.00968288
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.404433 0.598774
+1 0.404433 0.674689
+3 0.320176 0.674689
+0 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai22down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968289
+0 0.00592025 0.00968289
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.488418 0.598774
+2 0.488418 0.674689
+0 0.404161 0.674689
+3 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai21level"
+loc 0.00276819 -0.0542647 -0.0886504
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0 0.0072481
+0 0.00729259 0
+0 0 0
+0 0.00729259 0.0072481
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.578262 0.590962
+1 0.578262 0.680549
+3 0.492051 0.680549
+0 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai21up"
+loc 0.00276819 -0.0528696 -0.0981678
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968288
+0 0.00592025 0.00968288
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.404433 0.598774
+2 0.404433 0.674689
+0 0.320176 0.674689
+3 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai21down"
+loc 0.00276819 -0.0529342 -0.0980666
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968289
+0 -0.00137234 0.00968289
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.488418 0.598774
+1 0.488418 0.674689
+3 0.404161 0.674689
+0 0.404161 0.598774
+kids 0
+OBJECT poly
+name "ai8level"
+loc 0.00276819 -0.0529599 -0.0982804
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968289
+0 0.00592025 0.00968289
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.578262 0.590962
+2 0.578262 0.680549
+0 0.492051 0.680549
+3 0.492051 0.590962
+kids 0
+OBJECT poly
+name "ai8up"
+loc 0.00276819 -0.0529315 -0.0981943
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 -0.00137234 0.016931
+0 0.00592025 0.00968289
+0 -0.00137234 0.00968289
+0 0.00592025 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+2 0.404433 0.598774
+1 0.404433 0.674689
+3 0.320176 0.674689
+0 0.320176 0.598774
+kids 0
+OBJECT poly
+name "ai8down"
+loc 0.00276819 -0.0527482 -0.0982393
+texture "symbols.png"
+crease 45.000000
+numvert 4
+0 0.00592025 0.016931
+0 -0.00137234 0.00968289
+0 0.00592025 0.00968289
+0 -0.00137234 0.016931
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+1 0.488418 0.598774
+2 0.488418 0.674689
+0 0.404161 0.674689
+3 0.404161 0.598774
+kids 0
 OBJECT poly
 name "ai20level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -24,7 +651,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai20up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -43,7 +670,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai20down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -62,7 +689,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai19level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -81,7 +708,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai19up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -100,7 +727,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai19down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -119,7 +746,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai18level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -138,7 +765,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai18up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -157,7 +784,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai18down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -176,7 +803,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai17level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -195,7 +822,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai17up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -214,7 +841,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai17down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -233,7 +860,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai16level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -252,7 +879,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai16up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -271,7 +898,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai16down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -290,7 +917,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai15level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -309,7 +936,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai15up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -328,7 +955,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai15down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -347,7 +974,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai14level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -366,7 +993,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai14up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -385,7 +1012,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai14down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -404,7 +1031,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai13level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -423,7 +1050,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai13up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -442,7 +1069,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai13down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -461,7 +1088,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai12level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -480,7 +1107,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai12up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -499,7 +1126,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai12down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -518,7 +1145,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai12level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -537,7 +1164,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai12up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -556,7 +1183,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai12down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -575,7 +1202,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai11level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -594,7 +1221,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai11up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -613,7 +1240,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai11down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -632,7 +1259,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai10level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -651,7 +1278,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai10up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -670,7 +1297,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai10down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -689,7 +1316,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp29level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -708,7 +1335,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp29up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -727,7 +1354,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp29down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -746,7 +1373,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp30level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -765,7 +1392,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp30up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -784,7 +1411,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp30down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -803,7 +1430,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp28level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -822,7 +1449,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp28up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -841,7 +1468,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp28down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -860,7 +1487,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp27level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -879,7 +1506,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp27up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -898,7 +1525,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp27down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -917,7 +1544,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp26level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -936,7 +1563,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp26up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -955,7 +1582,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp26down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -974,7 +1601,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp25level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -993,7 +1620,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp25up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1012,7 +1639,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp25down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1031,7 +1658,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp24level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1050,7 +1677,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp24up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1069,7 +1696,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp24down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1088,7 +1715,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp23level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1107,7 +1734,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp23up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1126,7 +1753,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp23down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1145,7 +1772,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp22level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1164,7 +1791,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp22up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1183,7 +1810,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp22down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1202,7 +1829,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp21level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1221,7 +1848,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp21up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1240,7 +1867,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp21down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1259,7 +1886,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp20level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1278,7 +1905,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp20up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1297,7 +1924,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp20down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1316,7 +1943,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp19level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1335,7 +1962,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp19up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1354,7 +1981,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp19down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1373,7 +2000,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp18level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1392,7 +2019,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp18up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1411,7 +2038,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp18down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1430,7 +2057,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp17level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1449,7 +2076,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp17up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1468,7 +2095,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp17down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1487,7 +2114,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp16level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1506,7 +2133,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp16up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1525,7 +2152,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp16down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1544,7 +2171,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp15level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1563,7 +2190,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp15up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1582,7 +2209,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp15down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1601,7 +2228,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp14level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1620,7 +2247,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp14up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1639,7 +2266,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp14down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1658,7 +2285,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp13level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1677,7 +2304,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp13up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1696,7 +2323,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp13down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1715,7 +2342,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp13level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1734,7 +2361,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp13up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1753,7 +2380,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp13down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1772,7 +2399,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp12level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1791,7 +2418,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp12up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1810,7 +2437,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp12down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1829,7 +2456,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp11level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1848,7 +2475,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp11up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1867,7 +2494,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp11down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1886,7 +2513,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp9level"
-loc -0.000101103 -0.0528436 -0.0998525
+loc 0.00276819 -0.0526998 -0.0984125
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1905,7 +2532,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp9up"
-loc -0.000101103 -0.0524472 -0.0998257
+loc 0.00276819 -0.0523034 -0.0983857
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1924,7 +2551,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp9down"
-loc -0.000101103 -0.0525433 -0.0997385
+loc 0.00276819 -0.0523995 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1943,7 +2570,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp8level"
-loc -0.000101103 -0.0528436 -0.0995882
+loc 0.00276819 -0.0526998 -0.0981482
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1962,7 +2589,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp8up"
-loc -0.000101103 -0.0524472 -0.0999579
+loc 0.00276819 -0.0523034 -0.0985179
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -1981,7 +2608,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp8down"
-loc -0.000101103 -0.052279 -0.0998706
+loc 0.00276819 -0.0521352 -0.0984306
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2000,7 +2627,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai9level"
-loc -0.000101103 -0.0526196 -0.0997204
+loc 0.00276819 -0.0524758 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2019,7 +2646,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai9up"
-loc -0.000101103 -0.0525912 -0.0996343
+loc 0.00276819 -0.0524474 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2038,7 +2665,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai9down"
-loc -0.000101103 -0.0524079 -0.0996793
+loc 0.00276819 -0.0522641 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2057,7 +2684,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai7level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2076,7 +2703,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai7up"
-loc -0.000101103 -0.0524188 -0.0996343
+loc 0.00276819 -0.052275 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2095,7 +2722,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai7down"
-loc -0.000101103 -0.0523676 -0.0996793
+loc 0.00276819 -0.0522238 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2114,7 +2741,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai6level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2133,7 +2760,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai6up"
-loc -0.000101103 -0.0524188 -0.0996343
+loc 0.00276819 -0.052275 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2152,7 +2779,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai6down"
-loc -0.000101103 -0.0523676 -0.0996793
+loc 0.00276819 -0.0522238 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2171,7 +2798,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai5level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2190,7 +2817,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai5up"
-loc -0.000101103 -0.0524188 -0.0996343
+loc 0.00276819 -0.052275 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2209,7 +2836,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai5down"
-loc -0.000101103 -0.0523676 -0.0996793
+loc 0.00276819 -0.0522238 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2228,7 +2855,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai4level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2247,7 +2874,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai4up"
-loc -0.000101103 -0.0524188 -0.0996343
+loc 0.00276819 -0.052275 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2266,7 +2893,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai4down"
-loc -0.000101103 -0.0523676 -0.0996793
+loc 0.00276819 -0.0522238 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2285,7 +2912,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai3level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2304,7 +2931,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai3up"
-loc -0.000101103 -0.0524188 -0.0996343
+loc 0.00276819 -0.052275 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2323,7 +2950,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai3down"
-loc -0.000101103 -0.0523676 -0.0996793
+loc 0.00276819 -0.0522238 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2342,7 +2969,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai2level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2361,7 +2988,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai2up"
-loc -0.000101103 -0.0524188 -0.0996343
+loc 0.00276819 -0.052275 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2380,7 +3007,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai2down"
-loc -0.000101103 -0.0523676 -0.0996793
+loc 0.00276819 -0.0522238 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2399,7 +3026,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai1level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2418,7 +3045,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai1up"
-loc -0.000101103 -0.0524188 -0.0996343
+loc 0.00276819 -0.052275 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2437,7 +3064,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai1down"
-loc -0.000101103 -0.0523676 -0.0996793
+loc 0.00276819 -0.0522238 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2456,7 +3083,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp1level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2475,7 +3102,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp1up"
-loc -0.000101103 -0.0526388 -0.0996343
+loc 0.00276819 -0.052495 -0.0981943
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2494,7 +3121,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp1down"
-loc -0.000101103 -0.0528076 -0.0996793
+loc 0.00276819 -0.0526638 -0.0982393
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2513,7 +3140,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp2level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2532,7 +3159,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp2up"
-loc -0.000101103 -0.0528436 -0.0994293
+loc 0.00276819 -0.0526998 -0.0979893
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2551,7 +3178,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp2down"
-loc -0.000101103 -0.0528076 -0.0994742
+loc 0.00276819 -0.0526638 -0.0980342
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2570,7 +3197,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp3level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2589,7 +3216,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp3up"
-loc -0.000101103 -0.0528436 -0.0994293
+loc 0.00276819 -0.0526998 -0.0979893
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2608,7 +3235,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp3down"
-loc -0.000101103 -0.0528076 -0.0994742
+loc 0.00276819 -0.0526638 -0.0980342
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2627,7 +3254,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp4level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2646,7 +3273,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp4up"
-loc -0.000101103 -0.0528436 -0.0994293
+loc 0.00276819 -0.0526998 -0.0979893
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2665,7 +3292,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp4down"
-loc -0.000101103 -0.0528076 -0.0994742
+loc 0.00276819 -0.0526638 -0.0980342
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2684,7 +3311,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp5level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2703,7 +3330,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp5up"
-loc -0.000101103 -0.0528436 -0.0994293
+loc 0.00276819 -0.0526998 -0.0979893
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2722,7 +3349,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp5down"
-loc -0.000101103 -0.0528076 -0.0994742
+loc 0.00276819 -0.0526638 -0.0980342
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2741,7 +3368,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp6level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2760,7 +3387,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp6up"
-loc -0.000101103 -0.0528436 -0.0994293
+loc 0.00276819 -0.0526998 -0.0979893
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2779,7 +3406,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp6down"
-loc -0.000101103 -0.0528076 -0.0994742
+loc 0.00276819 -0.0526638 -0.0980342
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2798,7 +3425,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp7level"
-loc -0.000101103 -0.0528436 -0.0994561
+loc 0.00276819 -0.0526998 -0.0980161
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2817,7 +3444,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp7up"
-loc -0.000101103 -0.0528436 -0.0994293
+loc 0.00276819 -0.0526998 -0.0979893
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2836,7 +3463,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp7down"
-loc -0.000101103 -0.0528076 -0.0994742
+loc 0.00276819 -0.0526638 -0.0980342
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2855,7 +3482,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp10level"
-loc -0.000101103 -0.0527517 -0.0997204
+loc 0.00276819 -0.0526079 -0.0982804
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2874,7 +3501,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp10up"
-loc -0.000101103 -0.0524874 -0.0995614
+loc 0.00276819 -0.0523436 -0.0981214
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2893,7 +3520,7 @@ refs 4
 kids 0
 OBJECT poly
 name "mp10down"
-loc -0.000101103 -0.0524514 -0.0997385
+loc 0.00276819 -0.0523076 -0.0982985
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -2975,7 +3602,7 @@ refs 4
 kids 0
 OBJECT poly
 name "nextwppointer"
-loc 0.00155746 0.0270873 -0.0865564
+loc 0.00201794 0.0272399 -0.0865564
 texture "symbols.png"
 crease 45.000000
 numvert 8
@@ -3024,7 +3651,7 @@ refs 4
 kids 0
 OBJECT poly
 name "wp10path"
-loc 0.00155747 0.00779708 -0.0890469
+loc 0.00201795 0.0079497 -0.0890469
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -3043,7 +3670,7 @@ refs 4
 kids 0
 OBJECT poly
 name "wp10pos"
-loc 0.00155734 -0.054848 -0.11386
+loc 0.00201782 -0.0546954 -0.11386
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -3062,7 +3689,7 @@ refs 4
 kids 0
 OBJECT poly
 name "wp1pos"
-loc 0.00155734 -0.054848 -0.11386
+loc 0.00201782 -0.0546954 -0.11386
 texture "symbols.png"
 crease 45.000000
 numvert 4
@@ -3081,7 +3708,7 @@ refs 4
 kids 0
 OBJECT poly
 name "wp1path"
-loc 0.00155747 0.00779708 -0.0890469
+loc 0.00201795 0.0079497 -0.0890469
 texture "symbols.png"
 crease 45.000000
 numvert 4
