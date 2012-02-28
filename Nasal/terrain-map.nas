@@ -28,7 +28,7 @@ var terrain_full = "/instrumentation/terrain-map[1]/pixels/";
     },
        update : func {
 
-if (getprop("/controls/mfd/extra") == "terr") {
+if (getprop("/controls/mfd/extra") == 2) {
 
 var pos_lon = getprop("/position/longitude-deg");
 var pos_lat = getprop("/position/latitude-deg");
