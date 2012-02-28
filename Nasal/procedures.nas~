@@ -327,9 +327,9 @@ var fmcTP = {
 			if ((SIDList[SIDindex].wpts[n].wp_lon != 0) and (SIDList[SIDindex].wpts[n].wp_lat != 0)) {
 				
 				if (me.checkpos(SIDList[SIDindex].wpts[n].wp_name, type, SIDList[SIDindex].wpts[n].wp_lat, SIDList[SIDindex].wpts[n].wp_lon)) 
-					setprop("/autopilot/route-manager/input", "@INSERT" ~  n ~ ":" ~ SIDList[SIDindex].wpts[n].wp_name ~ "@" ~ SIDList[SIDindex].wpts[n].alt_cstr);
+					setprop("/autopilot/route-manager/input", "@INSERT" ~ (n + 1) ~ ":" ~ SIDList[SIDindex].wpts[n].wp_name ~ "@" ~ SIDList[SIDindex].wpts[n].alt_cstr);
 				else
-					setprop("/autopilot/route-manager/input", "@INSERT" ~ n ~ ":" ~ SIDList[SIDindex].wpts[n].wp_lon ~ "," ~ SIDList[SIDindex].wpts[n].wp_lat ~ "@" ~ SIDList[SIDindex].wpts[n].alt_cstr);
+					setprop("/autopilot/route-manager/input", "@INSERT" ~ (n + 1) ~ ":" ~ SIDList[SIDindex].wpts[n].wp_lon ~ "," ~ SIDList[SIDindex].wpts[n].wp_lat ~ "@" ~ SIDList[SIDindex].wpts[n].alt_cstr);
 					
 			}
 		
