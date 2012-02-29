@@ -283,8 +283,8 @@ setprop("/controls/cdu[1]/display/r5", "RADIOS");
 setprop("/controls/cdu[1]/display/l6", "DEP / ARR");
 setprop("/controls/cdu[1]/display/r6", "FLIGHTPLAN");
 
-setprop("/controls/cdu[1]/display/l7", "TAKE OFF");
-setprop("/controls/cdu[1]/display/r7", "APPROACH");
+setprop("/controls/cdu[1]/display/l7", "T/O PERF");
+setprop("/controls/cdu[1]/display/r7", "APP PERF");
 
 #### Menu Presses
 
@@ -329,12 +329,12 @@ keypress = "";
 }
 
 if (keypress == "l7") {
-page = "TAKE OFF";
+page = "TAKE-OFF PERFORMANCE";
 keypress = "";
 }
 
 if (keypress == "r7") {
-page = "APPROACH";
+page = "APPROACH PERFORMANCE";
 keypress = "";
 }
 
@@ -980,7 +980,7 @@ cduinput = "";
 
 setprop("/controls/cdu[1]/input", cduinput);
 
-} elsif (page == "TAKE OFF") {
+} elsif (page == "TAKE-OFF PERFORMANCE") {
 
 #### Field types
 
@@ -1038,7 +1038,7 @@ setprop("/controls/cdu[1]/display/l6", getprop("/instrumentation/b787-fmc/speeds
 setprop("/controls/cdu[1]/display/r6", "");
 
 setprop("/controls/cdu[1]/display/l7", "< INDEX");
-setprop("/controls/cdu[1]/display/r7", "APPROACH >");
+setprop("/controls/cdu[1]/display/r7", "APP PERF >");
 
 ### Menu Presses
 
@@ -1046,11 +1046,11 @@ if (keypress == "l7") {
 page = "INDEX";
 keypress = "";
 } elsif (keypress == "r7") {
-page = "APPROACH";
+page = "APPROACH PERFORMANCE";
 keypress = "";
 }
 
-} elsif (page == "APPROACH") {
+} elsif (page == "APPROACH PERFORMANCE") {
 
 #### Field types
 
