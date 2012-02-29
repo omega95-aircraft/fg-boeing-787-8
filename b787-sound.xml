@@ -365,7 +365,7 @@
 
     <enginei2>
         <name>internal left n2</name>
-        <path>Aircraft/787-8/Sounds/ljet.wav</path>
+        <path>Aircraft/787-8/Sounds/jet.wav</path>
         <mode>looped</mode>
 		<condition>
 				<property>sim/current-view/internal</property>
