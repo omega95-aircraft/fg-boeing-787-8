@@ -1830,6 +1830,7 @@
 		<command>nasal</command>
  		<script>
 			b787.nd.init();
+			b787.nav.init();
 		</script>
             </binding>
         </action>
