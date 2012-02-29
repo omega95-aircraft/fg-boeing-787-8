@@ -257,6 +257,19 @@ setprop("/controls/hydraulic/systeme", 1);
 setprop("/controls/hydraulic/systeme", 0);
 }
 
+if (getprop("/controls/hydraulic/fail/system0") == 1)
+	setprop("/controls/hydraulic/serviceable/system0", 0);
+	
+if (getprop("/controls/hydraulic/fail/system1") == 1)
+	setprop("/controls/hydraulic/serviceable/system1", 0);
+
+if (getprop("/controls/hydraulic/fail/system2") == 1)
+	setprop("/controls/hydraulic/serviceable/system2", 0);
+
+if (getprop("/controls/hydraulic/fail/system2") == 1)
+	setprop("/controls/hydraulic/serviceable/system3", 0);
+
+
 },
     reset : func {
         me.loopid += 1;

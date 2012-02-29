@@ -2724,6 +2724,20 @@
 			<property>/instrumentation/warn/caution</property>
 		</condition>
 	</animation>
+	
+	<animation>
+        <type>pick</type>
+        <object-name>masterwarn</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>/instrumentation/warn/master-sound</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+	
 
 <!-- WXRADAR Panel -->
 
@@ -3162,6 +3176,90 @@
 			<x>0</x>
 			<y>1</y>
 			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>disch.knob.1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/fires/fire/extinguish</property>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>disch.knob.2</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/fires/fire[1]/extinguish</property>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>disch.knob.1</object-name>
+		<property>controls/fires/fire/extinguish</property>
+		<factor>45</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+		<center>
+			<x-m>-23.0821</x-m>
+			<y-m>-0.0231</y-m>
+			<z-m>0</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>disch.knob.2</object-name>
+		<property>controls/fires/fire[1]/extinguish</property>
+		<factor>-45</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+		<center>
+			<x-m>-23.0821</x-m>
+			<y-m>0.0253</y-m>
+			<z-m>0</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>disch.knob.1</object-name>
+		<property>controls/fires/fire/extinguish</property>
+		<factor>0.024</factor>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>disch.knob.2</object-name>
+		<property>controls/fires/fire[1]/extinguish</property>
+		<factor>0.024</factor>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
 		</axis>
 	</animation>
 

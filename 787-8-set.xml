@@ -134,6 +134,10 @@
 		<range type="int">30</range>
 	</wxradar>
 	
+	<warn>
+		<master-sound type="int">1</master-sound>
+	</warn>
+	
 		<nd-settings>
 			<wpt type="bool">true</wpt>
 			<arpt type="bool">true</arpt>
@@ -467,6 +471,16 @@
 						</binding>
 					</item>
 					<item>
+						<label>Simulate System Failures</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							 var failures = gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/787-8/Systems/failures-dlg.xml");
+							 failures.open();
+							</script>
+						</binding>
+					</item>
+					<item>
 						<name>dualcontrol</name>
 						<label>Dual Control System Settings</label>
 						<binding>
@@ -646,6 +660,16 @@
 	</payload>
 
 	<controls>
+		<fires>
+			<fire>
+				<burn-time type="int">0</burn-time>
+				<extinguish type="int">0</extinguish>
+			</fire>
+			<fire n="1">
+				<burn-time type="int">0</burn-time>
+				<extinguish type="int">0</extinguish>
+			</fire>
+		</fires>
 		<mfd>
 			<extra>0</extra>
 		</mfd>
@@ -1059,6 +1083,7 @@
 			<file>Aircraft/787-8/Nasal/terrain-map.nas</file>
 			<file>Aircraft/787-8/Nasal/world-map.nas</file>
 			<file>Aircraft/787-8/Nasal/gear_system.nas</file>
+			<file>Aircraft/787-8/Nasal/engine-fire.nas</file>
 			<file>Aircraft/787-8/Nasal/fmc.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsDB.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsWP.nas</file>

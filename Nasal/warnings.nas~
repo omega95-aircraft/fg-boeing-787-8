@@ -94,8 +94,7 @@ if ((getprop("/instrumentation/warn/master-sound") == 0) and (me.mute == 0)) {
 
 if (master == 0) {
 	setprop("/sim/sound/master-warn", 0);
-	me.mute = 0;
-	setprop("/instrumentation/warn/master-sound", 1);
+	me.mute = 0;	
 }
 
 },

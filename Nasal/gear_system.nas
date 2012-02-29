@@ -9,6 +9,10 @@ var g_tree = "/systems/gears/";
             setprop("/controls/gear-failures/gear[1]/stuck-pos", 99);
             setprop("/controls/gear-failures/gear[2]/stuck-pos", 99);
             
+            setprop("/fdm/jsbsim/gear/unit[0]/z-position", -143.36872);
+            setprop("/fdm/jsbsim/gear/unit[1]/z-position", -153.63242);
+            setprop("/fdm/jsbsim/gear/unit[2]/z-position", -153.63242);
+            
             setprop("/fdm/jsbsim/gear/unit[0]/dynamic_friction_coeff", 0.5);
 			setprop("/fdm/jsbsim/gear/unit[0]/static_friction_coeff", 0.9);
 			setprop("/fdm/jsbsim/gear/unit[0]/rolling_friction_coeff", 0.02);
@@ -48,7 +52,7 @@ var g_tree = "/systems/gears/";
 			if ((getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/pos-norm") != 0) and (getprop("/velocities/airspeed-kt") >= 270) and (getprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos") == 99))
 				setprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos", getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/pos-norm"));
 			
-			if ((getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/pos-norm") != 0) and (getprop("/velocities/airspeed-kt") >= 270))
+			if (getprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos") != 99)
 				me.stuck(n, getprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos"));
 				
 			### Gear breaks off if airspeed exceeds 330 knots and gears are down
@@ -101,6 +105,8 @@ var g_tree = "/systems/gears/";
     	# Oooh, this is bad... Set Gear positions to 0, they're not there dude!
     	
     	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/pos-norm", 0);
+    	
+    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/z-position", -50);
     	
     },
     	burst : func(gear_unit) {
