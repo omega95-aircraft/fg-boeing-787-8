@@ -119,9 +119,9 @@
      </voice>
 
      <speaker>                           <!-- Speaker Configuration -->
-       <max-dist> 6 </max-dist>          <!-- Max. distance where speaker is heard -->
+       <max-dist> 12 </max-dist>          <!-- Max. distance where speaker is heard -->
        <reference-dist> 2 </reference-dist> <!-- Distance to pilot -->
-       <volume> 1.0 </volume>            <!-- Volume at reference distance -->
+       <volume> 2.0 </volume>            <!-- Volume at reference distance -->
      </speaker>
 
    </tcas>
@@ -785,6 +785,7 @@
 	<instrumentation>
 		<ndfull>
 			<active type="int">0</active>
+			<ground-factor type="double">1</ground-factor>
 		</ndfull>
 		<cdu>
 			<ident>
@@ -1057,6 +1058,7 @@
 			<file>Aircraft/787-8/Nasal/holding-pattern.nas</file>
 			<file>Aircraft/787-8/Nasal/terrain-map.nas</file>
 			<file>Aircraft/787-8/Nasal/world-map.nas</file>
+			<file>Aircraft/787-8/Nasal/gear_system.nas</file>
 			<file>Aircraft/787-8/Nasal/fmc.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsDB.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsWP.nas</file>

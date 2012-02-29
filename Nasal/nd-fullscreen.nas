@@ -16,7 +16,7 @@
     },
        update : func {
 
-setprop("/instrumentation/groundradar/range", getprop("/instrumentation/ndfull/range"));
+setprop("/instrumentation/groundradar/range", getprop("/instrumentation/ndfull/range") * getprop("/instrumentation/ndfull/ground-factor"));
 setprop("/instrumentation/nd[1]/range", getprop("/instrumentation/ndfull/range"));
 
 if (getprop("/instrumentation/ndfull/active") == 1) {
