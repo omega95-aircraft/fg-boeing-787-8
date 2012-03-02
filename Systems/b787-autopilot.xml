@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
  
-<!-- Generic Autopilot Configuration -->
+<!-- Generic Autopilot Configuration foo-->
 
 <!-- Each component is evaluated in the order specified.  You can make up -->
 <!-- property names to pass the result of one component on to a subsequent -->

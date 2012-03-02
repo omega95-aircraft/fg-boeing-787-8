@@ -1,7 +1,3 @@
-# Determine the value for the global variable "phase" for use with airspeed management 
-
-
-	
 var copilot = {
 	init : func { 
         me.UPDATE_INTERVAL = 1.73; 

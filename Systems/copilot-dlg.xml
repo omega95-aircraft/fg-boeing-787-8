@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-
+<!-- foo -->
 	<name>copilot</name>
 	<layout>vbox</layout>
 
