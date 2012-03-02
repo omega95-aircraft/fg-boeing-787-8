@@ -4,7 +4,7 @@
 <PropertyList>
     <name>WXRadar Echo Main</name>
     <w-base>512</w-base>
-    <h-base>512</h-base>
+    <h-base>1024</h-base>
 
     <layers>
 
@@ -43,13 +43,18 @@
     			</transformation>
 				<transformation>
 				 	<type>rotation</type>
+				 	<property>/orientation/heading-deg</property>
+				 	<scale>1</scale>
+				</transformation>
+				<transformation>
+				 	<type>rotation</type>
 				 	<property>/instrumentation/wxradar/storm[0]/heading-deg</property>
 				 	<scale>1</scale>
 				</transformation>	
 			</transformations>
             <emissive>1</emissive>
-            <w>512</w>
-            <h>512</h>
+            <w-prop>/instrumentation/wxradar/storm[0]/width-px</w-prop>
+            <h-prop>/instrumentation/wxradar/storm[0]/width-px</h-prop>
         </layer>
 
 

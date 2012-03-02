@@ -139,7 +139,7 @@
 
     <engine>
         <name>left n1</name>
-        <path>Aircraft/787-8/Sounds/lwhine.wav</path>
+        <path>Aircraft/787-8/Sounds/whine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -172,12 +172,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine>	
 
     <engine1>
         <name>right n1</name>
-        <path>Aircraft/787-8/Sounds/rwhine.wav</path>
+        <path>Aircraft/787-8/Sounds/whine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -210,12 +210,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine1>
 
     <engine2>
         <name>left n2</name>
-        <path>Aircraft/787-8/Sounds/lturbine.wav</path>
+        <path>Aircraft/787-8/Sounds/turbine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -248,12 +248,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine2>	
 
     <engine3>
         <name>right n2</name>
-        <path>Aircraft/787-8/Sounds/rturbine.wav</path>
+        <path>Aircraft/787-8/Sounds/turbine.wav</path>
         <mode>looped</mode>
 		<condition>
 			<not>
@@ -286,7 +286,7 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </engine3>	
 
 <!-- Engine Internal Sounds -->
@@ -324,7 +324,7 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei>	
 
     <enginei1>
@@ -360,12 +360,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei1>
 
     <enginei2>
         <name>internal left n2</name>
-        <path>Aircraft/787-8/Sounds/ljet.wav</path>
+        <path>Aircraft/787-8/Sounds/jet.wav</path>
         <mode>looped</mode>
 		<condition>
 				<property>sim/current-view/internal</property>
@@ -396,12 +396,12 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei2>	
 
     <enginei3>
         <name>internal right n2</name>
-        <path>Aircraft/787-8/Sounds/rjet.wav</path>
+        <path>Aircraft/787-8/Sounds/jet.wav</path>
         <mode>looped</mode>
 		<condition>
 				<property>sim/current-view/internal</property>
@@ -432,7 +432,7 @@
             <z>0</z>
         </position>
         <reference-dist>10.0</reference-dist>
-        <max-dist>30.0</max-dist>
+        <max-dist>50.0</max-dist>
     </enginei3>	
 
 
@@ -688,6 +688,190 @@
         <reference-dist>10</reference-dist>
         <max-dist>100</max-dist>
     </surge>
+    
+<!-- Engine Explode -->
+
+	<explode0>
+        <name>Explosion</name>
+        <path>Aircraft/787-8/Sounds/explode.wav</path>
+        <mode>once</mode>
+        <condition>
+		<equals>
+                <property>sim/sound/explode0</property>
+                <value>1</value>
+		</equals>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>-8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>100</max-dist>
+    </explode0>
+    
+    <explode1>
+        <name>Explosion 1</name>
+        <path>Aircraft/787-8/Sounds/explode.wav</path>
+        <mode>once</mode>
+        <condition>
+		<equals>
+                <property>sim/sound/explode1</property>
+                <value>1</value>
+		</equals>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>100</max-dist>
+    </explode1>
+    
+    <extinguish>
+        <name>extinguish</name>
+        <path>Aircraft/787-8/Sounds/extinguish.wav</path>
+        <mode>looped</mode>
+        <condition>
+			<equals>
+                <property>/controls/fires/fire/extinguish</property>
+                <value>1</value>
+			</equals>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>-8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>200</max-dist>
+    </extinguish>
+    
+    <extinguish1>
+        <name>extinguish 1</name>
+        <path>Aircraft/787-8/Sounds/extinguish.wav</path>
+        <mode>looped</mode>
+        <condition>
+			<equals>
+                <property>/controls/fires/fire[1]/extinguish</property>
+                <value>1</value>
+			</equals>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>200</max-dist>
+    </extinguish1>
+    
+    <fire>
+        <name>fire</name>
+        <path>Aircraft/787-8/Sounds/jet.wav</path>
+        <mode>looped</mode>
+        <condition>
+			<equals>
+                <property>/controls/fires/fire/on-fire</property>
+                <value>1</value>
+			</equals>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>-8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>200</max-dist>
+    </fire>
+    
+    <fire1>
+        <name>fire 1</name>
+        <path>Aircraft/787-8/Sounds/jet.wav</path>
+        <mode>looped</mode>
+        <condition>
+			<equals>
+                <property>/controls/fires/fire[1]/on-fire</property>
+                <value>1</value>
+			</equals>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>-8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>200</max-dist>
+    </fire1>
+    
+    <fire-warn>
+        <name>fire warn</name>
+        <path>Aircraft/787-8/Sounds/fire-warning.wav</path>
+        <mode>looped</mode>
+        <condition>
+        	<or>
+			<equals>
+                <property>/controls/fires/fire/phase</property>
+                <value>fire</value>
+			</equals>
+			<equals>
+                <property>/controls/fires/fire[1]/phase</property>
+                <value>fire</value>
+			</equals>
+			</or>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>-8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>200</max-dist>
+    </fire-warn>
+    
+    <master-warn>
+        <name>master warning</name>
+        <path>Aircraft/787-8/Sounds/master-warning.wav</path>
+        <mode>looped</mode>
+        <condition>
+			<equals>
+                <property>/sim/sound/master-warn</property>
+                <value>1</value>
+			</equals>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>10</reference-dist>
+        <max-dist>200</max-dist>
+    </master-warn>
 
 <!-- Seat Belt -->
 
@@ -830,7 +1014,7 @@
     <enginesr1>
         <name>left reverse-thrust</name>
         <mode>looped</mode>
-        <path>Aircraft/787-8/Sounds/lreverser.wav</path>
+        <path>Aircraft/787-8/Sounds/reverser.wav</path>
         <condition>
             <property>engines/engine[0]/running</property>
         </condition>
@@ -852,7 +1036,7 @@
     <enginesr2>
         <name>right reverse-thrust</name>
         <mode>looped</mode>
-        <path>Aircraft/787-8/Sounds/rreverser.wav</path>
+        <path>Aircraft/787-8/Sounds/reverser.wav</path>
         <condition>
             <property>engines/engine[1]/running</property>
         </condition>
@@ -914,6 +1098,89 @@
         <reference-dist>5.0</reference-dist>
         <max-dist>10.0</max-dist>
     </gear1>
+
+<!-- Wheels -->
+
+<wheels1>
+<name>touchdown</name>
+ <path>Aircraft/787-8/Sounds/touchdown.wav</path>
+ <mode>once</mode>
+ <condition>
+	<or>
+		<property>/gear/gear[0]/wow</property>
+		<property>/gear/gear[1]/wow</property>
+    	<property>/gear/gear[2]/wow</property>
+	</or>
+ </condition>
+        <volume>
+            <factor>1</factor>
+        </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</wheels1>
+
+<wheels2>
+<name>slowroll</name>
+ <path>Aircraft/787-8/Sounds/rumble.wav</path>
+ <mode>looped</mode>
+ <condition>
+	<and>
+		<or>
+			<property>/gear/gear[0]/wow</property>
+			<property>/gear/gear[1]/wow</property>
+    		<property>/gear/gear[2]/wow</property>
+		</or>
+		<greater-than>
+			<property>/velocities/groundspeed-kt</property>
+			<value>3</value>
+		</greater-than>
+	</and>
+ </condition>
+        <volume>
+            <factor>1</factor>
+        </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</wheels2>
+<!--
+<wheels3>
+<name>fastroll</name>
+ <path>Aircraft/787-8/Sounds/roll.wav</path>
+ <mode>looped</mode>
+ <condition>
+	<and>
+		<or>
+			<property>/gear/gear[0]/wow</property>
+			<property>/gear/gear[1]/wow</property>
+    		<property>/gear/gear[2]/wow</property>
+		</or>
+		<greater-than>
+			<property>/velocities/groundspeed-kt</property>
+			<value>50</value>
+		</greater-than>
+	</and>
+ </condition>
+        <volume>
+            <factor>1</factor>
+        </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</wheels3> -->
 
 <foo include="Sounds/copilot.xml" omit-node="y" />
 

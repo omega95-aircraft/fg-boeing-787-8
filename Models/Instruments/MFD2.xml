@@ -145,7 +145,7 @@
 </model>
 
 <model>
- <path>CDU.xml</path>
+ <path>CDU1.xml</path>
  <offsets>
 	<pitch-deg>90.0</pitch-deg>
  </offsets>
@@ -334,5 +334,75 @@
             </binding>
         </action>
     </animation>
+    
+        <animation>
+        <type>pick</type>
+        <object-name>cam</object-name>
+        <object-name>cam.active</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/mfd2/page</property>
+				<value>cam</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>gear</object-name>
+        <object-name>gear.active</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/mfd2/page</property>
+				<value>gear</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+		<type>select</type>
+		<object-name>cam.active</object-name>
+		<condition>
+ 		<equals>
+   			<property>controls/mfd2/page</property>
+   			<value>cam</value>
+  		</equals>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>gear.active</object-name>
+		<condition>
+ 		<equals>
+   			<property>controls/mfd2/page</property>
+   			<value>gear</value>
+  		</equals>
+		</condition>
+	</animation>
+	
+<model>
+ <path>CAM.xml</path>
+ <condition>
+  <equals>
+   <property>controls/mfd2/page</property>
+   <value>cam</value>
+  </equals>
+ </condition>
+</model>
+
+<model>
+ <path>GEAR.xml</path>
+ <condition>
+  <equals>
+   <property>controls/mfd2/page</property>
+   <value>gear</value>
+  </equals>
+ </condition>
+</model>
 
 </PropertyList>

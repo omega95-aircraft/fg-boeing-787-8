@@ -523,7 +523,7 @@
 	</model>
 
 	<model>
-		<path>Aircraft/787-8/Models/Instruments/CDU.xml</path>
+		<path>Aircraft/787-8/Models/Instruments/CDU1.xml</path>
 		<offsets>
 			<x-m>-23.58</x-m>
 			<y-m>0.078</y-m>
@@ -1049,7 +1049,7 @@
             <binding>
                 <command>property-cycle</command>
                 <property>controls/cdu/keypress</property>
-		<value>T</value>
+		<value>U</value>
             </binding>
         </action>
     </animation>
@@ -1799,6 +1799,7 @@
 		<command>nasal</command>
  		<script>
 			b787.cdu.init();
+			b787.cdu1.init();
 		</script>
             </binding>
         </action>
@@ -1829,6 +1830,7 @@
 		<command>nasal</command>
  		<script>
 			b787.nd.init();
+			b787.nav.init();
 		</script>
             </binding>
         </action>
@@ -2342,7 +2344,7 @@
     <animation>
         <type>pick</type>
         <object-name>APalt</object-name>
-        <object-name>ALT.toggle</object-name>
+        <object-name>FLCH.toggle</object-name>
         <action>
             <button>0</button>
             <binding>
@@ -2350,6 +2352,22 @@
                 <property>/autopilot/panel/alt</property>
 				<value>alt</value>
 				<value></value>
+            </binding>
+        </action>
+    </animation>
+    
+        <animation>
+        <type>pick</type>
+        <object-name>ALThold</object-name>
+        <object-name>ALT.toggle</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+ 				<script>
+ 					setprop("/autopilot/settings/target-altitude-ft", getprop("/instrumentation/altimeter/indicated-altitude-ft"));
+ 					setprop("/autopilot/panel/alt", "alt");
+ 				</script>
             </binding>
         </action>
     </animation>
@@ -2419,8 +2437,19 @@
 		<object-name>ALT.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
-				<value>alt</value>
+				<property>/autopilot/panel/alt-ind</property>
+				<value>hold</value>
+			</equals>
+		</condition>
+	</animation>
+	
+		<animation>
+		<type>select</type>
+		<object-name>FLCH.toggle</object-name>
+		<condition>
+			<equals>
+				<property>/autopilot/panel/alt-ind</property>
+				<value>flch</value>
 			</equals>
 		</condition>
 	</animation>
@@ -2696,6 +2725,20 @@
 			<property>/instrumentation/warn/caution</property>
 		</condition>
 	</animation>
+	
+	<animation>
+        <type>pick</type>
+        <object-name>masterwarn</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>/instrumentation/warn/master-sound</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+	
 
 <!-- WXRADAR Panel -->
 
@@ -2860,6 +2903,365 @@
 			<y-m>0</y-m>
 			<z-m>1.347</z-m>
 		</center>
+	</animation>
+
+<!-- EFIS Buttons and Knobs -->
+
+	<animation>
+		<type>pick</type>
+		<object-name>navmode</object-name>
+		<object-name>navmode1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-cycle</command>
+				<property>controls/mfd/extra</property>
+				<value>0</value>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>navmode</object-name>
+		<property>controls/mfd/extra</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>-116</dep></entry>
+			<entry><ind>1</ind><dep>-48.5</dep></entry>
+			<entry><ind>2</ind><dep>48.5</dep></entry>
+			<entry><ind>3</ind><dep>116</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>-23.7522</x1-m>
+			<y1-m>-0.3054</y1-m>
+			<z1-m>1.9529</z1-m>
+			<x2-m>-23.7614</x2-m>
+			<y2-m>-0.3054</y2-m>
+			<z2-m>1.9502</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>navmode1</object-name>
+		<property>controls/mfd/extra</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>-116</dep></entry>
+			<entry><ind>1</ind><dep>-48.5</dep></entry>
+			<entry><ind>2</ind><dep>48.5</dep></entry>
+			<entry><ind>3</ind><dep>116</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>-23.7522</x1-m>
+			<y1-m>0.3602</y1-m>
+			<z1-m>1.9522</z1-m>
+			<x2-m>-23.7614</x2-m>
+			<y2-m>0.3602</y2-m>
+			<z2-m>1.9494</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>navrange</object-name>
+		<object-name>navrange1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-cycle</command>
+				<property>/instrumentation/ndfull/range</property>
+				<value>0.75</value>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+				<value>14</value>
+				<value>15</value>
+				<value>16</value>
+				<value>32</value>
+				<value>64</value>
+				<value>128</value>
+				<value>250</value>
+			</binding>
+		</action>
+	</animation>
+	
+		<animation>
+		<type>pick</type>
+		<object-name>navrange</object-name>
+		<object-name>navrange1</object-name>
+		<action>
+			<button>1</button>
+			<button>3</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-cycle</command>
+				<property>/instrumentation/ndfull/range</property>
+				<value>250</value>
+				<value>128</value>
+				<value>64</value>
+				<value>32</value>
+				<value>16</value>
+				<value>15</value>
+				<value>14</value>
+				<value>13</value>
+				<value>12</value>
+				<value>11</value>
+				<value>10</value>
+				<value>9</value>
+				<value>8</value>
+				<value>7</value>
+				<value>6</value>
+				<value>5</value>
+				<value>4</value>
+				<value>3</value>
+				<value>2</value>
+				<value>1</value>
+				<value>0.75</value>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>navrange</object-name>
+		<property>/instrumentation/ndfull/range</property>
+		<interpolation>
+			<entry><ind>1</ind><dep>-120</dep></entry>
+			<entry><ind>2</ind><dep>-90</dep></entry>
+			<entry><ind>4</ind><dep>-60</dep></entry>
+			<entry><ind>8</ind><dep>-30</dep></entry>
+			<entry><ind>16</ind><dep>0</dep></entry>
+			<entry><ind>32</ind><dep>30</dep></entry>
+			<entry><ind>64</ind><dep>60</dep></entry>
+			<entry><ind>128</ind><dep>90</dep></entry>
+			<entry><ind>250</ind><dep>120</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>-23.7522</x1-m>
+			<y1-m>-0.3519</y1-m>
+			<z1-m>1.9529</z1-m>
+			<x2-m>-23.7614</x2-m>
+			<y2-m>-0.3519</y2-m>
+			<z2-m>1.9502</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>navrange1</object-name>
+		<property>/instrumentation/ndfull/range</property>
+		<interpolation>
+			<entry><ind>1</ind><dep>-120</dep></entry>
+			<entry><ind>2</ind><dep>-90</dep></entry>
+			<entry><ind>4</ind><dep>-60</dep></entry>
+			<entry><ind>8</ind><dep>-30</dep></entry>
+			<entry><ind>16</ind><dep>0</dep></entry>
+			<entry><ind>32</ind><dep>30</dep></entry>
+			<entry><ind>64</ind><dep>60</dep></entry>
+			<entry><ind>128</ind><dep>90</dep></entry>
+			<entry><ind>250</ind><dep>120</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>-23.7522</x1-m>
+			<y1-m>0.3137</y1-m>
+			<z1-m>1.9522</z1-m>
+			<x2-m>-23.7614</x2-m>
+			<y2-m>0.3137</y2-m>
+			<z2-m>1.9494</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>vor.btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>instrumentation/nd-settings/vor</property>
+			</binding>
+		</action>
+	</animation>	
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>vor.btn</object-name>
+		<property>instrumentation/nd-settings/vor</property>
+		<factor>-0.25</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>wpt.btn</object-name>
+		<object-name>fix.btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>instrumentation/nd-settings/wpt</property>
+			</binding>
+		</action>
+	</animation>	
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>wpt.btn</object-name>
+		<object-name>fix.btn</object-name>
+		<property>instrumentation/nd-settings/wpt</property>
+		<factor>-0.25</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>arpt.btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>instrumentation/nd-settings/arpt</property>
+			</binding>
+		</action>
+	</animation>	
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>arpt.btn</object-name>
+		<property>instrumentation/nd-settings/arpt</property>
+		<factor>-0.25</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>tcas.btn</object-name>
+		<condition>
+			<equals>	
+				<property>controls/mfd/extra</property>
+				<value>0</value>
+			</equals>
+		</condition>
+		<factor>-0.25</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>disch.knob.1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/fires/fire/extinguish</property>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>disch.knob.2</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/fires/fire[1]/extinguish</property>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>disch.knob.1</object-name>
+		<property>controls/fires/fire/extinguish</property>
+		<factor>45</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+		<center>
+			<x-m>-23.0821</x-m>
+			<y-m>-0.0231</y-m>
+			<z-m>0</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>disch.knob.2</object-name>
+		<property>controls/fires/fire[1]/extinguish</property>
+		<factor>-45</factor>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+		<center>
+			<x-m>-23.0821</x-m>
+			<y-m>0.0253</y-m>
+			<z-m>0</z-m>
+		</center>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>disch.knob.1</object-name>
+		<property>controls/fires/fire/extinguish</property>
+		<factor>0.024</factor>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>disch.knob.2</object-name>
+		<property>controls/fires/fire[1]/extinguish</property>
+		<factor>0.024</factor>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
 	</animation>
 
 </PropertyList>

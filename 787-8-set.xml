@@ -6,7 +6,7 @@
 		<description>Boeing 787-8</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-8</aero>
-		<authors>Narendran Muraleedharan, Hooray, Ron Jenson, Thorsten ,Dwayne Gable, Joshua Wilson</authors>
+		<authors>Narendran Muraleedharan, Dwayne Gable, Scott Hamilton, Hooray, Ron Jenson, Thorsten, Joshua Wilson</authors>
 		<engine>trent_1000</engine>
 
 		<model>
@@ -119,9 +119,9 @@
      </voice>
 
      <speaker>                           <!-- Speaker Configuration -->
-       <max-dist> 6 </max-dist>          <!-- Max. distance where speaker is heard -->
+       <max-dist> 12 </max-dist>          <!-- Max. distance where speaker is heard -->
        <reference-dist> 2 </reference-dist> <!-- Distance to pilot -->
-       <volume> 1.0 </volume>            <!-- Volume at reference distance -->
+       <volume> 2.0 </volume>            <!-- Volume at reference distance -->
      </speaker>
 
    </tcas>
@@ -133,6 +133,62 @@
 		<precip type="bool">true</precip>
 		<range type="int">30</range>
 	</wxradar>
+	
+	<warn>
+		<master-sound type="int">1</master-sound>
+	</warn>
+	
+		<nd-settings>
+			<wpt type="bool">true</wpt>
+			<arpt type="bool">true</arpt>
+			<vor type="bool">true</vor>
+			<ndb type="bool">true</ndb>
+			<traffic type="bool">false</traffic>
+		</nd-settings>
+		
+		<nd n="0">
+           <radar-texture-path type="string">Aircraft/787-8/Models/Instruments/od_ndradar_1.png</radar-texture-path>
+          <symbol-texture-path type="string">Aircraft/787-8/Models/Instruments/symbols_2d.png</symbol-texture-path>
+            <font>
+                <color>
+                   <red type="float">0.7</red>
+                   <green type="float">0.7</green>
+                   <blue type="float">0.7</blue>
+                   <alpha type="float">1</alpha>
+               </color>
+               <name type="string">helvetica_bold.txf</name>
+               <size type="float">14</size>
+               <line-spacing type="float">0.01</line-spacing>
+           </font>
+           <serviceable type="bool">true</serviceable>
+           <range type="int">30</range>
+           <aircraft-heading-up type="bool">true</aircraft-heading-up>
+           <heading-up-deg type="float">0.01</heading-up-deg>
+           <x-center type="float">0.499</x-center>
+           <y-center type="float">0.182</y-center>
+       </nd>
+       
+       <nd n="1">
+           <radar-texture-path type="string">Aircraft/787-8/Models/Instruments/od_ndradar_2.png</radar-texture-path>
+          <symbol-texture-path type="string">Aircraft/787-8/Models/Instruments/symbols_2d.png</symbol-texture-path>
+            <font>
+                <color>
+                   <red type="float">0.7</red>
+                   <green type="float">0.7</green>
+                   <blue type="float">0.7</blue>
+                   <alpha type="float">1</alpha>
+               </color>
+               <name type="string">helvetica_bold.txf</name>
+               <size type="float">14</size>
+               <line-spacing type="float">0.01</line-spacing>
+           </font>
+           <serviceable type="bool">true</serviceable>
+           <range type="int">100</range>
+           <aircraft-heading-up type="bool">true</aircraft-heading-up>
+           <heading-up-deg type="float">0.01</heading-up-deg>
+           <x-center type="float">0.499</x-center>
+           <y-center type="float">0.182</y-center>
+       </nd>
 
 		</instrumentation>
 
@@ -188,6 +244,40 @@
 	</view>
 
 	<view n="101">
+		<name>Gear View</name>
+		<type>lookfrom</type>
+		<internal type="bool">true</internal>
+		<cockpit type="bool">true</cockpit>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">-2.3146</y-offset-m>
+			<z-offset-m type="double">10.1193</z-offset-m>
+			<default-field-of-view-deg type="double">60</default-field-of-view-deg>
+		</config>
+	</view>
+
+	<view n="102">
+		<name>Right Engine View</name>
+		<type>lookfrom</type>
+		<internal type="bool">true</internal>
+		<cockpit type="bool">true</cockpit>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+			<x-offset-m type="double">3.25</x-offset-m>
+			<y-offset-m type="double">2.0382</y-offset-m>
+			<z-offset-m type="double">-8.2443</z-offset-m>
+			<heading-offset-deg>-111</heading-offset-deg>
+			<pitch-offset-deg>-16.2</pitch-offset-deg>
+			<default-field-of-view-deg type="double">62</default-field-of-view-deg>
+		</config>
+	</view>
+
+	<view n="103">
 		<name>Full Cockpit View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
@@ -204,7 +294,7 @@
 		</config>
 	</view>
 
-	<view n="102">
+	<view n="104">
 		<name>EFB View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
@@ -222,7 +312,7 @@
 		</config>
 	</view>
 
-	<view n="103">
+	<view n="105">
 		<name>CDU View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
@@ -239,7 +329,7 @@
 		</config>
 	</view>
 
-	<view n="104">
+	<view n="106">
 		<name>Overhead Panel View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
@@ -256,7 +346,7 @@
 		</config>
 	</view>
 
-	<view n="105">
+	<view n="107">
 		<name>Copilot View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
@@ -314,14 +404,14 @@
 <enabled type="bool">true</enabled>
 					<item>
 						<name>autostart</name>
-						<label>Autostart</label>
+						<label>Autostart Aircraft Engines</label>
 						<binding>
 							<command>property-toggle</command>
 							<property>sim/model/start-idling</property>
 						</binding>
 					</item>
 					<item>
-						<label>Select Livery</label>
+						<label>Select Aircraft Livery</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -331,7 +421,7 @@
 					</item>
 
 					<item>
-						<label>Virtual Co-pilot</label>
+						<label>Virtual Co-pilot Settings</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -341,8 +431,18 @@
 						</binding>
 					</item>
 					<item>
+						<label>Import/Export Flightplan</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							 var flightplan = gui.Dialog.new("sim/gui/dialogs/flightplan/dialog", "Aircraft/787-8/Systems/flightplan-dlg.xml");
+							 flightplan.open();
+							</script>
+						</binding>
+					</item>
+					<item>
 						<name>pushback</name>
-						<label>Pushback</label>
+						<label>Request for Pushback</label>
 						<binding>
 							<command>dialog-show</command>
 							<dialog-name>pushback</dialog-name>
@@ -350,7 +450,7 @@
 					</item>
 					<item>
 						<name>lights</name>
-						<label>Aircraft Lights</label>
+						<label>Control Aircraft Lights</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -361,7 +461,7 @@
 					</item>
 					<item>
 						<name>announcements</name>
-						<label>Announcements</label>
+						<label>Make Announcements</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -371,8 +471,18 @@
 						</binding>
 					</item>
 					<item>
+						<label>Simulate System Failures</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							 var failures = gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/787-8/Systems/failures-dlg.xml");
+							 failures.open();
+							</script>
+						</binding>
+					</item>
+					<item>
 						<name>dualcontrol</name>
-						<label>Dual Control Systems</label>
+						<label>Dual Control System Settings</label>
 						<binding>
 							<command>nasal</command>
 							<script>
@@ -422,27 +532,57 @@
 			</key>
 		</help>
 
+<!-- General MP Enabled Properties -->
+
     <multiplay>
         <generic>
-            <int n="0" alias="/systems/electrical/outputs/strobe"/>
-            <int n="1" alias="/systems/electrical/outputs/beacon"/>
-            <int n="2" alias="/systems/electrical/outputs/taxi-lights"/>
-            <int n="3" alias="/systems/electrical/outputs/logo-lights"/>
-            <int n="4" alias="/systems/electrical/outputs/landing-light[0]"/>
-            <int n="5" alias="/systems/electrical/outputs/landing-light[1]"/>
-            <int n="6" alias="/systems/electrical/outputs/landing-light[2]"/>
-            <int n="7" alias="/systems/electrical/outputs/nav-lights"/>
 
-            <float n="0" alias="/gear/gear[0]/compression-m"/>
-            <float n="1" alias="/gear/gear[1]/compression-m"/>
-            <float n="2" alias="/gear/gear[2]/compression-m"/>
-            <float n="3" alias="/gear/gear[1]/compression-m"/>
-            <float n="4" alias="/gear/gear[2]/compression-m"/>
-            <float n="5" alias="/surface-positions/speedbrake-norm"/>
-            <float n="6" alias="/surface-positions/reverser-norm"/>
-            <string  alias="/sim/multiplay/callsign"/>
+			<!-- Aircraft Lighting -->
+
+            <int n="0" alias="controls/lighting/logo"/>
+            <int n="1" alias="controls/lighting/landing-lights[0]"/>
+            <int n="2" alias="controls/lighting/wing-lights"/>
+            <int n="3" alias="sim/model/lights/beacon/state"/>
+            <int n="4" alias="controls/lighting/nav-lights"/>
+            <int n="5" alias="sim/model/lights/strobe/state"/>
+            <int n="6" alias="controls/lighting/taxi-lights"/>
+
+			<!-- Gears, Engines, Surfaces and Wingflex -->	
+
+            <float n="0" alias="gear/gear[0]/position-norm"/>
+            <float n="1" alias="gear/gear[1]/position-norm"/>
+            <float n="2" alias="gear/gear[2]/position-norm"/>
+            <float n="3" alias="engines/engine[0]/n1"/>
+            <float n="4" alias="engines/engine[1]/n1"/>
+            <float n="5" alias="fdm/jsbsim/aero/coefficient/CLalpha"/>
+            <float n="6" alias="/fdm/jsbsim/fcs/aileron-fbw-output"/>
+            <float n="7" alias="surface-positions/flap-pos-norm"/>
+            <float n="8" alias="controls/flight/elevator-trim"/>
+            <float n="9" alias="/fdm/jsbsim/fcs/elevator-fbw-output"/>
+            <float n="10" alias="/fdm/jsbsim/fcs/rudder-fbw-output"/>
+            <float n="11" alias="surface-positions/speedbrake-pos-norm"/>
+            <float n="12" alias="controls/switches/contrails"/>
+            <float n="13" alias="gear/gear[0]/compression-norm"/>
+            <float n="14" alias="gear/gear[1]/compression-norm"/>
+            <float n="15" alias="gear/gear[2]/compression-norm"/>
+            <float n="16" alias="gear/gear[0]/rollspeed-ms"/>
+            <float n="17" alias="gear/gear[1]/rollspeed-ms"/>
+            <float n="18" alias="gear/gear[2]/rollspeed-ms"/>
+            <float n="19" alias="engines/engine[0]/reverser-pos-norm"/>
+            <float n="20" alias="engines/engine[1]/reverser-pos-norm"/>
+
+			<!-- Fuel Controls and Extra -->
+
+			<int n="7" alias="/controls/surge/flash" />
+			<int n="8" alias="controls/jettison/arm" />
+			<int n="9" alias="/controls/jettison/rnozzle" />
+			<int n="10" alias="/controls/jettison/lnozzle" />
+
         </generic>
     </multiplay>
+
+<!-- NOTE that the Dual Control MP Properties will be aliased into /sim/multiplay/generic/ through Dual_Control_Pilot.nas, Dual_Control_Copilot and Dual_Control_787.nas files -->
+
 	</sim>
 
 <aircraft>
@@ -520,6 +660,19 @@
 	</payload>
 
 	<controls>
+		<fires>
+			<fire>
+				<burn-time type="int">0</burn-time>
+				<extinguish type="int">0</extinguish>
+			</fire>
+			<fire n="1">
+				<burn-time type="int">0</burn-time>
+				<extinguish type="int">0</extinguish>
+			</fire>
+		</fires>
+		<mfd>
+			<extra>0</extra>
+		</mfd>
 		<navigation>
 			<init type="double">0</init>
 		</navigation>
@@ -656,6 +809,7 @@
 	<instrumentation>
 		<ndfull>
 			<active type="int">0</active>
+			<ground-factor type="double">1</ground-factor>
 		</ndfull>
 		<cdu>
 			<ident>
@@ -813,6 +967,58 @@
 					</script>
 				</binding>
 			</key>
+			<key n="357">
+				<name>Up</name>
+				<repeatable type="bool">true</repeatable>
+				  <mod-alt>
+				   <desc>Tilt View Up</desc>
+				   <binding>
+					<command>nasal</command>
+					<script>
+						setprop("/sim/current-view/pitch-offset-deg", getprop("/sim/current-view/pitch-offset-deg") + 1);
+					</script>
+				   </binding>
+				  </mod-alt>
+			</key>
+			<key n="359">
+				<name>Down</name>
+				<repeatable type="bool">true</repeatable>
+				  <mod-alt>
+				   <desc>Tilt View Down</desc>
+				   <binding>
+					<command>nasal</command>
+					<script>
+						setprop("/sim/current-view/pitch-offset-deg", getprop("/sim/current-view/pitch-offset-deg") - 1);
+					</script>
+				   </binding>
+				  </mod-alt>
+			</key>
+			<key n="356">
+				<name>Left</name>
+				<repeatable type="bool">true</repeatable>
+				  <mod-alt>
+				   <desc>Pan View Left</desc>
+				   <binding>
+					<command>nasal</command>
+					<script>
+						setprop("/sim/current-view/heading-offset-deg", getprop("/sim/current-view/heading-offset-deg") + 1);
+					</script>
+				   </binding>
+				  </mod-alt>
+			</key>
+			<key n="358">
+				<name>Right</name>
+				<repeatable type="bool">true</repeatable>
+				  <mod-alt>
+				   <desc>Pan View Right</desc>
+				   <binding>
+					<command>nasal</command>
+					<script>
+						setprop("/sim/current-view/heading-offset-deg", getprop("/sim/current-view/heading-offset-deg") - 1);
+					</script>
+				   </binding>
+				  </mod-alt>
+			</key>
 
 		</keyboard>
 	</input>
@@ -857,7 +1063,10 @@
 			<file>Aircraft/787-8/Nasal/anti-ice.nas</file>
 			<file>Aircraft/787-8/Nasal/surge.nas</file>
 			<file>Aircraft/787-8/Nasal/autobrake.nas</file>
-			<file>Aircraft/787-8/Nasal/cdu.nas</file>
+			<file>Aircraft/787-8/Nasal/flightplans.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures.nas</file>
+			<file>Aircraft/787-8/Nasal/cdu1.nas</file>
+			<file>Aircraft/787-8/Nasal/cdu2.nas</file>
 			<file>Aircraft/787-8/Nasal/mfd-navigation.nas</file>
 			<file>Aircraft/787-8/Nasal/nd-fullscreen.nas</file>
 			<file>Aircraft/787-8/Nasal/tcas.nas</file>
@@ -868,18 +1077,31 @@
 			<file>Aircraft/787-8/Nasal/modecontrol.nas</file>
 			<file>Aircraft/787-8/Nasal/warnings.nas</file>
 			<file>Aircraft/787-8/Nasal/lighting.nas</file>
-			<file>Aircraft/787-8/Nasal/wxradar.nas</file>
+			<file>Aircraft/787-8/Nasal/wxradar-ndhalf.nas</file>
+			<file>Aircraft/787-8/Nasal/wxradar-ndfull.nas</file>
 			<file>Aircraft/787-8/Nasal/holding-pattern.nas</file>
-<!--			<file>Aircraft/787-8/DualControl/dualcontrol_main.nas</file> -->
+			<file>Aircraft/787-8/Nasal/terrain-map.nas</file>
+			<file>Aircraft/787-8/Nasal/world-map.nas</file>
+			<file>Aircraft/787-8/Nasal/gear_system.nas</file>
+			<file>Aircraft/787-8/Nasal/engine-fire.nas</file>
+			<file>Aircraft/787-8/Nasal/fmc.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsDB.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsWP.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsTP.nas</file>
+			<file>Aircraft/787-8/Nasal/procedures/fmsTransition.nas</file>
 		</b787>
+		<dualcontrol>
+			<file>Aircraft/787-8/DualControl/DualControl_base.nas</file>
+		</dualcontrol>
         <dialogs>
             <file>Aircraft/787-8/Nasal/radio.nas</file>
         </dialogs>
-<!-- WXRADAR Animations Creator -->
-		<wxr>
+<!-- Animations Creators -->
+		<helpers>
 <!--			<file>Aircraft/787-8/Devel/wxradar-echo-animations.nas</file> -->
 			<file>Aircraft/787-8/Devel/wxradar-pixel-animations.nas</file>
-		</wxr>
+			<file>Aircraft/787-8/Devel/tcas-animations-helper.nas</file>
+		</helpers>
 	</nasal>
 
 </PropertyList>

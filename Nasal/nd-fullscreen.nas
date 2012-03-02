@@ -16,7 +16,8 @@
     },
        update : func {
 
-setprop("/instrumentation/groundradar/range", getprop("/instrumentation/ndfull/range"));
+setprop("/instrumentation/groundradar/range", getprop("/instrumentation/ndfull/range") * getprop("/instrumentation/ndfull/ground-factor"));
+setprop("/instrumentation/nd[1]/range", getprop("/instrumentation/ndfull/range"));
 
 if (getprop("/instrumentation/ndfull/active") == 1) {
 
@@ -51,10 +52,10 @@ if (getprop("/instrumentation/ndfull/active") == 1) {
 	if (getprop("/instrumentation/gps[1]/scratch/longitude-deg") != nil) {
 
 	var naxcoord = 60 * getprop("/instrumentation/gps[1]/scratch/longitude-deg");
-	var naycoord = 0.24 + (60 * getprop("/instrumentation/gps[1]/scratch/latitude-deg"));
+	var naycoord = 60 * getprop("/instrumentation/gps[1]/scratch/latitude-deg");
 
-	var xoffset = (naxcoord - xcoord) * (100 / ytop);
-	var yoffset = (naycoord - ycoord) * (100 / ytop);
+	var xoffset = ((naxcoord - xcoord) / ytop) * 0.691427744;
+	var yoffset = ((naycoord - ycoord) / ytop) * 0.94274977;
 
 setprop("/instrumentation/ndfull/airport/xoffset", xoffset);
 
@@ -110,12 +111,13 @@ if (getprop("instrumentation/ndfull/vor2-dist") <= ytop) {
 var currentwp = getprop("/autopilot/route-manager/current-wp");
 var numberofwps = getprop("/autopilot/route-manager/route/num");
 
-for (var n = 1; n <= 10; n = n + 1) {
+for (var n = 1; n <= 10; n += 1) {
 
 if (numberofwps - currentwp > n - 1) {
 
 var wp = currentwp + n - 1;
 
+if (wp >= 0) {
 if (getprop("/autopilot/route-manager/route/wp[" ~ wp ~ "]/longitude-deg") != nil) {
 
 var wpxcoord = 60 * getprop("/autopilot/route-manager/route/wp[" ~ wp ~ "]/longitude-deg");
@@ -129,7 +131,8 @@ if (n == 1) {
 setprop("/instrumentation/ndfull/route/wp[1]/bearing-deg",270 + (57.2957795 * math.atan2(yoffset, xoffset)));
 } else {
 
-setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/bearing-deg",270 + (57.2957795 * math.atan2(yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"), xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
+if ((getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset") != nil) and getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset") != nil)
+	setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/bearing-deg",270 + (57.2957795 * math.atan2(yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"), xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
 
 }
 
@@ -137,7 +140,10 @@ if (n == 1) {
 setprop("/instrumentation/ndfull/route/wp[1]/line-length", math.sqrt((yoffset * yoffset) + (xoffset * xoffset)));
 } else {
 
-var linelength = math.sqrt(((yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset")) * (yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"))) + ((xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset")) * (xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
+var linelength = 0;
+
+if ((getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset") != nil) and getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset") != nil)
+	linelength = math.sqrt(((yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset")) * (yoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/yoffset"))) + ((xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset")) * (xoffset - getprop("/instrumentation/ndfull/route/wp[" ~ wp ~ "]/xoffset"))));
 
 setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/line-length", linelength);
 
@@ -156,9 +162,13 @@ setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
 } else {
 setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
 }
-
+} else {
+setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
 }
 
+} else {
+setprop("/instrumentation/ndfull/route/wp[" ~ (currentwp + n) ~ "]/show", 0);
+}
 }
 
 }   },
@@ -173,58 +183,3 @@ setprop("/instrumentation/ndfull/route/wp[" ~ (wp + 1) ~ "]/show", 0);
         }
 
     };
-
-    var Deflection = func(bug, limit) {
-      var heading = getprop("orientation/heading-magnetic-deg");
-      var bugDeg = 0;
-
-      while (bug < 0)
-       {
-       bug += 360;
-       }
-      while (bug > 360)
-       {
-       bug -= 360;
-       }
-      if (bug < limit)
-       {
-       bug += 360;
-       }
-      if (heading < limit)
-       {
-       heading += 360;
-       }
-      # bug is adjusted normally
-      if (math.abs(heading - bug) < limit)
-       {
-       bugDeg = heading - bug;
-       }
-      elsif (heading - bug < 0)
-       {
-       # bug is on the far right
-       if (math.abs(heading - bug + 360 >= 180))
-        {
-        bugDeg = -limit;
-        }
-       # bug is on the far left
-       elsif (math.abs(heading - bug + 360 < 180))
-        {
-        bugDeg = limit;
-        }
-       }
-      else
-       {
-       # bug is on the far right
-       if (math.abs(heading - bug >= 180))
-        {
-        bugDeg = -limit;
-        }
-       # bug is on the far left
-       elsif (math.abs(heading - bug < 180))
-        {
-        bugDeg = limit;
-        }
-       }
-
-      return bugDeg;
-    }

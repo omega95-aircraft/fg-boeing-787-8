@@ -25,10 +25,11 @@ file, these values will be used (they are hardcoded).
 
 <PropertyList>
 
+<!-- Not Enabling the Generic TCAS as the 787 has it's own
     	<tcas>
   		<name>tcas</name>
        		<number>0</number>
-    	</tcas>
+    	</tcas> -->
 
 	<adf>
 		<name>adf</name>
@@ -145,6 +146,16 @@ file, these values will be used (they are hardcoded).
 		<name>gps</name>
 		<number>2</number>
 	</gps>
+	
+	<gps>
+		<name>gps</name>
+		<number>3</number>
+	</gps>
+	
+	<gps>
+		<name>gps</name>
+		<number>4</number>
+	</gps>
 
 	<radar>
 		<name>wxradar</name>
@@ -160,6 +171,12 @@ file, these values will be used (they are hardcoded).
 	 <name>mk-viii</name>
 	 <number>0</number>
 	</mk-viii>
+	
+	<!-- navigation-display>
+        <name>nd</name>
+        <number>0</number>        
+        <symbols include="nav-display.xml"/>
+    </navigation-display -->
 
     <groundradar>
         <name>groundradar</name>

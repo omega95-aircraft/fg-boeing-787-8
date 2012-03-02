@@ -336,7 +336,6 @@
 
 </propulsion>
 
-    <system file="Defines"/>
     <system file="pushback"/>
 
 <flight_control name="FCS: 787-8">
@@ -661,6 +660,7 @@
                               0.6000	 0.4000
                           </tableData> -->
 <!--                      <tableData> Devel > CLalpha/Graph 1
+	                         -0.2000   -0.6800
                               0.0000	0.2000
                               0.0400	0.6400
                               0.2300	2.7000

@@ -104,6 +104,7 @@ name "FD.pitch"
 loc -0.00381551 -0.0142413 -0.0743785
 data 9
 Plane.019
+texture "pfd-extra.png"
 crease 30.000000
 numvert 4
 0 -0.00058821 -0.0692111
@@ -114,16 +115,17 @@ numsurf 1
 SURF 0x0
 mat 0
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 0.729287 0.910156
+3 0.729287 0.910156
+2 0.729287 0.910156
+1 0.729287 0.910156
 kids 0
 OBJECT poly
 name "FD.roll"
 loc -0.00381551 -0.00505087 -0.074082
 data 9
 Plane.019
+texture "pfd-extra.png"
 crease 30.000000
 numvert 4
 0 0.0739256 -0.0005887
@@ -134,10 +136,10 @@ numsurf 1
 SURF 0x0
 mat 0
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 0.729287 0.910156
+3 0.729287 0.910156
+2 0.729287 0.910156
+1 0.729287 0.910156
 kids 0
 OBJECT poly
 name "pfd"

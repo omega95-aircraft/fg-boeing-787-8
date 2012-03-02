@@ -3,6 +3,8 @@ var warn = {
         me.UPDATE_INTERVAL = 0.1; 
         me.loopid = 0; 
 		
+		me.mute = 0;
+		
 		setprop("/instrumentation/warn/master", 0);
 		setprop("/instrumentation/warn/caution", 0);
 
@@ -79,6 +81,22 @@ if (getprop("consumables/fuel/total-fuel-kg") <= 1000) caution = 1;
 
 setprop("/instrumentation/warn/master", master);
 setprop("/instrumentation/warn/caution", caution);
+
+if ((master == 1) and (me.mute == 0)) {
+	setprop("/sim/sound/master-warn", 1);
+}
+
+if ((getprop("/instrumentation/warn/master-sound") == 0) and (me.mute == 0)) {
+	me.mute == 1;
+	setprop("/sim/sound/master-warn", 0);
+
+}
+
+if (master == 0) {
+	setprop("/sim/sound/master-warn", 0);
+	me.mute = 0;
+	setprop("/instrumentation/warn/master-sound", 1);
+}
 
 },
     reset : func {

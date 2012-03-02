@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">Merlion Virtual</name>
+				<name type="string">Merlion Virtual Airlines</name>
 				<texture>Liveries/MIA.png</texture>
 			</livery>
 		</model>

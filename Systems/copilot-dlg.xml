@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-
+<!-- foo -->
 	<name>copilot</name>
 	<layout>vbox</layout>
 
@@ -76,7 +76,7 @@
 			<live>false</live>
 		</checkbox>
 
-<checkbox>
+		<checkbox>
 			<label>Control Altimeter Setting</label>
 			<property>controls/switches/copilot/altimeter</property>
 			<binding>
@@ -85,6 +85,24 @@
 			<live>false</live>
 		</checkbox>
 
+		<checkbox>
+			<label>Manage Airspeed Setting</label>
+			<property>controls/switches/copilot/airspeed</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>false</live>
+		</checkbox>
+		
+		<checkbox>
+			<label>Manage Autopilot</label>
+			<property>controls/switches/copilot/autopilot</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>false</live>
+		</checkbox>
+		
 	<hrule />
 
 		<group>

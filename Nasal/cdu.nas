@@ -1,3 +1,9 @@
+var TPindex = 0;
+var TPmax = 0;
+var WPindex = 0;
+var TPList = [];
+var TPpressed = 0;
+
 var cdu = {
 	init : func { 
         me.UPDATE_INTERVAL = 0.1; 
@@ -11,6 +17,13 @@ setprop("/controls/cdu/vnav/crz-altitude-ft", 10000);
 setprop("/controls/cdu/vnav/start-crz", "");
 setprop("/controls/cdu/vnav/end-crz", "");
 
+## TP Properties
+
+setprop("/instrumentation/b787-fmc/TPicao", "");
+setprop("/instrumentation/b787-fmc/TPname", "");
+setprop("/instrumentation/b787-fmc/TPtype", "SID");
+setprop("/instrumentation/b787-fmc/TPrwy", "");
+
 ## HOLD Config Properties
 
 setprop("/controls/cdu/hold/found", 0);
@@ -18,7 +31,7 @@ setprop("/controls/cdu/hold/found", 0);
 var htree = "/autopilot/hold/";
 
 setprop(htree ~"hold-time", 60);
-setprop(htree ~"hold-direction", 0); # 0 = right, 1 = left
+setprop(htree ~"hold-direction", "Right");
 setprop(htree ~"hold-radial", 0);
 setprop(htree ~"altitude", 5000);
 setprop(htree ~"active", 0);
@@ -98,11 +111,6 @@ setprop("/controls/cdu/display/r4", "");
 setprop("/controls/cdu/display/r5", "");
 setprop("/controls/cdu/display/r6", "");
 setprop("/controls/cdu/display/r7", "");
-
-## There's an error in setting the destination props in hte DEP/ARR page, so I'm temporarily setting route manager destination as WSSS 20R
-
-setprop("/autopilot/route-manager/destination/airport", "WSSS");
-setprop("/autopilot/route-manager/destination/runway", "20R");
 
         me.reset(); 
 }, 
@@ -305,7 +313,7 @@ keypress = "";
 }
 
 if (keypress == "l6") {
-page = " ";
+page = "DEP/ARR";
 keypress = "";
 }
 
@@ -467,7 +475,7 @@ keypress = "";
 cduinput = "";
 }
 
-} elsif (page == " ") {
+} elsif (page == "DEP/ARR") {
 
 #### Field types
 
@@ -476,14 +484,17 @@ setprop("/controls/cdu/l2-type", "click");
 setprop("/controls/cdu/l3-type", "disp");
 setprop("/controls/cdu/l4-type", "click");
 setprop("/controls/cdu/l5-type", "disp");
-setprop("/controls/cdu/l6-type", "disp");
+if (getprop("/controls/cdu/flightnum") != nil)
+	setprop("/controls/cdu/l6-type", "click");
+else 
+	setprop("/controls/cdu/l6-type", "disp");
 setprop("/controls/cdu/l7-type", "click");
 
 setprop("/controls/cdu/r1-type", "click");
 setprop("/controls/cdu/r2-type", "click");
 setprop("/controls/cdu/r3-type", "disp");
 setprop("/controls/cdu/r4-type", "disp");
-setprop("/controls/cdu/r5-type", "disp");
+setprop("/controls/cdu/r5-type", "click");
 setprop("/controls/cdu/r6-type", "click");
 setprop("/controls/cdu/r7-type", "click");
 
@@ -504,12 +515,23 @@ setprop("/controls/cdu/display/r5-label", "");
 setprop("/controls/cdu/display/r6-label", "");
 setprop("/controls/cdu/display/r7-label", "");
 
-setprop("/controls/cdu/display/l1", getprop("/autopilot/route-manager/departure/airport"));
-setprop("/controls/cdu/display/r1", getprop("/autopilot/route-manager/destination/airport"));
+if (getprop("/autopilot/route-manager/departure/airport") != nil)
+	setprop("/controls/cdu/display/l1", getprop("/autopilot/route-manager/departure/airport"));
+else
+	setprop("/controls/cdu/display/l1", "");
+if (getprop("/autopilot/route-manager/destination/airport") != nil)
+	setprop("/controls/cdu/display/r1", getprop("/autopilot/route-manager/destination/airport"));
+else
+	setprop("/controls/cdu/display/r1", "");
 
-setprop("/controls/cdu/display/l2", getprop("/autopilot/route-manager/departure/runway"));
-setprop("/controls/cdu/display/r2", getprop("/autopilot/route-manager/destination/runway"));
-
+if (getprop("/autopilot/route-manager/departure/runway") != nil)
+	setprop("/controls/cdu/display/l2", getprop("/autopilot/route-manager/departure/runway"));
+else
+	setprop("/controls/cdu/display/l2", "");
+if (getprop("/autopilot/route-manager/destination/runway") != nil)
+	setprop("/controls/cdu/display/r2", getprop("/autopilot/route-manager/destination/runway"));
+else 
+	setprop("/controls/cdu/display/r2", "");
 setprop("/controls/cdu/display/l3", "");
 setprop("/controls/cdu/display/r3", "");
 
@@ -517,9 +539,12 @@ setprop("/controls/cdu/display/l4", getprop("/controls/cdu/flightnum"));
 setprop("/controls/cdu/display/r4", "");
 
 setprop("/controls/cdu/display/l5", "");
-setprop("/controls/cdu/display/r5", "");
+setprop("/controls/cdu/display/r5", "PROCEDURES >");
 
-setprop("/controls/cdu/display/l6", "");
+if (getprop("/controls/cdu/flightnum") != "")
+	setprop("/controls/cdu/display/l6", "< FLIGHT INFO");
+else
+	setprop("/controls/cdu/display/l6", "");
 setprop("/controls/cdu/display/r6", "FLIGHT LOG >");
 
 setprop("/controls/cdu/display/l7", "< INDEX");
@@ -530,8 +555,14 @@ setprop("/controls/cdu/display/r7", "ROUTE >");
 if (keypress == "l7") {
 page = "INDEX";
 keypress = "";
+} elsif (keypress == "l6") {
+page = "FLIGHT INFO";
+keypress = "";
 } elsif (keypress == "r6") {
 page = " LOG ";
+keypress = "";
+} elsif (keypress == "r5") {
+page = "PROCEDURES";
 keypress = "";
 } elsif (keypress == "r7") {
 page = "ROUTE";
@@ -968,9 +999,9 @@ setprop("/controls/cdu/r7-type", "click");
 setprop("/controls/cdu/display/l1-label", "T/O Flaps");
 setprop("/controls/cdu/display/l2-label", "Climb Rate");
 setprop("/controls/cdu/display/l3-label", "Lift Pitch");
-setprop("/controls/cdu/display/l4-label", "FLAPS 5");
-setprop("/controls/cdu/display/l5-label", "FLAPS UP");
-setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/l4-label", "FLAPS 5 Degrees");
+setprop("/controls/cdu/display/l5-label", "FLAPS 1 Degree");
+setprop("/controls/cdu/display/l6-label", "FLAPS UP");
 setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/r1-label", "V1");
 setprop("/controls/cdu/display/r2-label", "VR");
@@ -981,21 +1012,23 @@ setprop("/controls/cdu/display/r6-label", "");
 setprop("/controls/cdu/display/r7-label", "");
 
 setprop("/controls/cdu/display/l1", "10 Degrees");
-setprop("/controls/cdu/display/r1", "140 KIAS");
+setprop("/controls/cdu/display/r1", getprop("/instrumentation/fmc/vspeeds/V1"));
 
 setprop("/controls/cdu/display/l2", "Min. 1800 FPM");
-setprop("/controls/cdu/display/r2", "150 KIAS");
+setprop("/controls/cdu/display/r2", getprop("/instrumentation/fmc/vspeeds/VR"));
 
-setprop("/controls/cdu/display/l3", "10 Degrees");
-setprop("/controls/cdu/display/r3", "160 KIAS");
+setprop("/controls/cdu/display/l3", "12 Degrees");
+setprop("/controls/cdu/display/r3", getprop("/instrumentation/fmc/vspeeds/V2"));
 
-setprop("/controls/cdu/display/l4", "180 KIAS");
+fmc.calc_speeds();
+
+setprop("/controls/cdu/display/l4", getprop("/instrumentation/b787-fmc/speeds/flaps10"));
 setprop("/controls/cdu/display/r4", "");
 
-setprop("/controls/cdu/display/l5", "220 KIAS");
+setprop("/controls/cdu/display/l5", getprop("/instrumentation/b787-fmc/speeds/flaps5"));
 setprop("/controls/cdu/display/r5", "");
 
-setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/l6", getprop("/instrumentation/b787-fmc/speeds/flaps1"));
 setprop("/controls/cdu/display/r6", "");
 
 setprop("/controls/cdu/display/l7", "< INDEX");
@@ -1033,12 +1066,12 @@ setprop("/controls/cdu/r7-type", "disp");
 
 #### Field Values
 
-setprop("/controls/cdu/display/l1-label", "FLAPS 5");
-setprop("/controls/cdu/display/l2-label", "FLAPS 10");
-setprop("/controls/cdu/display/l3-label", "FLAPS 15");
-setprop("/controls/cdu/display/l4-label", "FLAPS 25");
-setprop("/controls/cdu/display/l5-label", "FLAPS 35");
-setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/l1-label", "FLAPS 1 Degree");
+setprop("/controls/cdu/display/l2-label", "FLAPS 5 Degrees");
+setprop("/controls/cdu/display/l3-label", "FLAPS 10 Degrees");
+setprop("/controls/cdu/display/l4-label", "FLAPS 15 Degrees");
+setprop("/controls/cdu/display/l5-label", "FLAPS 25 Degrees");
+setprop("/controls/cdu/display/l6-label", "FLAPS 35 Degrees");
 setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/r1-label", "Max. Descent Rate");
 setprop("/controls/cdu/display/r2-label", "");
@@ -1048,22 +1081,24 @@ setprop("/controls/cdu/display/r5-label", "");
 setprop("/controls/cdu/display/r6-label", "");
 setprop("/controls/cdu/display/r7-label", "");
 
-setprop("/controls/cdu/display/l1", "240 KIAS");
+fmc.calc_speeds();
+
+setprop("/controls/cdu/display/l1", getprop("/instrumentation/b787-fmc/speeds/flaps1"));
 setprop("/controls/cdu/display/r1", "-2500 FPM");
 
-setprop("/controls/cdu/display/l2", "225 KIAS");
+setprop("/controls/cdu/display/l2", getprop("/instrumentation/b787-fmc/speeds/flaps5"));
 setprop("/controls/cdu/display/r2", "");
 
-setprop("/controls/cdu/display/l3", "210 KIAS");
-setprop("/controls/cdu/display/r3", "145 KIAS");
+setprop("/controls/cdu/display/l3", getprop("/instrumentation/b787-fmc/speeds/flaps10"));
+setprop("/controls/cdu/display/r3", getprop("/instrumentation/b787-fmc/speeds/ap"));
 
-setprop("/controls/cdu/display/l4", "180 KIAS");
-setprop("/controls/cdu/display/r4", "133 KIAS");
+setprop("/controls/cdu/display/l4", getprop("/instrumentation/b787-fmc/speeds/flaps15"));
+setprop("/controls/cdu/display/r4", getprop("/instrumentation/b787-fmc/speeds/td"));
 
-setprop("/controls/cdu/display/l5", "160 KIAS");
+setprop("/controls/cdu/display/l5", getprop("/instrumentation/b787-fmc/speeds/flaps25"));
 setprop("/controls/cdu/display/r5", "");
 
-setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/l6", getprop("/instrumentation/b787-fmc/speeds/flaps35"));
 setprop("/controls/cdu/display/r6", "");
 
 setprop("/controls/cdu/display/l7", "< INDEX");
@@ -1190,7 +1225,7 @@ if (keypress == "l7") {
 page = "INDEX";
 keypress = "";
 } elsif (keypress == "l6") {
-page = " ";
+page = "DEP/ARR";
 keypress = "";
 } elsif (keypress == "r6") {
 page = "ROUTE";
@@ -1589,11 +1624,11 @@ setprop("/controls/cdu/l2-type", "click");
 setprop("/controls/cdu/l3-type", "click");
 setprop("/controls/cdu/l4-type", "click");
 setprop("/controls/cdu/l5-type", "click");
-setprop("/controls/cdu/l6-type", "disp");
+setprop("/controls/cdu/l6-type", "click");
 setprop("/controls/cdu/l7-type", "click");
 
 setprop("/controls/cdu/r1-type", "disp");
-setprop("/controls/cdu/r2-type", "disp");
+setprop("/controls/cdu/r2-type", "click");
 setprop("/controls/cdu/r3-type", "disp");
 setprop("/controls/cdu/r4-type", "disp");
 setprop("/controls/cdu/r5-type", "disp");
@@ -1607,10 +1642,10 @@ setprop("/controls/cdu/display/l2-label", "Holding Navaid");
 setprop("/controls/cdu/display/l3-label", "Holding Navaid Type");
 setprop("/controls/cdu/display/l4-label", "Holding Radial");
 setprop("/controls/cdu/display/l5-label", "Holding Altitude");
-setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/l6-label", "Holding Time (sec)");
 setprop("/controls/cdu/display/r7-label", "");
 setprop("/controls/cdu/display/r1-label", "");
-setprop("/controls/cdu/display/r2-label", "");
+setprop("/controls/cdu/display/r2-label", "Turn Direction");
 setprop("/controls/cdu/display/r3-label", "");
 setprop("/controls/cdu/display/r4-label", "");
 setprop("/controls/cdu/display/r5-label", "");
@@ -1621,7 +1656,7 @@ setprop("/controls/cdu/display/l1", "");
 setprop("/controls/cdu/display/r1", "");
 
 setprop("/controls/cdu/display/l2", getprop("/autopilot/hold/fix"));
-setprop("/controls/cdu/display/r2", "");
+setprop("/controls/cdu/display/r2", getprop("/autopilot/hold/hold-direction"));
 
 setprop("/controls/cdu/display/l3", getprop("/autopilot/hold/nav-type"));
 setprop("/controls/cdu/display/r3", "");
@@ -1632,7 +1667,7 @@ setprop("/controls/cdu/display/r4", "");
 setprop("/controls/cdu/display/l5", getprop("/autopilot/hold/altitude"));
 setprop("/controls/cdu/display/r5", "");
 
-setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/l6", getprop("/autopilot/hold/hold-time"));
 setprop("/controls/cdu/display/r6", "");
 
 setprop("/controls/cdu/display/l7", "< INDEX");
@@ -1643,7 +1678,6 @@ if (getprop("/autopilot/hold/active") == 0) setprop("/controls/cdu/display/r7", 
 else setprop("/controls/cdu/display/r7", "EXIT HOLD >");
 } else {
 setprop("/controls/cdu/display/r6", "SEARCH NAVAID >");
-setprop("/controls/cdu/display/l7", "");
 setprop("/controls/cdu/display/r7", "");
 }
 
@@ -1658,6 +1692,21 @@ if ((keypress == "l2") and (cduinput != "")) {
 setprop("/autopilot/hold/fix", cduinput);
 cduinput = "";
 setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if ((keypress == "l6") and (cduinput != "")) {
+setprop("/autopilot/hold/hold-time", cduinput);
+cduinput = "";
+setprop("/controls/cdu/input", "");
+keypress = "";
+}
+
+if (keypress == "r2") {
+
+if (getprop("/autopilot/hold/hold-direction") == "Left") setprop("/autopilot/hold/hold-direction", "Right");
+else setprop("/autopilot/hold/hold-direction", "Left");
+
 keypress = "";
 }
 
@@ -1687,7 +1736,12 @@ keypress = "";
 if (keypress == "r7") {
 
 if (getprop("/autopilot/hold/active") == 0) setprop("/autopilot/hold/active", 1);
-else setprop("/autopilot/hold/active", 0);
+else {
+setprop("/autopilot/hold/active", 0);
+setprop("/controls/cdu/hold/found", 0);
+}
+
+keypress = "";
 
 }
 
@@ -1705,7 +1759,236 @@ setprop("/controls/cdu/input", "");
 keypress = "";
 }
 
+} elsif (page == "FLIGHT INFO") {
+
+#### Field types
+
+setprop("/controls/cdu/l1-type", "disp");
+setprop("/controls/cdu/l2-type", "disp");
+setprop("/controls/cdu/l3-type", "disp");
+setprop("/controls/cdu/l4-type", "disp");
+setprop("/controls/cdu/l5-type", "disp");
+setprop("/controls/cdu/l6-type", "disp");
+setprop("/controls/cdu/l7-type", "click");
+
+setprop("/controls/cdu/r1-type", "disp");
+setprop("/controls/cdu/r2-type", "disp");
+setprop("/controls/cdu/r3-type", "disp");
+setprop("/controls/cdu/r4-type", "disp");
+setprop("/controls/cdu/r5-type", "disp");
+setprop("/controls/cdu/r6-type", "disp");
+setprop("/controls/cdu/r7-type", "click");
+
+#### Field Values
+
+setprop("/controls/cdu/display/l1-label", "Flight Number");
+setprop("/controls/cdu/display/l2-label", "Departure ICAO");
+setprop("/controls/cdu/display/l3-label", "Destination ICAO");
+setprop("/controls/cdu/display/l4-label", "Aircraft Registration");
+setprop("/controls/cdu/display/l5-label", "Total Flight Time");
+setprop("/controls/cdu/display/l6-label", "Preset Flight Plan");
+setprop("/controls/cdu/display/r7-label", "");
+setprop("/controls/cdu/display/r1-label", "");
+setprop("/controls/cdu/display/r2-label", "");
+setprop("/controls/cdu/display/r3-label", "");
+setprop("/controls/cdu/display/r4-label", "");
+setprop("/controls/cdu/display/r5-label", "");
+setprop("/controls/cdu/display/r6-label", "");
+setprop("/controls/cdu/display/r7-label", "");
+
+setprop("/controls/cdu/display/l7", "< INDEX");
+
+setprop("/controls/cdu/display/r1", "");
+setprop("/controls/cdu/display/r2", "");
+setprop("/controls/cdu/display/r3", "");
+setprop("/controls/cdu/display/r4", "");
+setprop("/controls/cdu/display/r5", "");
+setprop("/controls/cdu/display/r6", "");
+setprop("/controls/cdu/display/r7", "SET ROUTE >");
+
+
+# Run the Flight Search Function
+
+fmc.search_flight(getprop("/controls/cdu/flightnum"));
+
+# MENU PRESSES
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif (keypress == "r7") {
+fmc.confirm_flight(getprop("/controls/cdu/flightnum"));
+keypress = "";
 }
+
+} elsif (page == "PROCEDURES") {
+
+#### Field types
+
+setprop("/controls/cdu/l1-type", "disp");
+setprop("/controls/cdu/l2-type", "click");
+setprop("/controls/cdu/l3-type", "click");
+setprop("/controls/cdu/l4-type", "click");
+setprop("/controls/cdu/l5-type", "disp");
+setprop("/controls/cdu/l6-type", "disp");
+setprop("/controls/cdu/l7-type", "click");
+
+setprop("/controls/cdu/r1-type", "disp");
+if (TPpressed == 1) {
+if (TPList[TPindex].wp_name != nil)
+	setprop("/controls/cdu/r2-type", "click");
+}
+else
+	setprop("/controls/cdu/r2-type", "disp");
+setprop("/controls/cdu/r3-type", "disp");
+setprop("/controls/cdu/r4-type", "disp");
+setprop("/controls/cdu/r5-type", "disp");
+if (TPpressed == 1) {
+if (TPList[TPindex].wp_name != nil)
+	setprop("/controls/cdu/r6-type", "click");
+	}
+else
+	setprop("/controls/cdu/r6-type", "disp");
+setprop("/controls/cdu/r7-type", "click");
+
+#### Field Values
+
+setprop("/controls/cdu/display/l1-label", "");
+setprop("/controls/cdu/display/l2-label", "Airport ICAO (Enter)");
+setprop("/controls/cdu/display/l3-label", "Terminal Procedure Type (Cycle)");
+setprop("/controls/cdu/display/l4-label", "To/From Runway (Enter)");
+setprop("/controls/cdu/display/l5-label", "");
+setprop("/controls/cdu/display/l6-label", "");
+setprop("/controls/cdu/display/r7-label", "");
+setprop("/controls/cdu/display/r1-label", "");
+if (TPpressed == 1) {
+if (TPList[TPindex].wp_name != nil)
+	setprop("/controls/cdu/display/r2-label", "Terminal Procedure Name (Cycle)");
+	}
+else
+	setprop("/controls/cdu/display/r2-label", "");
+setprop("/controls/cdu/display/r3-label", "");
+setprop("/controls/cdu/display/r4-label", "");
+setprop("/controls/cdu/display/r5-label", "");
+setprop("/controls/cdu/display/r6-label", "");
+setprop("/controls/cdu/display/r7-label", "");
+
+setprop("/controls/cdu/display/l1", "");
+setprop("/controls/cdu/display/l2", getprop("/instrumentation/b787-fmc/TPicao"));
+setprop("/controls/cdu/display/l3", getprop("/instrumentation/b787-fmc/TPtype"));
+setprop("/controls/cdu/display/l4", getprop("/instrumentation/b787-fmc/TPrwy"));
+setprop("/controls/cdu/display/l5", "");
+setprop("/controls/cdu/display/l6", "");
+setprop("/controls/cdu/display/l7", "< INDEX");
+
+setprop("/controls/cdu/display/r1", "");
+if (TPpressed == 1) {
+if (TPList[TPindex].wp_name != nil)
+	setprop("/controls/cdu/display/r2", TPList[TPindex].wp_name);
+} else 
+	setprop("/controls/cdu/display/r2", "");
+setprop("/controls/cdu/display/r3", "");
+setprop("/controls/cdu/display/r4", "");
+setprop("/controls/cdu/display/r5", "");
+setprop("/controls/cdu/display/r6", "");
+if (TPpressed == 1) {
+if (TPList[TPindex].wp_name != nil)
+	setprop("/controls/cdu/display/r6", "ACTIVATE >");
+} else
+	setprop("/controls/cdu/display/r6", "");
+setprop("/controls/cdu/display/r7", "SEARCH TP >");
+
+# MENU PRESSES
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif ((keypress == "r7") and (getprop("/instrumentation/b787-fmc/TPicao") != nil)) {
+# Function to Get a List of available Terminal Procedures, and add it to the route.
+
+var AptICAO = fmsDB.new(getprop("/instrumentation/b787-fmc/TPicao"));
+
+if (getprop("/instrumentation/b787-fmc/TPtype") == "SID")
+	TPList = AptICAO.getSIDList(getprop("/instrumentation/b787-fmc/TPrwy"));
+elsif (getprop("/instrumentation/b787-fmc/TPtype") == "STAR")
+	TPList = AptICAO.getSTARList(getprop("/instrumentation/b787-fmc/TPrwy"));
+else 
+	TPList = AptICAO.getIAPList(getprop("/instrumentation/b787-fmc/TPrwy"));
+	
+TPindex = 0;
+
+## Find Maximum number of Available Procedures for the runway
+
+TPmax = 0;
+
+while (TPList[TPmax].wp_name != nil) {
+TPmax += 1;
+}
+	
+keypress = "";
+TPpressed = 1;
+} elsif ((keypress == "l2") and (cduinput != "")) {
+setprop("/instrumentation/b787-fmc/TPicao", cduinput);
+cduinput = "";
+keypress = "";
+setprop("/controls/cdu/input", "");
+} elsif (keypress == "r2"){
+
+## Toggle Through Available TPs
+
+if (TPindex < TPmax)
+	TPindex += 1;
+else
+	TPindex = 0;
+
+keypress = "";
+} elsif (keypress == "l3") {
+
+## Toggle Through Terminal Procedure Types
+
+if (getprop("/instrumentation/b787-fmc/TPtype") == "SID")
+	setprop("/instrumentation/b787-fmc/TPtype", "STAR");
+elsif (getprop("/instrumentation/b787-fmc/TPtype") == "STAR")
+	setprop("/instrumentation/b787-fmc/TPtype", "IAP");
+else
+	setprop("/instrumentation/b787-fmc/TPtype", "SID");
+	
+keypress = "";
+} elsif ((keypress == "l4") and (cduinput != "")) {
+
+setprop("/instrumentation/b787-fmc/TPrwy", cduinput);
+
+keypress = "";
+cduinput = "";
+setprop("/instrumentation/cdu/input", "");
+} elsif ((keypress == "r6") and (TPList[TPindex].wp_name != nil)) {
+
+if (getprop("/instrumentation/b787-fmc/TPtype") == "SID") { ## Add SID to beginning
+
+	while (TPList[TPindex].wpts[WPindex].wp_name != nil) {
+		
+		setprop("/autopilot/route-manager/input", "@INSERT" ~ (WPindex + 1) ~ ":" ~ TPList[TPindex].wpts[WPindex].wp_name);
+		WPindex += 1;
+		
+	}
+
+} else { ## Append STARs or IAPs to the End
+
+	while (TPList[TPindex].wpts[WPindex].wp_name != nil) {
+		
+		setprop("/autopilot/route-manager/input", "@INSERT999:" ~ TPList[TPindex].wpts[WPindex].wp_name);
+		WPindex += 1;
+		
+	}
+
+}
+
+keypress = "";
+
+}
+
+}
+
 
 ## Typing Characters and Functions
 
@@ -1754,5 +2037,7 @@ setprop("/controls/cdu/keypress", "");
 setlistener("sim/signals/fdm-initialized", func
  {
  cdu.init();
- print("CDU Computer ........ Initialized");
+ print("FMS Computer ........ Initialized");
+ fmc.parse_flightsDB();
+ print("Flight Database ..... Initialized");
  });

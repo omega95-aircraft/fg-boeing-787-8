@@ -729,6 +729,30 @@
 
 <animation>
     <type>select</type>
+	<object-name>engine1fire</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/fires/fire/phase</property>
+    		<value>fire</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>engine2fire</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/fires/fire[1]/phase</property>
+    		<value>fire</value>
+	</equals>
+  	</condition>
+</animation>
+
+
+
+<animation>
+    <type>select</type>
 	<object-name>machtrim</object-name>
   	<condition>
 	<and>

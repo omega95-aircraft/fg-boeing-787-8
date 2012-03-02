@@ -2981,4 +2981,154 @@
 	</condition>
 </animation>
 
+<!-- Smoke and Fire -->
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/fire.xml</path>
+ <condition>
+	<equals>
+		<property>/controls/fires/fire/phase</property>
+		<value>fire</value>
+	</equals>
+ </condition>
+ <name>fire_1</name>
+ <offsets>
+  <x-m>-4</x-m>
+  <y-m>-9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/smoke.xml</path>
+ <condition>
+ 	<or>
+	<equals>
+		<property>/controls/fires/fire/phase</property>
+		<value>smoke</value>
+	</equals>
+	<equals>
+		<property>/controls/fires/fire/phase</property>
+		<value>fire</value>
+	</equals>
+	</or>
+ </condition>
+ <name>smoke_1</name>
+ <offsets>
+  <x-m>-4</x-m>
+  <y-m>-9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/explode1.xml</path>
+ <condition>
+	<equals>
+		<property>/controls/fires/fire/phase</property>
+		<value>explode</value>
+	</equals>
+ </condition>
+ <name>fire_2</name>
+ <offsets>
+  <x-m>-3.5</x-m>
+  <y-m>-9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/fire.xml</path>
+ <condition>
+	<equals>
+		<property>/controls/fires/fire[1]/phase</property>
+		<value>fire</value>
+	</equals>
+ </condition>
+ <name>~fire_1</name>
+ <offsets>
+  <x-m>-3</x-m>
+  <y-m>9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/smoke.xml</path>
+ <condition>
+ 	<or>
+	<equals>
+		<property>/controls/fires/fire[1]/phase</property>
+		<value>smoke</value>
+	</equals>
+	<equals>
+		<property>/controls/fires/fire[1]/phase</property>
+		<value>fire</value>
+	</equals>
+	</or>
+ </condition>
+ <name>~smoke_1</name>
+ <offsets>
+  <x-m>-3</x-m>
+  <y-m>9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/explode1.xml</path>
+ <condition>
+	<equals>
+		<property>/controls/fires/fire[1]/phase</property>
+		<value>explode</value>
+	</equals>
+ </condition>
+ <name>~fire_2</name>
+ <offsets>
+  <x-m>-3.5</x-m>
+  <y-m>9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/ext.xml</path>
+ <condition>
+	<equals>
+		<property>/controls/fires/fire/extinguish</property>
+		<value>1</value>
+	</equals>
+ </condition>
+ <name>ext</name>
+ <offsets>
+  <x-m>-5</x-m>
+  <y-m>-9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/787-8/Models/Effects/ext.xml</path>
+ <condition>
+	<equals>
+		<property>/controls/fires/fire[1]/extinguish</property>
+		<value>1</value>
+	</equals>
+ </condition>
+ <name>ext</name>
+ <offsets>
+  <x-m>-5</x-m>
+  <y-m>9.63</y-m>
+  <z-m>-.085</z-m>
+  <heading-deg>0</heading-deg>
+ </offsets>
+</model>
+
 </PropertyList>

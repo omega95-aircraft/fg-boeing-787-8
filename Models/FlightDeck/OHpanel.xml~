@@ -1752,11 +1752,11 @@ setprop("/controls/engines/engine[1]/starter", 0);
 		</interpolation>
 		<axis>
 			<x1-m>1</x1-m>
-			<y1-m>-0.1817</y1-m>
-			<z1-m>-0.3972</z1-m>
+			<y1-m>-0.1333</y1-m>
+			<z1-m>-0.3967</z1-m>
 			<x2-m>0</x2-m>
-			<y2-m>-0.1817</y2-m>
-			<z2-m>-0.3972</z2-m>
+			<y2-m>-0.1333</y2-m>
+			<z2-m>-0.3967</z2-m>
 		</axis>
 	</animation>
 
@@ -1770,11 +1770,11 @@ setprop("/controls/engines/engine[1]/starter", 0);
 		</interpolation>
 		<axis>
 			<x1-m>1</x1-m>
-			<y1-m>-0.1333</y1-m>
-			<z1-m>-0.3967</z1-m>
+			<y1-m>-0.1817</y1-m>
+			<z1-m>-0.3972</z1-m>
 			<x2-m>0</x2-m>
-			<y2-m>-0.1333</y2-m>
-			<z2-m>-0.3967</z2-m>
+			<y2-m>-0.1817</y2-m>
+			<z2-m>-0.3972</z2-m>
 		</axis>
 	</animation>
 

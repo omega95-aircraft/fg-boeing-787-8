@@ -1,19 +1,25 @@
 var location = "/temp/test/";
-var filename = getprop("/sim/fg-home") ~ "/Drawing/wxradar-pixel.xml";
+var filename = getprop("/sim/fg-home") ~ "/Drawing/terrain-map-pixel.xml";
 
-var drawline = func() {
+var create_pixels = func() {
 
-	for (var deg = 0; deg < 60; deg += 1)
+	for (var row = 0; row < 32; row += 1)
 	{
 
-		for (var dist = 0; dist < 20; dist += 1)
+		for (var col = 1; col <= 32; col += 1)
 		{
 
-			setprop(location ~ "animation[" ~ ((deg * 20) + dist) ~ "]/type", "textranslate");
-			setprop(location~"animation[" ~ ((deg * 20) + dist) ~ "]/object-name", "wxr." ~ (dist + 1) ~ "." ~ (deg + 1));
-			setprop(location~"animation[" ~ ((deg * 20) + dist) ~ "]/property", "/instrumentation/wxradar/pixels/deg[" ~ deg ~ "]/dist[" ~ dist ~ "]/reflectivity");
-			setprop(location ~ "animation[" ~ ((deg * 20) + dist) ~ "]/factor", 0.92);
-			setprop(location ~ "animation[" ~ ((deg * 20) + dist) ~ "]/axis/x", 1);
+			var pixel = ((row * 32) + col);
+			
+			if (pixel < 10) var pixel_no = "00" ~ pixel;
+			elsif (pixel < 100) var pixel_no = "0" ~ pixel;
+			else var pixel_no = pixel;
+
+			setprop(location ~ "animation[" ~ pixel ~ "]/type", "textranslate");
+			setprop(location~"animation[" ~ pixel ~ "]/object-name", "Plane." ~ pixel_no);
+			setprop(location~"animation[" ~ pixel ~ "]/property", "/instrumentation/terrain-map/pixels/row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft");
+			setprop(location ~ "animation[" ~ pixel ~ "]/factor", 0.000055556);
+			setprop(location ~ "animation[" ~ pixel ~ "]/axis/x", 1);
 
 		}
 

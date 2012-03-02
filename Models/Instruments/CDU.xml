@@ -33,12 +33,12 @@
 <!-- Page Name -->
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.1106</x-m>
-			<y-m>-0.0125</y-m>
+			<x-m>-0.1022</x-m>
+			<y-m>0</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 			<heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>center-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -48,7 +48,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.01</character-size>
+		<character-size>0.009</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -58,12 +58,12 @@
 <!-- Active Typing -->
 	<text><name>text</name>
 		<offsets>
-			<x-m>0.0208</x-m>
-			<y-m>-0.0125</y-m>
+			<x-m>0.0100</x-m>
+			<y-m>0</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 			<heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>center-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -84,8 +84,8 @@
 <!-- Left Side Labels -->
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.1028</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0918</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -98,7 +98,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -106,8 +106,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0855</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0778</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -120,7 +120,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -128,8 +128,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0680</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0638</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -142,7 +142,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -150,8 +150,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0506</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0504</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -164,7 +164,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -172,8 +172,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0330</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0364</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -186,7 +186,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -194,8 +194,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0155</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.0230</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -208,7 +208,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -216,8 +216,8 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0010</x-m>
-			<y-m>-0.07</y-m>
+			<x-m>-0.01</x-m>
+			<y-m>-0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
 		<alignment>left-center</alignment>
@@ -230,7 +230,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -241,11 +241,11 @@
 
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.1028</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0918</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -255,7 +255,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -263,11 +263,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0855</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0778</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -277,7 +277,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -285,11 +285,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0680</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0638</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -299,7 +299,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -307,11 +307,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0506</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0504</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -321,7 +321,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -329,11 +329,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0330</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0364</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -343,7 +343,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -351,11 +351,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0155</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.0230</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -365,7 +365,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -373,11 +373,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0010</x-m>
-			<y-m>0.0030</y-m>
+			<x-m>-0.01</x-m>
+			<y-m>0.065</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -387,19 +387,18 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.005</character-size>
+		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
 
-
 <!-- Left Side Values -->
 
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0946</x-m>
+			<x-m>-0.0849</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -413,7 +412,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -421,7 +420,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0770</x-m>
+			<x-m>-0.0715</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -435,7 +434,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -443,7 +442,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0590</x-m>
+			<x-m>-0.0577</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -457,7 +456,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -465,7 +464,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0415</x-m>
+			<x-m>-0.0442</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -479,7 +478,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -487,7 +486,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0240</x-m>
+			<x-m>-0.0303</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -501,7 +500,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -509,7 +508,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0070</x-m>
+			<x-m>-0.0166</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -523,7 +522,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -531,7 +530,7 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>0.0098</x-m>
+			<x-m>-0.0037</x-m>
 			<y-m>-0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
@@ -545,7 +544,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -556,11 +555,11 @@
 
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0946</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0849</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -570,7 +569,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -578,11 +577,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0770</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0715</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -592,7 +591,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -600,11 +599,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0590</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0577</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -614,7 +613,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -622,11 +621,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0415</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0442</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -636,7 +635,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -644,11 +643,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0240</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0303</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -658,7 +657,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -666,11 +665,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>-0.0070</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0166</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -680,7 +679,7 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
@@ -688,11 +687,11 @@
 	</text>
 	<text><name>text</name>
 		<offsets>
-			<x-m>0.0098</x-m>
-			<y-m>0.0135</y-m>
+			<x-m>-0.0037</x-m>
+			<y-m>0.06</y-m>
 			<z-m>-0.0001</z-m><heading-deg>90</heading-deg>
 		</offsets>
-		<alignment>left-center</alignment>
+		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
@@ -702,13 +701,12 @@
   <draw-text type="bool">true</draw-text>
   <draw-alignment type="bool">false</draw-alignment>
   <draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.008</character-size>
+		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-
 
 <!-- Key Presses (Touchscreen here :P ) -->
 
@@ -1181,7 +1179,7 @@
             <binding>
                 <command>property-cycle</command>
                 <property>controls/cdu/keypress</property>
-		<value>T</value>
+		<value>U</value>
             </binding>
         </action>
     </animation>
@@ -1589,6 +1587,725 @@
 		<value>r7</value>
             </binding>
         </action>
+    </animation>
+    
+    <!-- Quick Access Pages -->
+    
+    <animation>
+        <type>pick</type>
+        <object-name>index</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/cdu/display/page</property>
+				<value>INDEX</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>rte</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/cdu/display/page</property>
+				<value>ROUTE</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>ident</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-cycle</command>
+                <property>controls/cdu/display/page</property>
+				<value>IDENT</value>
+            </binding>
+        </action>
+    </animation>
+    
+    <!-- Route Manager BACK/NEXT -->
+    
+    <animation>
+        <type>pick</type>
+        <object-name>next</object-name>
+        <action>
+        	<button>0</button>
+			<repeatable type="bool">true</repeatable>
+            <binding>
+				<command>property-adjust</command>
+				<property>/controls/cdu/route-manager/page</property>
+				<step type="double">1</step>
+				<max>30</max>
+			</binding>
+        </action>
+    </animation>
+    
+        <animation>
+        <type>pick</type>
+        <object-name>back</object-name>
+        <action>
+        	<button>0</button>
+			<repeatable type="bool">true</repeatable>
+            <binding>
+				<command>property-adjust</command>
+				<property>/controls/cdu/route-manager/page</property>
+				<step type="double">-1</step>
+				<min>1</min>
+			</binding>
+        </action>
+    </animation>
+    
+<!-- While clicking -->
+
+<animation>
+	<type>select</type>
+	<object-name>l1p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>l1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>l2p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>l2</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>l3p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>l3</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>l4p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>l4</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>l5p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>l5</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>l6p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>l6</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>l7p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>l7</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>r1p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>r1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>r2p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>r2</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>r3p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>r3</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>r4p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>r4</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>r5p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>r5</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>r6p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>r6</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>r7p</object-name>
+	<condition>
+		<equals>
+			<property>controls/cdu/keypress</property>
+			<value>r7</value>
+		</equals>
+	</condition>
+</animation>
+
+<!-- Keypress Lights -->
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu0p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu1p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu2p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>2</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu3p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>3</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu4p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>4</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu5p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>5</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu6p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>6</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu7p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>7</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu8p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>8</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu9p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>9</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu.p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>.</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cdu00p</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>@</value>
+            </equals>
+        </condition>
+    </animation>
+
+<!-- Functions -->
+
+    <animation>
+        <type>select</type>
+        <object-name>execp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>exec</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>delp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>del</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>clrp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>clr</value>
+            </equals>
+        </condition>
+    </animation>
+
+<!-- Alphabets -->
+
+    <animation>
+        <type>select</type>
+        <object-name>ap</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>A</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>bp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>B</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>cp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>C</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>dp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>D</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ep</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>E</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>fp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>F</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>gp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>G</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>hp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>H</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ip</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>I</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>jp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>J</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>kp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>K</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>lp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>L</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>mp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>M</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>np</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>N</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>op</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>O</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>pp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>P</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>qp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>Q</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>rp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>R</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>sp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>S</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>tp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>T</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>up</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>U</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>vp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>V</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>wp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>W</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>xp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>X</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>yp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>Y</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>zp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/keypress</property>
+		<value>Z</value>
+            </equals>
+        </condition>
+    </animation>
+    
+        <animation>
+        <type>select</type>
+        <object-name>indexp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/display/page</property>
+				<value>INDEX</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>rtep</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/display/page</property>
+				<value>ROUTE</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>identp</object-name>
+        <condition>
+            <equals>
+                <property>controls/cdu/display/page</property>
+				<value>IDENT</value>
+            </equals>
+        </condition>
     </animation>
 
 </PropertyList>

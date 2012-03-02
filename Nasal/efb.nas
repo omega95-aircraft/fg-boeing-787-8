@@ -525,7 +525,7 @@ if (getprop("/instrumentation/efb/selected-rwy/heading-deg") != nil) l6 = "Runwa
 if (getprop("/instrumentation/efb/selected-rwy/length-ft") != nil) l8 = "Runway Length   : " ~ getprop("/instrumentation/efb/selected-rwy/length-ft") ~ " ft";
 if (getprop("/instrumentation/efb/selected-rwy/width-ft") != nil) l9 = "Runway Width    : " ~ getprop("/instrumentation/efb/selected-rwy/width-ft") ~ " ft";
 
-if ((getprop("/instrumentation/efb/selected-rwy/ils-mhz") != "NOT AVAILABLE") or (getprop("/instrumentation/efb/selected-rwy/ils-mhz") != nil)) {
+if (getprop("/instrumentation/efb/selected-rwy/ils-mhz") != nil) {
 l11 = "ILS Frequency   : " ~ getprop("/instrumentation/efb/selected-rwy/ils-mhz");
 r11 = "SET NAV1 >";
 } else l11 = "ILS Frequency   : NOT ILS Equipped";
