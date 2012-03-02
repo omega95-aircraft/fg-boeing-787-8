@@ -391,11 +391,21 @@
                     </item>
                 </menu>
                 <menu n="5">
-                    <item n="1">
+                    <item>
                     <label>Radio Stack</label>
                         <binding>
                             <command>nasal</command>
                             <script>dialogs.Radio.open()</script>
+                        </binding>
+                    </item>
+                    <item>
+                    <label>Fuel Truck Controls</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
+                            var fuel_truck = gui.Dialog.new("sim/gui/dialogs/fuel_truck/dialog", "Aircraft/787-8/Systems/fuel_truck.xml");
+							 fuel_truck.open();
+                            </script>
                         </binding>
                     </item>
                 </menu>
@@ -481,6 +491,16 @@
 						</binding>
 					</item>
 					<item>
+                    <label>Ground Services' Controls</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
+                            var ground_services = gui.Dialog.new("sim/gui/dialogs/ground_services/dialog", "Aircraft/787-8/Systems/ground_services-dlg.xml");
+							 ground_services.open();
+                            </script>
+                        </binding>
+                    </item>
+					<!-- item>
 						<name>dualcontrol</name>
 						<label>Dual Control System Settings</label>
 						<binding>
@@ -490,7 +510,7 @@
 							 dualcontrol.open();
 							</script>
 						</binding>
-					</item>
+					</item -->
 				</menu>
 			</default>
 		</menubar>
@@ -1084,6 +1104,7 @@
 			<file>Aircraft/787-8/Nasal/world-map.nas</file>
 			<file>Aircraft/787-8/Nasal/gear_system.nas</file>
 			<file>Aircraft/787-8/Nasal/engine-fire.nas</file>
+			<file>Aircraft/787-8/Nasal/ground_services.nas</file>
 			<file>Aircraft/787-8/Nasal/fmc.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsDB.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsWP.nas</file>

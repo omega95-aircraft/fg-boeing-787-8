@@ -1,6 +1,6 @@
 var icing = {
 	init : func { 
-        me.UPDATE_INTERVAL = 2; 
+        me.UPDATE_INTERVAL = 5; 
         me.loopid = 0; 
 	me.icewarnw = 0;
 	me.icewarne1 = 0;
@@ -91,7 +91,7 @@ me.icewarnw = 1;
 }
 
 if (outsidetemp < wingtemp) {
-wingtemp = wingtemp - 1;
+wingtemp = wingtemp - 0.25;
 }
 
 } else {
@@ -117,7 +117,7 @@ me. icewarne1 = 1;
 }
 
 if (outsidetemp < eng1temp) {
-eng1temp = eng1temp - 1;
+eng1temp = eng1temp - 0.25;
 }
 
 } else {
@@ -143,7 +143,7 @@ me. icewarne2 = 1;
 }
 
 if (outsidetemp < eng2temp) {
-eng2temp = eng2temp - 1;
+eng2temp = eng2temp - 0.25;
 }
 
 } else {

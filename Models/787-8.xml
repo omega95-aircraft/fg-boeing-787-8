@@ -3131,4 +3131,56 @@
  </offsets>
 </model>
 
+<!-- Fuel Truck -->
+
+<model>
+	<path>Aircraft/787-8/Models/Ground/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.ac</path>
+	<condition>
+		<equals>
+			<property>/services/fuel-truck/enable</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</model>
+
+<animation>
+	<type>select</type>
+	<object-name>fuel_pipe</object-name>
+	<condition>
+		<equals>
+			<property>/services/fuel-truck/connect</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>fuel_pipe_disconnected</object-name>
+	<condition>
+		<equals>
+			<property>/services/fuel-truck/connect</property>
+			<value>0</value>
+		</equals>
+	</condition>
+</animation>
+
+<!-- De-icing Truck -->
+
+<model>
+	<path>Aircraft/787-8/Models/Ground/Services/De-Icing/volvo_deicing_truck.xml</path>
+	<condition>
+		<equals>
+			<property>/services/deicing_truck/enable</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<offsets>
+		<x-m>-17</x-m>
+		<y-m>9.5</y-m>
+		<z-m>-3.77232</z-m>
+		<heading-deg>160</heading-deg>
+	</offsets>
+</model>
+
 </PropertyList>
