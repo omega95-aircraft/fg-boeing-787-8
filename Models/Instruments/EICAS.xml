@@ -1,0 +1,879 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>eicas.ac</path>
+
+<!-- Come on only when there's atleast 9 volts of power -->
+
+	<animation>
+		<type>select</type>
+		<object-name>eicas</object-name>
+		<condition>
+			<greater-than>
+				<property>systems/electrical/outputs/efis</property>
+				<value>9</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+<!-- N1 Digits -->
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn1.004</object-name>
+   	<property>engines/engine/n1</property>
+   	<factor>0.001</factor>
+	<step>100</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn1.003</object-name>
+   	<property>engines/engine/n1</property>
+   	<factor>0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn1.002</object-name>
+   	<property>engines/engine/n1</property>
+   	<factor>0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn1.001</object-name>
+   	<property>engines/engine/n1</property>
+   	<factor>1.0</factor>
+	<step>0.1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn1.004</object-name>
+   	<property>engines/engine[1]/n1</property>
+   	<factor>0.001</factor>
+	<step>100</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn1.003</object-name>
+   	<property>engines/engine[1]/n1</property>
+   	<factor>0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn1.002</object-name>
+   	<property>engines/engine[1]/n1</property>
+   	<factor>0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn1.001</object-name>
+   	<property>engines/engine[1]/n1</property>
+   	<factor>1.0</factor>
+	<step>0.1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<!-- n2 Digits -->
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn2.004</object-name>
+   	<property>engines/engine/n2</property>
+   	<factor>0.001</factor>
+	<step>100</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn2.003</object-name>
+   	<property>engines/engine/n2</property>
+   	<factor>0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn2.002</object-name>
+   	<property>engines/engine/n2</property>
+   	<factor>0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>LHn2.001</object-name>
+   	<property>engines/engine/n2</property>
+   	<factor>1.0</factor>
+	<step>0.1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn2.004</object-name>
+   	<property>engines/engine[1]/n2</property>
+   	<factor>0.001</factor>
+	<step>100</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn2.003</object-name>
+   	<property>engines/engine[1]/n2</property>
+   	<factor>0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn2.002</object-name>
+   	<property>engines/engine[1]/n2</property>
+   	<factor>0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>RHn2.001</object-name>
+   	<property>engines/engine[1]/n2</property>
+   	<factor>1.0</factor>
+	<step>0.1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<!-- N1, N2 and EGT Rotate Animations -->
+
+<animation>
+	<type>rotate</type>
+   	<object-name>n1.l</object-name>
+   	<property>engines/engine/n1</property>
+   	<interpolation>
+        <entry>
+       		<ind>0.0</ind><dep>0.0</dep>
+     	</entry>
+     	<entry>
+       		<ind>100</ind><dep>225</dep>
+     	</entry>
+   	</interpolation>
+   	<center>
+    	<x-m>0</x-m>
+     	<y-m>-0.0414</y-m>
+     	<z-m>0.1128</z-m>
+   	</center>
+   	<axis>
+     	<x>-1.0</x>
+     	<y>0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+   	<object-name>n1.r</object-name>
+   	<property>engines/engine[1]/n1</property>
+   	<interpolation>
+        <entry>
+       		<ind>0.0</ind><dep>0.0</dep>
+     	</entry>
+     	<entry>
+       		<ind>100</ind><dep>225</dep>
+     	</entry>
+   	</interpolation>
+   	<center>
+    	<x-m>0</x-m>
+     	<y-m>0.0095</y-m>
+     	<z-m>0.1128</z-m>
+   	</center>
+   	<axis>
+     	<x>-1.0</x>
+     	<y>0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+   	<object-name>n2.l</object-name>
+   	<property>engines/engine/n2</property>
+   	<interpolation>
+        <entry>
+       		<ind>0.0</ind><dep>0.0</dep>
+     	</entry>
+     	<entry>
+       		<ind>100</ind><dep>225</dep>
+     	</entry>
+   	</interpolation>
+   	<center>
+    	<x-m>0</x-m>
+     	<y-m>-0.0414</y-m>
+     	<z-m>0.0651</z-m>
+   	</center>
+   	<axis>
+     	<x>-1.0</x>
+     	<y>0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+   	<object-name>n2.r</object-name>
+   	<property>engines/engine[1]/n2</property>
+   	<interpolation>
+        <entry>
+       		<ind>0.0</ind><dep>0.0</dep>
+     	</entry>
+     	<entry>
+       		<ind>100</ind><dep>225</dep>
+     	</entry>
+   	</interpolation>
+   	<center>
+    	<x-m>0</x-m>
+     	<y-m>0.0095</y-m>
+     	<z-m>0.0651</z-m>
+   	</center>
+   	<axis>
+     	<x>-1.0</x>
+     	<y>0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+   	<object-name>egt.l</object-name>
+   	<property>engines/engine/egt-degf</property>
+   	<interpolation>
+        <entry>
+       		<ind>0.0</ind><dep>0.0</dep>
+     	</entry>
+     	<entry>
+       		<ind>3000</ind><dep>225</dep>
+     	</entry>
+   	</interpolation>
+   	<center>
+    	<x-m>0</x-m>
+     	<y-m>-0.0414</y-m>
+     	<z-m>0.0179</z-m>
+   	</center>
+   	<axis>
+     	<x>-1.0</x>
+     	<y>0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+   	<object-name>egt.r</object-name>
+   	<property>engines/engine[1]/egt-degf</property>
+   	<interpolation>
+        <entry>
+       		<ind>0.0</ind><dep>0.0</dep>
+     	</entry>
+     	<entry>
+       		<ind>3000</ind><dep>225</dep>
+     	</entry>
+   	</interpolation>
+   	<center>
+    	<x-m>0</x-m>
+     	<y-m>0.0095</y-m>
+     	<z-m>0.0179</z-m>
+   	</center>
+   	<axis>
+     	<x>-1.0</x>
+     	<y>0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<!-- TAT digits -->
+
+<!-- Positive TAT Value -->
+
+	<animation>
+		<type>select</type>
+		<object-name>TAT.1</object-name>
+		<object-name>TAT.10</object-name>
+		<condition>
+			<greater-than-equals>
+				<property>controls/ice/tat</property>
+				<value>0</value>
+			</greater-than-equals>
+		</condition>
+	</animation>
+
+<!-- Negative TAT Value -->
+
+	<animation>
+		<type>select</type>
+		<object-name>TAT.-</object-name>
+		<object-name>TAT.-1</object-name>
+		<object-name>TAT.-10</object-name>
+		<condition>
+			<less-than>
+				<property>controls/ice/tat</property>
+				<value>0</value>
+			</less-than>
+		</condition>
+	</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>TAT.10</object-name>
+   	<property>controls/ice/tat</property>
+   	<factor>0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>TAT.1</object-name>
+   	<property>controls/ice/tat</property>
+   	<factor>0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>TAT.-10</object-name>
+   	<property>controls/ice/tat</property>
+   	<factor>-0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>TAT.-1</object-name>
+   	<property>controls/ice/tat</property>
+   	<factor>-0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<!-- FUEL INDICATORS-->
+<!-- total fuel lbs-->
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>Tfuel.001</object-name>
+   	<property>consumables/fuel/total-fuel-lbs</property>
+   	<factor>0.10</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>Tfuel.002</object-name>
+   	<property>consumables/fuel/total-fuel-lbs</property>
+   	<factor>0.010</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>Tfuel.003</object-name>
+   	<property>consumables/fuel/total-fuel-lbs</property>
+   	<factor>0.0010</factor>
+	<step>100</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>Tfuel.004</object-name>
+   	<property>consumables/fuel/total-fuel-lbs</property>
+   	<factor>0.0001</factor>
+	<step>1000</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>Tfuel.005</object-name>
+   	<property>consumables/fuel/total-fuel-lbs</property>
+   	<factor>0.00001</factor>
+	<step>10000</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<!-- Warnings and Indicators -->
+
+<animation>
+    <type>select</type>
+	<object-name>engine1failure</object-name>
+  	<condition>
+    	<equals>
+    	<property>/engines/engine/n1</property>
+    	<value>0</value>
+    	</equals>
+  	</condition>
+</animation>
+<animation>
+    <type>select</type>
+	<object-name>engine2failure</object-name>
+  	<condition>
+    	<equals>
+    	<property>/engines/engine[1]/n1</property>
+    	<value>0</value>
+    	</equals>
+  	</condition>
+</animation>
+<animation>
+    <type>select</type>
+	<object-name>criticalfuel</object-name>
+  	<condition>
+    	<less-than>
+    	<property>/consumables/fuel/total-fuel-lbs</property>
+    	<value>2000</value>
+    	</less-than>
+  	</condition>
+</animation>
+<animation>
+    <type>select</type>
+	<object-name>spoilersarmed</object-name>
+  	<condition>
+	<not>
+    	<equals>
+    	<property>/surface-positions/speedbrake-pos-norm</property>
+    	<value>0</value>
+    	</equals>
+	</not>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>windowicedetected</object-name>
+  	<condition>
+	<less-than-equals>
+ 	   	<property>/controls/window-heat/temp</property>
+    		<value>0</value>
+	</less-than-equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>hydraulicfailure</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/hydraulic/failure-indicator</property>
+    		<value>1</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>alternategear</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/hydraulic/failure-indicator</property>
+    		<value>1</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>fbwdisconnect</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/fbw/active</property>
+    		<value>0</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>ramairturbine</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/electric/ram-air-turbine</property>
+    		<value>1</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>externalpower</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/electric/external-power</property>
+    		<value>1</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>fueldump</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/fuel/dump</property>
+    		<value>1</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>fuelcross-feed</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/fuel/x-feed</property>
+    		<value>1</value>
+	</equals>
+  	</condition>
+</animation>
+
+<!-- Wing and Engine Ice Warnings -->
+
+<animation>
+    <type>select</type>
+	<object-name>wingice</object-name>
+  	<condition>
+	<less-than-equals>
+ 	   	<property>/controls/ice/wing/temp</property>
+    		<value>0</value>
+	</less-than-equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>eng1ice</object-name>
+  	<condition>
+	<less-than-equals>
+ 	   	<property>/controls/ice/eng1/temp</property>
+    		<value>0</value>
+	</less-than-equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>eng2ice</object-name>
+  	<condition>
+	<less-than-equals>
+ 	   	<property>/controls/ice/eng2/temp</property>
+    		<value>0</value>
+	</less-than-equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>icewing</object-name>
+  	<condition>
+	<less-than-equals>
+ 	   	<property>/controls/ice/wing/temp</property>
+    		<value>-20</value>
+	</less-than-equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>iceeng1</object-name>
+  	<condition>
+	<less-than-equals>
+ 	   	<property>/controls/ice/eng1/temp</property>
+    		<value>-20</value>
+	</less-than-equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>iceeng2</object-name>
+  	<condition>
+	<less-than-equals>
+ 	   	<property>/controls/ice/eng2/temp</property>
+    		<value>-20</value>
+	</less-than-equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>engine1fire</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/fires/fire/phase</property>
+    		<value>fire</value>
+	</equals>
+  	</condition>
+</animation>
+
+<animation>
+    <type>select</type>
+	<object-name>engine2fire</object-name>
+  	<condition>
+	<equals>
+ 	   	<property>/controls/fires/fire[1]/phase</property>
+    		<value>fire</value>
+	</equals>
+  	</condition>
+</animation>
+
+
+
+<animation>
+    <type>select</type>
+	<object-name>machtrim</object-name>
+  	<condition>
+	<and>
+	<less-than-equals>
+ 	   	<property>/velocities/airspeed-kt</property>
+    		<value>220</value>
+	</less-than-equals>
+	</and>
+	<and>
+	<less-than-equals>
+ 	   	<property>/controls/flight/flaps</property>
+    		<value>0.10</value>
+	</less-than-equals>
+	</and>
+  	</condition>
+</animation>
+
+<!-- EGT Digits -->
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.l.001</object-name>
+   	<property>engines/engine/egt-degf</property>
+   	<factor>0.0001</factor>
+	<step>1000</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.l.004</object-name>
+   	<property>engines/engine/egt-degf</property>
+   	<factor>0.001</factor>
+	<step>100</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.l.003</object-name>
+   	<property>engines/engine/egt-degf</property>
+   	<factor>0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.l.002</object-name>
+   	<property>engines/engine/egt-degf</property>
+   	<factor>0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.r.001</object-name>
+   	<property>engines/engine[1]/egt-degf</property>
+   	<factor>0.0001</factor>
+	<step>1000</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.r.004</object-name>
+   	<property>engines/engine[1]/egt-degf</property>
+   	<factor>0.001</factor>
+	<step>100</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.r.003</object-name>
+   	<property>engines/engine[1]/egt-degf</property>
+   	<factor>0.01</factor>
+	<step>10</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+<animation>
+   	<type>textranslate</type>
+   	<object-name>egt.r.002</object-name>
+   	<property>engines/engine[1]/egt-degf</property>
+   	<factor>0.1</factor>
+	<step>1</step>
+     <axis>
+     	<x>0.0</x>
+     	<y>1.0</y>
+     	<z>0.0</z>
+   	</axis>
+</animation>
+
+</PropertyList>
