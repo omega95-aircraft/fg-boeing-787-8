@@ -92,7 +92,7 @@ keypress = "";
 if (keypress == "r6") { setprop("/instrumentation/efb/page", "Flight Fuel Planner");
 keypress = "";
 }
-if (keypress == "r7") { setprop("/instrumentation/efb/page", "Auto-PIREP System");
+if (keypress == "r7") { setprop("/instrumentation/efb/page", "VNAV Altitudes Generator");
 keypress = "";
 }
 
@@ -440,6 +440,11 @@ var page = {
 		helper = "";
 
 },
+	vnav : func {
+	
+	
+	
+},
 	index : func {
 
 l7 = "< Airport Information";
@@ -449,7 +454,7 @@ r9 = "GPS Settings >";
 l11 = "< Flight Manual Index";
 r11 = "Flight Fuel Planner >";
 l13 = "< FGFSCopilot Connect";
-r13 = "Auto-PIREP System >";
+r13 = "VNAV Helper >";
 
 },
 	airportinfo : func {

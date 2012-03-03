@@ -457,7 +457,7 @@
 		<object-name>zoomout</object-name>
 		<action>
 			<button>0</button>
-			<repeatable type="bool">true</repeatable>
+			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
 				<property>/instrumentation/ndfull/range</property>
@@ -491,11 +491,11 @@
 		<object-name>zoomin</object-name>
 		<action>
 			<button>0</button>
-			<repeatable type="bool">true</repeatable>
+			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
 				<property>/instrumentation/ndfull/range</property>
-				<value>256</value>
+				<value>250</value>
 				<value>128</value>
 				<value>64</value>
 				<value>32</value>
@@ -518,6 +518,28 @@
 				<value>0.75</value>
 			</binding>
 		</action>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>zoomout</object-name>
+		<condition>
+			<less-than>
+				<property>/instrumentation/ndfull/range</property>
+				<value>250</value>
+			</less-than>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>zoomin</object-name>
+		<condition>
+			<greater-than>
+				<property>/instrumentation/ndfull/range</property>
+				<value>0.75</value>
+			</greater-than>
+		</condition>
 	</animation>
 
 	<!-- HSI arc -->
@@ -16036,7 +16058,7 @@
   </greater-than>
   <equals>
    <property>controls/mfd/extra</property>
-   <value>terr</value>
+   <value>2</value>
   </equals>
  </and>
  </condition>
