@@ -136,8 +136,17 @@
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
 	<binding>
-		<command>property-toggle</command>
-		<property>controls/electric/external-power</property>
+		<command>nasal</command>
+		<script>
+		if (getprop("controls/electric/external-power") == 0) {
+		if (getprop("/services/ext-pwr/enable") == 1)
+			setprop("controls/electric/external-power", 1);
+		else
+			screen.log.write("Please Hook the external power cable up first...", 1, 0, 0);
+		} else {
+			setprop("controls/electric/external-power", 0);
+		}
+		</script>
 	</binding>
 	</action>
  </animation>

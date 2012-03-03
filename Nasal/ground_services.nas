@@ -7,6 +7,15 @@ var ground_services = {
 	me.loopid = 0;
 	
 	me.ice_time = 0;
+	
+	# External Power
+	
+	setprop("/services/ext-pwr/enable", 1);
+	
+	# Catering Truck
+	
+	setprop("/services/catering/scissor-deg", 0);
+	setprop("/sim/model/door-positions/cater_pos/position-norm", 0);
 
 	# Fuel Truck
 	
@@ -29,6 +38,23 @@ var ground_services = {
 	},
 	update : func {
 	
+		# External Power Stuff
+		
+		if (getprop("/velocities/groundspeed-kt") > 10)
+			setprop("/services/ext-pwr/enable", 0);
+		
+		if (getprop("/services/ext-pwr/enable") == 0)
+			setprop("controls/electric/external-power", 0);
+	
+		# Catering Truck Controls
+		
+		var cater_pos = getprop("/sim/model/door-positions/cater_pos/position-norm");
+		
+		var scissor_deg = 3.325 * RAD2DEG * math.asin(cater_pos / (2 * 3.6612));
+		
+		setprop("/services/catering/scissor-deg", scissor_deg);
+		
+			
 		# Fuel Truck Controls
 		
 		if (getprop("/services/fuel-truck/enable") and getprop("/services/fuel-truck/connect")) {

@@ -41,6 +41,59 @@
 		
 	<hrule />
 	
+	<text>
+		<label>Catering Truck</label>
+	</text>
+	
+	<checkbox>
+		<label>Enable Catering Truck</label>
+		<property>services/catering/enable</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<button>
+		<legend>Toggle Catering</legend>
+		<padding>5</padding>
+		<binding>
+			<command>nasal</command>
+			<script>
+				if (getprop("services/catering/enable") == 1) {
+					b787.doors.toggle("cater_pos");
+				} else
+					screen.log.write("Please Enable the Catering truck first", 1, 0, 0);
+			</script>
+		</binding>
+	</button>
+	
+	<hrule />
+	
+	<text>
+		<label>Other Ground Services</label>
+	</text>
+	
+	<checkbox>
+		<label>Enable Baggage Truck</label>
+		<property>services/baggage/enable</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<checkbox>
+		<label>Enable External Power Box</label>
+		<property>services/ext-pwr/enable</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<hrule />
+	
 	<group>
 	<layout>hbox</layout>
 
