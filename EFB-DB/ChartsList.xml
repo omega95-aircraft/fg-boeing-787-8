@@ -55,6 +55,16 @@
 		<IAP-0 type="string">09-ILS-LOC</IAP-0>
 		<IAPs type="int">1</IAPs>
 	</KMEM>
+	
+	<LOWI>
+		<STAR-0 type="string">26-RTT</STAR-0>
+		<STAR-1 type="string">West-NDB_KTI</STAR-1>
+		<STARs type="int">2</STARs>
+		<IAP-0 type="string">26-DME</IAP-0>
+		<IAPs type="int">1</IAPs>
+		<SID-0 type="string">08-RTT</SID-0>
+		<SIDs type="int">1</SIDs>
+	</LOWI>
 
 </chartsDB>
 
