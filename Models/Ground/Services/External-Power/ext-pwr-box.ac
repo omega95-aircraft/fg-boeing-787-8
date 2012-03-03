@@ -4,7 +4,7 @@ OBJECT world
 kids 9
 OBJECT poly
 name "box"
-loc -14.9771 -3.12156 7.13293
+loc -14.9771 -3.19098 7.13293
 texture "texture.png"
 crease 45.000000
 numvert 16
@@ -112,7 +112,7 @@ refs 4
 kids 0
 OBJECT poly
 name "box"
-loc -15.4326 -2.53254 6.74517
+loc -15.4326 -2.60196 6.74517
 texture "texture.png"
 crease 45.000000
 numvert 8
@@ -163,7 +163,7 @@ refs 4
 kids 0
 OBJECT poly
 name "box"
-loc -15.4326 -2.53254 6.74517
+loc -15.4326 -2.60196 6.74517
 texture "texture.png"
 crease 45.000000
 numvert 12
@@ -246,7 +246,7 @@ refs 4
 kids 0
 OBJECT poly
 name "box"
-loc -15.4767 -3.1788 6.71372
+loc -15.4767 -3.24822 6.71372
 texture "texture.png"
 crease 45.000000
 numvert 8
@@ -304,7 +304,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.008"
-loc -14.3408 -3.54097 7.84664
+loc -14.3408 -3.61039 7.84664
 data 12
 Cylinder.008
 texture "texture.png"
@@ -1398,7 +1398,7 @@ refs 4
 kids 0
 OBJECT poly
 name "block"
-loc -14.8603 -3.33445 6.77418
+loc -14.8603 -3.40387 6.77418
 texture "texture.png"
 crease 45.000000
 numvert 32
@@ -1634,7 +1634,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc -15.6079 -3.23731 6.59952
+loc -15.6079 -3.30673 6.59952
 texture "texture.png"
 crease 45.000000
 numvert 26
@@ -1642,15 +1642,15 @@ numvert 26
 0.41503 0 -0.494613
 -0.373369 -2.38419e-07 0.52957
 -0.37895 -0.0271924 0.524887
--0.394199 -0.0470984 0.512092
+-0.394198 -0.0470984 0.512092
 -0.41503 -0.0543845 0.494613
--0.43586 -0.0470984 0.477134
--0.451109 -0.0271924 0.464338
--0.45669 0 0.459655
--0.451109 0.0271921 0.464338
--0.43586 0.0470982 0.477134
+-0.435861 -0.0470984 0.477134
+-0.45111 -0.0271924 0.464338
+-0.456691 0 0.459655
+-0.45111 0.0271921 0.464338
+-0.435861 0.0470982 0.477134
 -0.41503 0.0543842 0.494613
--0.394199 0.0470982 0.512092
+-0.394198 0.0470982 0.512092
 -0.37895 0.0271921 0.524887
 0.456691 -2.38419e-07 -0.459656
 0.451109 -0.0271924 -0.464339
@@ -1896,7 +1896,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc -15.7845 -2.22732 7.16455
+loc -15.7845 -2.29674 7.16455
 texture "texture.png"
 crease 45.000000
 numvert 146
@@ -3098,7 +3098,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc -19.5217 -3.14548 4.35804
+loc -19.5217 -3.2149 4.35804
 texture "texture.png"
 crease 45.000000
 numvert 338

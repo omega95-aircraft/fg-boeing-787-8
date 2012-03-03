@@ -2455,6 +2455,7 @@
         <type>translate</type>
          <object-name>NGearStrut</object-name>
          <object-name>NoseWheel</object-name>
+         <object-name>choke_nose</object-name>
         <property>gear/gear[0]/compression-norm</property>
         <interpolation>
             <entry><ind>0.00</ind><dep>0</dep></entry>
@@ -2539,6 +2540,7 @@
         <object-name>LeftGearCompressor</object-name>
         <object-name>LeftGearCompressor1</object-name>
         <object-name>LeftGearBaseRod</object-name>
+        <object-name>choke_left</object-name>
         <property>gear/gear[1]/compression-norm</property>
         <interpolation>
             <entry><ind>0.00</ind><dep>0</dep></entry>
@@ -2663,6 +2665,7 @@
         <object-name>RightGearCompressor</object-name>
         <object-name>RightGearCompressor1</object-name>
         <object-name>RightGearBaseRod</object-name>
+        <object-name>choke_right</object-name>
         <property>gear/gear[2]/compression-norm</property>
         <interpolation>
             <entry><ind>0.00</ind><dep>0</dep></entry>
@@ -3227,6 +3230,41 @@
 	<condition>
 		<equals>
 			<property>/services/ext-pwr/enable</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</model>
+
+<!-- Chokes -->
+
+<model>
+	<name>choke_nose</name>
+	<path>Aircraft/787-8/Models/Ground/Services/Chokes/choke_nose.ac</path>
+	<condition>
+		<equals>
+			<property>/services/chokes/nose</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</model>
+
+<model>
+	<name>choke_left</name>
+	<path>Aircraft/787-8/Models/Ground/Services/Chokes/choke_left.ac</path>
+	<condition>
+		<equals>
+			<property>/services/chokes/left</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</model>
+
+<model>
+	<name>choke_right</name>
+	<path>Aircraft/787-8/Models/Ground/Services/Chokes/choke_right.ac</path>
+	<condition>
+		<equals>
+			<property>/services/chokes/right</property>
 			<value>1</value>
 		</equals>
 	</condition>

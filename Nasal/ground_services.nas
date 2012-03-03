@@ -8,6 +8,14 @@ var ground_services = {
 	
 	me.ice_time = 0;
 	
+	# Chokes and Parking Brakes
+	
+	setprop("/services/chokes/nose", 1);
+	setprop("/services/chokes/left", 1);
+	setprop("/services/chokes/right", 1);
+	
+	setprop("/controls/parking-brake", 1);
+	
 	# External Power
 	
 	setprop("/services/ext-pwr/enable", 1);
@@ -25,19 +33,34 @@ var ground_services = {
 	setprop("/services/fuel-truck/clean", 0);
 	setprop("/services/fuel-truck/request-kg", 0);
 	
-	# External Power
-	
-	setprop("/services/ext-pwr/active", 0);
-	
 	# De-icing Truck
 	
 	setprop("/services/deicing_truck/enable", 0);
 	setprop("/services/deicing_truck/de-ice", 0);
+	
+	# Set them all to 0 if the aircraft is not stationary
+	
+	if (getprop("/velocities/groundspeed-kt") > 10) {
+		setprop("/services/chokes/nose", 0);
+		setprop("/services/chokes/left", 0);
+		setprop("/services/chokes/right", 0);
+		setprop("/services/fuel-truck/enable", 0);
+		setprop("/services/ext-pwr/enable", 0);
+		setprop("/services/deicing_truck/enable", 0);
+		setprop("/services/catering/enable", 0);
+	}
 
 	me.reset();
 	},
 	update : func {
 	
+		# Chokes and Parking Brakes Control
+		
+		if ((getprop("/services/chokes/nose") == 1) or (getprop("/services/chokes/left") == 1) or (getprop("/services/chokes/right") == 1) or (getprop("/controls/parking-brake") == 1))
+			setprop("/controls/gear/brake-parking", 1);
+		else
+			setprop("/controls/gear/brake-parking", 0);
+				
 		# External Power Stuff
 		
 		if (getprop("/velocities/groundspeed-kt") > 10)
@@ -139,6 +162,15 @@ var ground_services = {
 		settimer(func { me._loop_(id); }, me.UPDATE_INTERVAL);
 	}
 };
+
+var toggle_parkingbrakes = func {
+
+	if (getprop("/controls/parking-brake") == 1)
+		setprop("/controls/parking-brake", 0);
+	else	
+		setprop("/controls/parking-brake", 1);	
+
+}
 
 setlistener("sim/signals/fdm-initialized", func {
 	ground_services.init();

@@ -4,7 +4,7 @@ OBJECT world
 kids 147
 OBJECT poly
 name "Axle_front.003"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.011
 texture "container_trailer.png"
@@ -538,7 +538,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.004"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.012
 texture "container_trailer.png"
@@ -765,7 +765,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.005"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.013
 texture "container_trailer.png"
@@ -2293,7 +2293,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.007"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.015
 texture "container_trailer.png"
@@ -2776,7 +2776,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.010"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.018
 texture "container_trailer.png"
@@ -2836,7 +2836,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.011"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.019
 texture "container_trailer.png"
@@ -3010,7 +3010,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.012"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.020
 texture "container_trailer.png"
@@ -3356,7 +3356,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Container_platform"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 8
 Cube.007
 texture "container_trailer.png"
@@ -4354,7 +4354,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.072"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 8
 Cube.020
 texture "container_trailer.png"
@@ -4558,7 +4558,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.077"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 8
 Cube.072
 texture "container_trailer.png"
@@ -4643,7 +4643,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.078"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 8
 Cube.073
 texture "container_trailer.png"
@@ -4689,7 +4689,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.079"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 8
 Cube.074
 texture "container_trailer.png"
@@ -4742,7 +4742,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.005"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 12
 Cylinder.009
 texture "container_trailer.png"
@@ -6220,7 +6220,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Reflectors.001"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 4
 Cube
 texture "container_trailer.png"
@@ -6308,7 +6308,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bar_parking"
-loc 29.1079 -3.64201 -4.18876
+loc 29.1079 -3.73885 -4.18876
 data 8
 Cube.077
 texture "container_trailer.png"
@@ -6485,7 +6485,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.003"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.011
 texture "container_trailer.png"
@@ -7019,7 +7019,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.004"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.012
 texture "container_trailer.png"
@@ -7246,7 +7246,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.005"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.013
 texture "container_trailer.png"
@@ -8774,7 +8774,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Axle_front.007"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.015
 texture "container_trailer.png"
@@ -9257,7 +9257,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.010"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.018
 texture "container_trailer.png"
@@ -9317,7 +9317,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.011"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.019
 texture "container_trailer.png"
@@ -9491,7 +9491,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.012"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.020
 texture "container_trailer.png"
@@ -9837,7 +9837,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Container_platform"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 8
 Cube.007
 texture "container_trailer.png"
@@ -10835,7 +10835,7 @@ refs 2
 kids 0
 OBJECT poly
 name "Cube.072"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 8
 Cube.020
 texture "container_trailer.png"
@@ -11039,7 +11039,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.077"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 8
 Cube.072
 texture "container_trailer.png"
@@ -11124,7 +11124,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.078"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 8
 Cube.073
 texture "container_trailer.png"
@@ -11170,7 +11170,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.079"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 8
 Cube.074
 texture "container_trailer.png"
@@ -11223,7 +11223,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.005"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 12
 Cylinder.009
 texture "container_trailer.png"
@@ -12701,7 +12701,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Reflectors.001"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 4
 Cube
 texture "container_trailer.png"
@@ -12789,7 +12789,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Bar_parking"
-loc 22.966 -3.64201 -6.78669
+loc 22.966 -3.73885 -6.78669
 data 8
 Cube.077
 texture "container_trailer.png"
@@ -12966,7 +12966,7 @@ refs 4
 kids 0
 OBJECT poly
 name "container_AKH"
-loc 21.22 -3.60864 -7.73822
+loc 21.22 -3.70548 -7.73822
 data 8
 Cube.160
 texture "container_AKH.png"
@@ -13090,7 +13090,7 @@ refs 4
 kids 0
 OBJECT poly
 name "container_AKH"
-loc 18.1667 -3.60864 -7.28251
+loc 18.1667 -3.70548 -7.28251
 data 8
 Cube.160
 texture "container_AKH.png"
@@ -13214,7 +13214,7 @@ refs 4
 kids 0
 OBJECT poly
 name "container_AKH"
-loc 20.4802 -3.06255 -11.1369
+loc 20.4802 -3.15939 -11.1369
 data 8
 Cube.160
 texture "container_AKH.png"
@@ -13338,7 +13338,7 @@ refs 4
 kids 0
 OBJECT poly
 name "container_AKH"
-loc 21.4023 -3.06255 -15.0021
+loc 21.4023 -3.15939 -15.0021
 data 8
 Cube.160
 texture "container_AKH.png"
@@ -13462,7 +13462,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.003"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.011
 texture "container_trailer.png"
@@ -13996,7 +13996,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.004"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.012
 texture "container_trailer.png"
@@ -14223,7 +14223,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.005"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.013
 texture "container_trailer.png"
@@ -14328,7 +14328,7 @@ numvert 180
 3.45245 0.463369 -2.46051
 4.16822 0.463369 -0.77427
 3.40637 0.241705 -2.41707
-4.10495 0.241705 -0.771296
+4.10495 0.241705 -0.771297
 3.43813 0.370486 -2.43055
 4.13672 0.370486 -0.784779
 3.3746 0.370486 -2.40359
@@ -15751,7 +15751,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.007"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.015
 texture "container_trailer.png"
@@ -16234,7 +16234,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.010"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.018
 texture "container_trailer.png"
@@ -16294,7 +16294,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.011"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.019
 texture "container_trailer.png"
@@ -16468,7 +16468,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.012"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.020
 texture "container_trailer.png"
@@ -16814,7 +16814,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Container_platform"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 8
 Cube.007
 texture "container_trailer.png"
@@ -17812,7 +17812,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.072"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 8
 Cube.020
 texture "container_trailer.png"
@@ -18016,7 +18016,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.077"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 8
 Cube.072
 texture "container_trailer.png"
@@ -18101,7 +18101,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.078"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 8
 Cube.073
 texture "container_trailer.png"
@@ -18147,7 +18147,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.079"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 8
 Cube.074
 texture "container_trailer.png"
@@ -18200,7 +18200,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.005"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 12
 Cylinder.009
 texture "container_trailer.png"
@@ -19678,7 +19678,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Reflectors.001"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 4
 Cube
 texture "container_trailer.png"
@@ -19766,7 +19766,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bar_parking"
-loc 15.7877 -3.64201 -9.13968
+loc 15.7877 -3.73885 -9.13968
 data 8
 Cube.077
 texture "container_trailer.png"
@@ -19943,7 +19943,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.003"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.011
 texture "container_trailer.png"
@@ -20477,7 +20477,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.004"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.012
 texture "container_trailer.png"
@@ -20704,7 +20704,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.005"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.013
 texture "container_trailer.png"
@@ -22232,7 +22232,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Axle_front.007"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.015
 texture "container_trailer.png"
@@ -22715,7 +22715,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.010"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.018
 texture "container_trailer.png"
@@ -22775,7 +22775,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.011"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.019
 texture "container_trailer.png"
@@ -22949,7 +22949,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Axle_front.012"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.020
 texture "container_trailer.png"
@@ -23295,7 +23295,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bar_down"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 8
 Cube.076
 texture "container_trailer.png"
@@ -23472,7 +23472,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Container_platform"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 8
 Cube.007
 texture "container_trailer.png"
@@ -24470,7 +24470,7 @@ refs 2
 kids 0
 OBJECT poly
 name "Cube.072"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 8
 Cube.020
 texture "container_trailer.png"
@@ -24674,7 +24674,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.077"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 8
 Cube.072
 texture "container_trailer.png"
@@ -24759,7 +24759,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.078"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 8
 Cube.073
 texture "container_trailer.png"
@@ -24805,7 +24805,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.079"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 8
 Cube.074
 texture "container_trailer.png"
@@ -24858,7 +24858,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.005"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 12
 Cylinder.009
 texture "container_trailer.png"
@@ -26336,7 +26336,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Reflectors.001"
-loc 16.3144 -3.64201 -15.0038
+loc 16.3144 -3.73885 -15.0038
 data 4
 Cube
 texture "container_trailer.png"
@@ -26424,7 +26424,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Bag_01_01"
-loc 9.78873 -4.24503 -18.3001
+loc 9.78873 -4.34187 -18.3001
 data 8
 Cube.062
 texture "baggage_trailer_bags.png"
@@ -27189,7 +27189,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_01_02"
-loc 9.78873 -4.24503 -18.3001
+loc 9.78873 -4.34187 -18.3001
 data 8
 Cube.064
 texture "baggage_trailer_bags.png"
@@ -27415,7 +27415,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_01_03"
-loc 9.78873 -4.24503 -18.3001
+loc 9.78873 -4.34187 -18.3001
 data 8
 Cube.065
 texture "baggage_trailer_bags.png"
@@ -27824,7 +27824,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_02_01"
-loc 6.32634 -3.63808 -27.0869
+loc 6.32634 -3.73492 -27.0869
 data 8
 Cube.088
 texture "baggage_trailer_bags.png"
@@ -28589,7 +28589,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_02_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 8
 Cube.104
 texture "baggage_trailer_bags.png"
@@ -28815,7 +28815,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_02_03"
-loc 6.28591 -3.63808 -27.1737
+loc 6.28591 -3.73492 -27.1737
 data 8
 Cube.103
 texture "baggage_trailer_bags.png"
@@ -29224,7 +29224,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_03_01"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.089
 texture "baggage_trailer_bags.png"
@@ -29989,7 +29989,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_03_02"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.105
 texture "baggage_trailer_bags.png"
@@ -30215,7 +30215,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_03_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.106
 texture "baggage_trailer_bags.png"
@@ -30624,7 +30624,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_04_01"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.102
 texture "baggage_trailer_bags.png"
@@ -31389,7 +31389,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_04_02"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.108
 texture "baggage_trailer_bags.png"
@@ -31615,7 +31615,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bag_04_03"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.107
 texture "baggage_trailer_bags.png"
@@ -32024,7 +32024,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bar_down_bgt_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 8
 Cube.084
 texture "baggage_trailer.png"
@@ -32201,7 +32201,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bar_down_bgt_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.093
 texture "baggage_trailer.png"
@@ -32378,7 +32378,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bar_down_bgt_04"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.098
 texture "baggage_trailer.png"
@@ -32555,7 +32555,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.066"
-loc 8.17892 -3.63808 -27.6888
+loc 8.17892 -3.73492 -27.6888
 data 8
 Cube.056
 texture "baggage_trailer.png"
@@ -32608,7 +32608,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Reflectors_01"
-loc 8.17892 -3.63808 -27.6888
+loc 8.17892 -3.73492 -27.6888
 data 8
 Cube.059
 texture "baggage_trailer.png"
@@ -32696,7 +32696,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Reflectors_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 8
 Cube.082
 texture "baggage_trailer.png"
@@ -32784,7 +32784,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Reflectors_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.094
 texture "baggage_trailer.png"
@@ -32872,7 +32872,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Reflectors_04"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.097
 texture "baggage_trailer.png"
@@ -32960,7 +32960,7 @@ refs 3
 kids 0
 OBJECT poly
 name "front_01"
-loc 8.17892 -3.63808 -27.6888
+loc 8.17892 -3.73492 -27.6888
 data 12
 Cylinder.021
 texture "baggage_trailer.png"
@@ -33135,7 +33135,7 @@ numvert 284
 -0.596519 0.147431 2.06191
 0.945498 0.147431 1.927
 -0.601728 0.112923 2.00237
-0.94029 0.112923 1.86747
+0.940289 0.112923 1.86747
 -0.607743 0.112923 1.93362
 0.934275 0.112923 1.79871
 -0.612953 0.147431 1.87408
@@ -33149,7 +33149,7 @@ numvert 284
 -0.607743 0.370487 1.93362
 0.934275 0.370487 1.79871
 -0.601727 0.370487 2.00237
-0.94029 0.370487 1.86747
+0.940289 0.370487 1.86747
 -0.604733 0.241705 1.96799
 0.937284 0.241705 1.83309
 -0.621453 0.463368 2.02908
@@ -35012,7 +35012,7 @@ refs 3
 kids 0
 OBJECT poly
 name "front_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 12
 Cylinder.005
 texture "baggage_trailer.png"
@@ -37064,7 +37064,7 @@ refs 3
 kids 0
 OBJECT poly
 name "front_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 12
 Cylinder.022
 texture "baggage_trailer.png"
@@ -39116,7 +39116,7 @@ refs 3
 kids 0
 OBJECT poly
 name "front_04"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 12
 Cylinder.026
 texture "baggage_trailer.png"
@@ -41168,7 +41168,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rails_01"
-loc 8.17892 -3.63808 -27.6888
+loc 8.17892 -3.73492 -27.6888
 data 8
 Cube.031
 texture "baggage_trailer.png"
@@ -42342,7 +42342,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rails_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 8
 Cube.086
 texture "baggage_trailer.png"
@@ -43516,7 +43516,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rails_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.091
 texture "baggage_trailer.png"
@@ -44690,7 +44690,7 @@ refs 4
 kids 0
 OBJECT poly
 name "rails_04"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.100
 texture "baggage_trailer.png"
@@ -45864,7 +45864,7 @@ refs 4
 kids 0
 OBJECT poly
 name "raincoat_01"
-loc 8.17892 -3.63808 -27.6888
+loc 8.17892 -3.73492 -27.6888
 data 8
 Cube.060
 texture "baggage_trailer.png"
@@ -46180,7 +46180,7 @@ refs 4
 kids 0
 OBJECT poly
 name "raincoat_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 8
 Cube.081
 texture "baggage_trailer.png"
@@ -46496,7 +46496,7 @@ refs 4
 kids 0
 OBJECT poly
 name "raincoat_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.095
 texture "baggage_trailer.png"
@@ -46812,7 +46812,7 @@ refs 4
 kids 0
 OBJECT poly
 name "raincoat_04"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.096
 texture "baggage_trailer.png"
@@ -47128,7 +47128,7 @@ refs 4
 kids 0
 OBJECT poly
 name "sign_01"
-loc 8.17892 -3.63808 -27.6888
+loc 8.17892 -3.73492 -27.6888
 data 8
 Cube.045
 texture "baggage_trailer.png"
@@ -47188,7 +47188,7 @@ refs 4
 kids 0
 OBJECT poly
 name "sign_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 8
 Cube.085
 texture "baggage_trailer.png"
@@ -47248,7 +47248,7 @@ refs 4
 kids 0
 OBJECT poly
 name "sign_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.092
 texture "baggage_trailer.png"
@@ -47308,7 +47308,7 @@ refs 4
 kids 0
 OBJECT poly
 name "sign_04"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.099
 texture "baggage_trailer.png"
@@ -47368,7 +47368,7 @@ refs 4
 kids 0
 OBJECT poly
 name "trailer_01"
-loc 8.17892 -3.63808 -27.6888
+loc 8.17892 -3.73492 -27.6888
 data 8
 Cube.083
 texture "baggage_trailer.png"
@@ -49208,7 +49208,7 @@ refs 4
 kids 0
 OBJECT poly
 name "trailer_02"
-loc 6.31929 -3.63808 -27.1587
+loc 6.31929 -3.73492 -27.1587
 data 8
 Cube.155
 texture "baggage_trailer.png"
@@ -51048,7 +51048,7 @@ refs 4
 kids 0
 OBJECT poly
 name "trailer_03"
-loc 3.95221 -3.63808 -25.1798
+loc 3.95221 -3.73492 -25.1798
 data 8
 Cube.156
 texture "baggage_trailer.png"
@@ -52888,7 +52888,7 @@ refs 4
 kids 0
 OBJECT poly
 name "trailer_04"
-loc 1.6257 -3.63808 -21.1392
+loc 1.6257 -3.73492 -21.1392
 data 8
 Cube.157
 texture "baggage_trailer.png"
@@ -54728,7 +54728,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 5.93103
+loc 10.5865 -0.36859 5.93103
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -54990,7 +54990,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 5.68106
+loc 10.5865 -0.36859 5.68106
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -55252,7 +55252,7 @@ refs 3
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 5.43109
+loc 10.5865 -0.36859 5.43109
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -55514,7 +55514,7 @@ refs 3
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 5.18111
+loc 10.5865 -0.36859 5.18111
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -55776,7 +55776,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 4.93511
+loc 10.5865 -0.36859 4.93511
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -56038,7 +56038,7 @@ refs 3
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 4.68513
+loc 10.5865 -0.36859 4.68513
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -56300,7 +56300,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 4.43516
+loc 10.5865 -0.36859 4.43516
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -56562,7 +56562,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 4.18519
+loc 10.5865 -0.36859 4.18519
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -56824,7 +56824,7 @@ refs 3
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 3.94315
+loc 10.5865 -0.36859 3.94315
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -57086,7 +57086,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 3.69317
+loc 10.5865 -0.36859 3.69317
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -57348,7 +57348,7 @@ refs 3
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 3.4432
+loc 10.5865 -0.36859 3.4432
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -57610,7 +57610,7 @@ refs 3
 kids 0
 OBJECT poly
 name "box"
-loc 12.8004 -1.0812 -3.39625
+loc 12.8004 -1.17804 -3.39625
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 12
@@ -57700,7 +57700,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_railing"
-loc 11.6769 -2.84703 -12.0426
+loc 11.6769 -2.94387 -12.0426
 data 8
 Cube.052
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -57796,7 +57796,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_railing"
-loc 11.6769 -3.18126 -9.63035
+loc 11.6769 -3.2781 -9.63035
 data 8
 Cube.052
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -57892,7 +57892,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.075
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -57952,7 +57952,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.003"
-loc 11.6769 -3.60577 -7.28507
+loc 11.6769 -3.70261 -7.28507
 data 8
 Cube.003
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -59519,7 +59519,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.004"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.004
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -59654,7 +59654,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.006"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.006
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -59714,7 +59714,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.007"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.007
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -59774,7 +59774,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.008"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.008
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -60342,7 +60342,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cube.009"
-loc 11.6769 -3.69008 -7.28507
+loc 11.6769 -3.78692 -7.28507
 data 8
 Cube.009
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -60402,7 +60402,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.010"
-loc 11.6769 -3.60577 -7.28507
+loc 11.6769 -3.70261 -7.28507
 data 8
 Cube.010
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -60804,7 +60804,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.011"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.011
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -60914,7 +60914,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.012"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.012
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -60974,7 +60974,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.013"
-loc 11.6769 -3.60577 -7.28507
+loc 11.6769 -3.70261 -7.28507
 data 8
 Cube.013
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -61084,7 +61084,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.015"
-loc 11.6769 -3.69008 -7.28507
+loc 11.6769 -3.78692 -7.28507
 data 8
 Cube.079
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -61137,7 +61137,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.016"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 8
 Cube.082
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -61247,7 +61247,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_railing"
-loc 11.6769 -3.64605 -7.28507
+loc 11.6769 -3.74289 -7.28507
 data 8
 Cube.052
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -61343,7 +61343,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_cargo"
-loc 11.6769 -3.7852 -7.28507
+loc 11.6769 -3.88204 -7.28507
 data 8
 Cube.014
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -61453,7 +61453,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.001"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.001
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -62547,7 +62547,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.002"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.002
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -63065,7 +63065,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cylinder.003"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.003
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -63329,7 +63329,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cylinder.004"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.004
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -63583,7 +63583,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.005"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.005
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -63735,7 +63735,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.006"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.007
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -63999,7 +63999,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cylinder.007"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.006
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -64145,7 +64145,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.008"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.008
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -65239,7 +65239,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.009"
-loc 11.6769 -3.6544 -7.28507
+loc 11.6769 -3.75124 -7.28507
 data 12
 Cylinder.009
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -65503,7 +65503,7 @@ refs 3
 kids 0
 OBJECT poly
 name "box"
-loc 10.5587 -1.0812 -3.39625
+loc 10.5587 -1.17804 -3.39625
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 12
@@ -65593,7 +65593,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cargo_ramp_belt"
-loc 11.6819 -2.72804 -13.2442
+loc 11.6819 -2.82488 -13.2442
 texture "texture2.png"
 crease 45.000000
 numvert 32
@@ -65896,7 +65896,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cargo_ramp_belt"
-loc 11.6254 -2.72804 -13.2442
+loc 11.6254 -2.82488 -13.2442
 texture "texture2.png"
 crease 45.000000
 numvert 4
@@ -65915,7 +65915,7 @@ refs 4
 kids 0
 OBJECT poly
 name "cylinder"
-loc 10.5865 -0.271754 3.19323
+loc 10.5865 -0.36859 3.19323
 texture "Catering_Loader_Truck_VolvoFM.png"
 crease 45.000000
 numvert 26
@@ -66177,7 +66177,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Bar_down_bgt_01"
-loc 8.25715 -2.06101 -26.7281
+loc 8.25715 -2.15785 -26.7281
 data 8
 Cube.055
 texture "baggage_trailer.png"
