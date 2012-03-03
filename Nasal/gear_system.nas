@@ -49,27 +49,27 @@ var g_tree = "/systems/gears/";
 		
 			### Gear gets stuck if airspeed exceeds 270 knots and gears are down
 		
-			if ((getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/pos-norm") != 0) and (getprop("/velocities/airspeed-kt") >= 270) and (getprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos") == 99))
-				setprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos", getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/pos-norm"));
+			if ((getprop("/gear/gear[" ~ n ~ "]/position-norm") != 0) and (getprop("/velocities/airspeed-kt") >= 270) and (getprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos") == 99))
+				setprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos", getprop("/gear/gear[" ~ n ~ "]/position-norm"));
 			
 			if (getprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos") != 99)
 				me.stuck(n, getprop("/controls/gear-failures/gear[" ~ n ~ "]/stuck-pos"));
 				
 			### Gear breaks off if airspeed exceeds 330 knots and gears are down
 			
-			if ((getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/pos-norm") != 0) and (getprop("/velocities/airspeed-kt") >= 330))
+			if ((getprop("/gear/gear[" ~ n ~ "]/position-norm") != 0) and (getprop("/velocities/airspeed-kt") >= 330))
 				setprop("/controls/gear-failures/gear[" ~ n ~ "]/break", 1);
 				
 			## Compression based failures
 			
 			### Burst tires if compression exceeds 1.5 (wow, that's a hard landing!)
 			
-			if (getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/compression-ft") >= 1.5)
+			if (getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/compression-ft") >= 1.8)
 				setprop("/controls/gear-failures/gear[" ~ n ~ "]/burst", 1);
 			
 			### Break off if compression exceeds 2.2 (DUDE, THAT'S LIKE A CRASH!)
 			
-			if (getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/compression-ft") >= 2.2)
+			if (getprop("/fdm/jsbsim/gear/unit[" ~ n ~ "]/compression-ft") >= 3)
 				setprop("/controls/gear-failures/gear[" ~ n ~ "]/break", 1);
 				
 			## Wow and Speed based failures
@@ -107,6 +107,8 @@ var g_tree = "/systems/gears/";
     	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/pos-norm", 0);
     	
     	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/z-position", -50);
+    	
+    	burst(gear_unit);
     	
     },
     	burst : func(gear_unit) {
