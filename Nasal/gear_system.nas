@@ -108,7 +108,7 @@ var g_tree = "/systems/gears/";
     	
     	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/z-position", -50);
     	
-    	burst(gear_unit);
+    	me.burst(gear_unit);
     	
     },
     	burst : func(gear_unit) {

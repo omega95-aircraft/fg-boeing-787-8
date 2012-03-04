@@ -6,7 +6,7 @@
 		<description>Boeing 787-8</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-8</aero>
-		<authors>Narendran Muraleedharan, Dwayne Gable, Scott Hamilton, Hooray, Ron Jenson, Thorsten, Joshua Wilson</authors>
+		<authors>See Authors.txt</authors>
 		<engine>trent_1000</engine>
 
 		<model>
@@ -1039,7 +1039,14 @@
 				   </binding>
 				  </mod-alt>
 			</key>
-
+			<key n="66">
+				<name>B</name>
+				<desc>Toggle parking brake on or off</desc>
+				<binding>
+					<command>nasal</command>
+					<script>b787.toggle_parkingbrakes();</script>
+				</binding>
+			</key>
 		</keyboard>
 	</input>
 
