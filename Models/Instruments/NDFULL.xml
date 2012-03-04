@@ -1052,7 +1052,7 @@
    		<object-name>wp1pos</object-name>
    		<object-name>wp2path</object-name>
    		<property>/instrumentation/ndfull/route/wp[1]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1063,7 +1063,7 @@
    		<object-name>wp1pos</object-name>
    		<object-name>wp2path</object-name>
    		<property>/instrumentation/ndfull/route/wp[1]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1088,7 +1088,7 @@
    		<object-name>wp2pos</object-name>
    		<object-name>wp3path</object-name>
    		<property>/instrumentation/ndfull/route/wp[2]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1099,7 +1099,7 @@
    		<object-name>wp2pos</object-name>
    		<object-name>wp3path</object-name>
    		<property>/instrumentation/ndfull/route/wp[2]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1124,7 +1124,7 @@
    		<object-name>wp3pos</object-name>
    		<object-name>wp4path</object-name>
    		<property>/instrumentation/ndfull/route/wp[3]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1135,7 +1135,7 @@
    		<object-name>wp3pos</object-name>
    		<object-name>wp4path</object-name>
    		<property>/instrumentation/ndfull/route/wp[3]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1160,7 +1160,7 @@
    		<object-name>wp4pos</object-name>
    		<object-name>wp5path</object-name>
    		<property>/instrumentation/ndfull/route/wp[4]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1171,7 +1171,7 @@
    		<object-name>wp4pos</object-name>
    		<object-name>wp5path</object-name>
    		<property>/instrumentation/ndfull/route/wp[4]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1196,7 +1196,7 @@
    		<object-name>wp5pos</object-name>
    		<object-name>wp6path</object-name>
    		<property>/instrumentation/ndfull/route/wp[5]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1207,7 +1207,7 @@
    		<object-name>wp5pos</object-name>
    		<object-name>wp6path</object-name>
    		<property>/instrumentation/ndfull/route/wp[5]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1232,7 +1232,7 @@
    		<object-name>wp6pos</object-name>
    		<object-name>wp7path</object-name>
    		<property>/instrumentation/ndfull/route/wp[6]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1243,7 +1243,7 @@
    		<object-name>wp6pos</object-name>
    		<object-name>wp7path</object-name>
    		<property>/instrumentation/ndfull/route/wp[6]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1268,7 +1268,7 @@
    		<object-name>wp7pos</object-name>
    		<object-name>wp8path</object-name>
    		<property>/instrumentation/ndfull/route/wp[7]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1279,7 +1279,7 @@
    		<object-name>wp7pos</object-name>
    		<object-name>wp8path</object-name>
    		<property>/instrumentation/ndfull/route/wp[7]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1304,7 +1304,7 @@
    		<object-name>wp8pos</object-name>
    		<object-name>wp9path</object-name>
    		<property>/instrumentation/ndfull/route/wp[8]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1315,7 +1315,7 @@
    		<object-name>wp8pos</object-name>
    		<object-name>wp9path</object-name>
    		<property>/instrumentation/ndfull/route/wp[8]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1340,7 +1340,7 @@
    		<object-name>wp9pos</object-name>
    		<object-name>wp10path</object-name>
    		<property>/instrumentation/ndfull/route/wp[9]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1351,7 +1351,7 @@
    		<object-name>wp9pos</object-name>
    		<object-name>wp10path</object-name>
    		<property>/instrumentation/ndfull/route/wp[9]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
@@ -1375,7 +1375,7 @@
   	 	<type>translate</type>
    		<object-name>wp10pos</object-name>
    		<property>/instrumentation/ndfull/route/wp[10]/xoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
    		</axis>
@@ -1385,7 +1385,7 @@
   	 	<type>translate</type>
    		<object-name>wp10pos</object-name>
    		<property>/instrumentation/ndfull/route/wp[10]/yoffset</property>
-   		<factor>0.08</factor>
+   		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
    		</axis>
