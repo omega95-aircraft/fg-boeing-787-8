@@ -1,3 +1,19 @@
-Rename Aircraft folder to '787-8'
+WIKI : http://wiki.flightgear.org/Boeing_787-8_Dreamliner
 
-WIKI ARTICLE : http://wiki.flightgear.org/Boeing_787-8_Dreamliner
+^ Everything you'll need to know about the 787-8 should be up there.
+
+When you download the 787-8 from git, rename the base folder to '787-8'
+
+-----------------------------------
+
+VERSION  : Stable v2.1.1
+
+DOWNLOAD : stable_d / Default
+
+-----------------------------------
+
+stable_d : This is the DEFAULT version of the Boeing 787-8 Dreamliner containing EFB and FMC database files for selected airports only. That reduces the file size, but is still bigger than the 'stable_e' release.
+
+> stable_e : This version contains only the basic aircraft, with model, systems and instruments. The EFB and FMC databases are empty to reduce file sizes. Only recommended for slow internet connections.
+
+> stable_f : This version contains the default diagrams and charts in the EFB Database and ALL available airports' navdata in the FMC Database. (3808 airports) Download this only if you have a good internet connection. WARNING: OVER 280 MB!
