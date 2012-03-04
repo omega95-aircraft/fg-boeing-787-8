@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<flightsDB>
+	
+		<airline>Boeing</airline>
+
+		<!-- stable_e 'Empty Database' doesn't have any preset routes by default>
+
+	</flightsDB>
+
+</PropertyList>
