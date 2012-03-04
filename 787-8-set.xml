@@ -391,21 +391,11 @@
                     </item>
                 </menu>
                 <menu n="5">
-                    <item>
+                    <item n="1">
                     <label>Radio Stack</label>
                         <binding>
                             <command>nasal</command>
                             <script>dialogs.Radio.open()</script>
-                        </binding>
-                    </item>
-                    <item>
-                    <label>Fuel Truck Controls</label>
-                        <binding>
-                            <command>nasal</command>
-                            <script>
-                            var fuel_truck = gui.Dialog.new("sim/gui/dialogs/fuel_truck/dialog", "Aircraft/787-8/Systems/fuel_truck.xml");
-							 fuel_truck.open();
-                            </script>
                         </binding>
                     </item>
                 </menu>
@@ -497,6 +487,16 @@
                             <script>
                             var ground_services = gui.Dialog.new("sim/gui/dialogs/ground_services/dialog", "Aircraft/787-8/Systems/ground_services-dlg.xml");
 							 ground_services.open();
+                            </script>
+                        </binding>
+                    </item>
+                     <item>
+                    <label>Fuel Truck Controls</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>
+                            var fuel_truck = gui.Dialog.new("sim/gui/dialogs/fuel_truck/dialog", "Aircraft/787-8/Systems/fuel_truck.xml");
+							 fuel_truck.open();
                             </script>
                         </binding>
                     </item>
