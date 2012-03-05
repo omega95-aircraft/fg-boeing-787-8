@@ -1,24 +1,27 @@
 var fmc = {
 	autogen_alts: func {
+		# This function is used to generate altitude recommendations for each waypoint.
+		# This single function calls the functions autogen_climb_alts and autogen_descent_alts.
+		# Those functions make calls to all other functions down to line 134.
+		me.autogen_climb_alts();
+		me.autogen_descent_alts();
+	},
+	get_dir: func {
 		# Determine direction of flight
+		var direction = "";
 		var start_long = getprop("/autopilot/route-manager/route/wp/longitude-deg");
 		var total = getprop("/autopilot/route-manager/route/num") - 1;
 		var end_long = getprop("/autopilot/route-manager/route/wp[" ~ total ~ "]/longitude-deg");
 		if (end_long >= start_long)
-			setprop("/instrumentation/b787-fmc/vnav-calcs/direction", "East");	# altitude recommendations will be rounded to nearest odd thousand
+			direction = "East";	# altitude recommendations will be rounded to nearest odd thousand
 		else
-			setprop("/instrumentation/b787-fmc/vnav-calcs/direction", "West");	# altitude recommendations will be rounded to nearest even thousand
-		
-		# Determine climb altitudes
-		setprop("/instrumentation/b787-fmc/vnav-calcs/wp/altitude", getprop("/instrumentation/altimeter/indicated-altitude-ft"));
-		var tod_wp = 9999;
+			direction = "West";	# altitude recommendations will be rounded to nearest even thousand
+		setprop("/instrumentation/b787-fmc/vnav-calcs/direction", direction);
+		return direction;
+	},
+	get_end_crz: func {
+		var tod_wp = 0;
 		var descent_distance = 0;
-		var vs_climb = 2750;
-		var distance = 0;
-		var climb_gs = 0;
-		var index = 0;
-		var altitude = 1;
-		var factor = 1;
 		for (var y = getprop("/autopilot/route-manager/route/num") - 2; y > 0; y -= 1){
 			if (descent_distance < 124){
 				descent_distance += getprop("/autopilot/route-manager/route/wp["~ y ~"]/leg-distance-nm");
@@ -27,74 +30,249 @@ var fmc = {
 			else
 				y = -1;
 		}
-		for (var x = 1; x < getprop("/autopilot/route-manager/route/num") - 1; x += 1){
-			if (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") < 10000)
-				vs_climb = 2750;
-			elsif ((getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") >= 10000) and (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") < 30000))
-				vs_climb = 2250;
-			else
-				vs_climb = 1000;
-			distance = getprop("/autopilot/route-manager/route/wp["~ index ~"]/leg-distance-nm");
+		return tod_wp;
+	},
+	get_climb_vs: func(altitude) {
+		var vs_climb = 0;
+		if (altitude < 10000)
+			vs_climb = 2750;
+		elsif ((altitude >= 10000) and (altitude < 30000))
+			vs_climb = 2250;
+		else
+			vs_climb = 1000;
+		return vs_climb;
+	},
+	autogen_climb_alts: func {
+		setprop("/instrumentation/b787-fmc/vnav-calcs/wp/altitude", getprop("/instrumentation/altimeter/indicated-altitude-ft"));
+		var index = 0;
+		var altitude = 1;
+		var distance = 0;
+		var factor = 0;
+		var climb_gs = 0;
+		var target_altitude = 1;
+		var tod_wp = me.get_end_crz();
+		var direction = me.get_dir();
+		for (var x = 1; x < tod_wp; x += 1){
 			index=(x - 1);
 			altitude = getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude");
-			#if (!altitude > 0) die("Altitude is not > 0");
+			distance = getprop("/autopilot/route-manager/route/wp["~ index ~"]/leg-distance-nm");
 			factor = math.ln(altitude);
 			climb_gs = -314.287 + (75.242 *  factor);
 			if (climb_gs < 288)
 				climb_gs = 288;
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/climb-gs", climb_gs);
-			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/vs-climb", vs_climb);
+			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/vs-climb", me.get_climb_vs(altitude));
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/distance", distance);
-			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/altitude", vs_climb * (60 * distance / climb_gs) + getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude"));
-			if ((getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") < 35000) and (x < tod_wp)){
-				if (getprop("/instrumentation/b787-fmc/vnav-calcs/direction") == "East"){
-					for (var n = -1000; n < 41000; n += 2000){
-						if ((getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") >= n) and (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") < n + 1000))
-							setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/altitude", n);
-						elsif (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") >= n + 1000)
-							setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/altitude", n + 2000);
-					}
-				}
-				else{
-					for (var n = -2000; n < 40000; n += 2000){
-						if ((getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") >= n) and (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") < n + 1000))
-							setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/altitude", n);
-						elsif (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude") >= n + 1000)
-							setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/altitude", n + 2000);
-					}
-				}
-			}
+			target_altitude = me.get_climb_vs(altitude) * (60 * distance / climb_gs) + altitude;
+			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/altitude", me.round_climb_alts(target_altitude, direction));
 		}
-		# Determine descent altitudes
-		vs_descent = -2300;
-		var descent_gs = 0;
-		for (var z = tod_wp; z < getprop("/autopilot/route-manager/route/num") - 1; z += 1){
-			if (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (z - 1) ~"]/altitude") > 10000)
-				vs_descent = -2300;
+	},
+	round_climb_alts: func(target_altitude, direction) {
+		if (direction == "East"){
+			if (target_altitude < 2000)
+				target_altitude = 1000;
+			elsif ((target_altitude >= 2000) and (target_altitude < 4000))
+				target_altitude = 3000;
+			elsif ((target_altitude >= 4000) and (target_altitude < 6000))
+				target_altitude = 5000;
+			elsif ((target_altitude >= 6000) and (target_altitude < 8000))
+				target_altitude = 7000;
+			elsif ((target_altitude >= 8000) and (target_altitude < 10000))
+				target_altitude = 9000;
+			elsif ((target_altitude >= 10000) and (target_altitude < 12000))
+				target_altitude = 11000;
+			elsif ((target_altitude >= 12000) and (target_altitude < 14000))
+				target_altitude = 13000;
+			elsif ((target_altitude >= 14000) and (target_altitude < 16000))
+				target_altitude = 15000;
+			elsif ((target_altitude >= 16000) and (target_altitude < 18000))
+				target_altitude = 17000;
+			elsif ((target_altitude >= 18000) and (target_altitude < 20000))
+				target_altitude = 19000;
+			elsif ((target_altitude >= 20000) and (target_altitude < 22000))
+				target_altitude = 21000;
+			elsif ((target_altitude >= 22000) and (target_altitude < 24000))
+				target_altitude = 23000;
+			elsif ((target_altitude >= 24000) and (target_altitude < 26000))
+				target_altitude = 25000;
+			elsif ((target_altitude >= 26000) and (target_altitude < 28000))
+				target_altitude = 27000;
+			elsif ((target_altitude >= 28000) and (target_altitude < 30000))
+				target_altitude = 29000;
+			elsif ((target_altitude >= 30000) and (target_altitude < 32000))
+				target_altitude = 31000;
+			elsif ((target_altitude >= 32000) and (target_altitude < 34000))
+				target_altitude = 33000;
+			elsif ((target_altitude >= 34000) and (target_altitude < 36000))
+				target_altitude = 35000;
+			elsif ((target_altitude >= 36000) and (target_altitude < 38000))
+				target_altitude = 37000;
+			elsif ((target_altitude >= 38000) and (target_altitude < 40000))
+				target_altitude = 39000;
 			else
-				vs_descent = -1800;
-			distance = getprop("/autopilot/route-manager/route/wp["~ (z - 1) ~"]/leg-distance-nm");
-			altitude = getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude");
-			#if (!altitude > 0) die("Altitude is not > 0");
-			descent_gs = -1.682 * math.pow(10, -7) * math.pow(altitude, 2) + 0.017 * altitude + 51.385;
-			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/altitude", altitude + (vs_climb * (60 * distance) / descent_gs));
-			if (getprop("/instrumentation/b787-fmc/vnav-calcs/direction") == "East"){
-				for (var n = 41000; n > -1000; n -= 2000){
-					if ((getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (z - 1) ~"]/altitude") <= n) and (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (z - 1) ~"]/altitude") >= n - 1000))
-						setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/altitude", n);
-					elsif (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (z - 1) ~"]/altitude") < n - 1000)
-						setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/altitude", n - 2000);
-				}
-			}
-			else{
-				for (var n = 40000; n > -2000; n -= 2000){
-					if ((getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (z - 1) ~"]/altitude") <= n) and (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (z - 1) ~"]/altitude") >= n - 1000))
-						setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/altitude", n);
-					elsif (getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (z - 1) ~"]/altitude") < n - 1000)
-						setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/altitude", n - 2000);
-				}
-			}
+				target_altitude = 41000;
 		}
+		else{
+			if (target_altitude < 3000)
+				target_altitude = 2000;
+			elsif ((target_altitude >= 3000) and (target_altitude < 5000))
+				target_altitude = 4000;
+			elsif ((target_altitude >= 5000) and (target_altitude < 7000))
+				target_altitude = 6000;
+			elsif ((target_altitude >= 7000) and (target_altitude < 9000))
+				target_altitude = 8000;
+			elsif ((target_altitude >= 9000) and (target_altitude < 11000))
+				target_altitude = 10000;
+			elsif ((target_altitude >= 11000) and (target_altitude < 13000))
+				target_altitude = 12000;
+			elsif ((target_altitude >= 13000) and (target_altitude < 15000))
+				target_altitude = 14000;
+			elsif ((target_altitude >= 15000) and (target_altitude < 17000))
+				target_altitude = 16000;
+			elsif ((target_altitude >= 17000) and (target_altitude < 19000))
+				target_altitude = 18000;
+			elsif ((target_altitude >= 19000) and (target_altitude < 21000))
+				target_altitude = 20000;
+			elsif ((target_altitude >= 21000) and (target_altitude < 23000))
+				target_altitude = 22000;
+			elsif ((target_altitude >= 23000) and (target_altitude < 25000))
+				target_altitude = 24000;
+			elsif ((target_altitude >= 25000) and (target_altitude < 27000))
+				target_altitude = 26000;
+			elsif ((target_altitude >= 27000) and (target_altitude < 29000))
+				target_altitude = 28000;
+			elsif ((target_altitude >= 29000) and (target_altitude < 31000))
+				target_altitude = 30000;
+			elsif ((target_altitude >= 31000) and (target_altitude < 33000))
+				target_altitude = 32000;
+			elsif ((target_altitude >= 33000) and (target_altitude < 35000))
+				target_altitude = 34000;
+			elsif ((target_altitude >= 35000) and (target_altitude < 37000))
+				target_altitude = 36000;
+			elsif ((target_altitude >= 37000) and (target_altitude < 39000))
+				target_altitude = 38000;
+			else
+				target_altitude = 40000;
+		}
+		return target_altitude;
+	},
+	get_descent_vs: func(descent_gs, altitude, z) {
+		var vs_descent = descent_gs * (1/60) * ((-1 * altitude) / me.get_descent_distance(z));
+		return vs_descent;
+	},
+	get_descent_distance: func(z) {
+		var descent_distance = 0;
+		for (var y = getprop("/autopilot/route-manager/route/num") - 2; y >= z; y -= 1){
+			descent_distance += getprop("/autopilot/route-manager/route/wp["~ y ~"]/leg-distance-nm");
+		}
+		return descent_distance;
+	},
+	autogen_descent_alts: func {
+		var index = 0;
+		var distance = 0;
+		var altitude = 1;
+		var vs_descent = 0;
+		var descent_gs = 0;
+		var target_altitude = 1;
+		var tod_wp = me.get_end_crz();
+		var direction = me.get_dir();
+		for (var z = tod_wp; z < getprop("/autopilot/route-manager/route/num"); z += 1){
+			index = (z - 1);
+			distance = getprop("/autopilot/route-manager/route/wp["~ index ~"]/leg-distance-nm");
+			altitude = getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude");
+			descent_gs = -1.682 * math.pow(10, -7) * math.pow(altitude, 2) + 0.017 * altitude + 51.385;
+			vs_descent = me.get_descent_vs(descent_gs, altitude, z);
+			target_altitude = altitude + (vs_descent * (60 * distance) / descent_gs);
+			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/descent-gs", descent_gs);
+			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/vs-descent", me.get_descent_vs(descent_gs, altitude, z));
+			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/distance", distance);
+			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/altitude", me.round_descent_alts(target_altitude, direction));
+		}
+	},
+	round_descent_alts: func(target_altitude, direction) {
+		if (direction == "East"){
+			if (target_altitude >= 38000)
+				target_altitude = 39000;
+			elsif ((target_altitude >= 36000) and (target_altitude < 38000))
+				target_altitude = 37000;
+			elsif ((target_altitude >= 34000) and (target_altitude < 36000))
+				target_altitude = 35000;
+			elsif ((target_altitude >= 32000) and (target_altitude < 34000))
+				target_altitude = 33000;
+			elsif ((target_altitude >= 30000) and (target_altitude < 32000))
+				target_altitude = 31000;
+			elsif ((target_altitude >= 28000) and (target_altitude < 30000))
+				target_altitude = 29000;
+			elsif ((target_altitude >= 26000) and (target_altitude < 28000))
+				target_altitude = 27000;
+			elsif ((target_altitude >= 24000) and (target_altitude < 26000))
+				target_altitude = 25000;
+			elsif ((target_altitude >= 22000) and (target_altitude < 24000))
+				target_altitude = 23000;
+			elsif ((target_altitude >= 20000) and (target_altitude < 22000))
+				target_altitude = 21000;
+			elsif ((target_altitude >= 18000) and (target_altitude < 20000))
+				target_altitude = 19000;
+			elsif ((target_altitude >= 16000) and (target_altitude < 18000))
+				target_altitude = 17000;
+			elsif ((target_altitude >= 14000) and (target_altitude < 16000))
+				target_altitude = 15000;
+			elsif ((target_altitude >= 12000) and (target_altitude < 14000))
+				target_altitude = 13000;
+			elsif ((target_altitude >= 10000) and (target_altitude < 12000))
+				target_altitude = 11000;
+			elsif ((target_altitude >= 8000) and (target_altitude < 10000))
+				target_altitude = 19000;
+			elsif ((target_altitude >= 6000) and (target_altitude < 8000))
+				target_altitude = 7000;
+			elsif ((target_altitude >= 4000) and (target_altitude < 6000))
+				target_altitude = 5000;
+			elsif ((target_altitude >= 2000) and (target_altitude < 4000))
+				target_altitude = 3000;
+			else
+				target_altitude = 1000;
+		}
+		else{
+			if (target_altitude >= 37000)
+				target_altitude = 38000;
+			elsif ((target_altitude >= 35000) and (target_altitude < 37000))
+				target_altitude = 36000;
+			elsif ((target_altitude >= 33000) and (target_altitude < 35000))
+				target_altitude = 34000;
+			elsif ((target_altitude >= 31000) and (target_altitude < 33000))
+				target_altitude = 32000;
+			elsif ((target_altitude >= 29000) and (target_altitude < 31000))
+				target_altitude = 30000;
+			elsif ((target_altitude >= 27000) and (target_altitude < 29000))
+				target_altitude = 30000;
+			elsif ((target_altitude >= 25000) and (target_altitude < 27000))
+				target_altitude = 26000;
+			elsif ((target_altitude >= 23000) and (target_altitude < 25000))
+				target_altitude = 24000;
+			elsif ((target_altitude >= 21000) and (target_altitude < 23000))
+				target_altitude = 22000;
+			elsif ((target_altitude >= 19000) and (target_altitude < 21000))
+				target_altitude = 20000;
+			elsif ((target_altitude >= 17000) and (target_altitude < 19000))
+				target_altitude = 18000;
+			elsif ((target_altitude >= 15000) and (target_altitude < 17000))
+				target_altitude = 16000;
+			elsif ((target_altitude >= 13000) and (target_altitude < 15000))
+				target_altitude = 14000;
+			elsif ((target_altitude >= 11000) and (target_altitude < 13000))
+				target_altitude = 12000;
+			elsif ((target_altitude >= 9000) and (target_altitude < 11000))
+				target_altitude = 10000;
+			elsif ((target_altitude >= 7000) and (target_altitude < 9000))
+				target_altitude = 8000;
+			elsif ((target_altitude >= 5000) and (target_altitude < 7000))
+				target_altitude = 6000;
+			elsif ((target_altitude >= 3000) and (target_altitude < 5000))
+				target_altitude = 4000;
+			else
+				target_altitude = 2000;
+		}
+		return target_altitude;
 	},
 	calc_speeds: func {
 	
