@@ -2,7 +2,8 @@ var fmc = {
 	autogen_alts: func {
 		# This function is used to generate altitude recommendations for each waypoint.
 		# This single function calls the functions autogen_climb_alts and autogen_descent_alts.
-		# Those functions make calls to all other functions down to line 134.
+		# Those functions make calls to all other functions down to line 278.
+		# You MUST search your destination in the EFB and caliberate the altimeter BEFORE running this.
 		me.autogen_climb_alts();
 		me.autogen_descent_alts();
 	},
@@ -58,8 +59,8 @@ var fmc = {
 			distance = getprop("/autopilot/route-manager/route/wp["~ index ~"]/leg-distance-nm");
 			factor = math.ln(altitude);
 			climb_gs = -314.287 + (75.242 *  factor);
-			if (climb_gs < 288)
-				climb_gs = 288;
+			if (climb_gs < 310)
+				climb_gs = 310;
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/climb-gs", climb_gs);
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/vs-climb", me.get_climb_vs(altitude));
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ x ~"]/distance", distance);
@@ -156,15 +157,16 @@ var fmc = {
 		}
 		return target_altitude;
 	},
-	get_descent_vs: func(descent_gs, altitude, z) {
-		var vs_descent = descent_gs * (1/60) * ((-1 * altitude) / me.get_descent_distance(z));
+	get_descent_vs: func(descent_gs, altitude, index, elevation) {
+		var vs_descent = descent_gs * (1/60) * ((-1 * (altitude - elevation)) / me.get_descent_distance(index));
 		return vs_descent;
 	},
-	get_descent_distance: func(z) {
+	get_descent_distance: func(index) {
 		var descent_distance = 0;
-		for (var y = getprop("/autopilot/route-manager/route/num") - 2; y >= z; y -= 1){
+		for (var y = getprop("/autopilot/route-manager/route/num") - 2; y >= index; y -= 1){
 			descent_distance += getprop("/autopilot/route-manager/route/wp["~ y ~"]/leg-distance-nm");
 		}
+		setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ (index + 1) ~"]/descent_distance", descent_distance);
 		return descent_distance;
 	},
 	autogen_descent_alts: func {
@@ -176,15 +178,16 @@ var fmc = {
 		var target_altitude = 1;
 		var tod_wp = me.get_end_crz();
 		var direction = me.get_dir();
+		var elevation = getprop("/instrumentation/gps/scratch/altitude-ft");
 		for (var z = tod_wp; z < getprop("/autopilot/route-manager/route/num"); z += 1){
 			index = (z - 1);
 			distance = getprop("/autopilot/route-manager/route/wp["~ index ~"]/leg-distance-nm");
 			altitude = getprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ index ~"]/altitude");
 			descent_gs = -1.682 * math.pow(10, -7) * math.pow(altitude, 2) + 0.017 * altitude + 51.385;
-			vs_descent = me.get_descent_vs(descent_gs, altitude, z);
+			vs_descent = me.get_descent_vs(descent_gs, altitude, index, elevation);
 			target_altitude = altitude + (vs_descent * (60 * distance) / descent_gs);
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/descent-gs", descent_gs);
-			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/vs-descent", me.get_descent_vs(descent_gs, altitude, z));
+			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/vs-descent", vs_descent);
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/distance", distance);
 			setprop("/instrumentation/b787-fmc/vnav-calcs/wp["~ z ~"]/altitude", me.round_descent_alts(target_altitude, direction));
 		}
