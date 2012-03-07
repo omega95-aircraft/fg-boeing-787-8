@@ -1129,7 +1129,11 @@
 <!--			<file>Aircraft/787-8/Devel/wxradar-echo-animations.nas</file>
 			<file>Aircraft/787-8/Devel/wxradar-pixel-animations.nas</file>
 			<file>Aircraft/787-8/Devel/tcas-animations-helper.nas</file> -->
+			<file>Aircraft/Instruments-3d/vsd/animation_creator.nas</file>
 		</helpers>
+		<vsd>
+			<file>Aircraft/787-8/Nasal/vsd.nas</file>
+		</vsd>
 	</nasal>
 
 </PropertyList>

@@ -184,7 +184,8 @@ var fmcFP = {
 	
 	export: func(path, plan) {
 	
-		io.write_properties(path, "/instrumentation/fmcFP/flightplan[" ~ plan ~ "]/");
+		var path = getprop("/sim/gui/dialogs/file-select-1/path");
+		io.write_properties(path, "/sim/gui/style[999]/");
 	
 	}
 

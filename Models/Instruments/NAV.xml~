@@ -5,7 +5,7 @@
 	<path>mfd-nav.ac</path>
 	
 	<model>
-		<path>Aircraft/787-8/Models/Instruments/vsd.xml</path>
+		<path>Aircraft/Instruments-3d/vsd/vsd.xml</path>
 		<offsets>
 			<x-m>0.001</x-m>
 			<z-m>0.01</z-m>
