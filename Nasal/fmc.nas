@@ -178,6 +178,8 @@ var fmc = {
 		var target_altitude = 1;
 		var tod_wp = me.get_end_crz();
 		var direction = me.get_dir();
+		setprop("/instrumentation/gps/scratch/query", getprop("/autopilot/route-manager/destination/airport"));
+		setprop("/instrumentation/gps/scratch/type", "airport");
 		var elevation = getprop("/instrumentation/gps/scratch/altitude-ft");
 		for (var z = tod_wp; z < getprop("/autopilot/route-manager/route/num"); z += 1){
 			index = (z - 1);
@@ -277,6 +279,22 @@ var fmc = {
 		}
 		return target_altitude;
 	},
+	
+	copy_altitudes: func {
+	
+		for (var n = 0; n < getprop("/autopilot/route-manager/route/num"); n += 1) {
+		
+			if (getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ n ~ "]/altitude") != nil) {
+				var vnav_altitude = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ n ~ "]/altitude");
+				
+				setprop("/autopilot/route-manager/route/wp[" ~ n ~ "]/altitude-ft", vnav_altitude);
+				
+				}
+		
+		}
+	
+	},
+	
 	calc_speeds: func {
 	
 		# Take-off and Approach Flap Extension Speeds

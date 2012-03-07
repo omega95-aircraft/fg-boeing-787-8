@@ -45,6 +45,9 @@ setprop("/instrumentation/efb/diagram/rotation", 0);
 
 setprop("/instrumentation/efb/manual-page", 0);
 
+setprop("/instrumentation/efb/vnav_autogen/first", 0);
+setprop("/instrumentation/efb/vnav_autogen/gen", 0);
+
         me.reset(); 
 }, 
 	searchairport : func(query) {
@@ -350,6 +353,31 @@ if (keypress == "r7") { setprop("/instrumentation/efb/page", "Aircraft Checklist
 keypress = "";
 }
 
+} elsif (getprop("/instrumentation/efb/page") == "VNAV Altitudes Generator") {
+	
+	page.clearpage();
+
+	page.vnav_alts();
+
+# Menu Presses
+
+	if (keypress == "r1") {
+		b787.fmc.autogen_alts();
+		setprop("/instrumentation/efb/vnav_autogen/gen", 1);
+		}
+
+	if (keypress == "r2")
+		if (getprop("/instrumentation/efb/vnav_autogen/gen") == 1)
+			b787.fmc.copy_altitudes();		
+		
+	if ((getprop("/instrumentation/efb/vnav_autogen/first") > 0) and (keypress == "r6"))
+		setprop("/instrumentation/efb/vnav_autogen/first", getprop("/instrumentation/efb/vnav_autogen/first") - 1);
+		
+	if ((getprop("/instrumentation/efb/vnav_autogen/first") + 10 < getprop("autopilot/route-manager/route/num")) and (keypress == "r7"))
+		setprop("/instrumentation/efb/vnav_autogen/first", getprop("/instrumentation/efb/vnav_autogen/first") + 1);
+
+	page.update();
+
 }
 
 
@@ -440,9 +468,124 @@ var page = {
 		helper = "";
 
 },
-	vnav : func {
+	vnav_alts : func {
 	
-	
+		r1 = "AUTOGEN >";
+		
+		r3 = "COPY TO RTE >";
+			
+		if (getprop("/instrumentation/efb/vnav_autogen/first") != 0)
+			r11 = "SCROLL UP >";
+			
+		if (getprop("/instrumentation/efb/vnav_autogen/first") + 10 < getprop("autopilot/route-manager/route/num"))
+			r13 = "SCROLL DOWN >";
+			
+		if (getprop("/instrumentation/efb/vnav_autogen/gen") == 1) {	
+		
+		var first = getprop("/instrumentation/efb/vnav_autogen/first");	
+			
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first) ~ "]/altitude");
+			
+			l1 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 1) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 1) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 1) ~ "]/altitude");
+			
+			l2 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 2) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 2) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 2) ~ "]/altitude");
+			
+			l3 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 3) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 3) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 3) ~ "]/altitude");
+			
+			l4 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 4) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 4) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 4) ~ "]/altitude");
+			
+			l5 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 5) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 5) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 5) ~ "]/altitude");
+			
+			l6 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 6) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 6) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 6) ~ "]/altitude");
+			
+			l7 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 7) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 7) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 7) ~ "]/altitude");
+			
+			l8 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 8) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 8) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 8) ~ "]/altitude");
+			
+			l9 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 9) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 9) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 9) ~ "]/altitude");
+			
+			l10 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		if (getprop("/autopilot/route-manager/route/wp[" ~ (first + 10) ~ "]/id") != nil) {
+		
+			var wp_id = getprop("/autopilot/route-manager/route/wp[" ~ (first + 10) ~ "]/id");
+			var wp_alt = getprop("/instrumentation/b787-fmc/vnav-calcs/wp[" ~ (first + 10) ~ "]/altitude");
+			
+			l11 = wp_id ~ " at " ~ int(wp_alt) ~ " ft";
+		
+		}
+		
+		}
+		
+		helper = "Create Route and then use Autogen";		
 	
 },
 	index : func {
@@ -454,7 +597,7 @@ r9 = "GPS Settings >";
 l11 = "< Flight Manual Index";
 r11 = "Flight Fuel Planner >";
 l13 = "< FGFSCopilot Connect";
-r13 = "VNAV Helper >";
+r13 = "VNAV Altitudes Gen >";
 
 },
 	airportinfo : func {
