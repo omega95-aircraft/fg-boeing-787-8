@@ -2576,8 +2576,10 @@
 			<binding>
 				<command>property-adjust</command>
 				<property>/autopilot/settings/heading-bug-deg</property>
-				<step>1</step>
-				<max>360</max>
+				<wrap type="bool">true</wrap>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
 			</binding>
 		</action>
 		<action>
@@ -2587,8 +2589,10 @@
 			<binding>
 				<command>property-adjust</command>
 				<property>/autopilot/settings/heading-bug-deg</property>
-				<step>-1</step>
-				<min>0</min>
+				<wrap type="bool">true</wrap>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
 			</binding>
 		</action>
 	</animation>
