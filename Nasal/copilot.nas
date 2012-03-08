@@ -316,23 +316,28 @@ elsif ((getprop("/autopilot/route-manager/wp-last/dist") != nil) and (getprop("/
 	
 if ((phase == 0) or (phase == 4)){
 	setprop("/autopilot/settings/target-speed-kt", 250);
-	setprop("/autopilot/locks/speed", "speed-with-throttle");
+	setprop("/autopilot/panel/auto-throttle", 1);
+	setprop("/autopilot/panel/speed-mode", "ias");
 }
 elsif (phase == 1){
 	setprop("/autopilot/settings/target-speed-kt", 300);
-	setprop("/autopilot/locks/speed", "speed-with-throttle");
+	setprop("/autopilot/panel/auto-throttle", 1);
+	setprop("/autopilot/panel/speed-mode", "ias");
 }
 elsif (phase == 2){
 	setprop("/autopilot/settings/mach-speed", 0.8);
-	setprop("/autopilot/locks/speed", "mach");
+	setprop("/autopilot/panel/auto-throttle", 1);
+	setprop("/autopilot/panel/speed-mode", "mach");
 }
 elsif (phase == 3){
 	setprop("/autopilot/settings/mach-speed", 0.85);
-	setprop("/autopilot/locks/speed", "mach");
+	setprop("/autopilot/panel/auto-throttle", 1);
+	setprop("/autopilot/panel/speed-mode", "mach");
 }
 elsif (phase == 5){
 	setprop("/autopilot/settings/target-speed-kt", getprop("/instrumentation/b787-fmc/speeds/ap"));
-	setprop("/autopilot/locks/speed", "speed-with-throttle");
+	setprop("/autopilot/panel/auto-throttle", 1);
+	setprop("/autopilot/panel/speed-mode", "ias");
 	if (altitude < 5000)
 		setprop("/controls/switches/copilot/airspeed", 0);
 }
@@ -342,6 +347,7 @@ elsif (phase == 5){
 # NOTE: You MUST have a route in the route manager to use this feature
 
 if (getprop("/controls/switches/copilot/autopilot") == 1){
+
 	# Takeoff assist
 	if ((airspeed != nil) and (VR != nil) and (airspeed > VR) and (altitude < 50) and (me.flightphase == 0)){
 		setprop("/autopilot/route-manager/active", 1);	#activate route manager

@@ -90,7 +90,7 @@ if ((getprop("/autopilot/panel/rarm") == 1) and (getprop("/autopilot/locks/speed
 elsif ((getprop("/autopilot/panel/rarm") == 1) and (getprop("/autopilot/locks/speed") == "mach")) setprop("/autopilot/speed/rthrottle", "mach");
 else setprop("/autopilot/speed/rthrottle", "");
 
-if ((getprop("/connection/fgfscopilot/connected") != 1) and (getprop("/autopilot/dialog/override") != 1)) {
+if ((getprop("/connection/fgfscopilot/connected") != 1) and ((getprop("/controls/switches/copilot/autopilot") != 1) or (getprop("controls/switches/copilot/active") != 1))) {
 
 # Speed Models (convert panel props to generic)
 
