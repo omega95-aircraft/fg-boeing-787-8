@@ -394,6 +394,7 @@ keypress = "";
 # Menu Presses
 
 	if (keypress == "l4") {
+			setprop("/instrumentation/efb/catchme/score", 0);
 			setprop("/instrumentation/efb/page", "Catch me if you can");
 		}
 

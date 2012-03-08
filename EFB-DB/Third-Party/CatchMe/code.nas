@@ -78,6 +78,9 @@
 					me.set_0();
 
 	},
+	reset_score : func {
+		setprop("/instrumentation/efb/catchme/score", 0);
+	}
 	timer : func {
 			me.time += 1;
 			
@@ -87,7 +90,6 @@
 				setprop("/instrumentation/efb/page", "GAME OVER");			
 				setprop("/instrumentation/efb/catchme/x", 0);
 				setprop("/instrumentation/efb/catchme/y", 0);
-				setprop("/instrumentation/efb/catchme/score", 0);
 			}
 	},
 	set_0 : func {
