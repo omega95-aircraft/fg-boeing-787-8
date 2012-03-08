@@ -461,6 +461,10 @@ if (keypress == "l1") {
 var stby = getprop("/instrumentation/comm[0]/frequencies/standby-mhz");
 setprop("/instrumentation/comm[0]/frequencies/standby-mhz", getprop("/instrumentation/comm[0]/frequencies/selected-mhz"));
 setprop("/instrumentation/comm[0]/frequencies/selected-mhz", stby);
+
+var freq = (int(stby * 100))/100 ;
+sysinfo.log_msg("[CDU] COM1 Frequency set to " ~ freq, 0);
+
 keypress = "";
 cduinput = "";
 }
@@ -469,6 +473,10 @@ if (keypress == "l2") {
 var stby = getprop("/instrumentation/comm[1]/frequencies/standby-mhz");
 setprop("/instrumentation/comm[1]/frequencies/standby-mhz", getprop("/instrumentation/comm[1]/frequencies/selected-mhz"));
 setprop("/instrumentation/comm[1]/frequencies/selected-mhz", stby);
+
+var freq = (int(stby * 100))/100 ;
+sysinfo.log_msg("[CDU] COM2 Frequency set to " ~ freq, 0);
+
 keypress = "";
 cduinput = "";
 }
@@ -477,6 +485,10 @@ if (keypress == "l3") {
 var stby = getprop("/instrumentation/nav[0]/frequencies/standby-mhz");
 setprop("/instrumentation/nav[0]/frequencies/standby-mhz", getprop("/instrumentation/nav[0]/frequencies/selected-mhz"));
 setprop("/instrumentation/nav[0]/frequencies/selected-mhz", stby);
+
+var freq = (int(stby * 100))/100 ;
+sysinfo.log_msg("[CDU] NAV1 Frequency set to " ~ freq, 0);
+
 keypress = "";
 cduinput = "";
 }
@@ -485,6 +497,10 @@ if (keypress == "l4") {
 var stby = getprop("/instrumentation/nav[1]/frequencies/standby-mhz");
 setprop("/instrumentation/nav[1]/frequencies/standby-mhz", getprop("/instrumentation/nav[1]/frequencies/selected-mhz"));
 setprop("/instrumentation/nav[1]/frequencies/selected-mhz", stby);
+
+var freq = (int(stby * 100))/100 ;
+sysinfo.log_msg("[CDU] NAV2 Frequency set to " ~ freq, 0);
+
 keypress = "";
 cduinput = "";
 }
@@ -875,6 +891,7 @@ keypress = "";
 }
 if ((getprop("/autopilot/route-manager/active") != 1) and (keypress == "r7")) {
 setprop("/autopilot/route-manager/active", 1);
+sysinfo.log_msg("[AP] Selected Route Activated", 0);
 keypress = "";
 cduinput = "";
 }
@@ -904,6 +921,7 @@ if (keypress == "l6") {
 setprop("/autopilot/route-manager/input", "@CLEAR");
 setprop("/controls/cdu/route-manager/page", 1);
 setprop("/autopilot/route-manager/current-wp", 0);
+sysinfo.log_msg("[AP] Active Route Cleared", 0);
 keypress = "";
 cduinput = "";
 }
@@ -1749,8 +1767,10 @@ keypress = "";
 
 if (keypress == "r7") {
 
-if (getprop("/autopilot/hold/active") == 0) setprop("/autopilot/hold/active", 1);
-else {
+if (getprop("/autopilot/hold/active") == 0) { 
+setprop("/autopilot/hold/active", 1);
+sysinfo.log_msg("[CDU] Entered Automatic Holding Pattern", 0);
+} else {
 setprop("/autopilot/hold/active", 0);
 setprop("/controls/cdu/hold/found", 0);
 }
@@ -2392,4 +2412,8 @@ setlistener("sim/signals/fdm-initialized", func
  {
  cdu.init();
  print("FMS Computer 1 ...... Initialized");
+ 
+ sysinfo.log_msg("[CDU] Control Display Units Initialized", 0);
+ sysinfo.log_msg("[FMC] Flight Management Computer Ready", 0);
+ 
  });

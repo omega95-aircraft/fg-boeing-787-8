@@ -287,4 +287,5 @@ setlistener("sim/signals/fdm-initialized", func
  {
  hydraulics.init();
  print("Hydraulic System .... Initialized");
+ sysinfo.log_msg("[HYD] Systems Check ...... OK", 0);
  });

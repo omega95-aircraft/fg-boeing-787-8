@@ -47,8 +47,8 @@
 					</script>
 				</binding>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
+		    		<command>dialog-apply</command>
+		   		</binding>
 			</button>
 		
 		</group>
@@ -106,6 +106,22 @@
 			</group>
 			
 			<button>
+				<legend>CLB</legend>
+				<padding>2</padding>
+				<binding>
+					<command>nasal</command>
+					<script>
+						setprop("/autopilot/settings/vertical-speed-fpm", getprop("/velocities/vertical-speed-fps") * 60);
+ 					
+ 						setprop("/autopilot/panel/alt", "vs");
+					</script>
+				</binding>
+				<binding>
+		    		<command>dialog-apply</command>
+		   		</binding>
+			</button>
+			
+			<button>
 				<legend>A/T</legend>
 				<padding>2</padding>
 				<binding>
@@ -137,6 +153,7 @@
 			<layout>table</layout>
 		
 			<input>
+				<name>ias_input</name>
 				<row>0</row>
 				<col>0</col>
 				<width>100</width>
@@ -151,10 +168,12 @@
 				</visible>
 				<binding>
         	<command>dialog-apply</command>
+        	<object-name>ias_input</object-name>
         </binding>
 			</input>
 			
 			<input>
+				<name>mach_input</name>
 				<row>0</row>
 				<col>0</col>
 				<width>100</width>
@@ -168,18 +187,20 @@
 					</equals>
 				</visible>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
+					<command>dialog-apply</command>
+					<object-name>mach_input</object-name>
+				</binding>
 			</input>
 			
 			</group>
 			
-<!-->			<group> -->
+			<group>
 			<layout>table</layout>
 			
-			<!-- dial>
+			<dial>
 				<row>0</row>
 				<col>0</col>
+				<name>ias_dial</name>
 				<width>32</width>
 				<property>/autopilot/settings/target-speed-kt</property>
 				<live>true</live>
@@ -192,13 +213,15 @@
 				<min>0</min>
 				<max>340</max>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
-			</dial -->
+					<command>dialog-apply</command>
+					<object-name>ias_dial</object-name>
+				</binding>
+			</dial>
 			
-			<!-- dial>
+			<dial>
 				<row>0</row>
 				<col>0</col>
+				<name>mach_dial</name>
 				<width>32</width>
 				<property>/autopilot/settings/mach-speed</property>
 				<live>true</live>
@@ -211,11 +234,12 @@
 				<min>0</min>
 				<max>0.9</max>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
-			</dial -->
+					<command>dialog-apply</command>
+					<object-name>mach_dial</object-name>
+				</binding>
+			</dial>
 			
-<!-->			</group> -->
+			</group>
 			
 			<button>
 				<legend>MODE</legend>
@@ -341,25 +365,29 @@
 			</text>
 			
 			<input>
+				<name>hdg_input</name>
 				<width>100</width>
 				<height>25</height>
 				<property>/autopilot/settings/heading-bug-deg</property>
 				<live>true</live>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
+					<command>dialog-apply</command>
+					<object-name>hdg_input</object-name>
+				</binding>
 			</input>
 			
-			<!-- dial>
+			<dial>
+				<name>hdg_dial</name>
 				<width>32</width>
 				<property>/autopilot/settings/heading-bug-deg</property>
 				<live>true</live>
 				<min>0</min>
 				<max>360</max>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
-			</dial -->
+					<command>dialog-apply</command>
+					<object-name>hdg_dial</object-name>
+				</binding>
+			</dial>
 			
 			<button>
 				<legend>HOLD</legend>
@@ -387,25 +415,29 @@
 			</text>
 			
 			<input>
+				<name>vs_input</name>
 				<width>100</width>
 				<height>25</height>
 				<property>/autopilot/settings/vertical-speed-fpm</property>
 				<live>true</live>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
+					<command>dialog-apply</command>
+					<object-name>vs_input</object-name>
+				</binding>
 			</input>
 			
-			<!-- dial>
+			<dial>
+				<name>vs_dial</name>
 				<width>32</width>
 				<property>/autopilot/settings/vertical-speed-fpm</property>
 				<live>true</live>
 				<min>-3000</min>
 				<max>3000</max>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
-			</dial -->
+					<command>dialog-apply</command>
+					<object-name>vs_dial</object-name>
+				</binding>
+			</dial>
 			
 			<button>
 				<legend>V/S</legend>
@@ -433,25 +465,29 @@
 			</text>
 			
 			<input>
+				<name>alt_input</name>
 				<width>100</width>
 				<height>25</height>
 				<property>/autopilot/settings/target-altitude-ft</property>
 				<live>true</live>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
+					<command>dialog-apply</command>
+					<object-name>alt_input</object-name>
+				</binding>
 			</input>
 			
-			<!-- dial>
+			<dial>
+				<name>alt_dial</name>
 				<width>32</width>
 				<property>/autopilot/settings/target-altitude-ft</property>
 				<live>true</live>
 				<min>0</min>
 				<max>41000</max>
 				<binding>
-        	<command>dialog-apply</command>
-        </binding>
-			</dial -->
+					<command>dialog-apply</command>
+					<object-name>alt_dial</object-name>
+				</binding>
+			</dial>
 			
 			<button>
 				<legend>HOLD</legend>

@@ -85,6 +85,7 @@ wingtemp = wingtemp + 1;
 
 if ((wingtemp <= 0) and (me.icewarnw == 0)) {
 screen.log.write("Wing Ice Alert!", 1, 0, 0);
+sysinfo.log_msg("[HEAT] Ice Detected on Wings", 1);
 me.icewarnw = 1;
 }
 
@@ -111,6 +112,7 @@ eng1temp = eng1temp + 1;
 
 if ((eng1temp <= 0) and (me.icewarne1 == 0)) {
 screen.log.write("Engine 1 Ice Alert!", 1, 0, 0);
+sysinfo.log_msg("[HEAT] Ice Detected on Engine 1", 1);
 me. icewarne1 = 1;
 }
 
@@ -137,6 +139,7 @@ eng2temp = eng2temp + 1;
 
 if ((eng2temp <= 0) and (me.icewarne2 == 0)) {
 screen.log.write("Engine 2 Ice Alert!", 1, 0, 0);
+sysinfo.log_msg("[HEAT] Ice Detected on Engine 2", 1);
 me. icewarne2 = 1;
 }
 
@@ -197,4 +200,5 @@ setlistener("sim/signals/fdm-initialized", func
  {
  icing.init();
  print("Anti-Icing .......... Initialized");
+ sysinfo.log_msg("[HEAT] System Check ...... OK", 0);
  });

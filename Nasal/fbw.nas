@@ -344,5 +344,6 @@ setprop(fcs~"rudder-fbw-output", rudderin);
 
 fbw.init();
 print("Fly-By-Wire ......... Initialized");
+sysinfo.log_msg("[FBW] Fly-by-Wire Engaged", 0);
 
 # *Power-by-wire : corresponds to power steering in cars

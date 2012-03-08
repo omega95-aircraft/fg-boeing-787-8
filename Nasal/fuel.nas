@@ -106,4 +106,5 @@ setlistener("sim/signals/fdm-initialized", func
  {
  fuelsystem.init();
  print("Fuel System ......... Initialized");
+ sysinfo.log_msg("[FUEL] Systems Check ..... OK", 0);
  });

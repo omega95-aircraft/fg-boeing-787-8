@@ -144,6 +144,7 @@ setlistener("/sim/signals/fdm-initialized", func {
     init_switches();
     settimer(update_electrical,5);
     print("Electrical System ... Initialized");
+    b787.sysinfo.log_msg("[ELEC] System Check ...... OK", 0);
 });
 
 var init_switches = func{

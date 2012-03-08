@@ -314,6 +314,8 @@ var fmcTP = {
 	
 	setDep: func() {
 	
+		sysinfo.log_msg("[FMC] Adding SID " ~ SIDList[SIDindex].wp_name ~ "to Route", 0);
+	
 		var n = 0;
 	
 		while (n < SIDwpmax) {
@@ -341,6 +343,8 @@ var fmcTP = {
 	
 	setArr: func() {
 	
+	sysinfo.log_msg("[FMC] Adding STAR " ~ SIDList[SIDindex].wp_name ~ "to Route", 0);
+	
 		var n = 0;
 	
 		while (n < STARwpmax) {
@@ -366,6 +370,8 @@ var fmcTP = {
 	},
 	
 	setApp: func() {
+	
+	sysinfo.log_msg("[FMC] Adding IAP " ~ SIDList[SIDindex].wp_name ~ "to Route", 0);
 	
 		var n = 0;
 	

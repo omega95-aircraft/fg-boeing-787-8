@@ -18,6 +18,8 @@ var root = getprop("/sim/aircraft-dir");
 
 io.read_properties(root ~ "/EFB-DB/ChartsList.xml", "/instrumentation/efb");
 
+sysinfo.log_msg("[EFB] Database Check ..... OK", 0);
+
 # var row = split(";", io.readfile(root ~ "/EFB-DB/ChartsList"));
 
 # for (var n = 1; n< (size(row) - 1); n += 1) {

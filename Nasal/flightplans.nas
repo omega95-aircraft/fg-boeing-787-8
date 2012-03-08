@@ -49,6 +49,8 @@ var fmcFP = {
 		setprop(fmcFPtree~ "FPpage[1]/first", 0);
 		
 		setprop(fmcFPtree~ "path", getprop("/sim/fg-home/"));
+		
+		sysinfo.log_msg("[FMC] Initialized Empty Flightplans", 0);
 	
 	},
 
@@ -57,6 +59,11 @@ var fmcFP = {
 	clear: func(plan) {
 	
 		var n = 0;
+		
+		if (plan == 0)
+			sysinfo.log_msg("[FMC] Primary Flightplan Cleared", 0);
+		else
+			sysinfo.log_msg("[FMC] Secondary Flightplan Cleared", 0);
 	
 		while(getprop(fmcFPtree~ "flightplan[" ~ plan ~ "]/wp[" ~ n ~ "]/id") != nil) {
 		
@@ -127,6 +134,11 @@ var fmcFP = {
 	
 	copy: func(plan) {
 	
+		if (plan == 0)
+			sysinfo.log_msg("[FMC] Primary Flightplan Copied to Route", 0);
+		else
+			sysinfo.log_msg("[FMC] Secondary Flightplan Copied to Route", 0);
+	
 		## Clear the Route Manager
 		
 		setprop(route~ "input", "@CLEAR");
@@ -156,6 +168,8 @@ var fmcFP = {
 	# Clear the active route and divert to the given airport
 	
 	divert: func(icao) {
+	
+		sysinfo.log_msg("[FMC] Diverting to " ~ icao, 0);
 	
 		## Clear the Route Manager
 		

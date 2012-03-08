@@ -76,4 +76,5 @@ setlistener("sim/signals/fdm-initialized", func
  {
  autobrake.init();
  print("Autobrake System .... Initialized");
+ sysinfo.log_msg("[ABS] Autobrake System Initialized", 0); 
  });

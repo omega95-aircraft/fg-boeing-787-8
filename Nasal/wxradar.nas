@@ -192,4 +192,5 @@ var sqr = func(n) return n * n;
 setlistener("sim/signals/fdm-initialized", func
  {
  wxradar.init();
+ sysinfo.log_msg("[WXR] WXRadar NOT Installed", 1);
  });

@@ -125,6 +125,11 @@
      </speaker>
 
    </tcas>
+   
+   <sysinfo>
+		<max type="int">0</max>
+		<first type="int">0</first>
+   </sysinfo>
 
 	<wxradar>
 		<serviceable type="bool">true</serviceable>
@@ -1058,6 +1063,9 @@
 </autopilot>
 
 	<nasal>
+		<b787>
+			<file>Aircraft/787-8/Nasal/sysinfo.nas</file>
+		</b787>
 		<systems>
 			<file>Aircraft/787-8/Nasal/systems.nas</file>
 		</systems>
@@ -1113,6 +1121,7 @@
 			<file>Aircraft/787-8/Nasal/engine-fire.nas</file>
 			<file>Aircraft/787-8/Nasal/ground_services.nas</file>
 			<file>Aircraft/787-8/Nasal/fmc.nas</file>
+			<file>Aircraft/787-8/Nasal/syscheck.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsDB.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsWP.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsTP.nas</file>

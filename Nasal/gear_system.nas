@@ -138,4 +138,5 @@ setlistener("sim/signals/fdm-initialized", func
  {
  gears.init();
  print("Gear System ......... Initialized");
+ sysinfo.log_msg("[GEAR] Systems Check ..... OK", 0);
  });

@@ -28,6 +28,7 @@ me.flash = me.flash + 1;
 # Engine Surge Warning
 if (me.surgewarn == 0) {
 screen.log.write("Engine Surge!", 1, 0, 0);
+sysinfo.log_msg("[ENG] Engine Surge Warning", 2);
 me.surgewarn = 1;
 }
 # Engine Surging Sound

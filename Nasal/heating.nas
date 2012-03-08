@@ -20,7 +20,8 @@ windowtemp = windowtemp + 0.5;
 if ((windowtemp <= -20) and (me.icewarn == 0)) {
 screen.log.write("You window seems to getting foggy due to the Low Temperature.", 1, 0, 0);
 screen.log.write("You might want to turn on the Window Heating from the Overhead Panel.", 1, 0, 0);
-me. icewarn = 1;
+sysinfo.log_msg("[HEAT] Window Ice Detected", 1);
+me.icewarn = 1;
 }
 
 }

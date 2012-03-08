@@ -80,7 +80,7 @@
 	},
 	reset_score : func {
 		setprop("/instrumentation/efb/catchme/score", 0);
-	}
+	},
 	timer : func {
 			me.time += 1;
 			

@@ -1,5 +1,8 @@
 var fmc = {
 	autogen_alts: func {
+	
+		sysinfo.log_msg("[FMC] VNAV Altitudes Generated", 0);
+		
 		# This function is used to generate altitude recommendations for each waypoint.
 		# This single function calls the functions autogen_climb_alts and autogen_descent_alts.
 		# Those functions make calls to all other functions down to line 278.
@@ -331,14 +334,20 @@ var fmc = {
 	parse_flightsDB: func {
 	
 		io.read_properties(getprop("/sim/aircraft-dir") ~ "/FMC-DB/FMC_Flights.xml", "/instrumentation/b787-fmc");
+		
+		sysinfo.log_msg("[FMC] Database Check ..... OK", 0);
 	
 	},
 	search_flight: func(flightnum) {
 	
 		var flightsDB = "/instrumentation/b787-fmc/flightsDB/" ~ flightnum ~ "/";
+		
+		var airline = getprop("/instrumentation/b787-fmc/flightsDB/airline");
 	
 		# Check if the flight exists
 		if (getprop(flightsDB ~ "depicao") != nil) {
+		
+			sysinfo.log_msg("[FMC] Found " ~ airline ~ " Flight " ~ flightnum, 0);
 			
 			# Display Flight Data in the CDU
 			setprop("/controls/cdu/display/l1", flightnum);
@@ -357,13 +366,17 @@ var fmc = {
 
 		} else {
 			setprop("/controls/cdu/display/page", "DEP/ARR");
+			sysinfo.log_msg("[FMC] " ~ airline ~ "Flight " ~ flightnum ~ " not found!", 0);
 		}
 	
 	},
 	confirm_flight: func(flightnum) {
 	
+		var airline = getprop("/instrumentation/b787-fmc/flightsDB/airline");
+	
 		var flightsDB = "/instrumentation/b787-fmc/flightsDB/" ~ flightnum ~ "/";
 	
+		sysinfo.log_msg("[FMC] Confirmed " ~ airline ~ " Flight " ~ flightnum, 0);
 	
 		# Used to clear the current route entered
 		setprop("/autopilot/route-manager/input", "@CLEAR");

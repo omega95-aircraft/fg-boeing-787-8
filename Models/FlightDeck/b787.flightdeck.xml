@@ -188,7 +188,7 @@
 		<path>Aircraft/787-8/Models/Instruments/EICAS.xml</path>
 		<offsets>
 			<x-m>-23.78</x-m>
-			<y-m>-0.1597</y-m>
+			<y-m>-0.15</y-m>
 			<z-m>1.69449</z-m>
 			<pitch-deg>-17</pitch-deg>
 		</offsets>
@@ -2356,7 +2356,7 @@
         </action>
     </animation>
     
-        <animation>
+   <animation>
         <type>pick</type>
         <object-name>ALThold</object-name>
         <object-name>ALT.toggle</object-name>
@@ -2367,6 +2367,22 @@
  				<script>
  					setprop("/autopilot/settings/target-altitude-ft", getprop("/instrumentation/altimeter/indicated-altitude-ft"));
  					setprop("/autopilot/panel/alt", "alt");
+ 				</script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>clb.con</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>nasal</command>
+ 				<script>
+ 					setprop("/autopilot/settings/vertical-speed-fpm", getprop("/velocities/vertical-speed-fps") * 60);
+ 					
+ 					setprop("/autopilot/panel/alt", "vs");
  				</script>
             </binding>
         </action>

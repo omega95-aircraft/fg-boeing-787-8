@@ -162,5 +162,6 @@ else setprop("/autopilot/panel/disp-vs", -1 * getprop("/autopilot/settings/verti
 setlistener("sim/signals/fdm-initialized", func
  {
  mcp.init();
+ sysinfo.log_msg("[AP] Systems Check ....... OK", 0);
  });
 

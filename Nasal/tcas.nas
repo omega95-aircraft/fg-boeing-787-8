@@ -164,4 +164,5 @@
 setlistener("sim/signals/fdm-initialized", func
  {
  tcas.init();
+ sysinfo.log_msg("[TCAS] Systems Check ..... OK", 0);
  });
