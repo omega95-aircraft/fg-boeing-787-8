@@ -18,6 +18,65 @@ setprop("/autopilot/settings/vertical-speed-fpm", 0);
 }, 
 	update : func {
 	
+	# Convert actual code to dialog display text
+	
+	## Vertical Autopilot Settings
+	if (getprop("/autopilot/panel/alt") == "alt") {
+		if (getprop("/autopilot/panel/alt-ind") == "hold")
+			setprop("/autopilot/dialog/alt", "HOLD");
+		else
+			setprop("/autopilot/dialog/alt", "FLCH");
+	} elsif (getprop("/autopilot/panel/alt") == "vs") {
+		setprop("/autopilot/dialog/alt", "V/S");
+	} elsif (getprop("/autopilot/panel/alt") == "vnav") {
+		setprop("/autopilot/dialog/alt", "VNAV");
+	} elsif (getprop("/autopilot/panel/alt") == "app") {
+		setprop("/autopilot/dialog/alt", "APP");
+	}
+
+	## Lateral Autopilot Settings
+	if (getprop("/autopilot/panel/hdg") == "hdg") {
+		setprop("/autopilot/dialog/hdg", "HOLD");
+	} elsif (getprop("/autopilot/panel/hdg") == "lnav") {
+		setprop("/autopilot/dialog/hdg", "LNAV");
+	} elsif (getprop("/autopilot/panel/hdg") == "loc") {
+		setprop("/autopilot/dialog/hdg", "LOC");
+	}
+	
+	## Speed Modes
+	
+	if (getprop("/autopilot/panel/speed-mode") == "ias") {
+		setprop("/autopilot/dialog/spd", "IAS");
+		setprop("/autopilot/dialog/spd-ias-hide", 0);
+		setprop("/autopilot/dialog/spd-mach-hide", 1);
+	}	else {
+		setprop("/autopilot/dialog/spd", "MACH");
+		setprop("/autopilot/dialog/spd-ias-hide", 1);
+		setprop("/autopilot/dialog/spd-mach-hide", 0);
+	}
+		
+	## Master Text
+	
+	if (getprop("/autopilot/panel/master") == 1)
+		setprop("/autopilot/dialog/ap", "AP: ON");
+	else
+		setprop("/autopilot/dialog/ap", "AP: OFF");
+		
+	## Auto-Throttle Text
+	
+	if (getprop("/autopilot/panel/auto-throttle") == 1)
+		setprop("/autopilot/dialog/at", "A/T: ON");
+	else
+		setprop("/autopilot/dialog/at", "A/T: OFF");
+		
+	## Flight Director Text
+	
+	if (getprop("/autopilot/flightdirector") == 1)
+		setprop("/autopilot/dialog/fd", "FD: ON");
+	else
+		setprop("/autopilot/dialog/fd", "FD: OFF");
+	
+	
 	if (getprop("/autopilot/internal/target-climb-rate-fps") != nil)
 		setprop("/autopilot/internal/climb-rate-difference", getprop("/autopilot/internal/target-climb-rate-fps") - getprop("/velocities/vertical-speed-fps"));
 

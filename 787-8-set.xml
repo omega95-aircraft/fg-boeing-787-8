@@ -1134,6 +1134,9 @@
 		<vsd>
 			<file>Aircraft/787-8/Nasal/vsd.nas</file>
 		</vsd>
+		<tps>
+			<file>Aircraft/787-8/EFB-DB/Third-Party/CatchMe/code.nas</file>
+		</tps>
 	</nasal>
 
 </PropertyList>

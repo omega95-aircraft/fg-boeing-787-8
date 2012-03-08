@@ -993,5 +993,17 @@
 			<green-prop>/instrumentation/efb/text-color</green-prop>
 		</emission>
  </animation>
+ 
+<!-- Third Party Software -->
+
+<model>
+ 	<path>Aircraft/787-8/EFB-DB/Third-Party/CatchMe/animations.xml</path>
+ 	<condition>
+ 		<equals>
+ 			<property>/instrumentation/efb/page</property>
+ 			<value>Catch me if you can</value>
+ 		</equals>
+ 	</condition>
+</model>
 
 </PropertyList>

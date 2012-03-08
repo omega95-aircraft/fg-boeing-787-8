@@ -167,6 +167,8 @@ var sqr = func(n) return n * n;
 			
 			## First VNAV Point
 			
+			if (getprop(rte_tree~ "route/num") > 0) {
+
 			var current_wp = getprop(rte_tree~ "current-wp");
 			
 			if (getprop(rte_tree~ "route/wp[" ~ current_wp ~ "]/id") != nil) {
@@ -248,6 +250,8 @@ var sqr = func(n) return n * n;
 			for (var n = 0; n < 6; n += 1)
 				
 				setprop(vsd_tree~ "vnav/wp[" ~ n ~ "]/visible", 0);
+			
+			}
 			
 			}
 			

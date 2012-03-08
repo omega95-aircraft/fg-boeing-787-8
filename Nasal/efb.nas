@@ -48,6 +48,8 @@ setprop("/instrumentation/efb/manual-page", 0);
 setprop("/instrumentation/efb/vnav_autogen/first", 0);
 setprop("/instrumentation/efb/vnav_autogen/gen", 0);
 
+setprop("/instrumentation/efb/catchme/score", 0);
+
         me.reset(); 
 }, 
 	searchairport : func(query) {
@@ -74,6 +76,9 @@ if (getprop("/instrumentation/efb/page") == "MENU") {
 	page.clearpage();
 	page.index();
 
+if (keypress == "r1") { setprop("/instrumentation/efb/page", "Are you Bored?");
+keypress = "";
+}
 if (keypress == "l4") { setprop("/instrumentation/efb/page", "Airport Information");
 keypress = "";
 }
@@ -378,7 +383,53 @@ keypress = "";
 
 	page.update();
 
+} elsif (getprop("/instrumentation/efb/page") == "Are you Bored?") {
+
+	setprop("/instrumentation/efb/catchme/score", 0);
+	
+	page.clearpage();
+
+	page.boredom();
+
+# Menu Presses
+
+	if (keypress == "l4") {
+			setprop("/instrumentation/efb/page", "Catch me if you can");
+		}
+
+	page.update();
+
+} elsif (getprop("/instrumentation/efb/page") == "Catch me if you can") {
+
+	page.clearpage();
+	
+	page.catchme();
+	
+	page.update();
+
+} elsif (getprop("/instrumentation/efb/page") == "GAME OVER") {
+
+	page.clearpage();
+	
+	page.catchme_gameover();
+	
+	# Menu Presses
+	
+	if (keypress == "r7") {
+	
+		setprop("/instrumentation/efb/catchme/score", 0);
+		setprop("/instrumentation/efb/catchme/x", 0);
+		setprop("/instrumentation/efb/catchme/y", 0);
+		setprop("/instrumentation/efb/catchme/color", "white");
+		
+		setprop("/instrumentation/efb/page", "Catch me if you can");
+	
+	}
+	
+	page.update();
+
 }
+
 
 
 if (substr(getprop("/instrumentation/efb/page"),0,19) == "Aircraft Checklists") {
@@ -468,6 +519,36 @@ var page = {
 		helper = "";
 
 },
+
+	boredom : func {
+	
+		l1 = "You should NOT be here if you're flying!";
+		l3 = "But then, we know that if you're cruising on long,";
+		l4 = "flights it gets quite boring... So well, select a";
+		l5 = "game and have fun!";
+		
+		l7 = "< Catch me if you can";
+		
+		helper = "More Games Coming Soon...";
+	
+},
+
+	catchme : func {
+	
+		r13 = "SCORE : " ~ getprop("/instrumentation/efb/catchme/score");
+		
+		helper = "Click on the ball to catch it!"
+	
+},
+
+	catchme_gameover : func {
+	
+		helper = "SCORE : " ~ getprop("/instrumentation/efb/catchme/score");
+		
+		r13 = "PLAY AGAIN >";
+	
+},
+
 	vnav_alts : func {
 	
 		r1 = "AUTOGEN >";
