@@ -362,7 +362,7 @@ if (getprop("/controls/switches/copilot/autopilot") == 1){
 		setprop("/autopilot/locks/altitude", "vnav");
 	}
 	# Intercept ILS
-	elsif ((me.flightphase == 1) and (getprop("/autopilot/route-manager/wp-last/dist") != nil) and (getprop("/autopilot/route-manager/wp-last/dist") < 25) and (altitude > 200) and (getprop("/instrumentation/nav/in-range"))){
+	elsif ((me.flightphase == 1) and (getprop("/autopilot/route-manager/wp-last/dist") != nil) and (getprop("/autopilot/route-manager/wp-last/dist") < 10) and (altitude > 200) and (getprop("/instrumentation/nav/in-range"))){
 		setprop("/autopilot/locks/heading", "nav1-hold");
 		if (getprop("/instrumentation/nav/gs-in-range")){
 				setprop("/autopilot/locks/altitude", "gs1-hold");
