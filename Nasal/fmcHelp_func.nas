@@ -23,6 +23,7 @@ var fmcHelp = {
 
 	parseWords : func() {
 		
+		var home = getprop("/sim/fg-home");
 		var root = getprop("/sim/aircraft-dir");
 		
 		# Preset Words
@@ -31,7 +32,7 @@ var fmcHelp = {
 		
 		# Learnt Words
 		
-		io.read_properties(root ~ "/FMC-DB/Vocabulary/Learnt_Words.xml", "/instrumentation/fmcVocabulary/learnt-words/");
+		io.read_properties(home ~ "/Export/Learnt_Words.xml", "/instrumentation/fmcVocabulary/learnt-words/");
 		
 		sysinfo.log_msg("[FMC] Vocabulary Check ... OK", 0);
 	
@@ -154,7 +155,7 @@ var fmcHelp = {
 	write : func() {
 	
 		var location = "/instrumentation/fmcVocabulary/learnt-words/";
-		var filename = getprop("/sim/aircraft-dir") ~ "/FMC-DB/Vocabulary/Learnt_Words.xml";
+		var filename = getprop("/sim/fg-home") ~ "/Export/Learnt_Words.xml";
 	
 		io.write_properties(filename, location);
 	
