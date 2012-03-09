@@ -1121,6 +1121,8 @@
 			<file>Aircraft/787-8/Nasal/engine-fire.nas</file>
 			<file>Aircraft/787-8/Nasal/ground_services.nas</file>
 			<file>Aircraft/787-8/Nasal/fmc.nas</file>
+			<file>Aircraft/787-8/Nasal/fmcHelp_func.nas</file>
+			<file>Aircraft/787-8/Nasal/fmcHelp_loop.nas</file>
 			<file>Aircraft/787-8/Nasal/syscheck.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsDB.nas</file>
 			<file>Aircraft/787-8/Nasal/procedures/fmsWP.nas</file>
@@ -1139,6 +1141,7 @@
 			<file>Aircraft/787-8/Devel/wxradar-pixel-animations.nas</file>
 			<file>Aircraft/787-8/Devel/tcas-animations-helper.nas</file> -->
 			<file>Aircraft/Instruments-3d/vsd/animation_creator.nas</file>
+			<!-- file>Aircraft/787-8/runways.nas</file -->
 		</helpers>
 		<vsd>
 			<file>Aircraft/787-8/Nasal/vsd.nas</file>

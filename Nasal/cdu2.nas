@@ -2341,22 +2341,35 @@ FPpage(1,1);
 if (keypress != "") {
 
 var charlength = size(getprop("/controls/cdu[1]/input"));
+var fmc_charlength = size(getprop("/instrumentation/fmcHelp[1]/search/input"));
 
 ### DEL Function
 if (keypress == "del") {
-setprop("/controls/cdu[1]/input",substr(getprop("/controls/cdu[1]/input"),0,charlength - 1));
+if (getprop("/instrumentation/fmcHelp[1]/search/active") != 1)	
+	setprop("/controls/cdu[1]/input",substr(getprop("/controls/cdu[1]/input"),0,charlength - 1));
+else
+	setprop("/instrumentation/fmcHelp[1]/search/input",substr(getprop("/instrumentation/fmcHelp[1]/search/input"),0,fmc_charlength - 1));
 }
 
 ### CLR Function
 elsif (keypress == "clr") {
-setprop("/controls/cdu[1]/input", "");
+if (getprop("/instrumentation/fmcHelp[1]/search/active") != 1)
+	setprop("/controls/cdu[1]/input", "");
+else
+	setprop("/instrumentation/fmcHelp[1]/search/input", "");
 }
 
 ### The actual Typing Function
 
 else {
 
-setprop("/controls/cdu[1]/input", cduinput ~ keypress);
+if (getprop("/instrumentation/fmcHelp[1]/search/active") != 1)
+
+	setprop("/controls/cdu[1]/input", cduinput ~ keypress);
+	
+else
+	
+	setprop("/instrumentation/fmcHelp[1]/search/input", getprop("/instrumentation/fmcHelp[1]/search/input") ~ keypress);
 
 }
 }
