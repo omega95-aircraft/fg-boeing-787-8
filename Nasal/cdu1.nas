@@ -170,6 +170,11 @@ var keypress = getprop("/controls/cdu/keypress");
 
 var cduinput = getprop("/controls/cdu/input");
 
+# Check for new words for the FMC to learn :)
+
+if ((cduinput != nil) and (me.keypress_check(keypress) == 1) and (cduinput != ""))
+	fmcHelp.learn(cduinput);
+
 # Pages and their Displays :)
 
 ### IDENT PAGE
@@ -2420,6 +2425,22 @@ setprop("/controls/cdu/display/page", page);
 setprop("/controls/cdu/keypress", "");
 
 },
+	keypress_check : func(keypress) {
+	
+		var check = 0;
+	
+		var input_key = ["l1", "l2", "l3", "l4", "l5", "l6", "l7", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "exec"];
+		
+		foreach(var key; input_key) {
+		
+			if (keypress == key)
+				check = 1;
+		
+		}
+		
+		return check;
+	
+	},
     reset : func {
         me.loopid += 1;
         me._loop_(me.loopid);

@@ -162,6 +162,11 @@ var keypress = getprop("/controls/cdu[1]/keypress");
 
 var cduinput = getprop("/controls/cdu[1]/input");
 
+# Check for new words for the FMC to learn :)
+
+ if ((cduinput != nil) and (cdu.keypress_check(keypress) == 1) and (cduinput != ""))
+	fmcHelp.learn(cduinput);
+
 # Pages and their Displays :)
 
 ### IDENT PAGE
