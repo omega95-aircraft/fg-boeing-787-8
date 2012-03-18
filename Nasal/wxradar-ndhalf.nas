@@ -200,6 +200,6 @@ var sqr = func(n) return n * n;
 
 setlistener("sim/signals/fdm-initialized", func
  {
- wxradar.init();
+# wxradar.init();
  print("WXRadar WXR-2100 .... Initialized");
  });
