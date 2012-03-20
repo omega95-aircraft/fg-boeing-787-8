@@ -6,6 +6,8 @@
 > Redneck  : FDM, Nasal, Instruments, Database, Systems
 > Jentron  : FDM, Systems
 > Scotth1  : Terminal Procedures Parser
+> Bicyus   : Nasal Code Simplification and Organization
+> Awexome  : Nasal Code Simplification and Organization
 > Hooray   : Nasal, Instruments, Systems
 > Zan      : CameraView Instrument (still on the drawing board)
 > Nicky    : 787-8 Maintainer till Jan 26, 2012 (start of the re-devel project)
