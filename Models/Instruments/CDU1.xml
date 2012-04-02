@@ -29,6 +29,16 @@
       <blue>  1 </blue>
     </emission>
   </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>text_grey</object-name>
+    <emission>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
 
 <!-- Page Name -->
 	<text><name>text</name>
@@ -1830,5 +1840,205 @@
         </binding>
     </action>
 </animation>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.0785</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[0]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.0849</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[1]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.0911</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[2]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.0975</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[3]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.1039</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[4]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.1103</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[5]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.1165</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[6]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<text>
+	<name>text_grey</name>
+	<offsets>
+		<x-m>0.1228</x-m>
+		<y-m>-0.03</y-m>
+		<z-m>0.0014</z-m>
+		<heading-deg>90</heading-deg>
+	</offsets>
+	<alignment>left-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">text-value</type>
+	<format type="string">%s</format>
+	<property>/instrumentation/fmcHelp[1]/disp[7]/desc</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">Helvetica.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.005</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
 
 </PropertyList>

@@ -11,6 +11,13 @@ setprop("/controls/cdu/vnav/crz-altitude-ft", 10000);
 setprop("/controls/cdu/vnav/start-crz", "");
 setprop("/controls/cdu/vnav/end-crz", "");
 
+## Navaid Search Properties
+
+setprop("/instrumentation/navSearch[1]/name", " ");
+setprop("/instrumentation/navSearch[1]/d_aircraft", 20);
+setprop("/instrumentation/navSearch[1]/icao", getprop("/autopilot/route-manager/departure/airport"));
+setprop("/instrumentation/navSearch[1]/d_airport", 20);
+
 ## TP Properties
 
 setprop("/instrumentation/b787-fmc/TPicao", "");
@@ -276,7 +283,7 @@ setprop("/controls/cdu[1]/display/r1", "");
 setprop("/controls/cdu[1]/display/l2", "");
 setprop("/controls/cdu[1]/display/r2", "");
 
-setprop("/controls/cdu[1]/display/l3", "IDENT");
+setprop("/controls/cdu[1]/display/l3", "NAVAIDS");
 setprop("/controls/cdu[1]/display/r3", "HOLD CONFIG");
 
 setprop("/controls/cdu[1]/display/l4", "VNAV CONFIG");
@@ -294,7 +301,7 @@ setprop("/controls/cdu[1]/display/r7", "APP PERF");
 #### Menu Presses
 
 if (keypress == "l3") {
-page = "IDENT";
+page = "NAVAIDS";
 keypress = "";
 }
 
@@ -2338,6 +2345,222 @@ FPpage(1,1);
 		cduinput = "";
 		setprop("/controls/cdu[1]/input", "");
 	}
+
+} elsif (page == "NAVAIDS") {
+
+#### Field types
+
+setprop("/controls/cdu[1]/l1-type", "click");
+setprop("/controls/cdu[1]/l2-type", "click");
+setprop("/controls/cdu[1]/l3-type", "disp");
+setprop("/controls/cdu[1]/l4-type", "click");
+setprop("/controls/cdu[1]/l5-type", "click");
+setprop("/controls/cdu[1]/l6-type", "disp");
+setprop("/controls/cdu[1]/l7-type", "click");
+
+setprop("/controls/cdu[1]/r1-type", "click");
+setprop("/controls/cdu[1]/r2-type", "click");
+setprop("/controls/cdu[1]/r3-type", "disp");
+setprop("/controls/cdu[1]/r4-type", "disp");
+setprop("/controls/cdu[1]/r5-type", "click");
+setprop("/controls/cdu[1]/r6-type", "disp");
+setprop("/controls/cdu[1]/r7-type", "disp");
+
+#### Field Values
+
+setprop("/controls/cdu[1]/display/l1-label", "Part or Full ID");
+setprop("/controls/cdu[1]/display/l2-label", "Distance from Aircraft");
+setprop("/controls/cdu[1]/display/l3-label", "");
+setprop("/controls/cdu[1]/display/l4-label", "Airport ICAO");
+setprop("/controls/cdu[1]/display/l5-label", "Distance from Airport");
+setprop("/controls/cdu[1]/display/l6-label", "");
+setprop("/controls/cdu[1]/display/l7-label", "");
+setprop("/controls/cdu[1]/display/r1-label", "Search by ID");
+setprop("/controls/cdu[1]/display/r2-label", "Search by Distance from Aircraft");
+setprop("/controls/cdu[1]/display/r3-label", "");
+setprop("/controls/cdu[1]/display/r4-label", "");
+setprop("/controls/cdu[1]/display/r5-label", "Search by Distance from Airport");
+setprop("/controls/cdu[1]/display/r6-label", "");
+setprop("/controls/cdu[1]/display/r7-label", "");
+
+setprop("/controls/cdu[1]/display/l1", getprop("/instrumentation/navSearch[1]/name"));
+setprop("/controls/cdu[1]/display/l2", getprop("/instrumentation/navSearch[1]/d_aircraft"));
+setprop("/controls/cdu[1]/display/l3", "");
+setprop("/controls/cdu[1]/display/l4", getprop("/instrumentation/navSearch[1]/icao"));
+setprop("/controls/cdu[1]/display/l5", getprop("/instrumentation/navSearch[1]/d_airport"));
+setprop("/controls/cdu[1]/display/l6", "");
+setprop("/controls/cdu[1]/display/l7", "< INDEX");
+
+setprop("/controls/cdu[1]/display/r1", "SEARCH >");
+setprop("/controls/cdu[1]/display/r2", "SEARCH >");
+setprop("/controls/cdu[1]/display/r3", "");
+setprop("/controls/cdu[1]/display/r4", "");
+setprop("/controls/cdu[1]/display/r5", "SEARCH >");
+setprop("/controls/cdu[1]/display/r6", "");
+setprop("/controls/cdu[1]/display/r7", "");
+
+## MENU PRESSES
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif ((keypress == "l1") and (cduinput != nil)) {
+setprop("/instrumentation/navSearch[1]/name", cduinput);
+setprop("/controls/cdu[1]/input", "");
+cduinput = "";
+keypress = "";
+} elsif ((keypress == "l2") and (cduinput != nil)) {
+setprop("/instrumentation/navSearch[1]/d_aircraft", cduinput);
+setprop("/controls/cdu[1]/input", "");
+cduinput = "";
+keypress = "";
+} elsif ((keypress == "l4") and (cduinput != nil)) {
+setprop("/instrumentation/navSearch[1]/icao", cduinput);
+setprop("/controls/cdu[1]/input", "");
+cduinput = "";
+keypress = "";
+} elsif ((keypress == "l5") and (cduinput != nil)) {
+setprop("/instrumentation/navSearch[1]/d_airport", cduinput);
+setprop("/controls/cdu[1]/input", "");
+cduinput = "";
+keypress = "";
+}
+
+## Search functions
+
+elsif (keypress == "r1") {
+
+navaids.search_by_name(1,getprop("/instrumentation/navSearch[1]/name"));
+
+page = "SEARCH RESULTS";
+
+keypress = "";
+} elsif (keypress == "r2") {
+
+navaids.search_by_dist(1,getprop("/position/latitude-deg"), getprop("/position/longitude-deg"), getprop("/instrumentation/navSearch[1]/d_aircraft"));
+
+page = "SEARCH RESULTS";
+
+keypress = "";
+} elsif (keypress == "r5") {
+
+setprop("/instrumentation/gps[4]/scratch/query", getprop("/instrumentation/navSearch[1]/icao"));
+setprop("/instrumentation/gps[4]/scratch/type", "airport");
+setprop("/instrumentation/gps[4]/command", "search");
+
+var gps_lat = getprop("/instrumentation/gps[4]/scratch/latitude-deg");
+var gps_lon = getprop("/instrumentation/gps[4]/scratch/longitude-deg");
+
+navaids.search_by_dist(1, gps_lat, gps_lon, getprop("/instrumentation/navSearch[1]/d_airport"));
+
+page = "SEARCH RESULTS";
+
+keypress = "";
+}
+
+} elsif (page == "SEARCH RESULTS") {
+
+var nav_disp = "/NavData/disp/cdu[1]/";
+
+var nav_result = "/NavData/results[1]/";
+	
+var first = getprop(nav_result ~ "/first");
+
+#### Field types
+
+setprop("/controls/cdu[1]/l1-type", "disp");
+setprop("/controls/cdu[1]/l2-type", "disp");
+setprop("/controls/cdu[1]/l3-type", "disp");
+setprop("/controls/cdu[1]/l4-type", "disp");
+setprop("/controls/cdu[1]/l5-type", "disp");
+setprop("/controls/cdu[1]/l6-type", "click");
+setprop("/controls/cdu[1]/l7-type", "click");
+
+setprop("/controls/cdu[1]/r1-type", "disp");
+setprop("/controls/cdu[1]/r2-type", "disp");
+setprop("/controls/cdu[1]/r3-type", "disp");
+setprop("/controls/cdu[1]/r4-type", "disp");
+setprop("/controls/cdu[1]/r5-type", "disp");
+setprop("/controls/cdu[1]/r6-type", "click");
+setprop("/controls/cdu[1]/r7-type", "click");
+
+#### Field Values
+
+setprop("/controls/cdu[1]/display/l1-label", getprop(nav_disp ~ "disp/name"));
+setprop("/controls/cdu[1]/display/l2-label", getprop(nav_disp ~ "disp[1]/name"));
+setprop("/controls/cdu[1]/display/l3-label", getprop(nav_disp ~ "disp[2]/name"));
+setprop("/controls/cdu[1]/display/l4-label", getprop(nav_disp ~ "disp[3]/name"));
+setprop("/controls/cdu[1]/display/l5-label", getprop(nav_disp ~ "disp[4]/name"));
+setprop("/controls/cdu[1]/display/l6-label", "");
+setprop("/controls/cdu[1]/display/l7-label", "");
+setprop("/controls/cdu[1]/display/r1-label", "");
+setprop("/controls/cdu[1]/display/r2-label", "");
+setprop("/controls/cdu[1]/display/r3-label", "");
+setprop("/controls/cdu[1]/display/r4-label", "");
+setprop("/controls/cdu[1]/display/r5-label", "");
+setprop("/controls/cdu[1]/display/r6-label", "");
+setprop("/controls/cdu[1]/display/r7-label", "");
+
+if ((getprop(nav_disp ~ "disp/id") != nil) and (getprop(nav_disp ~ "disp/id") != " "))
+	setprop("/controls/cdu[1]/display/l1", getprop(nav_disp ~ "disp/id") ~ " | Lat: " ~ getprop(nav_disp ~ "disp/lat") ~ ", Lon: " ~ getprop(nav_disp ~ "disp/lon"));
+else
+	setprop("/controls/cdu[1]/display/l1", "No Search Results...");
+	
+if ((getprop(nav_disp ~ "disp[1]/id") != nil) and (getprop(nav_disp ~ "disp[1]/id") != " "))
+setprop("/controls/cdu[1]/display/l2", getprop(nav_disp ~ "disp[1]/id") ~ " | Lat: " ~ getprop(nav_disp ~ "disp[1]/lat") ~ ", Lon: " ~ getprop(nav_disp ~ "disp[1]/lon"));
+
+if ((getprop(nav_disp ~ "disp[2]/id") != nil) and (getprop(nav_disp ~ "disp[2]/id") != " "))
+setprop("/controls/cdu[1]/display/l3", getprop(nav_disp ~ "disp[2]/id") ~ " | Lat: " ~ getprop(nav_disp ~ "disp[2]/lat") ~ ", Lon: " ~ getprop(nav_disp ~ "disp[2]/lon"));
+
+if ((getprop(nav_disp ~ "disp[3]/id") != nil) and (getprop(nav_disp ~ "disp[3]/id") != " "))
+setprop("/controls/cdu[1]/display/l4", getprop(nav_disp ~ "disp[3]/id") ~ " | Lat: " ~ getprop(nav_disp ~ "disp[3]/lat") ~ ", Lon: " ~ getprop(nav_disp ~ "disp[3]/lon"));
+
+if ((getprop(nav_disp ~ "disp[4]/id") != nil) and (getprop(nav_disp ~ "disp[4]/id") != " "))
+setprop("/controls/cdu[1]/display/l5", getprop(nav_disp ~ "disp[4]/id") ~ " | Lat: " ~ getprop(nav_disp ~ "disp[4]/lat") ~ ", Lon: " ~ getprop(nav_disp ~ "disp[4]/lon"));
+
+setprop("/controls/cdu[1]/display/l6", "< NAVAIDS");
+setprop("/controls/cdu[1]/display/l7", "< INDEX");
+
+setprop("/controls/cdu[1]/display/r1", "");
+setprop("/controls/cdu[1]/display/r2", "");
+setprop("/controls/cdu[1]/display/r3", "");
+setprop("/controls/cdu[1]/display/r4", "");
+setprop("/controls/cdu[1]/display/r5", "");
+if (first != 0)
+	setprop("/controls/cdu[1]/display/r6", "SCROLL UP >");
+else
+	setprop("/controls/cdu[1]/display/r6", "");
+
+var next = getprop(nav_result ~ "result[" ~ (first + 5) ~ "]/id");
+
+if ((next != nil) and (next != ""))
+	setprop("/controls/cdu[1]/display/r7", "SCROLL DOWN >");
+else
+	setprop("/controls/cdu[1]/display/r7", "");
+
+if (keypress == "l7") {
+page = "INDEX";
+keypress = "";
+} elsif (keypress == "l6") {
+page = "NAVAIDS";
+keypress = "";
+} elsif (keypress == "r6") {
+
+if (first != 0)
+	setprop(nav_result ~ "/first", first - 1);
+	
+navaids.update_display(1);
+
+keypress = "";
+} elsif (keypress == "r7") {
+
+if ((next != nil) and (next != ""))
+	setprop(nav_result ~ "/first", first + 1);
+	
+navaids.update_display(1);
+
+keypress = "";
+}
 
 }
 

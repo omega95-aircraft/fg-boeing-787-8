@@ -35,12 +35,21 @@ var fmcHelp = {
 		io.read_properties(home ~ "/Export/Learnt_Words.xml", "/instrumentation/fmcVocabulary/learnt-words/");
 		
 		sysinfo.log_msg("[FMC] Vocabulary Check ... OK", 0);
+		
+		# Parse Navaids
+		
+		# print("Loading 787-8 FMC NavData/navaids");
+		
+		# io.read_properties(root ~ "/FMC-DB/NavData/navaids.xml", "/NavData/");
+		
+		# sysinfo.log_msg("[FMC] Navigational Data Loaded", 0);
 	
 	},
 	search : func(cdu, input) {
 	
 		var fh_tree = "/instrumentation/fmcHelp[" ~ cdu ~ "]/";
 		var vocab = "/instrumentation/fmcVocabulary/words/";
+		# var navaids = "/NavData/navaids/";
 		
 		# Clear Result fields
 		
@@ -60,7 +69,9 @@ var fmcHelp = {
 		
 			if (substr(getprop("/instrumentation/fmcVocabulary/learnt-words/word[" ~ n ~ "]/string"), 0, inp_size) == input) {
 			
-				setprop(fh_tree~ "result[" ~ result ~ "]/string", getprop("/instrumentation/fmcVocabulary/learnt-words/word[" ~ n ~ "]/string"));				
+				setprop(fh_tree~ "result[" ~ result ~ "]/string", getprop("/instrumentation/fmcVocabulary/learnt-words/word[" ~ n ~ "]/string"));
+				
+				setprop(fh_tree~ "result[" ~ result ~ "]/desc", "");			
 				
 				result += 1;
 			
@@ -72,13 +83,29 @@ var fmcHelp = {
 		
 			if (substr(getprop(vocab~ "word[" ~ n ~ "]/string"), 0, inp_size) == input) {
 			
-				setprop(fh_tree~ "result[" ~ result ~ "]/string", getprop(vocab~ "word[" ~ n ~ "]/string"));				
+				setprop(fh_tree~ "result[" ~ result ~ "]/string", getprop(vocab~ "word[" ~ n ~ "]/string"));
+				
+				setprop(fh_tree~ "result[" ~ result ~ "]/desc", "");
 				
 				result += 1;
 			
 			}
 		
 		}
+		
+		# for (var n = 0; getprop(navaids ~ "navaid[" ~ n ~ "]/id") != nil; n += 1) {
+		
+		#	if (substr(getprop(navaids ~ "navaid[" ~ n ~ "]/id"), 0, inp_size) == input) {
+			
+		#		setprop(fh_tree~ "result[" ~ result ~ "]/string", getprop(navaids ~ "navaid[" ~ n ~ "]/id"));
+				
+		#		setprop(fh_tree~ "result[" ~ result ~ "]/desc", getprop(navaids ~ "navaid[" ~ n ~ "]/name"));
+				
+		#		result += 1
+			
+		#	}
+		
+		# }
 		
 		setprop(fh_tree~ "first", 0);
 		

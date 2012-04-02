@@ -359,37 +359,43 @@ setprop("/controls/navigation/vnav/wp5id", wp5id);
 
     # Calculate elevations for the next 50 nautical miles (only 1 sample  every frame)
 
-#    setprop("/controls/navigation/vert-profile/nm" ~ me.loopnum/2, get_elevation((y + yoffset) / 60, (x + xoffset) / 60));
+    setprop("/controls/navigation/vert-profile/nm" ~ me.loopnum/2, get_elevation((y + yoffset) / 60, (x + xoffset) / 60));
 
-#    var altdiff = indaltitude - get_elevation((y + yoffset) / 60, (x + xoffset) / 60);
+    var altdiff = indaltitude - get_elevation((y + yoffset) / 60, (x + xoffset) / 60);
 
-#    if (altdiff < 1000) {
-#    var color = "red";
-#    } elsif (altdiff < 2000) {
-#    var color = "orange";
-#    } elsif (altdiff < 3000) {
-#    var color = "yellow";
-#    } else {
-#    var color = "white";
-#    }
+    if (altdiff < 1000) {
+    var color = "red";
+    } elsif (altdiff < 2000) {
+    var color = "orange";
+    } elsif (altdiff < 3000) {
+    var color = "yellow";
+    } else {
+    var color = "white";
+    }
 
-#    if (getprop("/autopilot/route-manager/airborne") == 0) {
-#    var color = "white";
-#    }
+    if (getprop("/autopilot/route-manager/airborne") == 0) {
+    var color = "white";
+    }
 
-#    setprop("/controls/navigation/vert-profile-color/nm" ~ me.loopnum/2, color);
+    setprop("/controls/navigation/vert-profile-color/nm" ~ me.loopnum/2, color);
 
     # Loop Number Add and Reset
 
-#    me.loopnum = me.loopnum + 1;
+    me.loopnum = me.loopnum + 1;
 
-#    if (me.loopnum > 100) {
+    if (me.loopnum > 100) {
      me.loopnum = 1;
-#    }
+    }
 
 for(var n = 0; n < 99; n = n + 1) {
 
-}
+if (getprop("/drawing/line[" ~ n ~ "]/y2") != nil) {
+
+setprop("/drawing/line[" ~ n ~ "]/angle", RAD2DEG * math.atan2(getprop("/drawing/line[" ~ n ~ "]/y2") - getprop("/drawing/line[" ~ n ~ "]/y1"),getprop("/drawing/line[" ~ n ~ "]/x2") - getprop("/drawing/line[" ~ n ~ "]/x1")));
+
+setprop("/drawing/line[" ~ n ~ "]/length-m", math.sqrt(square(getprop("/drawing/line[" ~ n ~ "]/x2") - getprop("/drawing/line[" ~ n ~ "]/x1")) + square(getprop("/drawing/line[" ~ n ~ "]/y2") - getprop("/drawing/line[" ~ n ~ "]/y1"))));
+
+} }
 
     },
         reset : func {
