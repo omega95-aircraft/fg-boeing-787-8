@@ -19,96 +19,113 @@ var DEG2RAD = 0.016774532925;
 var terrain = "/instrumentation/terrain-map/pixels/";
 var terrain_full = "/instrumentation/terrain-map[1]/pixels/";
 
-    var terrain_map = {
-       init : func {
-            me.UPDATE_INTERVAL = 0.025;
-            me.loopid = 0;
+# Function to get Elevation at latitude and longitude
 
-            me.reset();
-    },
-       update : func {
 
-if (getprop("/controls/mfd/extra") == 2) {
 
-var pos_lon = getprop("/position/longitude-deg");
-var pos_lat = getprop("/position/latitude-deg");
-var heading = getprop("orientation/heading-magnetic-deg");
+var get_elevation = func (lat, lon) {
 
-setprop("/controls/mfd/terrain-map/range", getprop("/instrumentation/ndfull/range"));
+	var info = geodinfo(lat, lon);
+	if (info != nil) {var elevation = info[0] * 3.2808399;}
+	else {var elevation = -1.0; }
 
-var range = getprop("/controls/mfd/terrain-map/range");
+	return elevation;
+}
 
-# for (var row = 0; row < 32; row += 2)
-# {
 
-# First get all the points (16x16)
+var terrain_map = {
 
-for (var col = 1; col <= 32; col += 2)
-{
+	init : func {
+		me.UPDATE_INTERVAL = 0.025;
+		me.loopid = 0;
+
+		me.reset();
+	},
+
+	update : func {
+
+		if (getprop("/controls/mfd/extra") == 2) {
+
+			var pos_lon = getprop("/position/longitude-deg");
+			var pos_lat = getprop("/position/latitude-deg");
+			var heading = getprop("orientation/heading-magnetic-deg");
+
+			setprop("/controls/mfd/terrain-map/range", getprop("/instrumentation/ndfull/range"));
+
+			var range = getprop("/controls/mfd/terrain-map/range");
 	
-var proj_lon = pos_lon + (-1 * col * math.sin(DEG2RAD * (heading - 90)) / 60);
-var proj_lat = pos_lat + (-1 * col * math.cos(DEG2RAD * (heading - 90)) / 60);
+			# for (var row = 0; row < 32; row += 2)
+			# {
 
-var point_lon = proj_lon + ((row / 60) * math.sin(DEG2RAD * heading));
-var point_lat = proj_lat + ((row / 60) * math.cos(DEG2RAD * heading));
+				# First get all the points (16x16)
 
-setprop(terrain ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", get_elevation(point_lat, point_lon));
+				for (var col = 1; col <= 32; col += 2)
+				{
 
-}
+					var proj_lon = pos_lon + (-1 * col * math.sin(DEG2RAD * (heading - 90)) / 60);
+					var proj_lat = pos_lat + (-1 * col * math.cos(DEG2RAD * (heading - 90)) / 60);
 
-# Interpolate the rest of the points in each column
+					var point_lon = proj_lon + ((row / 60) * math.sin(DEG2RAD * heading));
+					var point_lat = proj_lat + ((row / 60) * math.cos(DEG2RAD * heading));
 
-for (var col = 2; col <= 31; col += 2)
-{
+					setprop(terrain ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", get_elevation(point_lat, point_lon));
 
-var elev_prev = getprop(terrain ~ "row[" ~ row ~ "]/col[" ~ (col - 1) ~ "]/elevation-ft");
-var elev_next = getprop(terrain ~ "row[" ~ row ~ "]/col[" ~ (col + 1) ~ "]/elevation-ft");
-var elevation = (elev_prev + elev_next) / 2;
+				}
 
-setprop(terrain ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", elevation);
+				# Interpolate the rest of the points in each column
 
-}
+				for (var col = 2; col <= 31; col += 2)
+				{
 
-# }
+					var elev_prev = getprop(terrain ~ "row[" ~ row ~ "]/col[" ~ (col - 1) ~ "]/elevation-ft");
+					var elev_next = getprop(terrain ~ "row[" ~ row ~ "]/col[" ~ (col + 1) ~ "]/elevation-ft");
+					var elevation = (elev_prev + elev_next) / 2;
+
+					setprop(terrain ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", elevation);
+
+				}
+
+			# }
 
 
-### Same calculations but for the fullscreen ND, that means RANGE matters
+			### Same calculations but for the fullscreen ND, that means RANGE matters
 
-# First get all the points (16x16)
+			# First get all the points (16x16)
 
-for (var col = 1; col <= 32; col += 2)
-{
+			for (var col = 1; col <= 32; col += 2)
+			{
 	
-var proj_lon = pos_lon + ((-1 * col * (range/30) * math.sin(DEG2RAD * (heading - 90))) / 60);
-var proj_lat = pos_lat + ((-1 * col * (range/30) * math.cos(DEG2RAD * (heading - 90))) / 60);
+				var proj_lon = pos_lon + ((-1 * col * (range/30) * math.sin(DEG2RAD * (heading - 90))) / 60);
+				var proj_lat = pos_lat + ((-1 * col * (range/30) * math.cos(DEG2RAD * (heading - 90))) / 60);
 
-var point_lon = proj_lon + ((row * (range/30) / 60) * math.sin(DEG2RAD * heading));
-var point_lat = proj_lat + ((row * (range/30) / 60) * math.cos(DEG2RAD * heading));
+				var point_lon = proj_lon + ((row * (range/30) / 60) * math.sin(DEG2RAD * heading));
+				var point_lat = proj_lat + ((row * (range/30) / 60) * math.cos(DEG2RAD * heading));
 
-setprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", get_elevation(point_lat, point_lon));
+				setprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", get_elevation(point_lat, point_lon));
 
-}
+			}
 
-# Interpolate the rest of the points in each column
+			# Interpolate the rest of the points in each column
 
-for (var col = 2; col <= 31; col += 2)
-{
+			for (var col = 2; col <= 31; col += 2)
+			{
 
-var elev_prev = getprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ (col - 1) ~ "]/elevation-ft");
-var elev_next = getprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ (col + 1) ~ "]/elevation-ft");
-var elevation = (elev_prev + elev_next) / 2;
+				var elev_prev = getprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ (col - 1) ~ "]/elevation-ft");
+				var elev_next = getprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ (col + 1) ~ "]/elevation-ft");
+				var elevation = (elev_prev + elev_next) / 2;
 
-setprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", elevation);
+				setprop(terrain_full ~ "row[" ~ row ~ "]/col[" ~ col ~ "]/elevation-ft", elevation);
 
-}
+			}
 
-row += 1;
+			row += 1;
 
-if (row == 32) row = 0;
+			if (row == 32) row = 0;
 
-}
+		}
 
-    },
+    	},
+
         reset : func {
             me.loopid += 1;
             me._loop_(me.loopid);
@@ -119,22 +136,17 @@ if (row == 32) row = 0;
             settimer(func { me._loop_(id); }, me.UPDATE_INTERVAL);
         }
 
-    };
-
-    # Function to get Elevation at latitude and longitude
-
-    var get_elevation = func (lat, lon) {
-
-    var info = geodinfo(lat, lon);
-       if (info != nil) {var elevation = info[0] * 3.2808399;}
-       else {var elevation = -1.0; }
-
-    return elevation;
-    }
+};
 
 
-setlistener("sim/signals/fdm-initialized", func
- {
- terrain_map.init();
- print("Terrain Map ......... Initialized");
- });
+
+
+
+
+setlistener("sim/signals/fdm-initialized", func {
+	terrain_map.init();
+	print("Terrain Map ......... Initialized");
+});
+
+
+
