@@ -62,8 +62,8 @@ var terrain_map = {
 				for (var col = 1; col <= 32; col += 2)
 				{
 
-					var proj_lon = pos_lon + (-1 * col * math.sin(DEG2RAD * (heading - 90)) / 60);
-					var proj_lat = pos_lat + (-1 * col * math.cos(DEG2RAD * (heading - 90)) / 60);
+					var proj_lon = pos_lon + (-1 * (col-16) * math.sin(DEG2RAD * (heading - 90)) / 60);
+					var proj_lat = pos_lat + (-1 * (col-16) * math.cos(DEG2RAD * (heading - 90)) / 60);
 
 					var point_lon = proj_lon + ((row / 60) * math.sin(DEG2RAD * heading));
 					var point_lat = proj_lat + ((row / 60) * math.cos(DEG2RAD * heading));
@@ -95,8 +95,8 @@ var terrain_map = {
 			for (var col = 1; col <= 32; col += 2)
 			{
 	
-				var proj_lon = pos_lon + ((-1 * col * (range/30) * math.sin(DEG2RAD * (heading - 90))) / 60);
-				var proj_lat = pos_lat + ((-1 * col * (range/30) * math.cos(DEG2RAD * (heading - 90))) / 60);
+				var proj_lon = pos_lon + ((-1 * (col-16) * (range/30) * math.sin(DEG2RAD * (heading - 90))) / 60);
+				var proj_lat = pos_lat + ((-1 * (col-16) * (range/30) * math.cos(DEG2RAD * (heading - 90))) / 60);
 
 				var point_lon = proj_lon + ((row * (range/30) / 60) * math.sin(DEG2RAD * heading));
 				var point_lat = proj_lat + ((row * (range/30) / 60) * math.cos(DEG2RAD * heading));
