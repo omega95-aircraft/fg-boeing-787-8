@@ -13,7 +13,7 @@
 			<path>Aircraft/787-8/Models/787-8.xml</path>
             <livery>
                <file type="string">BOE</file>
-            </livery> 
+            </livery>
 			<b787>
 				<heading-bug-pfd-deg type="double">0</heading-bug-pfd-deg>
 				<heading-bug-deg type="double">0</heading-bug-deg>
@@ -36,15 +36,15 @@
 			</efb>
 		</model>
 
-    <hud>
-    	<path n="1">Aircraft/787-8/Models/FlightDeck/HUD2.xml</path>
+        <hud>
+    	        <path n="1">Aircraft/787-8/Models/FlightDeck/HUD2.xml</path>
 	</hud>
 
 	<flaps>
 		<setting>0.000</setting>  <!-- flaps up -->
 		<setting>0.033</setting>  <!-- flaps 1  -->
 		<setting>0.220</setting>  <!-- flaps 5  -->
-		<setting>0.500</setting>  <!-- flaps 15 --> 
+		<setting>0.500</setting>  <!-- flaps 15 -->
 		<setting>0.666</setting>  <!-- flaps 20 -->
 		<setting>0.833</setting>  <!-- flaps 25 -->
 		<setting>1.000</setting>  <!-- flaps 30 -->
@@ -84,7 +84,7 @@
 		<autopilot>
 			<path>Aircraft/787-8/Systems/holding-pattern.xml</path>
 		</autopilot>
-	
+
 		<!-- Fly-By-Wire Auto Stabilize PID Controller -->
 
 		<autopilot>
@@ -94,6 +94,13 @@
 			<name>Spoilers</name>
 			<path>Aircraft/787-8/Systems/b787-spoilers.xml</path>
 		</autopilot>
+        
+		<!-- Wing Flexer -->
+		<wingflexer include="Systems/wingflexer-params.xml"/>
+		<property-rule n="100">
+			<name>wing flexer property rule</name>
+			<path>Aircraft/Generic/wingflexer.xml</path>
+		</property-rule>
 	</systems>
 
 		<chase-distance-m>-100</chase-distance-m>
@@ -125,7 +132,7 @@
      </speaker>
 
    </tcas>
-   
+
    <sysinfo>
 		<max type="int">0</max>
 		<first type="int">0</first>
@@ -138,11 +145,11 @@
 		<precip type="bool">true</precip>
 		<range type="int">30</range>
 	</wxradar>
-	
+
 	<warn>
 		<master-sound type="int">1</master-sound>
 	</warn>
-	
+
 		<nd-settings>
 			<wpt type="bool">true</wpt>
 			<arpt type="bool">true</arpt>
@@ -150,7 +157,7 @@
 			<ndb type="bool">true</ndb>
 			<traffic type="bool">false</traffic>
 		</nd-settings>
-		
+
 		<nd n="0">
            <radar-texture-path type="string">Aircraft/787-8/Models/Instruments/od_ndradar_1.png</radar-texture-path>
           <symbol-texture-path type="string">Aircraft/787-8/Models/Instruments/symbols_2d.png</symbol-texture-path>
@@ -172,7 +179,7 @@
            <x-center type="float">0.499</x-center>
            <y-center type="float">0.182</y-center>
        </nd>
-       
+
        <nd n="1">
            <radar-texture-path type="string">Aircraft/787-8/Models/Instruments/od_ndradar_2.png</radar-texture-path>
           <symbol-texture-path type="string">Aircraft/787-8/Models/Instruments/symbols_2d.png</symbol-texture-path>
@@ -200,7 +207,7 @@
 		<alarms>
 			<master-caution type="bool">false</master-caution>
 		</alarms>
-        
+
 	<view n="0">
 		<name>Pilot View</name>
 		<type>lookfrom</type>
@@ -572,7 +579,7 @@
             <int n="5" alias="sim/model/lights/strobe/state"/>
             <int n="6" alias="controls/lighting/taxi-lights"/>
 
-			<!-- Gears, Engines, Surfaces and Wingflex -->	
+			<!-- Gears, Engines, Surfaces and Wingflex -->
 
             <float n="0" alias="gear/gear[0]/position-norm"/>
             <float n="1" alias="gear/gear[1]/position-norm"/>
@@ -783,7 +790,7 @@
 			</copilot>
 		</switches>
 	</controls>
-	
+
 	<engines>
 		<APU>
 			<rpm type="double">0</rpm>
@@ -873,7 +880,7 @@
 				<category-6 type="int">1</category-6>
 				<category-7 type="int">124</category-7>
 				<category-8 type="int">2</category-8>
-				<category-9 type="int">3</category-9> 
+				<category-9 type="int">3</category-9>
 				<category-10 type="int">6</category-10>
 				<category-13 type="int">7</category-13>
 				<category-14 type="int">0</category-14>
