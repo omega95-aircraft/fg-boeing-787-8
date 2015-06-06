@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8' ?>
 <PropertyList>
-  
+
   <path>787-8.ac</path>
 
 	<!-- Lightmaps -->
@@ -227,7 +227,7 @@
       <ind>1.0</ind>
       <dep>-70.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>-21</x-m>
    <y-m>-0.6</y-m>
@@ -269,7 +269,7 @@
       <ind>1.0</ind>
       <dep>-70.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>-21</x-m>
    <y-m>-0.6</y-m>
@@ -311,7 +311,7 @@
       <ind>1.0</ind>
       <dep>-70.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>-21</x-m>
    <y-m>0.6</y-m>
@@ -322,7 +322,7 @@
    <y>0</y>
    <z>0.13</z>
   </axis>
-</animation> 
+</animation>
 
 <animation>
   <type>rotate</type>
@@ -353,7 +353,7 @@
       <ind>1.0</ind>
       <dep>-70.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>-21</x-m>
    <y-m>0.6</y-m>
@@ -364,7 +364,7 @@
    <y>0</y>
    <z>0.13</z>
   </axis>
-</animation> 
+</animation>
 
 <animation>
   <type>rotate</type>
@@ -387,7 +387,7 @@
       <ind>1.0</ind>
       <dep>0.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>-22.5</x-m>
    <y-m>-0.85</y-m>
@@ -421,7 +421,7 @@
       <ind>1.0</ind>
       <dep>0.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>-22.5</x-m>
    <y-m>-0.8</y-m>
@@ -466,7 +466,7 @@
    <y>0</y>
    <z>0.2</z>
   </axis>
-</animation> 
+</animation>
 
 <animation>
   <type>rotate</type>
@@ -500,7 +500,7 @@
    <y>0</y>
    <z>0.2</z>
   </axis>
-</animation> 
+</animation>
 
 <!-- Right Main Gear -->
 
@@ -669,7 +669,7 @@
   <object-name>eng1fan</object-name>
   <object-name>eng1fanb</object-name>
   <property>engines/engine[0]/n1</property>
-  <factor>10</factor>   
+  <factor>10</factor>
   <center>
    <x-m>-6.63</x-m>
    <y-m>-9.72</y-m>
@@ -681,13 +681,13 @@
    <z>0</z>
   </axis>
 </animation>
-  
+
 <animation>
   <type>spin</type>
   <object-name>eng2fan</object-name>
   <object-name>eng2fanb</object-name>
   <property>engines/engine[1]/n1</property>
-  <factor>10</factor>   
+  <factor>10</factor>
   <center>
    <x-m>-6.63</x-m>
    <y-m>9.72</y-m>
@@ -949,8 +949,8 @@
   <object-name>greennav</object-name>
   <object-name>strobe.right</object-name>
   <object-name>fueldump.r</object-name>
-  <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
-  <factor>0.00001</factor>
+  <property>sim/systems/wingflexer/z-m</property>
+  <factor>10.</factor>
   <offset-deg>0</offset-deg>
   <center>
    <x-m>0</x-m>
@@ -994,8 +994,8 @@
   <object-name>rednav</object-name>
   <object-name>strobe.left</object-name>
   <object-name>fueldump.l</object-name>
-  <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
-  <factor>0.00001</factor>
+  <property>sim/systems/wingflexer/z-m</property>
+  <factor>10.</factor>
   <offset-deg>0</offset-deg>
   <center>
    <x-m>0</x-m>
@@ -1027,8 +1027,8 @@
   <object-name>greennav</object-name>
   <object-name>strobe.right</object-name>
   <object-name>fueldump.r</object-name>
-  <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
-  <factor>0.00001</factor>
+  <property>sim/systems/wingflexer/z-m</property>
+  <factor>10.</factor>
   <offset-deg>0</offset-deg>
   <center>
    <x-m>3.6</x-m>
@@ -1060,8 +1060,8 @@
   <object-name>rednav</object-name>
   <object-name>strobe.left</object-name>
   <object-name>fueldump.l</object-name>
-  <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
-  <factor>0.00001</factor>
+  <property>sim/systems/wingflexer/z-m</property>
+  <factor>10.</factor>
   <offset-deg>0</offset-deg>
   <center>
    <x-m>3.6</x-m>
@@ -1086,8 +1086,8 @@
   <object-name>rchrome</object-name>
   <object-name>greennav</object-name>
   <object-name>strobe.right</object-name>
-  <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
-  <factor>0.00001</factor>
+  <property>sim/systems/wingflexer/z-m</property>
+  <factor>10.</factor>
   <offset-deg>0</offset-deg>
   <center>
    <x-m>7.5</x-m>
@@ -1112,8 +1112,8 @@
   <object-name>lchrome</object-name>
   <object-name>rednav</object-name>
   <object-name>strobe.left</object-name>
-  <property>fdm/jsbsim/aero/coefficient/CLalpha</property>
-  <factor>0.00001</factor>
+  <property>sim/systems/wingflexer/z-m</property>
+  <factor>10.</factor>
   <offset-deg>0</offset-deg>
   <center>
    <x-m>7.5</x-m>
@@ -1131,7 +1131,7 @@
 
 <model>
 <path>Aircraft/787-8/Models/Lights/landing-nose.xml</path>
-<name>noselanding</name>     
+<name>noselanding</name>
 <condition>
  <equals>
 			             <property>gear/gear[0]/position-norm</property>
@@ -1141,14 +1141,14 @@
 
 <offsets>
 <x-m> -21.0353</x-m>
-<y-m>  0.00</y-m> 
-<z-m> -1.9979</z-m>      
+<y-m>  0.00</y-m>
+<z-m> -1.9979</z-m>
 </offsets>
 </model>
 
 <model>
 <path>Aircraft/787-8/Models/Lights/taxi.xml</path>
-<name>taxilight</name>     
+<name>taxilight</name>
 <condition>
  <equals>
 			             <property>gear/gear[0]/position-norm</property>
@@ -1158,29 +1158,29 @@
 
 <offsets>
 <x-m> -21.0353</x-m>
-<y-m>  0.00</y-m> 
-<z-m> -2</z-m>      
+<y-m>  0.00</y-m>
+<z-m> -2</z-m>
 </offsets>
 </model>
 
 
 <model>
 <path>Aircraft/787-8/Models/Lights/landing-port.xml</path>
-<name>LeftWingLandinglight</name>   
+<name>LeftWingLandinglight</name>
 <offsets>
 <x-m>-6.9776</x-m>
 <y-m>-3.3768</y-m>
-<z-m> 0.3411</z-m>      
+<z-m> 0.3411</z-m>
 </offsets>
 </model>
 
 <model>
 <path>Aircraft/787-8/Models/Lights/landing-stbd.xml</path>
-<name>RightWingLandinglight</name>    
+<name>RightWingLandinglight</name>
 <offsets>
 <x-m>-6.9776</x-m>
 <y-m> 3.3768</y-m>
-<z-m> 0.3411</z-m>     
+<z-m> 0.3411</z-m>
 </offsets>
 </model>
 
@@ -1188,21 +1188,21 @@
 
 <model>
 <path>Aircraft/787-8/Models/Lights/beacon.xml</path>
-<name>Beaconlight.top</name>     
+<name>Beaconlight.top</name>
 <offsets>
 <x-m>-11.1355</x-m>
 <y-m>0.00</y-m>
-<z-m>4.4910</z-m>      
+<z-m>4.4910</z-m>
 </offsets>
 </model>
 
 <model>
 <path>Aircraft/787-8/Models/Lights/beacon.xml</path>
-<name>Beaconlight.bottom</name>     
+<name>Beaconlight.bottom</name>
 <offsets>
 <x-m>-3.9956</x-m>
 <y-m> 0.00</y-m>
-<z-m>-1.8719</z-m>      
+<z-m>-1.8719</z-m>
 </offsets>
 </model>
 
@@ -1214,7 +1214,7 @@
   <object-name>lhobaileron</object-name>
   <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
   <factor>20</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
     <x-m>9.1</x-m>
     <y-m>-22.95</y-m>
@@ -1232,7 +1232,7 @@
   <object-name>lhibaileron</object-name>
   <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
   <factor>10</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
     <x-m>3.8</x-m>
     <y-m>-11.215</y-m>
@@ -1263,7 +1263,7 @@
       <dep>43.0</dep>
     </entry>
   </interpolation>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
     <x-m>3.8</x-m>
     <y-m>-11.215</y-m>
@@ -1294,7 +1294,7 @@
       <dep>43.0</dep>
     </entry>
   </interpolation>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
     <x-m>3.8</x-m>
     <y-m>11.215</y-m>
@@ -1330,7 +1330,7 @@
   <object-name>rhibaileron</object-name>
   <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
   <factor>-10</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
     <x-m>3.8</x-m>
     <y-m>11.215</y-m>
@@ -1529,7 +1529,7 @@
   <object-name>rhelevator</object-name>
   <property>controls/flight/elevator-trim</property>
   <factor>15</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
    <x-m>25.111</x-m>
    <y-m>0</y-m>
@@ -1547,7 +1547,7 @@
   <object-name>lhelevator</object-name>
   <property>/fdm/jsbsim/fcs/elevator-fbw-output</property>
   <factor>20</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
    <x-m>27.911</x-m>
    <y-m>-5.5</y-m>
@@ -1565,7 +1565,7 @@
   <object-name>rhelevator</object-name>
   <property>/fdm/jsbsim/fcs/elevator-fbw-output</property>
   <factor>20</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
    <x-m>27.911</x-m>
    <y-m>5.5</y-m>
@@ -1584,7 +1584,7 @@
   <object-name>lightedrudder</object-name>
   <property>/fdm/jsbsim/fcs/rudder-fbw-output</property>
   <factor>-20</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
    <x-m>26.18</x-m>
    <y-m>0.0</y-m>
@@ -1604,7 +1604,7 @@
   <object-name>noselanding</object-name>
   <property>/fdm/jsbsim/fcs/rudder-fbw-output</property>
   <factor>60</factor>
-  <offset-deg>0</offset-deg>   
+  <offset-deg>0</offset-deg>
   <center>
    <x-m>-20.576</x-m>
    <y-m>0.0</y-m>
@@ -1647,7 +1647,7 @@
    <y>5.5</y>
    <z>-0.7</z>
   </axis>
-</animation> 
+</animation>
 
 <animation>
   <type>rotate</type>
@@ -1670,7 +1670,7 @@
       <ind>1.0</ind>
       <dep>3.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>9.1</x-m>
    <y-m>-22.95</y-m>
@@ -1703,7 +1703,7 @@
       <ind>1.0</ind>
       <dep>43.0</dep>
     </entry>
-  </interpolation> 
+  </interpolation>
   <center>
    <x-m>5.07</x-m>
    <y-m>-14.5</y-m>
@@ -1735,7 +1735,7 @@
       <ind>1.0</ind>
       <dep>43.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>3.21</x-m>
    <y-m>-8.7</y-m>
@@ -1798,7 +1798,7 @@
       <ind>1.0</ind>
       <dep>43.0</dep>
     </entry>
-  </interpolation>   
+  </interpolation>
   <center>
    <x-m>5.07</x-m>
    <y-m>14.51</y-m>
@@ -2260,7 +2260,7 @@
 <model>
  <path>Aircraft/787-8/Models/Effects/tire-smoke-nose.xml</path>
  <name>tyre-smoke-n</name>
- <offsets>  
+ <offsets>
   <x-m>-20.56</x-m>
   <y-m>0</y-m>
   <z-m>-3.2</z-m>
@@ -2290,7 +2290,7 @@
 <model>
  <path>Aircraft/787-8/Models/Effects/wet-runway.xml</path>
  <name>tyre-smoke-n</name>
- <offsets>  
+ <offsets>
   <x-m>-20.56</x-m>
   <y-m>0</y-m>
   <z-m>-3.2</z-m>
@@ -2323,11 +2323,11 @@
 
 <model>
 <path>Aircraft/787-8/Models/Lights/greennav.xml</path>
-<name>greennav</name>     
+<name>greennav</name>
 <offsets>
 <x-m>9.6840</x-m>
 <y-m>27.2495</y-m>
-<z-m>3.4275</z-m>      
+<z-m>3.4275</z-m>
 </offsets>
 </model>
 
@@ -2335,11 +2335,11 @@
 
 <model>
 <path>Aircraft/787-8/Models/Lights/rednav.xml</path>
-<name>rednav</name>     
+<name>rednav</name>
 <offsets>
 <x-m>9.6840</x-m>
 <y-m>-27.2495</y-m>
-<z-m>3.4275</z-m>    
+<z-m>3.4275</z-m>
 </offsets>
 </model>
 
@@ -2347,11 +2347,11 @@
 
 <model>
 <path>Aircraft/787-8/Models/Lights/strobe.xml</path>
-<name>strobe.left</name>     
+<name>strobe.left</name>
 <offsets>
 <x-m>9.6840</x-m>
 <y-m>-27.4363</y-m>
-<z-m>3.4601</z-m>      
+<z-m>3.4601</z-m>
 </offsets>
 </model>
 
@@ -2359,11 +2359,11 @@
 
 <model>
 <path>Aircraft/787-8/Models/Effects/strobe.xml</path>
-<name>strobe.right</name>     
+<name>strobe.right</name>
 <offsets>
 <x-m>9.6840</x-m>
 <y-m>27.4363</y-m>
-<z-m>3.4601</z-m>  
+<z-m>3.4601</z-m>
 </offsets>
 </model>
 
@@ -2371,7 +2371,7 @@
 
 <model>
 <path>Aircraft/787-8/Models/Effects/fuel-dump.xml</path>
-<name>fueldump.l</name>  
+<name>fueldump.l</name>
 <condition>
 	<and>
 		<equals>
@@ -2385,17 +2385,17 @@
 			<value>1</value>
 		</equals>
 	</and>
-</condition>   
+</condition>
 <offsets>
 <x-m>9.3450</x-m>
 <y-m>-20.980</y-m>
-<z-m>2.3696</z-m>  
+<z-m>2.3696</z-m>
 </offsets>
 </model>
 
 <model>
 <path>Aircraft/787-8/Models/Effects/fuel-dump.xml</path>
-<name>fueldump.r</name>  
+<name>fueldump.r</name>
 <condition>
 	<and>
 		<equals>
@@ -2409,7 +2409,7 @@
 			<value>1</value>
 		</equals>
 	</and>
-</condition>   
+</condition>
 <offsets>
 <x-m>9.3450</x-m>
 <y-m>20.980</y-m>
@@ -2947,7 +2947,7 @@
 			<y2-m>0.1917</y2-m>
 			<z2-m>1.7049</z2-m>
 		</axis>
-    </animation>	
+    </animation>
 
 <!-- Ground Stuff
 

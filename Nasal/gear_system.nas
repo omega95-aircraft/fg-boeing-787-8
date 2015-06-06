@@ -13,28 +13,29 @@ var g_tree = "/systems/gears/";
             setprop("/fdm/jsbsim/gear/unit[1]/z-position", -153.63242);
             setprop("/fdm/jsbsim/gear/unit[2]/z-position", -153.63242);
             
-            setprop("/fdm/jsbsim/gear/unit[0]/dynamic_friction_coeff", 0.5);
-			setprop("/fdm/jsbsim/gear/unit[0]/static_friction_coeff", 0.9);
-			setprop("/fdm/jsbsim/gear/unit[0]/rolling_friction_coeff", 0.02);
-			setprop("/fdm/jsbsim/gear/unit[0]/side_friction_coeff", 0.5);
-			setprop("/fdm/jsbsim/gear/unit[0]/pos-norm", 1);
-			setprop("/controls/gear-failures/gear[0]/break", 0);
-			setprop("/controls/gear-failures/gear[0]/burst", 0);
-			
-			setprop("/fdm/jsbsim/gear/unit[1]/dynamic_friction_coeff", 0.5);
-			setprop("/fdm/jsbsim/gear/unit[1]/static_friction_coeff", 0.9);
-			setprop("/fdm/jsbsim/gear/unit[1]/rolling_friction_coeff", 0.02);
-			setprop("/fdm/jsbsim/gear/unit[1]/side_friction_coeff", 0.5);
-			setprop("/fdm/jsbsim/gear/unit[1]/pos-norm", 1);
-			setprop("/controls/gear-failures/gear[1]/break", 0);
-			setprop("/controls/gear-failures/gear[1]/burst", 0);
-			
-			setprop("/fdm/jsbsim/gear/unit[2]/dynamic_friction_coeff", 0.5);
-			setprop("/fdm/jsbsim/gear/unit[2]/static_friction_coeff", 0.9);
-			setprop("/fdm/jsbsim/gear/unit[2]/rolling_friction_coeff", 0.02);
-			setprop("/fdm/jsbsim/gear/unit[2]/side_friction_coeff", 0.5);
-			setprop("/fdm/jsbsim/gear/unit[2]/pos-norm", 1);
-			setprop("/controls/gear-failures/gear[2]/break", 0);
+            # 787 nose gear has no brakes
+            setprop("/fdm/jsbsim/gear/unit[0]/dynamic_friction_coeff", 0.005);
+	    setprop("/fdm/jsbsim/gear/unit[0]/static_friction_coeff", 0.0062);
+	    setprop("/fdm/jsbsim/gear/unit[0]/rolling_friction_coeff", 0.02);
+	    setprop("/fdm/jsbsim/gear/unit[0]/side_friction_coeff", 0.5);
+	    setprop("/fdm/jsbsim/gear/unit[0]/pos-norm", 1);
+	    setprop("/controls/gear-failures/gear[0]/break", 0);
+	    setprop("/controls/gear-failures/gear[0]/burst", 0);
+	    
+	    setprop("/fdm/jsbsim/gear/unit[1]/dynamic_friction_coeff", 0.5);
+	    setprop("/fdm/jsbsim/gear/unit[1]/static_friction_coeff", 0.62);
+	    setprop("/fdm/jsbsim/gear/unit[1]/rolling_friction_coeff", 0.02);
+	    setprop("/fdm/jsbsim/gear/unit[1]/side_friction_coeff", 0.5);
+	    setprop("/fdm/jsbsim/gear/unit[1]/pos-norm", 1);
+	    setprop("/controls/gear-failures/gear[1]/break", 0);
+	    setprop("/controls/gear-failures/gear[1]/burst", 0);
+	    
+	    setprop("/fdm/jsbsim/gear/unit[2]/dynamic_friction_coeff", 0.5);
+	    setprop("/fdm/jsbsim/gear/unit[2]/static_friction_coeff", 0.62);
+	    setprop("/fdm/jsbsim/gear/unit[2]/rolling_friction_coeff", 0.02);
+	    setprop("/fdm/jsbsim/gear/unit[2]/side_friction_coeff", 0.5);
+	    setprop("/fdm/jsbsim/gear/unit[2]/pos-norm", 1);
+	    setprop("/controls/gear-failures/gear[2]/break", 0);
 			setprop("/controls/gear-failures/gear[2]/burst", 0);
 
             me.reset();
@@ -113,12 +114,13 @@ var g_tree = "/systems/gears/";
     },
     	burst : func(gear_unit) {
     	
-    	# This gear has no tires now! So I guess it creates a LOT of friction, except as there're no friction restrictors now (the wheels), the side friction is 0
+    	# This gear has no tires now! Assuming a medium friction coefficient 
+    	# (e.g. steel on concrete)
     	
-    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/dynamic_friction_coeff", 1);
-    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/static_friction_coeff", 1);
-    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/rolling_friction_coeff", 1);
-    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/side_friction_coeff", 0);
+    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/dynamic_friction_coeff", 0.4);
+    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/static_friction_coeff", 0.5);
+    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/rolling_friction_coeff", 0.4);
+    	setprop("/fdm/jsbsim/gear/unit[" ~ gear_unit ~ "]/side_friction_coeff", 0.4);
     	
     },
     
