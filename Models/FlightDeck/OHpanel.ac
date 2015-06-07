@@ -3791,7 +3791,7 @@ refs 4
 3 0.242459 0.752009
 kids 0
 OBJECT poly
-name "<factor>0.1</factor>unanimate_on"
+name "unanimate_on"
 loc 0.0127623 -0.129393 -0.293931
 data 8
 Mesh.336
