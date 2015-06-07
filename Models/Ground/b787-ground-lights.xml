@@ -4,6 +4,19 @@
 
 	<path>b787-ground-lights.ac</path>
 
+        <animation>
+        <!-- opaque objects -->
+        <!-- transparent objects -->
+        <object-name>landing-lights</object-name>
+        <type>select</type>
+        <condition>
+        <not>
+            <property>/sim/rendering/rembrandt/enabled</property>
+        </not>
+        </condition>
+    </animation>
+
+    
 <animation>
 	<type>translate</type>
 	<object-name>landing-lights</object-name>
@@ -64,9 +77,9 @@
     	<type>material</type>
 		<object-name>landing-lights</object-name>
     	<emission>
-      		<red>   1 </red>
-      		<green> 1 </green>
-      		<blue>  1 </blue>
+      		<red>   0.42 </red>
+      		<green> 0.42 </green>
+      		<blue>  0.42 </blue>
 			<factor-prop>/controls/lighting/landing-ground</factor-prop>
     	</emission>
   	</animation>
