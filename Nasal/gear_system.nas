@@ -14,29 +14,29 @@ var g_tree = "/systems/gears/";
             setprop("/fdm/jsbsim/gear/unit[2]/z-position", -153.63242);
             
             # 787 nose gear has no brakes
-            setprop("/fdm/jsbsim/gear/unit[0]/dynamic_friction_coeff", 0.005);
-	    setprop("/fdm/jsbsim/gear/unit[0]/static_friction_coeff", 0.0062);
-	    setprop("/fdm/jsbsim/gear/unit[0]/rolling_friction_coeff", 0.02);
-	    setprop("/fdm/jsbsim/gear/unit[0]/side_friction_coeff", 0.5);
-	    setprop("/fdm/jsbsim/gear/unit[0]/pos-norm", 1);
-	    setprop("/controls/gear-failures/gear[0]/break", 0);
-	    setprop("/controls/gear-failures/gear[0]/burst", 0);
+            setprop("/fdm/jsbsim/gear/unit[0]/dynamic_friction_coeff", 0.5);
+            setprop("/fdm/jsbsim/gear/unit[0]/static_friction_coeff", 0.62);
+            setprop("/fdm/jsbsim/gear/unit[0]/rolling_friction_coeff", 0.02);
+            setprop("/fdm/jsbsim/gear/unit[0]/side_friction_coeff", 0.5);
+            setprop("/fdm/jsbsim/gear/unit[0]/pos-norm", 1);
+            setprop("/controls/gear-failures/gear[0]/break", 0);
+            setprop("/controls/gear-failures/gear[0]/burst", 0);
 	    
-	    setprop("/fdm/jsbsim/gear/unit[1]/dynamic_friction_coeff", 0.5);
-	    setprop("/fdm/jsbsim/gear/unit[1]/static_friction_coeff", 0.62);
-	    setprop("/fdm/jsbsim/gear/unit[1]/rolling_friction_coeff", 0.02);
-	    setprop("/fdm/jsbsim/gear/unit[1]/side_friction_coeff", 0.5);
-	    setprop("/fdm/jsbsim/gear/unit[1]/pos-norm", 1);
-	    setprop("/controls/gear-failures/gear[1]/break", 0);
-	    setprop("/controls/gear-failures/gear[1]/burst", 0);
-	    
-	    setprop("/fdm/jsbsim/gear/unit[2]/dynamic_friction_coeff", 0.5);
-	    setprop("/fdm/jsbsim/gear/unit[2]/static_friction_coeff", 0.62);
-	    setprop("/fdm/jsbsim/gear/unit[2]/rolling_friction_coeff", 0.02);
-	    setprop("/fdm/jsbsim/gear/unit[2]/side_friction_coeff", 0.5);
-	    setprop("/fdm/jsbsim/gear/unit[2]/pos-norm", 1);
-	    setprop("/controls/gear-failures/gear[2]/break", 0);
-			setprop("/controls/gear-failures/gear[2]/burst", 0);
+            setprop("/fdm/jsbsim/gear/unit[1]/dynamic_friction_coeff", 0.5);
+            setprop("/fdm/jsbsim/gear/unit[1]/static_friction_coeff", 0.62);
+            setprop("/fdm/jsbsim/gear/unit[1]/rolling_friction_coeff", 0.02);
+            setprop("/fdm/jsbsim/gear/unit[1]/side_friction_coeff", 0.5);
+            setprop("/fdm/jsbsim/gear/unit[1]/pos-norm", 1);
+            setprop("/controls/gear-failures/gear[1]/break", 0);
+            setprop("/controls/gear-failures/gear[1]/burst", 0);
+            
+            setprop("/fdm/jsbsim/gear/unit[2]/dynamic_friction_coeff", 0.5);
+            setprop("/fdm/jsbsim/gear/unit[2]/static_friction_coeff", 0.62);
+            setprop("/fdm/jsbsim/gear/unit[2]/rolling_friction_coeff", 0.02);
+            setprop("/fdm/jsbsim/gear/unit[2]/side_friction_coeff", 0.5);
+            setprop("/fdm/jsbsim/gear/unit[2]/pos-norm", 1);
+            setprop("/controls/gear-failures/gear[2]/break", 0);
+            setprop("/controls/gear-failures/gear[2]/burst", 0);
 
             me.reset();
     },
