@@ -304,3 +304,21 @@ setlistener("controls/gear/gear-down", func
   props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
   }
  });
+
+# WORKAROUND for excessive initial wingflex flapping
+# multiplies the damping parameter D by 10 and resets it after 'init_delay' seconds
+# contributed by Andreas (D-AZ)
+# I should really figure out what's causing this funny behaviour in wingflexer in the first place 
+
+init_delay = 14.0;
+D_param_0 = getprop('/sim/systems/wingflexer/params/D');
+var D_param_1 = 10 * D_param_0;
+setprop('/sim/systems/wingflexer/params/D',D_param_1);
+set_wingflex_param = func{
+    setprop('/sim/systems/wingflexer/params/D',D_param_0);
+    logprint(3,'wingflex parameter D set to');
+    logprint(3,D_param_0);
+}
+var wingflex_timer = maketimer(init_delay, func{set_wingflex_param();});
+wingflex_timer.singleShot = 1;
+wingflex_timer.start();
