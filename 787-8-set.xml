@@ -9,6 +9,13 @@
         <authors>
           Omega95, Redneck, Jentron, Scotth1, Bicyus, Awexome, Hooray, Zan, Nicky, Thorsten, Oliver T, Joshua W, Makoto Sakaguchi, Thomas Albrecht (radi). See Authors.txt for details.
         </authors>
+        <aircraft-version>3.6</aircraft-version>
+        <rating>
+            <FDM type="int">4</FDM>
+            <systems type="int">4</systems>
+            <model type="int">4</model>
+            <cockpit type="int">4</cockpit>
+        </rating>
 		<engine>trent_1000</engine>
 
 		<model>
