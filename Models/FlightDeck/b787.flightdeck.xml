@@ -2,7 +2,70 @@
 
 <PropertyList>
 
-	<path>flightdeck.ac</path>
+  <path>flightdeck.ac</path>
+
+  <!-- ALS interior shadow effect -->
+  <effect>
+    <inherits-from>../Effects/interior/787-8-interior</inherits-from>
+    <object-name>ac</object-name>
+    <object-name>base</object-name>
+    <object-name>box</object-name>
+    <object-name>box.004</object-name>
+    <object-name>box.005</object-name>
+    <object-name>box.006</object-name>
+    <object-name>box.007</object-name>
+    <object-name>box.008</object-name>
+    <object-name>box.009</object-name>
+    <object-name>box.010</object-name>
+    <object-name>box.011</object-name>
+    <object-name>box.014</object-name>
+    <object-name>box.019</object-name>
+    <object-name>box.020</object-name>
+    <object-name>cockpitshell</object-name>
+    <object-name>cockpit.04</object-name>
+    <object-name>carpet</object-name>
+    <object-name>door</object-name>
+    <object-name>files</object-name>
+    <object-name>fireextg</object-name>
+    <object-name>flaps.lever</object-name>
+    <object-name>leather</object-name>
+    <object-name>leather.001</object-name>
+    <object-name>leather.002</object-name>
+    <object-name>leather.003</object-name>
+    <object-name>leatheredges</object-name>
+    <object-name>Mesh_1</object-name>
+    <object-name>mainpanel1</object-name>
+    <object-name>mainpanel2</object-name>
+    <object-name>mainpanelswitches</object-name>
+    <object-name>modecontrolswitches</object-name>
+    <object-name>ohp1</object-name>
+    <object-name>pedestal</object-name>
+    <object-name>pedestalswitches</object-name>
+    <object-name>pedalbase</object-name>
+    <object-name>park.brake</object-name>
+    <object-name>Panel.center_0.001</object-name>
+    <object-name>Panel.center_0</object-name>
+    <object-name>pedal.right</object-name>
+    <object-name>pedal.left</object-name>
+    <object-name>phone</object-name>
+    <object-name>seat</object-name>
+    <object-name>seat.001</object-name>
+    <object-name>shell2</object-name>
+    <object-name>shell2.001</object-name>
+    <object-name>shell3</object-name>
+    <object-name>shell3.001</object-name>
+    <object-name>shell3.002</object-name>
+    <object-name>spdbrk.lever</object-name>
+    <object-name>tiller.l</object-name>
+    <object-name>tiller.r</object-name>
+    <object-name>throttle.l</object-name>
+    <object-name>throttle.r</object-name>
+    <object-name>tillerbase</object-name>
+    <object-name>Yoke</object-name>
+    <object-name>yoke.left.roll</object-name>
+    <object-name>yoke.right.roll</object-name>
+    <object-name>yokepitch</object-name>
+  </effect>
 
 <!-- Cockpit Lighting -->
 
@@ -134,13 +197,14 @@
 
 	<model>
 		<path>Aircraft/787-8/Models/FlightDeck/OHpanel.xml</path>
-		<offsets>
+        <offsets>
 			<x-m>-23.1092</x-m>
 			<y-m>0</y-m>
 			<z-m>2.5412</z-m>
 			<pitch-deg>70.5</pitch-deg>
 		</offsets>
 	</model>
+
 
 	<!-- Compass -->
 

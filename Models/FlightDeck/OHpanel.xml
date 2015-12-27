@@ -4,6 +4,21 @@
 
 <path>OHpanel.ac</path>
 
+    <!-- As of Dec 2015, interior shadow effect does not work on submodels with 
+         offsets, see
+         http://wiki.flightgear.org/ALS_technical_notes#Interior_shadows_and_tinted_glass_effect
+         I tried to workaround by translate/rotate OHpanel.ac in blender and 
+         remove the offset in b787.flightdeck.xml, but then the panel no 
+         longer appears at the correct position. Therefore, the effect is 
+         diabled for OHpanel.
+    <effect>
+        <inherits-from>../Effects/interior/787-8-interior</inherits-from>
+        <object-name>ohbase</object-name>
+        <object-name>panels</object-name>
+    </effect>
+    -->
+
+
  	<animation>
     	<type>material</type>
 		<object-name>lightup</object-name>
