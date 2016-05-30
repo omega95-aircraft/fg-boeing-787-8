@@ -305,20 +305,26 @@ setlistener("controls/gear/gear-down", func
   }
  });
 
-# WORKAROUND for excessive initial wingflex flapping
-# multiplies the damping parameter D by 10 and resets it after 'init_delay' seconds
-# contributed by Andreas (D-AZ)
-# I should really figure out what's causing this funny behaviour in wingflexer in the first place 
-
-init_delay = 14.0;
-D_param_0 = getprop('/sim/systems/wingflexer/params/D');
+# wingflexer bug workaround (written by Andreas Z)
+var D_param_0 = getprop('/sim/systems/wingflexer/params/D');
 var D_param_1 = 10 * D_param_0;
-setprop('/sim/systems/wingflexer/params/D',D_param_1);
-set_wingflex_param = func{
-    setprop('/sim/systems/wingflexer/params/D',D_param_0);
-    logprint(3,'wingflex parameter D set to');
-    logprint(3,D_param_0);
+
+var disable_wingflexer = func{
+    setprop('/sim/systems/wingflexer/params/D',D_param_1);
+    var simtime = getprop('/sim/time/elapsed-sec');
+    logprint(3,'disable_wingflexer: Set parameter D to '~D_param_1~' at '~simtime~' sec.');
 }
-var wingflex_timer = maketimer(init_delay, func{set_wingflex_param();});
-wingflex_timer.singleShot = 1;
-wingflex_timer.start();
+var enable_wingflexer = func{
+    setprop('/sim/systems/wingflexer/params/D',D_param_0);
+    var simtime = getprop('/sim/time/elapsed-sec');
+    logprint(3,'enable_wingflexer: Set parameter D to '~D_param_0~' at '~simtime~' sec.');
+}
+disable_wingflexer();
+setlistener("/sim/signals/fdm-initialized",func{
+  var todo_when_sim_is_ready = func{
+      enable_wingflexer();
+  }
+  var sim_ready_tmr = maketimer( 14.0, todo_when_sim_is_ready);
+  sim_ready_tmr.singleShot = 1;
+  sim_ready_tmr.start();
+},0,0);
