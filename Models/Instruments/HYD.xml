@@ -24,7 +24,7 @@
 	<object-name>e1.warn</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys0-eng</property>
+				<property>controls/pneumatic/temp/hyd-sys0-eng</property>
 				<value>70</value>
 			</greater-than-equals>
 	</condition>
@@ -34,7 +34,7 @@
 	<object-name>e2.warn</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys1-eng</property>
+				<property>controls/pneumatic/temp/hyd-sys1-eng</property>
 				<value>70</value>
 			</greater-than-equals>
 	</condition>
@@ -44,7 +44,7 @@
 	<object-name>c1.warn</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys2-elec</property>
+				<property>controls/pneumatic/temp/hyd-sys2-elec</property>
 				<value>70</value>
 			</greater-than-equals>
 	</condition>
@@ -54,7 +54,7 @@
 	<object-name>c2.warn</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys3-elec</property>
+				<property>controls/pneumatic/temp/hyd-sys3-elec</property>
 				<value>70</value>
 			</greater-than-equals>
 	</condition>
@@ -67,7 +67,7 @@
 	<object-name>e1.fail</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys0-eng</property>
+				<property>controls/pneumatic/temp/hyd-sys0-eng</property>
 				<value>120</value>
 			</greater-than-equals>
 	</condition>
@@ -77,7 +77,7 @@
 	<object-name>e2.fail</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys1-eng</property>
+				<property>controls/pneumatic/temp/hyd-sys1-eng</property>
 				<value>120</value>
 			</greater-than-equals>
 	</condition>
@@ -87,7 +87,7 @@
 	<object-name>c1.fail</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys2-elec</property>
+				<property>controls/pneumatic/temp/hyd-sys2-elec</property>
 				<value>120</value>
 			</greater-than-equals>
 	</condition>
@@ -97,7 +97,7 @@
 	<object-name>c2.fail</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/controls/pneumatic/temp/hyd-sys3-elec</property>
+				<property>controls/pneumatic/temp/hyd-sys3-elec</property>
 				<value>120</value>
 			</greater-than-equals>
 	</condition>
@@ -110,7 +110,7 @@
 	<object-name>e1.run</object-name>
 	<condition>
 			<equals>
-				<property>/controls/hydraulic/system/engine-pump</property>
+				<property>controls/hydraulic/system/engine-pump</property>
 				<value>1</value>
 			</equals>
 	</condition>
@@ -120,7 +120,7 @@
 	<object-name>e2.run</object-name>
 	<condition>
 			<equals>
-				<property>/controls/hydraulic/system[1]/engine-pump</property>
+				<property>controls/hydraulic/system[1]/engine-pump</property>
 				<value>1</value>
 			</equals>
 	</condition>
@@ -131,7 +131,7 @@
 	<object-name>e.run</object-name>
 	<condition>
 			<equals>
-				<property>/controls/hydraulic/systeme</property>
+				<property>controls/hydraulic/systeme</property>
 				<value>1</value>
 			</equals>
 	</condition>
@@ -142,7 +142,7 @@
 	<object-name>c1.run</object-name>
 	<condition>
 			<equals>
-				<property>/controls/hydraulic/system[2]/electric-pump</property>
+				<property>controls/hydraulic/system[2]/electric-pump</property>
 				<value>1</value>
 			</equals>
 	</condition>
@@ -153,7 +153,7 @@
 	<object-name>c2.run</object-name>
 	<condition>
 			<equals>
-				<property>/controls/hydraulic/system[3]/electric-pump</property>
+				<property>controls/hydraulic/system[3]/electric-pump</property>
 				<value>1</value>
 			</equals>
 	</condition>
@@ -164,7 +164,7 @@
 	<object-name>c.run</object-name>
 	<condition>
 			<equals>
-				<property>/controls/hydraulic/systemc</property>
+				<property>controls/hydraulic/systemc</property>
 				<value>1</value>
 			</equals>
 	</condition>
@@ -177,7 +177,7 @@
 	<object-name>e1.pwr</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/engines/engine/n1</property>
+				<property>engines/engine/n1</property>
 				<value>20</value>
 			</greater-than-equals>
 	</condition>
@@ -188,7 +188,7 @@
 	<object-name>e2.pwr</object-name>
 	<condition>
 			<greater-than-equals>
-				<property>/engines/engine[1]/n1</property>
+				<property>engines/engine[1]/n1</property>
 				<value>20</value>
 			</greater-than-equals>
 	</condition>
@@ -204,7 +204,7 @@
 	<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[0]/setting</property>
+		<property>controls/hydraulic/system[0]/setting</property>
 		<value>0</value>
 		<value>2</value>
 	</binding>
@@ -219,7 +219,7 @@
 	<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[1]/setting</property>
+		<property>controls/hydraulic/system[1]/setting</property>
 		<value>0</value>
 		<value>2</value>
 	</binding>
@@ -234,7 +234,7 @@
 	<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[2]/setting</property>
+		<property>controls/hydraulic/system[2]/setting</property>
 		<value>0</value>
 		<value>2</value>
 	</binding>
@@ -249,7 +249,7 @@
 	<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[3]/setting</property>
+		<property>controls/hydraulic/system[3]/setting</property>
 		<value>0</value>
 		<value>2</value>
 	</binding>

@@ -409,7 +409,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>flaps.lever</object-name>
-		<property>/controls/flight/flaps</property>
+		<property>controls/flight/flaps</property>
 		<factor>70</factor>
 		<axis>
 			<x>0</x>
@@ -428,7 +428,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>spdbrk.lever</object-name>
-		<property>/controls/flight/speedbrake</property>
+		<property>controls/flight/speedbrake</property>
 		<factor>60</factor>
 		<center>
 			<x-m>-23.3103</x-m>
@@ -562,7 +562,7 @@
 		<object-name>separatormfd2</object-name>
 		<condition>
 			<equals>
-				<property>/instrumentation/ndfull/active</property>
+				<property>instrumentation/ndfull/active</property>
 				<value>0</value>
 			</equals>
 		</condition>
@@ -2459,7 +2459,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>gearlever</object-name>
-		<property>/controls/gear/gear-down</property>
+		<property>controls/gear/gear-down</property>
 		<factor>60</factor>
 		<center>
 			<x-m>-23.767</x-m>
@@ -2480,7 +2480,7 @@
 			<repeatable>false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>/controls/gear/gear-down</property>
+				<property>controls/gear/gear-down</property>
 			</binding>
 		</action>
 	</animation>
@@ -2542,7 +2542,7 @@
 		<object-name>APiasind</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/speed-mode</property>
+				<property>autopilot/panel/speed-mode</property>
 				<value>ias</value>
 			</equals>
 		</condition>
@@ -2556,7 +2556,7 @@
 		<object-name>APmachind</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/speed-mode</property>
+				<property>autopilot/panel/speed-mode</property>
 				<value>mach</value>
 			</equals>
 		</condition>
@@ -2814,7 +2814,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/flightdirector</property>
+                <property>autopilot/flightdirector</property>
             </binding>
         </action>
     </animation>
@@ -2827,7 +2827,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/panel/master</property>
+                <property>autopilot/panel/master</property>
             </binding>
         </action>
     </animation>
@@ -2840,7 +2840,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/panel/auto-throttle</property>
+                <property>autopilot/panel/auto-throttle</property>
             </binding>
         </action>
     </animation>
@@ -2852,7 +2852,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/speed-mode</property>
+                <property>autopilot/panel/speed-mode</property>
 				<value>ias</value>
 				<value>mach</value>
             </binding>
@@ -2866,7 +2866,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/panel/larm</property>
+                <property>autopilot/panel/larm</property>
             </binding>
         </action>
     </animation>
@@ -2878,7 +2878,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/panel/rarm</property>
+                <property>autopilot/panel/rarm</property>
             </binding>
         </action>
     </animation>
@@ -2891,7 +2891,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/hdg</property>
+                <property>autopilot/panel/hdg</property>
 				<value>lnav</value>
 				<value></value>
             </binding>
@@ -2906,7 +2906,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
+                <property>autopilot/panel/alt</property>
 				<value>vnav</value>
 				<value></value>
             </binding>
@@ -2922,7 +2922,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/hdg</property>
+                <property>autopilot/panel/hdg</property>
 				<value>hdg</value>
 				<value></value>
             </binding>
@@ -2937,7 +2937,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
+                <property>autopilot/panel/alt</property>
 				<value>vs</value>
 				<value></value>
             </binding>
@@ -2952,7 +2952,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
+                <property>autopilot/panel/alt</property>
 				<value>alt</value>
 				<value></value>
             </binding>
@@ -2999,7 +2999,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/hdg</property>
+                <property>autopilot/panel/hdg</property>
 				<value>loc</value>
 				<value></value>
             </binding>
@@ -3014,7 +3014,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
+                <property>autopilot/panel/alt</property>
 				<value>app</value>
 				<value></value>
             </binding>
@@ -3025,7 +3025,7 @@
 		<type>select</type>
 		<object-name>AP.toggle</object-name>
 		<condition>
-			<property>/autopilot/panel/master</property>
+			<property>autopilot/panel/master</property>
 		</condition>
 	</animation>
 
@@ -3034,7 +3034,7 @@
 		<object-name>APP.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
+				<property>autopilot/panel/alt</property>
 				<value>app</value>
 			</equals>
 		</condition>
@@ -3045,7 +3045,7 @@
 		<object-name>LOC.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/hdg</property>
+				<property>autopilot/panel/hdg</property>
 				<value>loc</value>
 			</equals>
 		</condition>
@@ -3056,7 +3056,7 @@
 		<object-name>ALT.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt-ind</property>
+				<property>autopilot/panel/alt-ind</property>
 				<value>hold</value>
 			</equals>
 		</condition>
@@ -3067,7 +3067,7 @@
 		<object-name>FLCH.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt-ind</property>
+				<property>autopilot/panel/alt-ind</property>
 				<value>flch</value>
 			</equals>
 		</condition>
@@ -3078,7 +3078,7 @@
 		<object-name>HDG.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/hdg</property>
+				<property>autopilot/panel/hdg</property>
 				<value>hdg</value>
 			</equals>
 		</condition>
@@ -3089,7 +3089,7 @@
 		<object-name>VS.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
+				<property>autopilot/panel/alt</property>
 				<value>vs</value>
 			</equals>
 		</condition>
@@ -3100,7 +3100,7 @@
 		<object-name>LNAV.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/hdg</property>
+				<property>autopilot/panel/hdg</property>
 				<value>lnav</value>
 			</equals>
 		</condition>
@@ -3111,7 +3111,7 @@
 		<object-name>VNAV.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
+				<property>autopilot/panel/alt</property>
 				<value>vnav</value>
 			</equals>
 		</condition>
@@ -3121,7 +3121,7 @@
 		<type>select</type>
 		<object-name>AT.toggle</object-name>
 		<condition>
-			<property>/autopilot/panel/auto-throttle</property>
+			<property>autopilot/panel/auto-throttle</property>
 		</condition>
 	</animation>
 
@@ -3136,7 +3136,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/target-altitude-ft</property>
+				<property>autopilot/settings/target-altitude-ft</property>
 				<step>500</step>
 				<max>50000</max>
 			</binding>
@@ -3147,7 +3147,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/target-altitude-ft</property>
+				<property>autopilot/settings/target-altitude-ft</property>
 				<step>-500</step>
 				<min>0</min>
 			</binding>
@@ -3165,7 +3165,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/vertical-speed-fpm</property>
+				<property>autopilot/settings/vertical-speed-fpm</property>
 				<step>100</step>
 				<max>3000</max>
 			</binding>
@@ -3176,7 +3176,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/vertical-speed-fpm</property>
+				<property>autopilot/settings/vertical-speed-fpm</property>
 				<step>-100</step>
 				<min>-3000</min>
 			</binding>
@@ -3194,7 +3194,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/heading-bug-deg</property>
+				<property>autopilot/settings/heading-bug-deg</property>
 				<wrap type="bool">true</wrap>
         <step>1</step>
         <min>0</min>
@@ -3207,7 +3207,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/heading-bug-deg</property>
+				<property>autopilot/settings/heading-bug-deg</property>
 				<wrap type="bool">true</wrap>
         <step>-1</step>
         <min>0</min>
@@ -3233,7 +3233,7 @@
 						<value>ias</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/target-speed-kt</property>
+				<property>autopilot/settings/target-speed-kt</property>
 				<step>1</step>
 				<max>350</max>
 			</binding>
@@ -3245,7 +3245,7 @@
 						<value>mach</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/mach-speed</property>
+				<property>autopilot/settings/mach-speed</property>
 				<step>0.01</step>
 				<max>1</max>
 			</binding>
@@ -3262,7 +3262,7 @@
 						<value>ias</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/target-speed-kt</property>
+				<property>autopilot/settings/target-speed-kt</property>
 				<step>-1</step>
 				<min>0</min>
 			</binding>
@@ -3274,7 +3274,7 @@
 						<value>mach</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/mach-speed</property>
+				<property>autopilot/settings/mach-speed</property>
 				<step>-0.01</step>
 				<min>0</min>
 			</binding>
@@ -3284,7 +3284,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>FD.toggle</object-name>
-		<property>/autopilot/flightdirector</property>
+		<property>autopilot/flightdirector</property>
 		<factor>45</factor>
 		<axis>
 			<x>0</x>
@@ -3303,7 +3303,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>larm</object-name>
-		<property>/autopilot/panel/larm</property>
+		<property>autopilot/panel/larm</property>
 		<factor>20</factor>
 		<axis>
 			<x>0</x>
@@ -3319,7 +3319,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>rarm</object-name>
-		<property>/autopilot/panel/rarm</property>
+		<property>autopilot/panel/rarm</property>
 		<factor>20</factor>
 		<axis>
 			<x>0</x>
@@ -3337,7 +3337,7 @@
 		<type>select</type>
 		<object-name>masterwarn</object-name>
 		<condition>
-			<property>/instrumentation/warn/master</property>
+			<property>instrumentation/warn/master</property>
 		</condition>
 	</animation>
 
@@ -3345,7 +3345,7 @@
 		<type>select</type>
 		<object-name>caution</object-name>
 		<condition>
-			<property>/instrumentation/warn/caution</property>
+			<property>instrumentation/warn/caution</property>
 		</condition>
 	</animation>
 	
@@ -3356,7 +3356,7 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/instrumentation/warn/master-sound</property>
+                <property>instrumentation/warn/master-sound</property>
                 <value>0</value>
             </binding>
         </action>
@@ -3374,7 +3374,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/instrumentation/wxradar/tilt</property>
+				<property>instrumentation/wxradar/tilt</property>
 				<step>1</step>
 				<max>15</max>
 			</binding>
@@ -3385,7 +3385,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/instrumentation/wxradar/tilt</property>
+				<property>instrumentation/wxradar/tilt</property>
 				<step>-1</step>
 				<min>-15</min>
 			</binding>
@@ -3395,7 +3395,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wxradar-tilt</object-name>
-		<property>/instrumentation/wxradar/tilt</property>
+		<property>instrumentation/wxradar/tilt</property>
 		<interpolation>
 			<entry><ind>-1</ind><dep>-16</dep></entry>
 			<entry><ind>-2</ind><dep>-32</dep></entry>
@@ -3448,7 +3448,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/instrumentation/wxradar/servicable</property>
+                <property>instrumentation/wxradar/servicable</property>
             </binding>
         </action>
     </animation>
@@ -3460,7 +3460,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/instrumentation/wxradar/precip</property>
+                <property>instrumentation/wxradar/precip</property>
             </binding>
         </action>
     </animation>
@@ -3472,7 +3472,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/instrumentation/wxradar/multi-scan</property>
+                <property>instrumentation/wxradar/multi-scan</property>
             </binding>
         </action>
     </animation>
@@ -3480,7 +3480,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wxradar-master</object-name>
-		<property>/instrumentation/wxradar/serviceable</property>
+		<property>instrumentation/wxradar/serviceable</property>
 		<factor>60</factor>
 		<axis>
 			<x>-1</x>
@@ -3497,7 +3497,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wxradar-multi-scan</object-name>
-		<property>/instrumentation/wxradar/multi-scan</property>
+		<property>instrumentation/wxradar/multi-scan</property>
 		<factor>60</factor>
 		<axis>
 			<x>-1</x>
@@ -3514,7 +3514,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wxradar-precip</object-name>
-		<property>/instrumentation/wxradar/precip</property>
+		<property>instrumentation/wxradar/precip</property>
 		<factor>40</factor>
 		<axis>
 			<x>0</x>
@@ -3597,7 +3597,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
-				<property>/instrumentation/ndfull/range</property>
+				<property>instrumentation/ndfull/range</property>
 				<value>0.75</value>
 				<value>1</value>
 				<value>2</value>
@@ -3633,7 +3633,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
-				<property>/instrumentation/ndfull/range</property>
+				<property>instrumentation/ndfull/range</property>
 				<value>250</value>
 				<value>128</value>
 				<value>64</value>
@@ -3662,7 +3662,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>navrange</object-name>
-		<property>/instrumentation/ndfull/range</property>
+		<property>instrumentation/ndfull/range</property>
 		<interpolation>
 			<entry><ind>1</ind><dep>-120</dep></entry>
 			<entry><ind>2</ind><dep>-90</dep></entry>
@@ -3687,7 +3687,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>navrange1</object-name>
-		<property>/instrumentation/ndfull/range</property>
+		<property>instrumentation/ndfull/range</property>
 		<interpolation>
 			<entry><ind>1</ind><dep>-120</dep></entry>
 			<entry><ind>2</ind><dep>-90</dep></entry>

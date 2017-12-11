@@ -45,7 +45,7 @@
 			<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-toggle</command>
-		<property>/controls/electric/battery-switch</property>
+		<property>controls/electric/battery-switch</property>
 	</binding>
 	</action>
  </animation>
@@ -53,7 +53,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>BATT.btn</object-name>
-<property>/controls/electric/battery-switch</property>
+<property>controls/electric/battery-switch</property>
    <factor>-0.25</factor>
    <axis>
      <x>0</x>
@@ -375,7 +375,7 @@
 			<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[0]/setting</property>
+		<property>controls/hydraulic/system[0]/setting</property>
 		<value>0</value>
 <!--		<value>1</value> -->
 		<value>2</value>
@@ -391,7 +391,7 @@
 			<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[1]/setting</property>
+		<property>controls/hydraulic/system[1]/setting</property>
 		<value>0</value>
 <!--		<value>1</value> -->
 		<value>2</value>
@@ -402,7 +402,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hyd.leng</object-name>
-<property>/controls/hydraulic/system/engine-pump</property>
+<property>controls/hydraulic/system/engine-pump</property>
    <factor>-0.25</factor>
    <axis>
      <x>0</x>
@@ -414,7 +414,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hyd.reng</object-name>
-<property>/controls/hydraulic/system[1]/engine-pump</property>
+<property>controls/hydraulic/system[1]/engine-pump</property>
    <factor>-0.25</factor>
    <axis>
      <x>0</x>
@@ -430,7 +430,7 @@
 	<object-name>fault.leng</object-name>
 	<condition>
 		<greater-than>
-			<property>/controls/pneumatic/temp/hyd-sys0-eng</property>
+			<property>controls/pneumatic/temp/hyd-sys0-eng</property>
 			<value>120</value>
 		</greater-than>
 	</condition>
@@ -441,7 +441,7 @@
 	<object-name>fault.reng</object-name>
 	<condition>
 		<greater-than>
-			<property>/controls/pneumatic/temp/hyd-sys1-eng</property>
+			<property>controls/pneumatic/temp/hyd-sys1-eng</property>
 			<value>120</value>
 		</greater-than>
 	</condition>
@@ -450,7 +450,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>C1.fault</object-name>
-<property>/controls/pneumatic/temp/hyd-sys2-elec</property>
+<property>controls/pneumatic/temp/hyd-sys2-elec</property>
 <interpolation>
 	<entry><ind>0</ind><dep>0</dep></entry>
 	<entry><ind>119</ind><dep>0</dep></entry>
@@ -467,7 +467,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>C2.fault</object-name>
-<property>/controls/pneumatic/temp/hyd-sys3-elec</property>
+<property>controls/pneumatic/temp/hyd-sys3-elec</property>
 <interpolation>
 	<entry><ind>0</ind><dep>0</dep></entry>
 	<entry><ind>119</ind><dep>0</dep></entry>
@@ -491,7 +491,7 @@
 	<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[2]/setting</property>
+		<property>controls/hydraulic/system[2]/setting</property>
 		<value>0</value>
 <!--		<value>1</value> -->
 		<value>2</value>
@@ -507,7 +507,7 @@
 	<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/hydraulic/system[3]/setting</property>
+		<property>controls/hydraulic/system[3]/setting</property>
 		<value>0</value>
 <!--		<value>1</value> -->
 		<value>2</value>
@@ -520,7 +520,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>hyd.c1.knob</object-name>
-		<property>/controls/hydraulic/system[2]/setting</property>
+		<property>controls/hydraulic/system[2]/setting</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>-30</dep></entry>
 			<entry><ind>1</ind><dep>0</dep></entry>
@@ -539,7 +539,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>hyd.c2.knob</object-name>
-		<property>/controls/hydraulic/system[3]/setting</property>
+		<property>controls/hydraulic/system[3]/setting</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>-30</dep></entry>
 			<entry><ind>1</ind><dep>0</dep></entry>
@@ -569,7 +569,7 @@
 			<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-toggle</command>
-		<property>/controls/jettison/arm</property>
+		<property>controls/jettison/arm</property>
 	</binding>
 	</action>
  </animation>
@@ -577,7 +577,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>jettison</object-name>
-<property>/controls/jettison/arm</property>
+<property>controls/jettison/arm</property>
    <factor>-0.25</factor>
    <axis>
      <x>0</x>
@@ -594,7 +594,7 @@
 			<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-toggle</command>
-		<property>/controls/jettison/rnozzle</property>
+		<property>controls/jettison/rnozzle</property>
 	</binding>
 	</action>
  </animation>
@@ -602,7 +602,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>rnozzle</object-name>
-<property>/controls/jettison/rnozzle</property>
+<property>controls/jettison/rnozzle</property>
    <factor>-0.25</factor>
    <axis>
      <x>0</x>
@@ -619,7 +619,7 @@
 			<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-toggle</command>
-		<property>/controls/jettison/lnozzle</property>
+		<property>controls/jettison/lnozzle</property>
 	</binding>
 	</action>
  </animation>
@@ -627,7 +627,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>lnozzle</object-name>
-<property>/controls/jettison/lnozzle</property>
+<property>controls/jettison/lnozzle</property>
    <factor>-0.25</factor>
    <axis>
      <x>0</x>
@@ -646,7 +646,7 @@
 	<repeatable type="bool">false</repeatable>
 	<binding>
 		<command>property-cycle</command>
-		<property>/controls/jettison/setting</property>
+		<property>controls/jettison/setting</property>
 		<value>0</value>
 		<value>1</value>
 		<value>2</value>
@@ -657,7 +657,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>jettison.knob</object-name>
-		<property>/controls/jettison/setting</property>
+		<property>controls/jettison/setting</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>-90</dep></entry>
 			<entry><ind>1</ind><dep>0</dep></entry>
@@ -685,14 +685,14 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>/controls/fuel/x-feed</property>
+				<property>controls/fuel/x-feed</property>
 			</binding>
 		</action>
 	</animation>
 	<animation>
 		<type>textranslate</type>
 		<object-name>xfeed</object-name>
-		<property>/controls/fuel/x-feed</property>
+		<property>controls/fuel/x-feed</property>
 		<factor>-0.25</factor>
 		<axis>
 			<x>0</x>
@@ -1103,7 +1103,7 @@ setprop("/controls/engines/engine[0]/starter", 0);
 	<animation>
 		<type>rotate</type>
 		<object-name>starter.1</object-name>
-		<property>/controls/engines/engine[0]/starter</property>
+		<property>controls/engines/engine[0]/starter</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>1</ind><dep>-30</dep></entry>
@@ -1147,7 +1147,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 	<animation>
 		<type>rotate</type>
 		<object-name>starter.2</object-name>
-		<property>/controls/engines/engine[1]/starter</property>
+		<property>controls/engines/engine[1]/starter</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>1</ind><dep>-30</dep></entry>
@@ -1692,7 +1692,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/controls/lighting/dome-input</property>
+				<property>controls/lighting/dome-input</property>
 				<step>0.05</step>
 				<max>1</max>
 			</binding>
@@ -1703,7 +1703,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/controls/lighting/dome-input</property>
+				<property>controls/lighting/dome-input</property>
 				<step>-0.05</step>
 				<min>0</min>
 			</binding>
@@ -1719,7 +1719,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/controls/lighting/ovhd-input</property>
+				<property>controls/lighting/ovhd-input</property>
 				<step>0.05</step>
 				<max>1</max>
 			</binding>
@@ -1730,7 +1730,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/controls/lighting/ovhd-input</property>
+				<property>controls/lighting/ovhd-input</property>
 				<step>-0.05</step>
 				<min>0</min>
 			</binding>
@@ -1746,7 +1746,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/controls/lighting/master-bright</property>
+				<property>controls/lighting/master-bright</property>
 				<step>0.05</step>
 				<max>1</max>
 			</binding>
@@ -1757,7 +1757,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/controls/lighting/master-bright</property>
+				<property>controls/lighting/master-bright</property>
 				<step>-0.05</step>
 				<min>0</min>
 			</binding>
@@ -1769,7 +1769,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 	<animation>
 		<type>rotate</type>
 		<object-name>dome.knob</object-name>
-		<property>/controls/lighting/dome-input</property>
+		<property>controls/lighting/dome-input</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>-120</dep></entry>
 			<entry><ind>1</ind><dep>120</dep></entry>
@@ -1787,7 +1787,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 	<animation>
 		<type>rotate</type>
 		<object-name>ovhd.knob</object-name>
-		<property>/controls/lighting/ovhd-input</property>
+		<property>controls/lighting/ovhd-input</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>-120</dep></entry>
 			<entry><ind>1</ind><dep>120</dep></entry>
@@ -1805,7 +1805,7 @@ setprop("/controls/engines/engine[1]/starter", 0);
 	<animation>
 		<type>rotate</type>
 		<object-name>master-bright.knob</object-name>
-		<property>/controls/lighting/master-bright</property>
+		<property>controls/lighting/master-bright</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>-120</dep></entry>
 			<entry><ind>1</ind><dep>120</dep></entry>

@@ -43,6 +43,7 @@
 				<diagram>help.jpg</diagram>
 				<chart>help.jpg</chart>
 			</efb>
+                        <shadow-enabled type="bool">true</shadow-enabled> <!-- disabled in remote aircraft over mp -->
 		</model>
 
         <hud>

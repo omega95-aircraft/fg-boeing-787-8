@@ -27,7 +27,7 @@
    <button>1</button>
     <binding>
      <command>property-toggle</command>
-     <property>/controls/switches/hud-flip</property>
+     <property>controls/switches/hud-flip</property>
 	<value>0</value>
 	<value>1</value>
     </binding>
@@ -41,7 +41,7 @@
    <button>0</button>
     <binding>
      <command>property-toggle</command>
-     <property>/controls/switches/hud</property>
+     <property>controls/switches/hud</property>
 	<value>0</value>
 	<value>1</value>
     </binding>
@@ -137,7 +137,7 @@
    <object-name>vstext</object-name>
    <object-name>vs-a</object-name>
    <object-name>vs-b</object-name>
-	<property>/controls/switches/hud-flip</property>
+	<property>controls/switches/hud-flip</property>
 	<factor>-120</factor>
 	<center>
 		<x-m>-0.01</x-m>
@@ -240,12 +240,12 @@
    <object-name>vs-b</object-name>
    <condition>
      <and>
-      <property>/controls/switches/hud</property>
+      <property>controls/switches/hud</property>
       <not>
       <property>sim/crashed</property>
       </not>
 	<less-than>
-		<property>/controls/switches/hud-flip</property>
+		<property>controls/switches/hud-flip</property>
 		<value>0.35</value>
 	</less-than>		
      </and>
@@ -273,7 +273,7 @@
    <object-name>ap.annun</object-name>
    <condition>
        <equals>
-         <property>/instrumentation/flightdirector/autopilot-on</property>
+         <property>instrumentation/flightdirector/autopilot-on</property>
          <value>1</value>
        </equals>
    </condition>
@@ -284,7 +284,7 @@
    <object-name>vnav.annun</object-name>
    <condition>
        <greater-than>
-         <property>/instrumentation/flightdirector/vnav</property>
+         <property>instrumentation/flightdirector/vnav</property>
          <value>0</value>
        </greater-than>
    </condition>
@@ -299,7 +299,7 @@
       <property>sim/crashed</property>
       </not>
        <greater-than>
-         <property>/instrumentation/flightdirector/lnav</property>
+         <property>instrumentation/flightdirector/lnav</property>
          <value>0</value>
        </greater-than>
    </and>
@@ -475,7 +475,7 @@
    <object-name>ils</object-name>
    <condition>
      <and>
-      <property>/controls/switches/hud1</property>
+      <property>controls/switches/hud1</property>
        <property>instrumentation/nav/has-gs</property>
      </and>
   </condition>
@@ -993,7 +993,7 @@
  <animation>
    <type>translate</type>
    <object-name>FDbars</object-name>
-   <property>/instrumentation/flightdirector/vbar-pitch</property>
+   <property>instrumentation/flightdirector/vbar-pitch</property>
 <factor>0.00104</factor>
 <axis>
      <x>0.0</x>
@@ -1010,7 +1010,7 @@
  <animation>
 	 <type>rotate</type>
 	 <object-name>FDbars</object-name>
-	 <property>/instrumentation/flightdirector/vbar-roll</property>
+	 <property>instrumentation/flightdirector/vbar-roll</property>
 	 <axis>
 		 <x>1.0</x>
 		 <y>0.0</y>

@@ -23,7 +23,7 @@
 		<enable-pointer>true</enable-pointer>
 		<pointer-type>fixed</pointer-type>
 		<input>
-			<property>/controls/flight/aileron</property>
+			<property>controls/flight/aileron</property>
 			<max>1.0</max>
 			<min>-1.0</min>
 		</input>
@@ -52,7 +52,7 @@
 		<enable-pointer>true</enable-pointer>
 		<pointer-type>fixed</pointer-type>
 		<input>
-			<property>/controls/flight/elevator</property>
+			<property>controls/flight/elevator</property>
 			<max>1.0</max>
 			<min>-1.0</min>
 		</input>
@@ -80,7 +80,7 @@
 		<enable-pointer>true</enable-pointer>
 		<pointer-type>fixed</pointer-type>
 		<input>
-			<property>/controls/flight/rudder</property>
+			<property>controls/flight/rudder</property>
 			<max>1.0</max>
 			<min>-1.0</min>
 		</input>
@@ -109,7 +109,7 @@
 		<enable-pointer>true</enable-pointer>
 		<pointer-type>fixed</pointer-type>
 		<input>
-			<property>/controls/engines/engine/throttle</property>
+			<property>controls/engines/engine/throttle</property>
 			<max>1.0</max>
 			<min>0.0</min>
 		</input>
@@ -138,7 +138,7 @@
 		<enable-pointer>true</enable-pointer>
 		<pointer-type>fixed</pointer-type>
 		<input>
-			<property>/controls/flight/elevator-trim</property>
+			<property>controls/flight/elevator-trim</property>
 			<max>1.0</max>
 			<min>-1.0</min>
 		</input>
@@ -167,7 +167,7 @@
 		<enable-pointer>true</enable-pointer>
 		<pointer-type>fixed</pointer-type>
 		<input>
-			<property>/controls/flight/rudder-trim</property>
+			<property>controls/flight/rudder-trim</property>
 			<max>1.0</max>
 			<min>-1.0</min>
 		</input>
@@ -196,7 +196,7 @@
 		<enable-pointer>true</enable-pointer>
 		<pointer-type>fixed</pointer-type>
 		<input>
-			<property>/controls/flight/aileron-trim</property>
+			<property>controls/flight/aileron-trim</property>
 			<max>1.0</max>
 			<min>-1.0</min>
 		</input>

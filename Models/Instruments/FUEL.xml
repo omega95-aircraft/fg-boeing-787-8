@@ -42,7 +42,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f°</format>
-		<property>/controls/fuel/lbsx1000</property>
+		<property>controls/fuel/lbsx1000</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -62,7 +62,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f°</format>
-		<property>/controls/fuel/ltank</property>
+		<property>controls/fuel/ltank</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.007</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -82,7 +82,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f°</format>
-		<property>/controls/fuel/rtank</property>
+		<property>controls/fuel/rtank</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.007</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -102,7 +102,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f°</format>
-		<property>/controls/fuel/ctank</property>
+		<property>controls/fuel/ctank</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.007</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -142,7 +142,7 @@
 		<type>select</type>
 		<object-name>xfeed</object-name>
 		<condition>
-				<property>/controls/fuel/x-feed</property>
+				<property>controls/fuel/x-feed</property>
 		</condition>
 	</animation>
 
@@ -150,8 +150,8 @@
 		<type>select</type>
 		<object-name>lnozzle</object-name>
 		<condition>
-				<property>/controls/jettison/rnozzle</property>
-				<property>/controls/jettison/arm</property>
+				<property>controls/jettison/rnozzle</property>
+				<property>controls/jettison/arm</property>
 		</condition>
 	</animation>
 
@@ -159,8 +159,8 @@
 		<type>select</type>
 		<object-name>rnozzle</object-name>
 		<condition>
-				<property>/controls/jettison/lnozzle</property>
-				<property>/controls/jettison/arm</property>
+				<property>controls/jettison/lnozzle</property>
+				<property>controls/jettison/arm</property>
 		</condition>
 	</animation>
 

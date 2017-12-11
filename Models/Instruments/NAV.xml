@@ -35,7 +35,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor1</object-name>
-		<property>/controls/navigation/nav1-defl</property>
+		<property>controls/navigation/nav1-defl</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -62,7 +62,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor1</object-name>
-		<property>/controls/navigation/nav1-defl</property>
+		<property>controls/navigation/nav1-defl</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -90,7 +90,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor2</object-name>
-		<property>/controls/navigation/nav2-defl</property>
+		<property>controls/navigation/nav2-defl</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -117,7 +117,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor2</object-name>
-		<property>/controls/navigation/nav2-defl</property>
+		<property>controls/navigation/nav2-defl</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -136,7 +136,7 @@
 		<object-name>nextwppointer</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/show-wp-pointer</property>
+				<property>controls/navigation/show-wp-pointer</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -144,7 +144,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>nextwppointer</object-name>
-		<property>/controls/navigation/wp1-defl</property>
+		<property>controls/navigation/wp1-defl</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -162,7 +162,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>headingbug</object-name>
-		<property>/controls/navigation/heading-bug</property>
+		<property>controls/navigation/heading-bug</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -190,7 +190,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor1pointer</object-name>
-		<property>/controls/navigation/nav1-defl</property>
+		<property>controls/navigation/nav1-defl</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -218,7 +218,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor2pointer</object-name>
-		<property>/controls/navigation/nav2-defl</property>
+		<property>controls/navigation/nav2-defl</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -485,7 +485,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hdgtext</object-name>
-   <property>/orientation/heading-magnetic-deg</property>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.001</factor>
    <step>100</step>
    <axis>
@@ -498,7 +498,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hdgtext.001</object-name>
-   <property>/orientation/heading-magnetic-deg</property>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -511,7 +511,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hdgtext.002</object-name>
-   <property>/orientation/heading-magnetic-deg</property>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -573,7 +573,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation1</object-name>
-   	<property>/controls/navigation/vert-profile/nm1</property>
+   	<property>controls/navigation/vert-profile/nm1</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -583,7 +583,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation2</object-name>
-   	<property>/controls/navigation/vert-profile/nm2</property>
+   	<property>controls/navigation/vert-profile/nm2</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -593,7 +593,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation3</object-name>
-   	<property>/controls/navigation/vert-profile/nm3</property>
+   	<property>controls/navigation/vert-profile/nm3</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -603,7 +603,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation4</object-name>
-   	<property>/controls/navigation/vert-profile/nm4</property>
+   	<property>controls/navigation/vert-profile/nm4</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -613,7 +613,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation5</object-name>
-   	<property>/controls/navigation/vert-profile/nm5</property>
+   	<property>controls/navigation/vert-profile/nm5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -623,7 +623,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation6</object-name>
-   	<property>/controls/navigation/vert-profile/nm6</property>
+   	<property>controls/navigation/vert-profile/nm6</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -633,7 +633,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation7</object-name>
-   	<property>/controls/navigation/vert-profile/nm7</property>
+   	<property>controls/navigation/vert-profile/nm7</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -643,7 +643,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation8</object-name>
-   	<property>/controls/navigation/vert-profile/nm8</property>
+   	<property>controls/navigation/vert-profile/nm8</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -653,7 +653,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation9</object-name>
-   	<property>/controls/navigation/vert-profile/nm9</property>
+   	<property>controls/navigation/vert-profile/nm9</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -663,7 +663,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation10</object-name>
-   	<property>/controls/navigation/vert-profile/nm10</property>
+   	<property>controls/navigation/vert-profile/nm10</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -673,7 +673,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation11</object-name>
-   	<property>/controls/navigation/vert-profile/nm11</property>
+   	<property>controls/navigation/vert-profile/nm11</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -683,7 +683,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation12</object-name>
-   	<property>/controls/navigation/vert-profile/nm12</property>
+   	<property>controls/navigation/vert-profile/nm12</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -693,7 +693,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation13</object-name>
-   	<property>/controls/navigation/vert-profile/nm13</property>
+   	<property>controls/navigation/vert-profile/nm13</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -703,7 +703,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation14</object-name>
-   	<property>/controls/navigation/vert-profile/nm14</property>
+   	<property>controls/navigation/vert-profile/nm14</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -713,7 +713,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation15</object-name>
-   	<property>/controls/navigation/vert-profile/nm15</property>
+   	<property>controls/navigation/vert-profile/nm15</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -723,7 +723,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation16</object-name>
-   	<property>/controls/navigation/vert-profile/nm16</property>
+   	<property>controls/navigation/vert-profile/nm16</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -733,7 +733,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation17</object-name>
-   	<property>/controls/navigation/vert-profile/nm17</property>
+   	<property>controls/navigation/vert-profile/nm17</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -743,7 +743,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation18</object-name>
-   	<property>/controls/navigation/vert-profile/nm18</property>
+   	<property>controls/navigation/vert-profile/nm18</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -753,7 +753,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation19</object-name>
-   	<property>/controls/navigation/vert-profile/nm19</property>
+   	<property>controls/navigation/vert-profile/nm19</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -763,7 +763,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation20</object-name>
-   	<property>/controls/navigation/vert-profile/nm20</property>
+   	<property>controls/navigation/vert-profile/nm20</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -773,7 +773,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation21</object-name>
-   	<property>/controls/navigation/vert-profile/nm21</property>
+   	<property>controls/navigation/vert-profile/nm21</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -783,7 +783,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation22</object-name>
-   	<property>/controls/navigation/vert-profile/nm22</property>
+   	<property>controls/navigation/vert-profile/nm22</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -793,7 +793,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation23</object-name>
-   	<property>/controls/navigation/vert-profile/nm23</property>
+   	<property>controls/navigation/vert-profile/nm23</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -803,7 +803,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation24</object-name>
-   	<property>/controls/navigation/vert-profile/nm24</property>
+   	<property>controls/navigation/vert-profile/nm24</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -813,7 +813,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation25</object-name>
-   	<property>/controls/navigation/vert-profile/nm25</property>
+   	<property>controls/navigation/vert-profile/nm25</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -823,7 +823,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation26</object-name>
-   	<property>/controls/navigation/vert-profile/nm26</property>
+   	<property>controls/navigation/vert-profile/nm26</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -833,7 +833,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation27</object-name>
-   	<property>/controls/navigation/vert-profile/nm27</property>
+   	<property>controls/navigation/vert-profile/nm27</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -843,7 +843,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation28</object-name>
-   	<property>/controls/navigation/vert-profile/nm28</property>
+   	<property>controls/navigation/vert-profile/nm28</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -853,7 +853,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation29</object-name>
-   	<property>/controls/navigation/vert-profile/nm29</property>
+   	<property>controls/navigation/vert-profile/nm29</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -863,7 +863,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation30</object-name>
-   	<property>/controls/navigation/vert-profile/nm30</property>
+   	<property>controls/navigation/vert-profile/nm30</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -873,7 +873,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation31</object-name>
-   	<property>/controls/navigation/vert-profile/nm31</property>
+   	<property>controls/navigation/vert-profile/nm31</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -883,7 +883,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation32</object-name>
-   	<property>/controls/navigation/vert-profile/nm32</property>
+   	<property>controls/navigation/vert-profile/nm32</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -893,7 +893,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation33</object-name>
-   	<property>/controls/navigation/vert-profile/nm33</property>
+   	<property>controls/navigation/vert-profile/nm33</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -903,7 +903,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation34</object-name>
-   	<property>/controls/navigation/vert-profile/nm34</property>
+   	<property>controls/navigation/vert-profile/nm34</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -913,7 +913,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation35</object-name>
-   	<property>/controls/navigation/vert-profile/nm35</property>
+   	<property>controls/navigation/vert-profile/nm35</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -923,7 +923,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation36</object-name>
-   	<property>/controls/navigation/vert-profile/nm36</property>
+   	<property>controls/navigation/vert-profile/nm36</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -933,7 +933,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation37</object-name>
-   	<property>/controls/navigation/vert-profile/nm37</property>
+   	<property>controls/navigation/vert-profile/nm37</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -943,7 +943,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation38</object-name>
-   	<property>/controls/navigation/vert-profile/nm38</property>
+   	<property>controls/navigation/vert-profile/nm38</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -953,7 +953,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation39</object-name>
-   	<property>/controls/navigation/vert-profile/nm39</property>
+   	<property>controls/navigation/vert-profile/nm39</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -963,7 +963,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation40</object-name>
-   	<property>/controls/navigation/vert-profile/nm40</property>
+   	<property>controls/navigation/vert-profile/nm40</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -973,7 +973,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation41</object-name>
-   	<property>/controls/navigation/vert-profile/nm41</property>
+   	<property>controls/navigation/vert-profile/nm41</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -983,7 +983,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation42</object-name>
-   	<property>/controls/navigation/vert-profile/nm42</property>
+   	<property>controls/navigation/vert-profile/nm42</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -993,7 +993,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation43</object-name>
-   	<property>/controls/navigation/vert-profile/nm43</property>
+   	<property>controls/navigation/vert-profile/nm43</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1003,7 +1003,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation44</object-name>
-   	<property>/controls/navigation/vert-profile/nm44</property>
+   	<property>controls/navigation/vert-profile/nm44</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1013,7 +1013,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation45</object-name>
-   	<property>/controls/navigation/vert-profile/nm45</property>
+   	<property>controls/navigation/vert-profile/nm45</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1023,7 +1023,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation46</object-name>
-   	<property>/controls/navigation/vert-profile/nm46</property>
+   	<property>controls/navigation/vert-profile/nm46</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1033,7 +1033,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation47</object-name>
-   	<property>/controls/navigation/vert-profile/nm47</property>
+   	<property>controls/navigation/vert-profile/nm47</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1043,7 +1043,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation48</object-name>
-   	<property>/controls/navigation/vert-profile/nm48</property>
+   	<property>controls/navigation/vert-profile/nm48</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1053,7 +1053,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation49</object-name>
-   	<property>/controls/navigation/vert-profile/nm49</property>
+   	<property>controls/navigation/vert-profile/nm49</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1063,7 +1063,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation50</object-name>
-   	<property>/controls/navigation/vert-profile/nm50</property>
+   	<property>controls/navigation/vert-profile/nm50</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1074,7 +1074,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation1.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm1.5</property>
+   	<property>controls/navigation/vert-profile/nm1.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1084,7 +1084,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation2.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm2.5</property>
+   	<property>controls/navigation/vert-profile/nm2.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1094,7 +1094,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation3.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm3.5</property>
+   	<property>controls/navigation/vert-profile/nm3.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1104,7 +1104,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation4.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm4.5</property>
+   	<property>controls/navigation/vert-profile/nm4.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1114,7 +1114,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation5.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm5.5</property>
+   	<property>controls/navigation/vert-profile/nm5.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1124,7 +1124,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation6.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm6.5</property>
+   	<property>controls/navigation/vert-profile/nm6.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1134,7 +1134,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation7.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm7.5</property>
+   	<property>controls/navigation/vert-profile/nm7.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1144,7 +1144,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation8.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm8.5</property>
+   	<property>controls/navigation/vert-profile/nm8.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1154,7 +1154,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation9.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm9.5</property>
+   	<property>controls/navigation/vert-profile/nm9.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1164,7 +1164,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation10.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm10.5</property>
+   	<property>controls/navigation/vert-profile/nm10.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1174,7 +1174,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation11.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm11.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm11.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1184,7 +1184,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation12.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm12.5</property>
+   	<property>controls/navigation/vert-profile/nm12.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1194,7 +1194,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation13.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm13.5</property>
+   	<property>controls/navigation/vert-profile/nm13.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1204,7 +1204,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation14.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm14.5</property>
+   	<property>controls/navigation/vert-profile/nm14.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1214,7 +1214,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation15.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm15.5</property>
+   	<property>controls/navigation/vert-profile/nm15.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1224,7 +1224,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation16.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm16.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm16.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1234,7 +1234,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation17.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm17.5</property>
+   	<property>controls/navigation/vert-profile/nm17.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1244,7 +1244,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation18.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm18.5</property>
+   	<property>controls/navigation/vert-profile/nm18.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1254,7 +1254,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation19.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm19.5</property>
+   	<property>controls/navigation/vert-profile/nm19.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1264,7 +1264,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation20.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm20.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm20.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1274,7 +1274,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation21.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm21.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm21.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1284,7 +1284,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation22.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm22.5</property>
+   	<property>controls/navigation/vert-profile/nm22.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1294,7 +1294,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation23.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm23.5</property>
+   	<property>controls/navigation/vert-profile/nm23.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1304,7 +1304,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation24.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm24.5</property>
+   	<property>controls/navigation/vert-profile/nm24.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1314,7 +1314,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation25.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm25.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm25.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1324,7 +1324,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation26.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm26.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm26.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1334,7 +1334,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation27.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm27.5</property>
+   	<property>controls/navigation/vert-profile/nm27.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1344,7 +1344,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation28.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm28.5</property>
+   	<property>controls/navigation/vert-profile/nm28.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1354,7 +1354,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation29.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm29.5</property>
+   	<property>controls/navigation/vert-profile/nm29.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1364,7 +1364,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation30.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm30.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm30.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1374,7 +1374,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation31.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm31.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm31.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1384,7 +1384,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation32.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm32.5</property>
+   	<property>controls/navigation/vert-profile/nm32.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1394,7 +1394,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation33.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm33.5</property>
+   	<property>controls/navigation/vert-profile/nm33.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1404,7 +1404,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation34.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm34.5</property>
+   	<property>controls/navigation/vert-profile/nm34.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1414,7 +1414,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation35.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm35.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm35.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1424,7 +1424,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation36.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm36.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm36.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1434,7 +1434,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation37.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm37.5</property>
+   	<property>controls/navigation/vert-profile/nm37.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1444,7 +1444,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation38.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm38.5</property>
+   	<property>controls/navigation/vert-profile/nm38.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1454,7 +1454,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation39.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm39.5</property>
+   	<property>controls/navigation/vert-profile/nm39.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1464,7 +1464,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation40.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm40.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm40.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1474,7 +1474,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation41.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm41.5</property>
+   	<property>controls/navigation/vert-profile/nm41.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1484,7 +1484,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation42.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm42.5</property>
+   	<property>controls/navigation/vert-profile/nm42.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1494,7 +1494,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation43.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm43.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm43.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1504,7 +1504,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation44.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm44.5</property>
+   	<property>controls/navigation/vert-profile/nm44.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1514,7 +1514,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation45.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm45.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm45.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1524,7 +1524,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation46.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm46.5</property>
+   	<property>controls/navigation/vert-profile/nm46.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1534,7 +1534,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation47.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm47.5</property>
+   	<property>controls/navigation/vert-profile/nm47.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1544,7 +1544,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation48.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm48.49999999999999</property>
+   	<property>controls/navigation/vert-profile/nm48.49999999999999</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1554,7 +1554,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>elevation49.5</object-name>
-   	<property>/controls/navigation/vert-profile/nm49.5</property>
+   	<property>controls/navigation/vert-profile/nm49.5</property>
    	<factor>0.00001115</factor>
      <axis>
      	<x>0.0</x>
@@ -1581,7 +1581,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>descent</object-name>
-		<property>/controls/navigation/descent-slope</property>
+		<property>controls/navigation/descent-slope</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1597,7 +1597,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>descent</object-name>
-   	<property>/controls/navigation/descent-line-length</property>
+   	<property>controls/navigation/descent-line-length</property>
    	<factor>0.007071068</factor>
      <axis>
      	<x>0.0</x>
@@ -1614,7 +1614,7 @@
 		<object-name>elevation1</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1</property>
+				<property>controls/navigation/vert-profile-color/nm1</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1629,7 +1629,7 @@
 		<object-name>elevation2</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2</property>
+				<property>controls/navigation/vert-profile-color/nm2</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1644,7 +1644,7 @@
 		<object-name>elevation3</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3</property>
+				<property>controls/navigation/vert-profile-color/nm3</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1659,7 +1659,7 @@
 		<object-name>elevation4</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4</property>
+				<property>controls/navigation/vert-profile-color/nm4</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1674,7 +1674,7 @@
 		<object-name>elevation5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5</property>
+				<property>controls/navigation/vert-profile-color/nm5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1689,7 +1689,7 @@
 		<object-name>elevation6</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6</property>
+				<property>controls/navigation/vert-profile-color/nm6</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1704,7 +1704,7 @@
 		<object-name>elevation7</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7</property>
+				<property>controls/navigation/vert-profile-color/nm7</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1719,7 +1719,7 @@
 		<object-name>elevation8</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8</property>
+				<property>controls/navigation/vert-profile-color/nm8</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1734,7 +1734,7 @@
 		<object-name>elevation9</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9</property>
+				<property>controls/navigation/vert-profile-color/nm9</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1749,7 +1749,7 @@
 		<object-name>elevation10</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10</property>
+				<property>controls/navigation/vert-profile-color/nm10</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1765,7 +1765,7 @@
 		<object-name>elevation11</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11</property>
+				<property>controls/navigation/vert-profile-color/nm11</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1780,7 +1780,7 @@
 		<object-name>elevation12</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12</property>
+				<property>controls/navigation/vert-profile-color/nm12</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1795,7 +1795,7 @@
 		<object-name>elevation13</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13</property>
+				<property>controls/navigation/vert-profile-color/nm13</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1810,7 +1810,7 @@
 		<object-name>elevation14</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14</property>
+				<property>controls/navigation/vert-profile-color/nm14</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1825,7 +1825,7 @@
 		<object-name>elevation15</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15</property>
+				<property>controls/navigation/vert-profile-color/nm15</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1840,7 +1840,7 @@
 		<object-name>elevation16</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16</property>
+				<property>controls/navigation/vert-profile-color/nm16</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1855,7 +1855,7 @@
 		<object-name>elevation17</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17</property>
+				<property>controls/navigation/vert-profile-color/nm17</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1870,7 +1870,7 @@
 		<object-name>elevation18</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18</property>
+				<property>controls/navigation/vert-profile-color/nm18</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1885,7 +1885,7 @@
 		<object-name>elevation19</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19</property>
+				<property>controls/navigation/vert-profile-color/nm19</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1900,7 +1900,7 @@
 		<object-name>elevation20</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20</property>
+				<property>controls/navigation/vert-profile-color/nm20</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1916,7 +1916,7 @@
 		<object-name>elevation21</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21</property>
+				<property>controls/navigation/vert-profile-color/nm21</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1931,7 +1931,7 @@
 		<object-name>elevation22</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22</property>
+				<property>controls/navigation/vert-profile-color/nm22</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1946,7 +1946,7 @@
 		<object-name>elevation23</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23</property>
+				<property>controls/navigation/vert-profile-color/nm23</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1961,7 +1961,7 @@
 		<object-name>elevation24</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24</property>
+				<property>controls/navigation/vert-profile-color/nm24</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1976,7 +1976,7 @@
 		<object-name>elevation25</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25</property>
+				<property>controls/navigation/vert-profile-color/nm25</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -1991,7 +1991,7 @@
 		<object-name>elevation26</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26</property>
+				<property>controls/navigation/vert-profile-color/nm26</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2006,7 +2006,7 @@
 		<object-name>elevation27</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27</property>
+				<property>controls/navigation/vert-profile-color/nm27</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2021,7 +2021,7 @@
 		<object-name>elevation28</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28</property>
+				<property>controls/navigation/vert-profile-color/nm28</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2036,7 +2036,7 @@
 		<object-name>elevation29</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29</property>
+				<property>controls/navigation/vert-profile-color/nm29</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2051,7 +2051,7 @@
 		<object-name>elevation30</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30</property>
+				<property>controls/navigation/vert-profile-color/nm30</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2067,7 +2067,7 @@
 		<object-name>elevation31</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31</property>
+				<property>controls/navigation/vert-profile-color/nm31</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2082,7 +2082,7 @@
 		<object-name>elevation32</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32</property>
+				<property>controls/navigation/vert-profile-color/nm32</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2097,7 +2097,7 @@
 		<object-name>elevation33</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33</property>
+				<property>controls/navigation/vert-profile-color/nm33</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2112,7 +2112,7 @@
 		<object-name>elevation34</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34</property>
+				<property>controls/navigation/vert-profile-color/nm34</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2127,7 +2127,7 @@
 		<object-name>elevation35</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35</property>
+				<property>controls/navigation/vert-profile-color/nm35</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2142,7 +2142,7 @@
 		<object-name>elevation36</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36</property>
+				<property>controls/navigation/vert-profile-color/nm36</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2157,7 +2157,7 @@
 		<object-name>elevation37</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37</property>
+				<property>controls/navigation/vert-profile-color/nm37</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2172,7 +2172,7 @@
 		<object-name>elevation38</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38</property>
+				<property>controls/navigation/vert-profile-color/nm38</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2187,7 +2187,7 @@
 		<object-name>elevation39</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39</property>
+				<property>controls/navigation/vert-profile-color/nm39</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2202,7 +2202,7 @@
 		<object-name>elevation40</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40</property>
+				<property>controls/navigation/vert-profile-color/nm40</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2218,7 +2218,7 @@
 		<object-name>elevation41</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41</property>
+				<property>controls/navigation/vert-profile-color/nm41</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2233,7 +2233,7 @@
 		<object-name>elevation42</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42</property>
+				<property>controls/navigation/vert-profile-color/nm42</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2248,7 +2248,7 @@
 		<object-name>elevation43</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43</property>
+				<property>controls/navigation/vert-profile-color/nm43</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2263,7 +2263,7 @@
 		<object-name>elevation44</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44</property>
+				<property>controls/navigation/vert-profile-color/nm44</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2278,7 +2278,7 @@
 		<object-name>elevation45</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45</property>
+				<property>controls/navigation/vert-profile-color/nm45</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2293,7 +2293,7 @@
 		<object-name>elevation46</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46</property>
+				<property>controls/navigation/vert-profile-color/nm46</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2308,7 +2308,7 @@
 		<object-name>elevation47</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47</property>
+				<property>controls/navigation/vert-profile-color/nm47</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2323,7 +2323,7 @@
 		<object-name>elevation48</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48</property>
+				<property>controls/navigation/vert-profile-color/nm48</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2338,7 +2338,7 @@
 		<object-name>elevation49</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49</property>
+				<property>controls/navigation/vert-profile-color/nm49</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2353,7 +2353,7 @@
 		<object-name>elevation50</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm50</property>
+				<property>controls/navigation/vert-profile-color/nm50</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2368,7 +2368,7 @@
 		<object-name>elevation1.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1.5</property>
+				<property>controls/navigation/vert-profile-color/nm1.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2383,7 +2383,7 @@
 		<object-name>elevation2.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2.5</property>
+				<property>controls/navigation/vert-profile-color/nm2.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2398,7 +2398,7 @@
 		<object-name>elevation3.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3.5</property>
+				<property>controls/navigation/vert-profile-color/nm3.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2413,7 +2413,7 @@
 		<object-name>elevation4.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4.5</property>
+				<property>controls/navigation/vert-profile-color/nm4.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2428,7 +2428,7 @@
 		<object-name>elevation5.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5.5</property>
+				<property>controls/navigation/vert-profile-color/nm5.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2443,7 +2443,7 @@
 		<object-name>elevation6.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6.5</property>
+				<property>controls/navigation/vert-profile-color/nm6.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2458,7 +2458,7 @@
 		<object-name>elevation7.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7.5</property>
+				<property>controls/navigation/vert-profile-color/nm7.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2473,7 +2473,7 @@
 		<object-name>elevation8.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8.5</property>
+				<property>controls/navigation/vert-profile-color/nm8.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2488,7 +2488,7 @@
 		<object-name>elevation9.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9.5</property>
+				<property>controls/navigation/vert-profile-color/nm9.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2503,7 +2503,7 @@
 		<object-name>elevation10.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10.5</property>
+				<property>controls/navigation/vert-profile-color/nm10.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2519,7 +2519,7 @@
 		<object-name>elevation11.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm11.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2534,7 +2534,7 @@
 		<object-name>elevation12.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12.5</property>
+				<property>controls/navigation/vert-profile-color/nm12.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2549,7 +2549,7 @@
 		<object-name>elevation13.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13.5</property>
+				<property>controls/navigation/vert-profile-color/nm13.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2564,7 +2564,7 @@
 		<object-name>elevation14.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14.5</property>
+				<property>controls/navigation/vert-profile-color/nm14.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2579,7 +2579,7 @@
 		<object-name>elevation15.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15.5</property>
+				<property>controls/navigation/vert-profile-color/nm15.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2594,7 +2594,7 @@
 		<object-name>elevation16.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm16.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2609,7 +2609,7 @@
 		<object-name>elevation17.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17.5</property>
+				<property>controls/navigation/vert-profile-color/nm17.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2624,7 +2624,7 @@
 		<object-name>elevation18.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18.5</property>
+				<property>controls/navigation/vert-profile-color/nm18.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2639,7 +2639,7 @@
 		<object-name>elevation19.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19.5</property>
+				<property>controls/navigation/vert-profile-color/nm19.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2654,7 +2654,7 @@
 		<object-name>elevation20.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm20.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2670,7 +2670,7 @@
 		<object-name>elevation21.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm21.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2685,7 +2685,7 @@
 		<object-name>elevation22.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22.5</property>
+				<property>controls/navigation/vert-profile-color/nm22.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2700,7 +2700,7 @@
 		<object-name>elevation23.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23.5</property>
+				<property>controls/navigation/vert-profile-color/nm23.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2715,7 +2715,7 @@
 		<object-name>elevation24.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24.5</property>
+				<property>controls/navigation/vert-profile-color/nm24.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2730,7 +2730,7 @@
 		<object-name>elevation25.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm25.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2745,7 +2745,7 @@
 		<object-name>elevation26.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm26.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2760,7 +2760,7 @@
 		<object-name>elevation27.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27.5</property>
+				<property>controls/navigation/vert-profile-color/nm27.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2775,7 +2775,7 @@
 		<object-name>elevation28.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28.5</property>
+				<property>controls/navigation/vert-profile-color/nm28.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2790,7 +2790,7 @@
 		<object-name>elevation29.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29.5</property>
+				<property>controls/navigation/vert-profile-color/nm29.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2805,7 +2805,7 @@
 		<object-name>elevation30.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm30.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2821,7 +2821,7 @@
 		<object-name>elevation31.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm31.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2836,7 +2836,7 @@
 		<object-name>elevation32.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32.5</property>
+				<property>controls/navigation/vert-profile-color/nm32.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2851,7 +2851,7 @@
 		<object-name>elevation33.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33.5</property>
+				<property>controls/navigation/vert-profile-color/nm33.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2866,7 +2866,7 @@
 		<object-name>elevation34.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34.5</property>
+				<property>controls/navigation/vert-profile-color/nm34.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2881,7 +2881,7 @@
 		<object-name>elevation35.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm35.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2896,7 +2896,7 @@
 		<object-name>elevation36.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm36.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2911,7 +2911,7 @@
 		<object-name>elevation37.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37.5</property>
+				<property>controls/navigation/vert-profile-color/nm37.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2926,7 +2926,7 @@
 		<object-name>elevation38.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38.5</property>
+				<property>controls/navigation/vert-profile-color/nm38.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2941,7 +2941,7 @@
 		<object-name>elevation39.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39.5</property>
+				<property>controls/navigation/vert-profile-color/nm39.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2956,7 +2956,7 @@
 		<object-name>elevation40.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm40.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2972,7 +2972,7 @@
 		<object-name>elevation41.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41.5</property>
+				<property>controls/navigation/vert-profile-color/nm41.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -2987,7 +2987,7 @@
 		<object-name>elevation42.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42.5</property>
+				<property>controls/navigation/vert-profile-color/nm42.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3002,7 +3002,7 @@
 		<object-name>elevation43.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm43.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3017,7 +3017,7 @@
 		<object-name>elevation44.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44.5</property>
+				<property>controls/navigation/vert-profile-color/nm44.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3032,7 +3032,7 @@
 		<object-name>elevation45.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm45.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3047,7 +3047,7 @@
 		<object-name>elevation46.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46.5</property>
+				<property>controls/navigation/vert-profile-color/nm46.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3062,7 +3062,7 @@
 		<object-name>elevation47.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47.5</property>
+				<property>controls/navigation/vert-profile-color/nm47.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3077,7 +3077,7 @@
 		<object-name>elevation48.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm48.49999999999999</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3092,7 +3092,7 @@
 		<object-name>elevation49.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49.5</property>
+				<property>controls/navigation/vert-profile-color/nm49.5</property>
 				<value>white</value>
 			</equals>
 		</condition>
@@ -3110,7 +3110,7 @@
 		<object-name>elevation1</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1</property>
+				<property>controls/navigation/vert-profile-color/nm1</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3125,7 +3125,7 @@
 		<object-name>elevation2</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2</property>
+				<property>controls/navigation/vert-profile-color/nm2</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3140,7 +3140,7 @@
 		<object-name>elevation3</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3</property>
+				<property>controls/navigation/vert-profile-color/nm3</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3155,7 +3155,7 @@
 		<object-name>elevation4</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4</property>
+				<property>controls/navigation/vert-profile-color/nm4</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3170,7 +3170,7 @@
 		<object-name>elevation5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5</property>
+				<property>controls/navigation/vert-profile-color/nm5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3185,7 +3185,7 @@
 		<object-name>elevation6</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6</property>
+				<property>controls/navigation/vert-profile-color/nm6</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3200,7 +3200,7 @@
 		<object-name>elevation7</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7</property>
+				<property>controls/navigation/vert-profile-color/nm7</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3215,7 +3215,7 @@
 		<object-name>elevation8</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8</property>
+				<property>controls/navigation/vert-profile-color/nm8</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3230,7 +3230,7 @@
 		<object-name>elevation9</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9</property>
+				<property>controls/navigation/vert-profile-color/nm9</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3245,7 +3245,7 @@
 		<object-name>elevation10</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10</property>
+				<property>controls/navigation/vert-profile-color/nm10</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3261,7 +3261,7 @@
 		<object-name>elevation11</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11</property>
+				<property>controls/navigation/vert-profile-color/nm11</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3276,7 +3276,7 @@
 		<object-name>elevation12</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12</property>
+				<property>controls/navigation/vert-profile-color/nm12</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3291,7 +3291,7 @@
 		<object-name>elevation13</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13</property>
+				<property>controls/navigation/vert-profile-color/nm13</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3306,7 +3306,7 @@
 		<object-name>elevation14</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14</property>
+				<property>controls/navigation/vert-profile-color/nm14</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3321,7 +3321,7 @@
 		<object-name>elevation15</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15</property>
+				<property>controls/navigation/vert-profile-color/nm15</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3336,7 +3336,7 @@
 		<object-name>elevation16</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16</property>
+				<property>controls/navigation/vert-profile-color/nm16</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3351,7 +3351,7 @@
 		<object-name>elevation17</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17</property>
+				<property>controls/navigation/vert-profile-color/nm17</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3366,7 +3366,7 @@
 		<object-name>elevation18</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18</property>
+				<property>controls/navigation/vert-profile-color/nm18</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3381,7 +3381,7 @@
 		<object-name>elevation19</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19</property>
+				<property>controls/navigation/vert-profile-color/nm19</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3396,7 +3396,7 @@
 		<object-name>elevation20</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20</property>
+				<property>controls/navigation/vert-profile-color/nm20</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3412,7 +3412,7 @@
 		<object-name>elevation21</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21</property>
+				<property>controls/navigation/vert-profile-color/nm21</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3427,7 +3427,7 @@
 		<object-name>elevation22</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22</property>
+				<property>controls/navigation/vert-profile-color/nm22</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3442,7 +3442,7 @@
 		<object-name>elevation23</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23</property>
+				<property>controls/navigation/vert-profile-color/nm23</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3457,7 +3457,7 @@
 		<object-name>elevation24</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24</property>
+				<property>controls/navigation/vert-profile-color/nm24</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3472,7 +3472,7 @@
 		<object-name>elevation25</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25</property>
+				<property>controls/navigation/vert-profile-color/nm25</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3487,7 +3487,7 @@
 		<object-name>elevation26</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26</property>
+				<property>controls/navigation/vert-profile-color/nm26</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3502,7 +3502,7 @@
 		<object-name>elevation27</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27</property>
+				<property>controls/navigation/vert-profile-color/nm27</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3517,7 +3517,7 @@
 		<object-name>elevation28</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28</property>
+				<property>controls/navigation/vert-profile-color/nm28</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3532,7 +3532,7 @@
 		<object-name>elevation29</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29</property>
+				<property>controls/navigation/vert-profile-color/nm29</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3547,7 +3547,7 @@
 		<object-name>elevation30</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30</property>
+				<property>controls/navigation/vert-profile-color/nm30</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3563,7 +3563,7 @@
 		<object-name>elevation31</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31</property>
+				<property>controls/navigation/vert-profile-color/nm31</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3578,7 +3578,7 @@
 		<object-name>elevation32</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32</property>
+				<property>controls/navigation/vert-profile-color/nm32</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3593,7 +3593,7 @@
 		<object-name>elevation33</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33</property>
+				<property>controls/navigation/vert-profile-color/nm33</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3608,7 +3608,7 @@
 		<object-name>elevation34</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34</property>
+				<property>controls/navigation/vert-profile-color/nm34</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3623,7 +3623,7 @@
 		<object-name>elevation35</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35</property>
+				<property>controls/navigation/vert-profile-color/nm35</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3638,7 +3638,7 @@
 		<object-name>elevation36</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36</property>
+				<property>controls/navigation/vert-profile-color/nm36</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3653,7 +3653,7 @@
 		<object-name>elevation37</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37</property>
+				<property>controls/navigation/vert-profile-color/nm37</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3668,7 +3668,7 @@
 		<object-name>elevation38</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38</property>
+				<property>controls/navigation/vert-profile-color/nm38</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3683,7 +3683,7 @@
 		<object-name>elevation39</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39</property>
+				<property>controls/navigation/vert-profile-color/nm39</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3698,7 +3698,7 @@
 		<object-name>elevation40</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40</property>
+				<property>controls/navigation/vert-profile-color/nm40</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3714,7 +3714,7 @@
 		<object-name>elevation41</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41</property>
+				<property>controls/navigation/vert-profile-color/nm41</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3729,7 +3729,7 @@
 		<object-name>elevation42</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42</property>
+				<property>controls/navigation/vert-profile-color/nm42</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3744,7 +3744,7 @@
 		<object-name>elevation43</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43</property>
+				<property>controls/navigation/vert-profile-color/nm43</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3759,7 +3759,7 @@
 		<object-name>elevation44</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44</property>
+				<property>controls/navigation/vert-profile-color/nm44</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3774,7 +3774,7 @@
 		<object-name>elevation45</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45</property>
+				<property>controls/navigation/vert-profile-color/nm45</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3789,7 +3789,7 @@
 		<object-name>elevation46</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46</property>
+				<property>controls/navigation/vert-profile-color/nm46</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3804,7 +3804,7 @@
 		<object-name>elevation47</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47</property>
+				<property>controls/navigation/vert-profile-color/nm47</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3819,7 +3819,7 @@
 		<object-name>elevation48</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48</property>
+				<property>controls/navigation/vert-profile-color/nm48</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3834,7 +3834,7 @@
 		<object-name>elevation49</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49</property>
+				<property>controls/navigation/vert-profile-color/nm49</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3849,7 +3849,7 @@
 		<object-name>elevation50</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm50</property>
+				<property>controls/navigation/vert-profile-color/nm50</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3864,7 +3864,7 @@
 		<object-name>elevation1.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1.5</property>
+				<property>controls/navigation/vert-profile-color/nm1.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3879,7 +3879,7 @@
 		<object-name>elevation2.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2.5</property>
+				<property>controls/navigation/vert-profile-color/nm2.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3894,7 +3894,7 @@
 		<object-name>elevation3.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3.5</property>
+				<property>controls/navigation/vert-profile-color/nm3.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3909,7 +3909,7 @@
 		<object-name>elevation4.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4.5</property>
+				<property>controls/navigation/vert-profile-color/nm4.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3924,7 +3924,7 @@
 		<object-name>elevation5.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5.5</property>
+				<property>controls/navigation/vert-profile-color/nm5.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3939,7 +3939,7 @@
 		<object-name>elevation6.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6.5</property>
+				<property>controls/navigation/vert-profile-color/nm6.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3954,7 +3954,7 @@
 		<object-name>elevation7.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7.5</property>
+				<property>controls/navigation/vert-profile-color/nm7.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3969,7 +3969,7 @@
 		<object-name>elevation8.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8.5</property>
+				<property>controls/navigation/vert-profile-color/nm8.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3984,7 +3984,7 @@
 		<object-name>elevation9.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9.5</property>
+				<property>controls/navigation/vert-profile-color/nm9.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -3999,7 +3999,7 @@
 		<object-name>elevation10.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10.5</property>
+				<property>controls/navigation/vert-profile-color/nm10.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4015,7 +4015,7 @@
 		<object-name>elevation11.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm11.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4030,7 +4030,7 @@
 		<object-name>elevation12.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12.5</property>
+				<property>controls/navigation/vert-profile-color/nm12.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4045,7 +4045,7 @@
 		<object-name>elevation13.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13.5</property>
+				<property>controls/navigation/vert-profile-color/nm13.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4060,7 +4060,7 @@
 		<object-name>elevation14.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14.5</property>
+				<property>controls/navigation/vert-profile-color/nm14.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4075,7 +4075,7 @@
 		<object-name>elevation15.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15.5</property>
+				<property>controls/navigation/vert-profile-color/nm15.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4090,7 +4090,7 @@
 		<object-name>elevation16.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm16.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4105,7 +4105,7 @@
 		<object-name>elevation17.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17.5</property>
+				<property>controls/navigation/vert-profile-color/nm17.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4120,7 +4120,7 @@
 		<object-name>elevation18.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18.5</property>
+				<property>controls/navigation/vert-profile-color/nm18.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4135,7 +4135,7 @@
 		<object-name>elevation19.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19.5</property>
+				<property>controls/navigation/vert-profile-color/nm19.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4150,7 +4150,7 @@
 		<object-name>elevation20.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm20.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4166,7 +4166,7 @@
 		<object-name>elevation21.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm21.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4181,7 +4181,7 @@
 		<object-name>elevation22.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22.5</property>
+				<property>controls/navigation/vert-profile-color/nm22.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4196,7 +4196,7 @@
 		<object-name>elevation23.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23.5</property>
+				<property>controls/navigation/vert-profile-color/nm23.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4211,7 +4211,7 @@
 		<object-name>elevation24.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24.5</property>
+				<property>controls/navigation/vert-profile-color/nm24.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4226,7 +4226,7 @@
 		<object-name>elevation25.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm25.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4241,7 +4241,7 @@
 		<object-name>elevation26.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm26.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4256,7 +4256,7 @@
 		<object-name>elevation27.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27.5</property>
+				<property>controls/navigation/vert-profile-color/nm27.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4271,7 +4271,7 @@
 		<object-name>elevation28.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28.5</property>
+				<property>controls/navigation/vert-profile-color/nm28.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4286,7 +4286,7 @@
 		<object-name>elevation29.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29.5</property>
+				<property>controls/navigation/vert-profile-color/nm29.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4301,7 +4301,7 @@
 		<object-name>elevation30.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm30.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4317,7 +4317,7 @@
 		<object-name>elevation31.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm31.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4332,7 +4332,7 @@
 		<object-name>elevation32.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32.5</property>
+				<property>controls/navigation/vert-profile-color/nm32.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4347,7 +4347,7 @@
 		<object-name>elevation33.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33.5</property>
+				<property>controls/navigation/vert-profile-color/nm33.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4362,7 +4362,7 @@
 		<object-name>elevation34.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34.5</property>
+				<property>controls/navigation/vert-profile-color/nm34.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4377,7 +4377,7 @@
 		<object-name>elevation35.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm35.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4392,7 +4392,7 @@
 		<object-name>elevation36.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm36.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4407,7 +4407,7 @@
 		<object-name>elevation37.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37.5</property>
+				<property>controls/navigation/vert-profile-color/nm37.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4422,7 +4422,7 @@
 		<object-name>elevation38.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38.5</property>
+				<property>controls/navigation/vert-profile-color/nm38.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4437,7 +4437,7 @@
 		<object-name>elevation39.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39.5</property>
+				<property>controls/navigation/vert-profile-color/nm39.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4452,7 +4452,7 @@
 		<object-name>elevation40.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm40.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4468,7 +4468,7 @@
 		<object-name>elevation41.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41.5</property>
+				<property>controls/navigation/vert-profile-color/nm41.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4483,7 +4483,7 @@
 		<object-name>elevation42.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42.5</property>
+				<property>controls/navigation/vert-profile-color/nm42.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4498,7 +4498,7 @@
 		<object-name>elevation43.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm43.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4513,7 +4513,7 @@
 		<object-name>elevation44.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44.5</property>
+				<property>controls/navigation/vert-profile-color/nm44.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4528,7 +4528,7 @@
 		<object-name>elevation45.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm45.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4543,7 +4543,7 @@
 		<object-name>elevation46.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46.5</property>
+				<property>controls/navigation/vert-profile-color/nm46.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4558,7 +4558,7 @@
 		<object-name>elevation47.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47.5</property>
+				<property>controls/navigation/vert-profile-color/nm47.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4573,7 +4573,7 @@
 		<object-name>elevation48.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm48.49999999999999</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4588,7 +4588,7 @@
 		<object-name>elevation49.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49.5</property>
+				<property>controls/navigation/vert-profile-color/nm49.5</property>
 				<value>red</value>
 			</equals>
 		</condition>
@@ -4606,7 +4606,7 @@
 		<object-name>elevation1</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1</property>
+				<property>controls/navigation/vert-profile-color/nm1</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4621,7 +4621,7 @@
 		<object-name>elevation2</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2</property>
+				<property>controls/navigation/vert-profile-color/nm2</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4636,7 +4636,7 @@
 		<object-name>elevation3</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3</property>
+				<property>controls/navigation/vert-profile-color/nm3</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4651,7 +4651,7 @@
 		<object-name>elevation4</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4</property>
+				<property>controls/navigation/vert-profile-color/nm4</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4666,7 +4666,7 @@
 		<object-name>elevation5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5</property>
+				<property>controls/navigation/vert-profile-color/nm5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4681,7 +4681,7 @@
 		<object-name>elevation6</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6</property>
+				<property>controls/navigation/vert-profile-color/nm6</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4696,7 +4696,7 @@
 		<object-name>elevation7</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7</property>
+				<property>controls/navigation/vert-profile-color/nm7</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4711,7 +4711,7 @@
 		<object-name>elevation8</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8</property>
+				<property>controls/navigation/vert-profile-color/nm8</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4726,7 +4726,7 @@
 		<object-name>elevation9</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9</property>
+				<property>controls/navigation/vert-profile-color/nm9</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4741,7 +4741,7 @@
 		<object-name>elevation10</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10</property>
+				<property>controls/navigation/vert-profile-color/nm10</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4757,7 +4757,7 @@
 		<object-name>elevation11</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11</property>
+				<property>controls/navigation/vert-profile-color/nm11</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4772,7 +4772,7 @@
 		<object-name>elevation12</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12</property>
+				<property>controls/navigation/vert-profile-color/nm12</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4787,7 +4787,7 @@
 		<object-name>elevation13</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13</property>
+				<property>controls/navigation/vert-profile-color/nm13</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4802,7 +4802,7 @@
 		<object-name>elevation14</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14</property>
+				<property>controls/navigation/vert-profile-color/nm14</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4817,7 +4817,7 @@
 		<object-name>elevation15</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15</property>
+				<property>controls/navigation/vert-profile-color/nm15</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4832,7 +4832,7 @@
 		<object-name>elevation16</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16</property>
+				<property>controls/navigation/vert-profile-color/nm16</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4847,7 +4847,7 @@
 		<object-name>elevation17</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17</property>
+				<property>controls/navigation/vert-profile-color/nm17</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4862,7 +4862,7 @@
 		<object-name>elevation18</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18</property>
+				<property>controls/navigation/vert-profile-color/nm18</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4877,7 +4877,7 @@
 		<object-name>elevation19</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19</property>
+				<property>controls/navigation/vert-profile-color/nm19</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4892,7 +4892,7 @@
 		<object-name>elevation20</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20</property>
+				<property>controls/navigation/vert-profile-color/nm20</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4908,7 +4908,7 @@
 		<object-name>elevation21</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21</property>
+				<property>controls/navigation/vert-profile-color/nm21</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4923,7 +4923,7 @@
 		<object-name>elevation22</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22</property>
+				<property>controls/navigation/vert-profile-color/nm22</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4938,7 +4938,7 @@
 		<object-name>elevation23</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23</property>
+				<property>controls/navigation/vert-profile-color/nm23</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4953,7 +4953,7 @@
 		<object-name>elevation24</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24</property>
+				<property>controls/navigation/vert-profile-color/nm24</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4968,7 +4968,7 @@
 		<object-name>elevation25</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25</property>
+				<property>controls/navigation/vert-profile-color/nm25</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4983,7 +4983,7 @@
 		<object-name>elevation26</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26</property>
+				<property>controls/navigation/vert-profile-color/nm26</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -4998,7 +4998,7 @@
 		<object-name>elevation27</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27</property>
+				<property>controls/navigation/vert-profile-color/nm27</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5013,7 +5013,7 @@
 		<object-name>elevation28</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28</property>
+				<property>controls/navigation/vert-profile-color/nm28</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5028,7 +5028,7 @@
 		<object-name>elevation29</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29</property>
+				<property>controls/navigation/vert-profile-color/nm29</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5043,7 +5043,7 @@
 		<object-name>elevation30</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30</property>
+				<property>controls/navigation/vert-profile-color/nm30</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5059,7 +5059,7 @@
 		<object-name>elevation31</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31</property>
+				<property>controls/navigation/vert-profile-color/nm31</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5074,7 +5074,7 @@
 		<object-name>elevation32</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32</property>
+				<property>controls/navigation/vert-profile-color/nm32</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5089,7 +5089,7 @@
 		<object-name>elevation33</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33</property>
+				<property>controls/navigation/vert-profile-color/nm33</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5104,7 +5104,7 @@
 		<object-name>elevation34</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34</property>
+				<property>controls/navigation/vert-profile-color/nm34</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5119,7 +5119,7 @@
 		<object-name>elevation35</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35</property>
+				<property>controls/navigation/vert-profile-color/nm35</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5134,7 +5134,7 @@
 		<object-name>elevation36</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36</property>
+				<property>controls/navigation/vert-profile-color/nm36</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5149,7 +5149,7 @@
 		<object-name>elevation37</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37</property>
+				<property>controls/navigation/vert-profile-color/nm37</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5164,7 +5164,7 @@
 		<object-name>elevation38</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38</property>
+				<property>controls/navigation/vert-profile-color/nm38</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5179,7 +5179,7 @@
 		<object-name>elevation39</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39</property>
+				<property>controls/navigation/vert-profile-color/nm39</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5194,7 +5194,7 @@
 		<object-name>elevation40</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40</property>
+				<property>controls/navigation/vert-profile-color/nm40</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5210,7 +5210,7 @@
 		<object-name>elevation41</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41</property>
+				<property>controls/navigation/vert-profile-color/nm41</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5225,7 +5225,7 @@
 		<object-name>elevation42</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42</property>
+				<property>controls/navigation/vert-profile-color/nm42</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5240,7 +5240,7 @@
 		<object-name>elevation43</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43</property>
+				<property>controls/navigation/vert-profile-color/nm43</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5255,7 +5255,7 @@
 		<object-name>elevation44</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44</property>
+				<property>controls/navigation/vert-profile-color/nm44</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5270,7 +5270,7 @@
 		<object-name>elevation45</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45</property>
+				<property>controls/navigation/vert-profile-color/nm45</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5285,7 +5285,7 @@
 		<object-name>elevation46</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46</property>
+				<property>controls/navigation/vert-profile-color/nm46</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5300,7 +5300,7 @@
 		<object-name>elevation47</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47</property>
+				<property>controls/navigation/vert-profile-color/nm47</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5315,7 +5315,7 @@
 		<object-name>elevation48</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48</property>
+				<property>controls/navigation/vert-profile-color/nm48</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5330,7 +5330,7 @@
 		<object-name>elevation49</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49</property>
+				<property>controls/navigation/vert-profile-color/nm49</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5345,7 +5345,7 @@
 		<object-name>elevation50</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm50</property>
+				<property>controls/navigation/vert-profile-color/nm50</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5360,7 +5360,7 @@
 		<object-name>elevation1.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1.5</property>
+				<property>controls/navigation/vert-profile-color/nm1.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5375,7 +5375,7 @@
 		<object-name>elevation2.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2.5</property>
+				<property>controls/navigation/vert-profile-color/nm2.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5390,7 +5390,7 @@
 		<object-name>elevation3.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3.5</property>
+				<property>controls/navigation/vert-profile-color/nm3.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5405,7 +5405,7 @@
 		<object-name>elevation4.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4.5</property>
+				<property>controls/navigation/vert-profile-color/nm4.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5420,7 +5420,7 @@
 		<object-name>elevation5.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5.5</property>
+				<property>controls/navigation/vert-profile-color/nm5.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5435,7 +5435,7 @@
 		<object-name>elevation6.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6.5</property>
+				<property>controls/navigation/vert-profile-color/nm6.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5450,7 +5450,7 @@
 		<object-name>elevation7.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7.5</property>
+				<property>controls/navigation/vert-profile-color/nm7.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5465,7 +5465,7 @@
 		<object-name>elevation8.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8.5</property>
+				<property>controls/navigation/vert-profile-color/nm8.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5480,7 +5480,7 @@
 		<object-name>elevation9.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9.5</property>
+				<property>controls/navigation/vert-profile-color/nm9.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5495,7 +5495,7 @@
 		<object-name>elevation10.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10.5</property>
+				<property>controls/navigation/vert-profile-color/nm10.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5511,7 +5511,7 @@
 		<object-name>elevation11.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm11.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5526,7 +5526,7 @@
 		<object-name>elevation12.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12.5</property>
+				<property>controls/navigation/vert-profile-color/nm12.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5541,7 +5541,7 @@
 		<object-name>elevation13.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13.5</property>
+				<property>controls/navigation/vert-profile-color/nm13.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5556,7 +5556,7 @@
 		<object-name>elevation14.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14.5</property>
+				<property>controls/navigation/vert-profile-color/nm14.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5571,7 +5571,7 @@
 		<object-name>elevation15.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15.5</property>
+				<property>controls/navigation/vert-profile-color/nm15.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5586,7 +5586,7 @@
 		<object-name>elevation16.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm16.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5601,7 +5601,7 @@
 		<object-name>elevation17.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17.5</property>
+				<property>controls/navigation/vert-profile-color/nm17.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5616,7 +5616,7 @@
 		<object-name>elevation18.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18.5</property>
+				<property>controls/navigation/vert-profile-color/nm18.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5631,7 +5631,7 @@
 		<object-name>elevation19.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19.5</property>
+				<property>controls/navigation/vert-profile-color/nm19.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5646,7 +5646,7 @@
 		<object-name>elevation20.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm20.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5662,7 +5662,7 @@
 		<object-name>elevation21.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm21.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5677,7 +5677,7 @@
 		<object-name>elevation22.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22.5</property>
+				<property>controls/navigation/vert-profile-color/nm22.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5692,7 +5692,7 @@
 		<object-name>elevation23.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23.5</property>
+				<property>controls/navigation/vert-profile-color/nm23.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5707,7 +5707,7 @@
 		<object-name>elevation24.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24.5</property>
+				<property>controls/navigation/vert-profile-color/nm24.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5722,7 +5722,7 @@
 		<object-name>elevation25.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm25.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5737,7 +5737,7 @@
 		<object-name>elevation26.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm26.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5752,7 +5752,7 @@
 		<object-name>elevation27.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27.5</property>
+				<property>controls/navigation/vert-profile-color/nm27.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5767,7 +5767,7 @@
 		<object-name>elevation28.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28.5</property>
+				<property>controls/navigation/vert-profile-color/nm28.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5782,7 +5782,7 @@
 		<object-name>elevation29.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29.5</property>
+				<property>controls/navigation/vert-profile-color/nm29.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5797,7 +5797,7 @@
 		<object-name>elevation30.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm30.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5813,7 +5813,7 @@
 		<object-name>elevation31.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm31.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5828,7 +5828,7 @@
 		<object-name>elevation32.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32.5</property>
+				<property>controls/navigation/vert-profile-color/nm32.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5843,7 +5843,7 @@
 		<object-name>elevation33.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33.5</property>
+				<property>controls/navigation/vert-profile-color/nm33.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5858,7 +5858,7 @@
 		<object-name>elevation34.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34.5</property>
+				<property>controls/navigation/vert-profile-color/nm34.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5873,7 +5873,7 @@
 		<object-name>elevation35.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm35.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5888,7 +5888,7 @@
 		<object-name>elevation36.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm36.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5903,7 +5903,7 @@
 		<object-name>elevation37.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37.5</property>
+				<property>controls/navigation/vert-profile-color/nm37.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5918,7 +5918,7 @@
 		<object-name>elevation38.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38.5</property>
+				<property>controls/navigation/vert-profile-color/nm38.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5933,7 +5933,7 @@
 		<object-name>elevation39.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39.5</property>
+				<property>controls/navigation/vert-profile-color/nm39.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5948,7 +5948,7 @@
 		<object-name>elevation40.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm40.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5964,7 +5964,7 @@
 		<object-name>elevation41.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41.5</property>
+				<property>controls/navigation/vert-profile-color/nm41.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5979,7 +5979,7 @@
 		<object-name>elevation42.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42.5</property>
+				<property>controls/navigation/vert-profile-color/nm42.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -5994,7 +5994,7 @@
 		<object-name>elevation43.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm43.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -6009,7 +6009,7 @@
 		<object-name>elevation44.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44.5</property>
+				<property>controls/navigation/vert-profile-color/nm44.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -6024,7 +6024,7 @@
 		<object-name>elevation45.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm45.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -6039,7 +6039,7 @@
 		<object-name>elevation46.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46.5</property>
+				<property>controls/navigation/vert-profile-color/nm46.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -6054,7 +6054,7 @@
 		<object-name>elevation47.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47.5</property>
+				<property>controls/navigation/vert-profile-color/nm47.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -6069,7 +6069,7 @@
 		<object-name>elevation48.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm48.49999999999999</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -6084,7 +6084,7 @@
 		<object-name>elevation49.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49.5</property>
+				<property>controls/navigation/vert-profile-color/nm49.5</property>
 				<value>orange</value>
 			</equals>
 		</condition>
@@ -6102,7 +6102,7 @@
 		<object-name>elevation1</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1</property>
+				<property>controls/navigation/vert-profile-color/nm1</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6117,7 +6117,7 @@
 		<object-name>elevation2</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2</property>
+				<property>controls/navigation/vert-profile-color/nm2</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6132,7 +6132,7 @@
 		<object-name>elevation3</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3</property>
+				<property>controls/navigation/vert-profile-color/nm3</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6147,7 +6147,7 @@
 		<object-name>elevation4</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4</property>
+				<property>controls/navigation/vert-profile-color/nm4</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6162,7 +6162,7 @@
 		<object-name>elevation5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5</property>
+				<property>controls/navigation/vert-profile-color/nm5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6177,7 +6177,7 @@
 		<object-name>elevation6</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6</property>
+				<property>controls/navigation/vert-profile-color/nm6</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6192,7 +6192,7 @@
 		<object-name>elevation7</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7</property>
+				<property>controls/navigation/vert-profile-color/nm7</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6207,7 +6207,7 @@
 		<object-name>elevation8</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8</property>
+				<property>controls/navigation/vert-profile-color/nm8</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6222,7 +6222,7 @@
 		<object-name>elevation9</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9</property>
+				<property>controls/navigation/vert-profile-color/nm9</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6237,7 +6237,7 @@
 		<object-name>elevation10</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10</property>
+				<property>controls/navigation/vert-profile-color/nm10</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6253,7 +6253,7 @@
 		<object-name>elevation11</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11</property>
+				<property>controls/navigation/vert-profile-color/nm11</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6268,7 +6268,7 @@
 		<object-name>elevation12</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12</property>
+				<property>controls/navigation/vert-profile-color/nm12</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6283,7 +6283,7 @@
 		<object-name>elevation13</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13</property>
+				<property>controls/navigation/vert-profile-color/nm13</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6298,7 +6298,7 @@
 		<object-name>elevation14</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14</property>
+				<property>controls/navigation/vert-profile-color/nm14</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6313,7 +6313,7 @@
 		<object-name>elevation15</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15</property>
+				<property>controls/navigation/vert-profile-color/nm15</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6328,7 +6328,7 @@
 		<object-name>elevation16</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16</property>
+				<property>controls/navigation/vert-profile-color/nm16</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6343,7 +6343,7 @@
 		<object-name>elevation17</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17</property>
+				<property>controls/navigation/vert-profile-color/nm17</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6358,7 +6358,7 @@
 		<object-name>elevation18</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18</property>
+				<property>controls/navigation/vert-profile-color/nm18</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6373,7 +6373,7 @@
 		<object-name>elevation19</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19</property>
+				<property>controls/navigation/vert-profile-color/nm19</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6388,7 +6388,7 @@
 		<object-name>elevation20</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20</property>
+				<property>controls/navigation/vert-profile-color/nm20</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6404,7 +6404,7 @@
 		<object-name>elevation21</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21</property>
+				<property>controls/navigation/vert-profile-color/nm21</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6419,7 +6419,7 @@
 		<object-name>elevation22</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22</property>
+				<property>controls/navigation/vert-profile-color/nm22</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6434,7 +6434,7 @@
 		<object-name>elevation23</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23</property>
+				<property>controls/navigation/vert-profile-color/nm23</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6449,7 +6449,7 @@
 		<object-name>elevation24</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24</property>
+				<property>controls/navigation/vert-profile-color/nm24</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6464,7 +6464,7 @@
 		<object-name>elevation25</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25</property>
+				<property>controls/navigation/vert-profile-color/nm25</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6479,7 +6479,7 @@
 		<object-name>elevation26</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26</property>
+				<property>controls/navigation/vert-profile-color/nm26</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6494,7 +6494,7 @@
 		<object-name>elevation27</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27</property>
+				<property>controls/navigation/vert-profile-color/nm27</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6509,7 +6509,7 @@
 		<object-name>elevation28</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28</property>
+				<property>controls/navigation/vert-profile-color/nm28</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6524,7 +6524,7 @@
 		<object-name>elevation29</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29</property>
+				<property>controls/navigation/vert-profile-color/nm29</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6539,7 +6539,7 @@
 		<object-name>elevation30</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30</property>
+				<property>controls/navigation/vert-profile-color/nm30</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6555,7 +6555,7 @@
 		<object-name>elevation31</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31</property>
+				<property>controls/navigation/vert-profile-color/nm31</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6570,7 +6570,7 @@
 		<object-name>elevation32</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32</property>
+				<property>controls/navigation/vert-profile-color/nm32</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6585,7 +6585,7 @@
 		<object-name>elevation33</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33</property>
+				<property>controls/navigation/vert-profile-color/nm33</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6600,7 +6600,7 @@
 		<object-name>elevation34</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34</property>
+				<property>controls/navigation/vert-profile-color/nm34</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6615,7 +6615,7 @@
 		<object-name>elevation35</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35</property>
+				<property>controls/navigation/vert-profile-color/nm35</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6630,7 +6630,7 @@
 		<object-name>elevation36</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36</property>
+				<property>controls/navigation/vert-profile-color/nm36</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6645,7 +6645,7 @@
 		<object-name>elevation37</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37</property>
+				<property>controls/navigation/vert-profile-color/nm37</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6660,7 +6660,7 @@
 		<object-name>elevation38</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38</property>
+				<property>controls/navigation/vert-profile-color/nm38</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6675,7 +6675,7 @@
 		<object-name>elevation39</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39</property>
+				<property>controls/navigation/vert-profile-color/nm39</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6690,7 +6690,7 @@
 		<object-name>elevation40</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40</property>
+				<property>controls/navigation/vert-profile-color/nm40</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6706,7 +6706,7 @@
 		<object-name>elevation41</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41</property>
+				<property>controls/navigation/vert-profile-color/nm41</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6721,7 +6721,7 @@
 		<object-name>elevation42</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42</property>
+				<property>controls/navigation/vert-profile-color/nm42</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6736,7 +6736,7 @@
 		<object-name>elevation43</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43</property>
+				<property>controls/navigation/vert-profile-color/nm43</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6751,7 +6751,7 @@
 		<object-name>elevation44</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44</property>
+				<property>controls/navigation/vert-profile-color/nm44</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6766,7 +6766,7 @@
 		<object-name>elevation45</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45</property>
+				<property>controls/navigation/vert-profile-color/nm45</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6781,7 +6781,7 @@
 		<object-name>elevation46</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46</property>
+				<property>controls/navigation/vert-profile-color/nm46</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6796,7 +6796,7 @@
 		<object-name>elevation47</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47</property>
+				<property>controls/navigation/vert-profile-color/nm47</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6811,7 +6811,7 @@
 		<object-name>elevation48</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48</property>
+				<property>controls/navigation/vert-profile-color/nm48</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6826,7 +6826,7 @@
 		<object-name>elevation49</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49</property>
+				<property>controls/navigation/vert-profile-color/nm49</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6841,7 +6841,7 @@
 		<object-name>elevation50</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm50</property>
+				<property>controls/navigation/vert-profile-color/nm50</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6856,7 +6856,7 @@
 		<object-name>elevation1.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm1.5</property>
+				<property>controls/navigation/vert-profile-color/nm1.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6871,7 +6871,7 @@
 		<object-name>elevation2.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm2.5</property>
+				<property>controls/navigation/vert-profile-color/nm2.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6886,7 +6886,7 @@
 		<object-name>elevation3.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm3.5</property>
+				<property>controls/navigation/vert-profile-color/nm3.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6901,7 +6901,7 @@
 		<object-name>elevation4.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm4.5</property>
+				<property>controls/navigation/vert-profile-color/nm4.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6916,7 +6916,7 @@
 		<object-name>elevation5.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm5.5</property>
+				<property>controls/navigation/vert-profile-color/nm5.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6931,7 +6931,7 @@
 		<object-name>elevation6.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm6.5</property>
+				<property>controls/navigation/vert-profile-color/nm6.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6946,7 +6946,7 @@
 		<object-name>elevation7.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm7.5</property>
+				<property>controls/navigation/vert-profile-color/nm7.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6961,7 +6961,7 @@
 		<object-name>elevation8.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm8.5</property>
+				<property>controls/navigation/vert-profile-color/nm8.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6976,7 +6976,7 @@
 		<object-name>elevation9.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm9.5</property>
+				<property>controls/navigation/vert-profile-color/nm9.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -6991,7 +6991,7 @@
 		<object-name>elevation10.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm10.5</property>
+				<property>controls/navigation/vert-profile-color/nm10.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7007,7 +7007,7 @@
 		<object-name>elevation11.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm11.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm11.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7022,7 +7022,7 @@
 		<object-name>elevation12.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm12.5</property>
+				<property>controls/navigation/vert-profile-color/nm12.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7037,7 +7037,7 @@
 		<object-name>elevation13.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm13.5</property>
+				<property>controls/navigation/vert-profile-color/nm13.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7052,7 +7052,7 @@
 		<object-name>elevation14.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm14.5</property>
+				<property>controls/navigation/vert-profile-color/nm14.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7067,7 +7067,7 @@
 		<object-name>elevation15.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm15.5</property>
+				<property>controls/navigation/vert-profile-color/nm15.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7082,7 +7082,7 @@
 		<object-name>elevation16.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm16.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm16.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7097,7 +7097,7 @@
 		<object-name>elevation17.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm17.5</property>
+				<property>controls/navigation/vert-profile-color/nm17.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7112,7 +7112,7 @@
 		<object-name>elevation18.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm18.5</property>
+				<property>controls/navigation/vert-profile-color/nm18.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7127,7 +7127,7 @@
 		<object-name>elevation19.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm19.5</property>
+				<property>controls/navigation/vert-profile-color/nm19.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7142,7 +7142,7 @@
 		<object-name>elevation20.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm20.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm20.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7158,7 +7158,7 @@
 		<object-name>elevation21.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm21.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm21.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7173,7 +7173,7 @@
 		<object-name>elevation22.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm22.5</property>
+				<property>controls/navigation/vert-profile-color/nm22.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7188,7 +7188,7 @@
 		<object-name>elevation23.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm23.5</property>
+				<property>controls/navigation/vert-profile-color/nm23.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7203,7 +7203,7 @@
 		<object-name>elevation24.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm24.5</property>
+				<property>controls/navigation/vert-profile-color/nm24.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7218,7 +7218,7 @@
 		<object-name>elevation25.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm25.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm25.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7233,7 +7233,7 @@
 		<object-name>elevation26.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm26.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm26.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7248,7 +7248,7 @@
 		<object-name>elevation27.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm27.5</property>
+				<property>controls/navigation/vert-profile-color/nm27.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7263,7 +7263,7 @@
 		<object-name>elevation28.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm28.5</property>
+				<property>controls/navigation/vert-profile-color/nm28.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7278,7 +7278,7 @@
 		<object-name>elevation29.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm29.5</property>
+				<property>controls/navigation/vert-profile-color/nm29.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7293,7 +7293,7 @@
 		<object-name>elevation30.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm30.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm30.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7309,7 +7309,7 @@
 		<object-name>elevation31.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm31.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm31.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7324,7 +7324,7 @@
 		<object-name>elevation32.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm32.5</property>
+				<property>controls/navigation/vert-profile-color/nm32.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7339,7 +7339,7 @@
 		<object-name>elevation33.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm33.5</property>
+				<property>controls/navigation/vert-profile-color/nm33.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7354,7 +7354,7 @@
 		<object-name>elevation34.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm34.5</property>
+				<property>controls/navigation/vert-profile-color/nm34.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7369,7 +7369,7 @@
 		<object-name>elevation35.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm35.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm35.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7384,7 +7384,7 @@
 		<object-name>elevation36.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm36.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm36.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7399,7 +7399,7 @@
 		<object-name>elevation37.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm37.5</property>
+				<property>controls/navigation/vert-profile-color/nm37.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7414,7 +7414,7 @@
 		<object-name>elevation38.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm38.5</property>
+				<property>controls/navigation/vert-profile-color/nm38.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7429,7 +7429,7 @@
 		<object-name>elevation39.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm39.5</property>
+				<property>controls/navigation/vert-profile-color/nm39.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7444,7 +7444,7 @@
 		<object-name>elevation40.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm40.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm40.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7460,7 +7460,7 @@
 		<object-name>elevation41.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm41.5</property>
+				<property>controls/navigation/vert-profile-color/nm41.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7475,7 +7475,7 @@
 		<object-name>elevation42.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm42.5</property>
+				<property>controls/navigation/vert-profile-color/nm42.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7490,7 +7490,7 @@
 		<object-name>elevation43.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm43.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm43.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7505,7 +7505,7 @@
 		<object-name>elevation44.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm44.5</property>
+				<property>controls/navigation/vert-profile-color/nm44.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7520,7 +7520,7 @@
 		<object-name>elevation45.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm45.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm45.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7535,7 +7535,7 @@
 		<object-name>elevation46.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm46.5</property>
+				<property>controls/navigation/vert-profile-color/nm46.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7550,7 +7550,7 @@
 		<object-name>elevation47.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm47.5</property>
+				<property>controls/navigation/vert-profile-color/nm47.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7565,7 +7565,7 @@
 		<object-name>elevation48.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm48.49999999999999</property>
+				<property>controls/navigation/vert-profile-color/nm48.49999999999999</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7580,7 +7580,7 @@
 		<object-name>elevation49.5</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vert-profile-color/nm49.5</property>
+				<property>controls/navigation/vert-profile-color/nm49.5</property>
 				<value>yellow</value>
 			</equals>
 		</condition>
@@ -7604,7 +7604,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp1id</property>
+		<property>controls/navigation/vnav/wp1id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.004</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7625,7 +7625,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp2id</property>
+		<property>controls/navigation/vnav/wp2id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.004</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7646,7 +7646,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp3id</property>
+		<property>controls/navigation/vnav/wp3id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.004</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7667,7 +7667,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp4id</property>
+		<property>controls/navigation/vnav/wp4id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.004</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7688,7 +7688,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp5id</property>
+		<property>controls/navigation/vnav/wp5id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.004</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7709,7 +7709,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp1alt</property>
+		<property>controls/navigation/vnav/wp1alt</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.006</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7730,7 +7730,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp2alt</property>
+		<property>controls/navigation/vnav/wp2alt</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.006</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7751,7 +7751,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp3alt</property>
+		<property>controls/navigation/vnav/wp3alt</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.006</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7772,7 +7772,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp4alt</property>
+		<property>controls/navigation/vnav/wp4alt</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.006</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7793,7 +7793,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp5alt</property>
+		<property>controls/navigation/vnav/wp5alt</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.006</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -7814,7 +7814,7 @@
 		<object-name>wp1markertextid</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vnav/show-wp1</property>
+				<property>controls/navigation/vnav/show-wp1</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -7828,7 +7828,7 @@
 		<object-name>wp2markertextid</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vnav/show-wp2</property>
+				<property>controls/navigation/vnav/show-wp2</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -7842,7 +7842,7 @@
 		<object-name>wp3markertextid</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vnav/show-wp3</property>
+				<property>controls/navigation/vnav/show-wp3</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -7856,7 +7856,7 @@
 		<object-name>wp4markertextid</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vnav/show-wp4</property>
+				<property>controls/navigation/vnav/show-wp4</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -7870,7 +7870,7 @@
 		<object-name>wp5markertextid</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/vnav/show-wp5</property>
+				<property>controls/navigation/vnav/show-wp5</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -7883,7 +7883,7 @@
    	<object-name>wpalt1</object-name>
 	<object-name>wp2dist</object-name>
 	<object-name>wp1markertext</object-name>
-   	<property>/controls/navigation/vnav/wp1alt</property>
+   	<property>controls/navigation/vnav/wp1alt</property>
    	<factor>0.000001997</factor>
     	<axis>
      		<z>1.0</z>
@@ -7897,7 +7897,7 @@
 	<object-name>wp2dist</object-name>
 	<object-name>wp1markertext</object-name>
 	<object-name>wp1markertextid</object-name>
-   	<property>/controls/navigation/vnav/wp1dist</property>
+   	<property>controls/navigation/vnav/wp1dist</property>
    	<factor>0.002892</factor>
     	<axis>
      		<y>1.0</y>
@@ -7909,7 +7909,7 @@
    	<object-name>wpalt2</object-name>
 	<object-name>wp3dist</object-name>
 	<object-name>wp2markertext</object-name>
-   	<property>/controls/navigation/vnav/wp2alt</property>
+   	<property>controls/navigation/vnav/wp2alt</property>
    	<factor>0.000001997</factor>
     	<axis>
      		<z>1.0</z>
@@ -7923,7 +7923,7 @@
 	<object-name>wp3dist</object-name>
 	<object-name>wp2markertext</object-name>
 	<object-name>wp2markertextid</object-name>
-   	<property>/controls/navigation/vnav/wp2dist</property>
+   	<property>controls/navigation/vnav/wp2dist</property>
    	<factor>0.002892</factor>
     	<axis>
      		<y>1.0</y>
@@ -7935,7 +7935,7 @@
    	<object-name>wpalt3</object-name>
 	<object-name>wp4dist</object-name>
 	<object-name>wp3markertext</object-name>
-   	<property>/controls/navigation/vnav/wp3alt</property>
+   	<property>controls/navigation/vnav/wp3alt</property>
    	<factor>0.000001997</factor>
     	<axis>
      		<z>1.0</z>
@@ -7949,7 +7949,7 @@
 	<object-name>wp4dist</object-name>
 	<object-name>wp3markertext</object-name>
 	<object-name>wp3markertextid</object-name>
-   	<property>/controls/navigation/vnav/wp3dist</property>
+   	<property>controls/navigation/vnav/wp3dist</property>
    	<factor>0.002892</factor>
     	<axis>
      		<y>1.0</y>
@@ -7961,7 +7961,7 @@
    	<object-name>wpalt4</object-name>
 	<object-name>wp5dist</object-name>
 	<object-name>wp4markertext</object-name>
-   	<property>/controls/navigation/vnav/wp4alt</property>
+   	<property>controls/navigation/vnav/wp4alt</property>
    	<factor>0.000001997</factor>
     	<axis>
      		<z>1.0</z>
@@ -7975,7 +7975,7 @@
 	<object-name>wp5dist</object-name>
 	<object-name>wp4markertext</object-name>
 	<object-name>wp4markertextid</object-name>
-   	<property>/controls/navigation/vnav/wp4dist</property>
+   	<property>controls/navigation/vnav/wp4dist</property>
    	<factor>0.002892</factor>
     	<axis>
      		<y>1.0</y>
@@ -7986,7 +7986,7 @@
    	<type>translate</type>
    	<object-name>wpalt5</object-name>
 	<object-name>wp5markertext</object-name>
-   	<property>/controls/navigation/vnav/wp5alt</property>
+   	<property>controls/navigation/vnav/wp5alt</property>
    	<factor>0.000001997</factor>
     	<axis>
      		<z>1.0</z>
@@ -7999,7 +7999,7 @@
    	<object-name>wpalt5id</object-name>
 	<object-name>wp5markertext</object-name>
 	<object-name>wp5markertextid</object-name>
-   	<property>/controls/navigation/vnav/wp5dist</property>
+   	<property>controls/navigation/vnav/wp5dist</property>
    	<factor>0.002892</factor>
     	<axis>
      		<y>1.0</y>
@@ -8009,7 +8009,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp1dist</object-name>
-		<property>/controls/navigation/vnav/wp1angle</property>
+		<property>controls/navigation/vnav/wp1angle</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -8025,7 +8025,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp1dist</object-name>
-   	<property>/controls/navigation/vnav/wp1length</property>
+   	<property>controls/navigation/vnav/wp1length</property>
    	<factor>0.007071068</factor>
      <axis>
      	<x>0.0</x>
@@ -8036,7 +8036,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp2dist</object-name>
-		<property>/controls/navigation/vnav/wp2angle</property>
+		<property>controls/navigation/vnav/wp2angle</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -8052,7 +8052,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp2dist</object-name>
-   	<property>/controls/navigation/vnav/wp2length</property>
+   	<property>controls/navigation/vnav/wp2length</property>
    	<factor>0.007071068</factor>
      <axis>
      	<x>0.0</x>
@@ -8063,7 +8063,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp3dist</object-name>
-		<property>/controls/navigation/vnav/wp3angle</property>
+		<property>controls/navigation/vnav/wp3angle</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -8079,7 +8079,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp3dist</object-name>
-   	<property>/controls/navigation/vnav/wp3length</property>
+   	<property>controls/navigation/vnav/wp3length</property>
    	<factor>0.007071068</factor>
      <axis>
      	<x>0.0</x>
@@ -8090,7 +8090,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp4dist</object-name>
-		<property>/controls/navigation/vnav/wp4angle</property>
+		<property>controls/navigation/vnav/wp4angle</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -8106,7 +8106,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp4dist</object-name>
-   	<property>/controls/navigation/vnav/wp4length</property>
+   	<property>controls/navigation/vnav/wp4length</property>
    	<factor>0.007071068</factor>
      <axis>
      	<x>0.0</x>
@@ -8117,7 +8117,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp5dist</object-name>
-		<property>/controls/navigation/vnav/wp5angle</property>
+		<property>controls/navigation/vnav/wp5angle</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -8133,7 +8133,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp5dist</object-name>
-   	<property>/controls/navigation/vnav/wp5length</property>
+   	<property>controls/navigation/vnav/wp5length</property>
    	<factor>0.007071068</factor>
      <axis>
      	<x>0.0</x>
@@ -8162,7 +8162,7 @@
 		<object-name>wp4path</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/show-wp1</property>
+				<property>controls/navigation/show-wp1</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -8181,7 +8181,7 @@
 		<object-name>wp4pos</object-name>
 		<object-name>wp4path</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp1brg</property>
+		<property>controls/navigation/wp1brg</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8198,7 +8198,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp1path</object-name>
-   	<property>/controls/navigation/vnav/wp1dist</property>
+   	<property>controls/navigation/vnav/wp1dist</property>
    	<factor>0.01</factor>
      <axis>
      	<x>0.0</x>
@@ -8219,7 +8219,7 @@
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
 		<object-name>wp4path</object-name>
-		<property>/controls/navigation/vnav/wp1dist</property>
+		<property>controls/navigation/vnav/wp1dist</property>
 		<factor>0.0026</factor>
 		<axis>
 			<x>0</x>
@@ -8236,7 +8236,7 @@
 		<object-name>wp2path</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/show-wp2</property>
+				<property>controls/navigation/show-wp2</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -8252,7 +8252,7 @@
 		<object-name>wp4pos</object-name>
 		<object-name>wp4path</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp2brg</property>
+		<property>controls/navigation/wp2brg</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8269,7 +8269,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp2path</object-name>
-   	<property>/controls/navigation/vnav/wp2dist</property>
+   	<property>controls/navigation/vnav/wp2dist</property>
    	<factor>0.01</factor>
      <axis>
      	<x>0.0</x>
@@ -8287,7 +8287,7 @@
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
 		<object-name>wp4path</object-name>
-		<property>/controls/navigation/vnav/wp2dist</property>
+		<property>controls/navigation/vnav/wp2dist</property>
 		<factor>0.0026</factor>
 		<axis>
 			<x>0</x>
@@ -8304,7 +8304,7 @@
 		<object-name>wp3path</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/show-wp3</property>
+				<property>controls/navigation/show-wp3</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -8317,7 +8317,7 @@
 		<object-name>wp4pos</object-name>
 		<object-name>wp4path</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp3brg</property>
+		<property>controls/navigation/wp3brg</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8334,7 +8334,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp3path</object-name>
-   	<property>/controls/navigation/vnav/wp3dist</property>
+   	<property>controls/navigation/vnav/wp3dist</property>
    	<factor>0.01</factor>
      <axis>
      	<x>0.0</x>
@@ -8349,7 +8349,7 @@
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
 		<object-name>wp4path</object-name>
-		<property>/controls/navigation/vnav/wp3dist</property>
+		<property>controls/navigation/vnav/wp3dist</property>
 		<factor>0.0026</factor>
 		<axis>
 			<x>0</x>
@@ -8366,7 +8366,7 @@
 		<object-name>wp4path</object-name>
 		<condition>
 			<equals>
-				<property>/controls/navigation/show-wp4</property>
+				<property>controls/navigation/show-wp4</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -8376,7 +8376,7 @@
 		<object-name>wp4pos</object-name>
 		<object-name>wp4path</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp4brg</property>
+		<property>controls/navigation/wp4brg</property>
 		<factor>0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8393,7 +8393,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp4path</object-name>
-   	<property>/controls/navigation/vnav/wp4dist</property>
+   	<property>controls/navigation/vnav/wp4dist</property>
    	<factor>0.01</factor>
      <axis>
      	<x>0.0</x>
@@ -8405,7 +8405,7 @@
 		<type>translate</type>
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/vnav/wp4dist</property>
+		<property>controls/navigation/vnav/wp4dist</property>
 		<factor>0.0026</factor>
 		<axis>
 			<x>0</x>
@@ -8427,7 +8427,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp1id</property>
+		<property>controls/navigation/vnav/wp1id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.005</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -8448,7 +8448,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp2id</property>
+		<property>controls/navigation/vnav/wp2id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.005</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -8469,7 +8469,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp3id</property>
+		<property>controls/navigation/vnav/wp3id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.005</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -8490,7 +8490,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/navigation/vnav/wp4id</property>
+		<property>controls/navigation/vnav/wp4id</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.005</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -8506,7 +8506,7 @@
 		<type>rotate</type>
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp4brg</property>
+		<property>controls/navigation/wp4brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8523,7 +8523,7 @@
 		<type>rotate</type>
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp3brg</property>
+		<property>controls/navigation/wp3brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8540,7 +8540,7 @@
 		<type>rotate</type>
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp2brg</property>
+		<property>controls/navigation/wp2brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8557,7 +8557,7 @@
 		<type>rotate</type>
 		<object-name>wp4pos</object-name>
 		<object-name>wp4posmarker</object-name>
-		<property>/controls/navigation/wp1brg</property>
+		<property>controls/navigation/wp1brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8575,7 +8575,7 @@
 		<type>rotate</type>
 		<object-name>wp3pos</object-name>
 		<object-name>wp3posmarker</object-name>
-		<property>/controls/navigation/wp3brg</property>
+		<property>controls/navigation/wp3brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8592,7 +8592,7 @@
 		<type>rotate</type>
 		<object-name>wp3pos</object-name>
 		<object-name>wp3posmarker</object-name>
-		<property>/controls/navigation/wp2brg</property>
+		<property>controls/navigation/wp2brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8609,25 +8609,7 @@
 		<type>rotate</type>
 		<object-name>wp3pos</object-name>
 		<object-name>wp3posmarker</object-name>
-		<property>/controls/navigation/wp1brg</property>
-		<factor>-0.85</factor>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-		<center>
-			<x-m>0</x-m>
-			<y-m>0</y-m>
-			<z-m>-0.0466</z-m>
-		</center>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>wp2pos</object-name>
-		<object-name>wp2posmarker</object-name>
-		<property>/controls/navigation/wp2brg</property>
+		<property>controls/navigation/wp1brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8645,7 +8627,25 @@
 		<type>rotate</type>
 		<object-name>wp2pos</object-name>
 		<object-name>wp2posmarker</object-name>
-		<property>/controls/navigation/wp1brg</property>
+		<property>controls/navigation/wp2brg</property>
+		<factor>-0.85</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.0466</z-m>
+		</center>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>wp2pos</object-name>
+		<object-name>wp2posmarker</object-name>
+		<property>controls/navigation/wp1brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -8663,7 +8663,7 @@
 		<type>rotate</type>
 		<object-name>wp1pos</object-name>
 		<object-name>wp1posmarker</object-name>
-		<property>/controls/navigation/wp1brg</property>
+		<property>controls/navigation/wp1brg</property>
 		<factor>-0.85</factor>
 		<axis>
 			<x>1</x>
@@ -24536,7 +24536,7 @@
 	<animation>
 		<type>rotate</type>
 	<object-name>wmap_sprite</object-name>
-		<property>/orientation/heading-deg</property>
+		<property>orientation/heading-deg</property>
 		<factor>-1</factor>
 		<axis>
 			<x>1</x>
@@ -24554,7 +24554,7 @@
   <type>texmultiple</type>
   <object-name>wmap</object-name>
   <transform>
-    <property>/position/latitude-deg</property>
+    <property>position/latitude-deg</property>
     <subtype>textranslate</subtype>
     <factor>0.0065</factor>
     <axis>
@@ -24564,7 +24564,7 @@
    </axis>
   </transform>
   <transform>
-    <property>/position/longitude-deg</property>
+    <property>position/longitude-deg</property>
     <subtype>textranslate</subtype>
     <factor>0.00277</factor>
     <axis>
@@ -24586,7 +24586,7 @@
 	<object-name>wmap_7</object-name>
 	<object-name>wmap_8</object-name>
 	<object-name>wmap_9</object-name>
-	<property>/position/latitude-deg</property>
+	<property>position/latitude-deg</property>
 	<factor>-0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24604,7 +24604,7 @@
 	<object-name>wmap_7</object-name>
 	<object-name>wmap_8</object-name>
 	<object-name>wmap_9</object-name>
-	<property>/position/longitude-deg</property>
+	<property>position/longitude-deg</property>
 	<factor>-0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24616,7 +24616,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_1</object-name>
-	<property>/instrumentation/world-map/wmap[1]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[1]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24626,7 +24626,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_1</object-name>
-	<property>/instrumentation/world-map/wmap[1]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[1]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24638,7 +24638,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_2</object-name>
-	<property>/instrumentation/world-map/wmap[2]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[2]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24648,7 +24648,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_2</object-name>
-	<property>/instrumentation/world-map/wmap[2]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[2]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24660,7 +24660,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_3</object-name>
-	<property>/instrumentation/world-map/wmap[3]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[3]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24670,7 +24670,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_3</object-name>
-	<property>/instrumentation/world-map/wmap[3]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[3]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24682,7 +24682,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_4</object-name>
-	<property>/instrumentation/world-map/wmap[4]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[4]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24692,7 +24692,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_4</object-name>
-	<property>/instrumentation/world-map/wmap[4]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[4]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24704,7 +24704,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_5</object-name>
-	<property>/instrumentation/world-map/wmap[5]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[5]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24714,7 +24714,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_5</object-name>
-	<property>/instrumentation/world-map/wmap[5]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[5]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24726,7 +24726,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_6</object-name>
-	<property>/instrumentation/world-map/wmap[6]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[6]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24736,7 +24736,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_6</object-name>
-	<property>/instrumentation/world-map/wmap[6]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[6]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24748,7 +24748,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_7</object-name>
-	<property>/instrumentation/world-map/wmap[7]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[7]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24758,7 +24758,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_7</object-name>
-	<property>/instrumentation/world-map/wmap[7]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[7]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24770,7 +24770,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_8</object-name>
-	<property>/instrumentation/world-map/wmap[8]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[8]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24780,7 +24780,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_8</object-name>
-	<property>/instrumentation/world-map/wmap[8]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[8]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>
@@ -24792,7 +24792,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_9</object-name>
-	<property>/instrumentation/world-map/wmap[9]/longitude-deg</property>
+	<property>instrumentation/world-map/wmap[9]/longitude-deg</property>
 	<factor>0.018555556</factor>
 	<axis>
 		<y>1</y>
@@ -24802,7 +24802,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>wmap_9</object-name>
-	<property>/instrumentation/world-map/wmap[9]/latitude-deg</property>
+	<property>instrumentation/world-map/wmap[9]/latitude-deg</property>
 	<factor>0.018266666</factor>
 	<axis>
 		<z>1</z>

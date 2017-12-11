@@ -683,7 +683,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/warning</property>
+	<property>instrumentation/sysinfo/warning</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -709,7 +709,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/message</property>
+	<property>instrumentation/sysinfo/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -735,7 +735,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[0]/message</property>
+	<property>instrumentation/sysinfo/disp[0]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -759,7 +759,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[1]/message</property>
+	<property>instrumentation/sysinfo/disp[1]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -783,7 +783,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[2]/message</property>
+	<property>instrumentation/sysinfo/disp[2]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -807,7 +807,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[3]/message</property>
+	<property>instrumentation/sysinfo/disp[3]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -831,7 +831,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[4]/message</property>
+	<property>instrumentation/sysinfo/disp[4]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -855,7 +855,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[5]/message</property>
+	<property>instrumentation/sysinfo/disp[5]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -879,7 +879,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[6]/message</property>
+	<property>instrumentation/sysinfo/disp[6]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -903,7 +903,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[7]/message</property>
+	<property>instrumentation/sysinfo/disp[7]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -927,7 +927,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[8]/message</property>
+	<property>instrumentation/sysinfo/disp[8]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -951,7 +951,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[9]/message</property>
+	<property>instrumentation/sysinfo/disp[9]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -975,7 +975,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[10]/message</property>
+	<property>instrumentation/sysinfo/disp[10]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -999,7 +999,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[11]/message</property>
+	<property>instrumentation/sysinfo/disp[11]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1023,7 +1023,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[12]/message</property>
+	<property>instrumentation/sysinfo/disp[12]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1047,7 +1047,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[13]/message</property>
+	<property>instrumentation/sysinfo/disp[13]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1071,7 +1071,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[14]/message</property>
+	<property>instrumentation/sysinfo/disp[14]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1095,7 +1095,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[15]/message</property>
+	<property>instrumentation/sysinfo/disp[15]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1119,7 +1119,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[16]/message</property>
+	<property>instrumentation/sysinfo/disp[16]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1143,7 +1143,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[17]/message</property>
+	<property>instrumentation/sysinfo/disp[17]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1167,7 +1167,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[18]/message</property>
+	<property>instrumentation/sysinfo/disp[18]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1191,7 +1191,7 @@
 	<axis-alignment>yz-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/sysinfo/disp[19]/message</property>
+	<property>instrumentation/sysinfo/disp[19]/message</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1229,7 +1229,7 @@
 	<object-name>msg0</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[0]/type</property>
+			<property>instrumentation/sysinfo/disp[0]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1249,7 +1249,7 @@
 	<object-name>msg0</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[0]/type</property>
+			<property>instrumentation/sysinfo/disp[0]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1269,7 +1269,7 @@
 	<object-name>msg0</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[0]/type</property>
+			<property>instrumentation/sysinfo/disp[0]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1290,7 +1290,7 @@
 	<object-name>msg1</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[1]/type</property>
+			<property>instrumentation/sysinfo/disp[1]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1310,7 +1310,7 @@
 	<object-name>msg1</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[1]/type</property>
+			<property>instrumentation/sysinfo/disp[1]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1330,7 +1330,7 @@
 	<object-name>msg1</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[1]/type</property>
+			<property>instrumentation/sysinfo/disp[1]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1351,7 +1351,7 @@
 	<object-name>msg2</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[2]/type</property>
+			<property>instrumentation/sysinfo/disp[2]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1371,7 +1371,7 @@
 	<object-name>msg2</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[2]/type</property>
+			<property>instrumentation/sysinfo/disp[2]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1391,7 +1391,7 @@
 	<object-name>msg2</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[2]/type</property>
+			<property>instrumentation/sysinfo/disp[2]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1412,7 +1412,7 @@
 	<object-name>msg3</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[3]/type</property>
+			<property>instrumentation/sysinfo/disp[3]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1432,7 +1432,7 @@
 	<object-name>msg3</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[3]/type</property>
+			<property>instrumentation/sysinfo/disp[3]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1452,7 +1452,7 @@
 	<object-name>msg3</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[3]/type</property>
+			<property>instrumentation/sysinfo/disp[3]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1473,7 +1473,7 @@
 	<object-name>msg4</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[4]/type</property>
+			<property>instrumentation/sysinfo/disp[4]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1493,7 +1493,7 @@
 	<object-name>msg4</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[4]/type</property>
+			<property>instrumentation/sysinfo/disp[4]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1513,7 +1513,7 @@
 	<object-name>msg4</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[4]/type</property>
+			<property>instrumentation/sysinfo/disp[4]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1534,7 +1534,7 @@
 	<object-name>msg5</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[5]/type</property>
+			<property>instrumentation/sysinfo/disp[5]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1554,7 +1554,7 @@
 	<object-name>msg5</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[5]/type</property>
+			<property>instrumentation/sysinfo/disp[5]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1574,7 +1574,7 @@
 	<object-name>msg5</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[5]/type</property>
+			<property>instrumentation/sysinfo/disp[5]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1595,7 +1595,7 @@
 	<object-name>msg6</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[6]/type</property>
+			<property>instrumentation/sysinfo/disp[6]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1615,7 +1615,7 @@
 	<object-name>msg6</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[6]/type</property>
+			<property>instrumentation/sysinfo/disp[6]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1635,7 +1635,7 @@
 	<object-name>msg6</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[6]/type</property>
+			<property>instrumentation/sysinfo/disp[6]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1656,7 +1656,7 @@
 	<object-name>msg7</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[7]/type</property>
+			<property>instrumentation/sysinfo/disp[7]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1676,7 +1676,7 @@
 	<object-name>msg7</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[7]/type</property>
+			<property>instrumentation/sysinfo/disp[7]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1696,7 +1696,7 @@
 	<object-name>msg7</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[7]/type</property>
+			<property>instrumentation/sysinfo/disp[7]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1717,7 +1717,7 @@
 	<object-name>msg8</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[8]/type</property>
+			<property>instrumentation/sysinfo/disp[8]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1737,7 +1737,7 @@
 	<object-name>msg8</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[8]/type</property>
+			<property>instrumentation/sysinfo/disp[8]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1757,7 +1757,7 @@
 	<object-name>msg8</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[8]/type</property>
+			<property>instrumentation/sysinfo/disp[8]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1778,7 +1778,7 @@
 	<object-name>msg9</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[9]/type</property>
+			<property>instrumentation/sysinfo/disp[9]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1798,7 +1798,7 @@
 	<object-name>msg9</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[9]/type</property>
+			<property>instrumentation/sysinfo/disp[9]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1818,7 +1818,7 @@
 	<object-name>msg9</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[9]/type</property>
+			<property>instrumentation/sysinfo/disp[9]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1839,7 +1839,7 @@
 	<object-name>msg10</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[10]/type</property>
+			<property>instrumentation/sysinfo/disp[10]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1859,7 +1859,7 @@
 	<object-name>msg10</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[10]/type</property>
+			<property>instrumentation/sysinfo/disp[10]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1879,7 +1879,7 @@
 	<object-name>msg10</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[10]/type</property>
+			<property>instrumentation/sysinfo/disp[10]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1900,7 +1900,7 @@
 	<object-name>msg11</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[11]/type</property>
+			<property>instrumentation/sysinfo/disp[11]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1920,7 +1920,7 @@
 	<object-name>msg11</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[11]/type</property>
+			<property>instrumentation/sysinfo/disp[11]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -1940,7 +1940,7 @@
 	<object-name>msg11</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[11]/type</property>
+			<property>instrumentation/sysinfo/disp[11]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -1961,7 +1961,7 @@
 	<object-name>msg12</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[12]/type</property>
+			<property>instrumentation/sysinfo/disp[12]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -1981,7 +1981,7 @@
 	<object-name>msg12</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[12]/type</property>
+			<property>instrumentation/sysinfo/disp[12]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2001,7 +2001,7 @@
 	<object-name>msg12</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[12]/type</property>
+			<property>instrumentation/sysinfo/disp[12]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2022,7 +2022,7 @@
 	<object-name>msg13</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[13]/type</property>
+			<property>instrumentation/sysinfo/disp[13]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -2042,7 +2042,7 @@
 	<object-name>msg13</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[13]/type</property>
+			<property>instrumentation/sysinfo/disp[13]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2062,7 +2062,7 @@
 	<object-name>msg13</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[13]/type</property>
+			<property>instrumentation/sysinfo/disp[13]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2083,7 +2083,7 @@
 	<object-name>msg14</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[14]/type</property>
+			<property>instrumentation/sysinfo/disp[14]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -2103,7 +2103,7 @@
 	<object-name>msg14</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[14]/type</property>
+			<property>instrumentation/sysinfo/disp[14]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2123,7 +2123,7 @@
 	<object-name>msg14</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[14]/type</property>
+			<property>instrumentation/sysinfo/disp[14]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2144,7 +2144,7 @@
 	<object-name>msg15</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[15]/type</property>
+			<property>instrumentation/sysinfo/disp[15]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -2164,7 +2164,7 @@
 	<object-name>msg15</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[15]/type</property>
+			<property>instrumentation/sysinfo/disp[15]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2184,7 +2184,7 @@
 	<object-name>msg15</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[15]/type</property>
+			<property>instrumentation/sysinfo/disp[15]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2205,7 +2205,7 @@
 	<object-name>msg16</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[16]/type</property>
+			<property>instrumentation/sysinfo/disp[16]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -2225,7 +2225,7 @@
 	<object-name>msg16</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[16]/type</property>
+			<property>instrumentation/sysinfo/disp[16]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2245,7 +2245,7 @@
 	<object-name>msg16</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[16]/type</property>
+			<property>instrumentation/sysinfo/disp[16]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2266,7 +2266,7 @@
 	<object-name>msg17</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[17]/type</property>
+			<property>instrumentation/sysinfo/disp[17]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -2286,7 +2286,7 @@
 	<object-name>msg17</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[17]/type</property>
+			<property>instrumentation/sysinfo/disp[17]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2306,7 +2306,7 @@
 	<object-name>msg17</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[17]/type</property>
+			<property>instrumentation/sysinfo/disp[17]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2327,7 +2327,7 @@
 	<object-name>msg18</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[18]/type</property>
+			<property>instrumentation/sysinfo/disp[18]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -2347,7 +2347,7 @@
 	<object-name>msg18</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[18]/type</property>
+			<property>instrumentation/sysinfo/disp[18]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2367,7 +2367,7 @@
 	<object-name>msg18</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[18]/type</property>
+			<property>instrumentation/sysinfo/disp[18]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2388,7 +2388,7 @@
 	<object-name>msg19</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[19]/type</property>
+			<property>instrumentation/sysinfo/disp[19]/type</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -2408,7 +2408,7 @@
 	<object-name>msg19</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[19]/type</property>
+			<property>instrumentation/sysinfo/disp[19]/type</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2428,7 +2428,7 @@
 	<object-name>msg19</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[19]/type</property>
+			<property>instrumentation/sysinfo/disp[19]/type</property>
 			<value>2</value>
 		</equals>
 	</condition>
@@ -2505,7 +2505,7 @@
 	<object-name>new.0</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[0]/attend</property>
+			<property>instrumentation/sysinfo/disp[0]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2529,7 +2529,7 @@
 	<object-name>new.1</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[1]/attend</property>
+			<property>instrumentation/sysinfo/disp[1]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2553,7 +2553,7 @@
 	<object-name>new.2</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[2]/attend</property>
+			<property>instrumentation/sysinfo/disp[2]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2577,7 +2577,7 @@
 	<object-name>new.3</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[3]/attend</property>
+			<property>instrumentation/sysinfo/disp[3]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2601,7 +2601,7 @@
 	<object-name>new.4</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[4]/attend</property>
+			<property>instrumentation/sysinfo/disp[4]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2625,7 +2625,7 @@
 	<object-name>new.5</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[5]/attend</property>
+			<property>instrumentation/sysinfo/disp[5]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2649,7 +2649,7 @@
 	<object-name>new.6</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[6]/attend</property>
+			<property>instrumentation/sysinfo/disp[6]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2673,7 +2673,7 @@
 	<object-name>new.7</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[7]/attend</property>
+			<property>instrumentation/sysinfo/disp[7]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2697,7 +2697,7 @@
 	<object-name>new.8</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[8]/attend</property>
+			<property>instrumentation/sysinfo/disp[8]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2721,7 +2721,7 @@
 	<object-name>new.9</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[9]/attend</property>
+			<property>instrumentation/sysinfo/disp[9]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2745,7 +2745,7 @@
 	<object-name>new.10</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[10]/attend</property>
+			<property>instrumentation/sysinfo/disp[10]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2769,7 +2769,7 @@
 	<object-name>new.11</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[11]/attend</property>
+			<property>instrumentation/sysinfo/disp[11]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2793,7 +2793,7 @@
 	<object-name>new.12</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[12]/attend</property>
+			<property>instrumentation/sysinfo/disp[12]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2817,7 +2817,7 @@
 	<object-name>new.13</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[13]/attend</property>
+			<property>instrumentation/sysinfo/disp[13]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2841,7 +2841,7 @@
 	<object-name>new.14</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[14]/attend</property>
+			<property>instrumentation/sysinfo/disp[14]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2865,7 +2865,7 @@
 	<object-name>new.15</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[15]/attend</property>
+			<property>instrumentation/sysinfo/disp[15]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2889,7 +2889,7 @@
 	<object-name>new.16</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[16]/attend</property>
+			<property>instrumentation/sysinfo/disp[16]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2913,7 +2913,7 @@
 	<object-name>new.17</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[17]/attend</property>
+			<property>instrumentation/sysinfo/disp[17]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2937,7 +2937,7 @@
 	<object-name>new.18</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[18]/attend</property>
+			<property>instrumentation/sysinfo/disp[18]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2961,7 +2961,7 @@
 	<object-name>new.19</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/disp[19]/attend</property>
+			<property>instrumentation/sysinfo/disp[19]/attend</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2985,7 +2985,7 @@
 	<object-name>unattended</object-name>
 	<condition>
 		<equals>
-			<property>/instrumentation/sysinfo/unattended</property>
+			<property>instrumentation/sysinfo/unattended</property>
 			<value>1</value>
 		</equals>
 	</condition>
