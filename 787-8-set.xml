@@ -20,6 +20,7 @@
 
 		<model>
 			<path>Aircraft/787-8/Models/787-8.xml</path>
+			<fallback-model-index type="int">253</fallback-model-index>
             <livery>
                <file type="string">BOE</file>
             </livery>
