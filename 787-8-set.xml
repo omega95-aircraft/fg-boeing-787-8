@@ -16,6 +16,19 @@
             <model type="int">4</model>
             <cockpit type="int">4</cockpit>
         </rating>
+        <tags>
+          <tag>transport</tag>
+          <tag>boeing</tag>
+          <tag>2010s</tag> <!-- first flight 2009, entry into service 2011 -->
+          <tag>etops</tag>
+          <tag>glass-cockpit</tag>
+          <tag>hud</tag>
+          <tag>ifr</tag>
+          <tag>retractable-gear</tag>
+          <tag>tricycle</tag>
+          <tag>jet</tag>
+          <tag>twin-engine</tag>
+        </tags>
 		<engine>trent_1000</engine>
 
 		<model>
