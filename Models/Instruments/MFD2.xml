@@ -138,7 +138,7 @@
  <path>NDFULL.xml</path>
  <condition>
   <equals>
-   <property>/instrumentation/ndfull/active</property>
+   <property>instrumentation/ndfull/active</property>
    <value>1</value>
   </equals>
  </condition>

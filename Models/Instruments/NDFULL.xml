@@ -22,7 +22,7 @@
 		<object-name>nextwppointer</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[1]/show</property>
+					<property>instrumentation/ndfull/route/wp[1]/show</property>
 					<value>0</value>
 				</equals>
 		</condition>
@@ -31,7 +31,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>nextwppointer</object-name>
-		<property>/instrumentation/ndfull/next-wp-brg</property>
+		<property>instrumentation/ndfull/next-wp-brg</property>
 		<factor>1</factor>
 		<axis>
 			<x>1</x>
@@ -460,7 +460,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
-				<property>/instrumentation/ndfull/range</property>
+				<property>instrumentation/ndfull/range</property>
 				<value>0.75</value>
 				<value>1</value>
 				<value>2</value>
@@ -494,7 +494,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
-				<property>/instrumentation/ndfull/range</property>
+				<property>instrumentation/ndfull/range</property>
 				<value>250</value>
 				<value>128</value>
 				<value>64</value>
@@ -525,7 +525,7 @@
 		<object-name>zoomout</object-name>
 		<condition>
 			<less-than>
-				<property>/instrumentation/ndfull/range</property>
+				<property>instrumentation/ndfull/range</property>
 				<value>250</value>
 			</less-than>
 		</condition>
@@ -536,7 +536,7 @@
 		<object-name>zoomin</object-name>
 		<condition>
 			<greater-than>
-				<property>/instrumentation/ndfull/range</property>
+				<property>instrumentation/ndfull/range</property>
 				<value>0.75</value>
 			</greater-than>
 		</condition>
@@ -797,7 +797,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hdgtext</object-name>
-   <property>/orientation/heading-magnetic-deg</property>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.08</factor>
    <step>100</step>
    <axis>
@@ -810,7 +810,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hdgtext.001</object-name>
-   <property>/orientation/heading-magnetic-deg</property>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -823,7 +823,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>hdgtext.002</object-name>
-   <property>/orientation/heading-magnetic-deg</property>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -838,7 +838,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>range</object-name>
-   <property>/instrumentation/ndfull/range</property>
+   <property>instrumentation/ndfull/range</property>
    <factor>0.08</factor>
    <step>100</step>
    <axis>
@@ -851,7 +851,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>range.001</object-name>
-   <property>/instrumentation/ndfull/range</property>
+   <property>instrumentation/ndfull/range</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -864,7 +864,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>range.002</object-name>
-   <property>/instrumentation/ndfull/range</property>
+   <property>instrumentation/ndfull/range</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -878,7 +878,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>headingbug</object-name>
-		<property>/instrumentation/ndfull/heading-bug</property>
+		<property>instrumentation/ndfull/heading-bug</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -898,7 +898,7 @@
 		<object-name>vor1</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/show-vor1</property>
+					<property>instrumentation/ndfull/show-vor1</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -911,7 +911,7 @@
 		<object-name>vor1pointer</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/show-vor1</property>
+					<property>instrumentation/ndfull/show-vor1</property>
 					<value>0</value>
 				</equals>
 		</condition>
@@ -921,7 +921,7 @@
 		<type>rotate</type>
 		<object-name>vor1pointer</object-name>
 		<object-name>vor1</object-name>
-		<property>/instrumentation/ndfull/nav1-brg</property>
+		<property>instrumentation/ndfull/nav1-brg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -937,7 +937,7 @@
 	<animation>
   	 	<type>translate</type>
    		<object-name>vor1</object-name>
-   		<property>/instrumentation/ndfull/vor1-dist</property>
+   		<property>instrumentation/ndfull/vor1-dist</property>
    		<factor>0.005</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -947,7 +947,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor1</object-name>
-		<property>/instrumentation/ndfull/nav1-brg</property>
+		<property>instrumentation/ndfull/nav1-brg</property>
 		<factor>-1</factor>
 		<axis>
 			<x>1</x>
@@ -968,7 +968,7 @@
 		<object-name>vor2</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/show-vor2</property>
+					<property>instrumentation/ndfull/show-vor2</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -981,7 +981,7 @@
 		<object-name>vor2pointer</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/show-vor2</property>
+					<property>instrumentation/ndfull/show-vor2</property>
 					<value>0</value>
 				</equals>
 		</condition>
@@ -991,7 +991,7 @@
 		<type>rotate</type>
 		<object-name>vor2pointer</object-name>
 		<object-name>vor2</object-name>
-		<property>/instrumentation/ndfull/nav2-brg</property>
+		<property>instrumentation/ndfull/nav2-brg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1007,7 +1007,7 @@
 	<animation>
   	 	<type>translate</type>
    		<object-name>vor2</object-name>
-   		<property>/instrumentation/ndfull/vor2-dist</property>
+   		<property>instrumentation/ndfull/vor2-dist</property>
    		<factor>0.005</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1017,7 +1017,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>vor2</object-name>
-		<property>/instrumentation/ndfull/nav2-brg</property>
+		<property>instrumentation/ndfull/nav2-brg</property>
 		<factor>-1</factor>
 		<axis>
 			<x>1</x>
@@ -1041,7 +1041,7 @@
 		<object-name>wp1path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[1]/show</property>
+					<property>instrumentation/ndfull/route/wp[1]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1051,7 +1051,7 @@
   	 	<type>translate</type>
    		<object-name>wp1pos</object-name>
    		<object-name>wp2path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[1]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[1]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1062,7 +1062,7 @@
   	 	<type>translate</type>
    		<object-name>wp1pos</object-name>
    		<object-name>wp2path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[1]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[1]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1077,7 +1077,7 @@
 		<object-name>wp2path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[2]/show</property>
+					<property>instrumentation/ndfull/route/wp[2]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1087,7 +1087,7 @@
   	 	<type>translate</type>
    		<object-name>wp2pos</object-name>
    		<object-name>wp3path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[2]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[2]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1098,7 +1098,7 @@
   	 	<type>translate</type>
    		<object-name>wp2pos</object-name>
    		<object-name>wp3path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[2]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[2]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1113,7 +1113,7 @@
 		<object-name>wp3path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[3]/show</property>
+					<property>instrumentation/ndfull/route/wp[3]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1123,7 +1123,7 @@
   	 	<type>translate</type>
    		<object-name>wp3pos</object-name>
    		<object-name>wp4path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[3]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[3]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1134,7 +1134,7 @@
   	 	<type>translate</type>
    		<object-name>wp3pos</object-name>
    		<object-name>wp4path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[3]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[3]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1149,7 +1149,7 @@
 		<object-name>wp4path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[4]/show</property>
+					<property>instrumentation/ndfull/route/wp[4]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1159,7 +1159,7 @@
   	 	<type>translate</type>
    		<object-name>wp4pos</object-name>
    		<object-name>wp5path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[4]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[4]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1170,7 +1170,7 @@
   	 	<type>translate</type>
    		<object-name>wp4pos</object-name>
    		<object-name>wp5path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[4]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[4]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1185,7 +1185,7 @@
 		<object-name>wp5path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[5]/show</property>
+					<property>instrumentation/ndfull/route/wp[5]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1195,7 +1195,7 @@
   	 	<type>translate</type>
    		<object-name>wp5pos</object-name>
    		<object-name>wp6path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[5]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[5]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1206,7 +1206,7 @@
   	 	<type>translate</type>
    		<object-name>wp5pos</object-name>
    		<object-name>wp6path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[5]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[5]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1221,7 +1221,7 @@
 		<object-name>wp6path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[6]/show</property>
+					<property>instrumentation/ndfull/route/wp[6]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1231,7 +1231,7 @@
   	 	<type>translate</type>
    		<object-name>wp6pos</object-name>
    		<object-name>wp7path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[6]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[6]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1242,7 +1242,7 @@
   	 	<type>translate</type>
    		<object-name>wp6pos</object-name>
    		<object-name>wp7path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[6]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[6]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1257,7 +1257,7 @@
 		<object-name>wp7path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[7]/show</property>
+					<property>instrumentation/ndfull/route/wp[7]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1267,7 +1267,7 @@
   	 	<type>translate</type>
    		<object-name>wp7pos</object-name>
    		<object-name>wp8path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[7]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[7]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1278,7 +1278,7 @@
   	 	<type>translate</type>
    		<object-name>wp7pos</object-name>
    		<object-name>wp8path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[7]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[7]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1293,7 +1293,7 @@
 		<object-name>wp8path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[8]/show</property>
+					<property>instrumentation/ndfull/route/wp[8]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1303,7 +1303,7 @@
   	 	<type>translate</type>
    		<object-name>wp8pos</object-name>
    		<object-name>wp9path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[8]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[8]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1314,7 +1314,7 @@
   	 	<type>translate</type>
    		<object-name>wp8pos</object-name>
    		<object-name>wp9path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[8]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[8]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1329,7 +1329,7 @@
 		<object-name>wp9path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[9]/show</property>
+					<property>instrumentation/ndfull/route/wp[9]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1339,7 +1339,7 @@
   	 	<type>translate</type>
    		<object-name>wp9pos</object-name>
    		<object-name>wp10path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[9]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[9]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1350,7 +1350,7 @@
   	 	<type>translate</type>
    		<object-name>wp9pos</object-name>
    		<object-name>wp10path</object-name>
-   		<property>/instrumentation/ndfull/route/wp[9]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[9]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1365,7 +1365,7 @@
 		<object-name>wp10path</object-name>
 		<condition>
 				<equals>
-					<property>/instrumentation/ndfull/route/wp[10]/show</property>
+					<property>instrumentation/ndfull/route/wp[10]/show</property>
 					<value>1</value>
 				</equals>
 		</condition>
@@ -1374,7 +1374,7 @@
 	<animation>
   	 	<type>translate</type>
    		<object-name>wp10pos</object-name>
-   		<property>/instrumentation/ndfull/route/wp[10]/xoffset</property>
+   		<property>instrumentation/ndfull/route/wp[10]/xoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<y>1.0</y>
@@ -1384,7 +1384,7 @@
 	<animation>
   	 	<type>translate</type>
    		<object-name>wp10pos</object-name>
-   		<property>/instrumentation/ndfull/route/wp[10]/yoffset</property>
+   		<property>instrumentation/ndfull/route/wp[10]/yoffset</property>
    		<factor>0.001</factor>
     	 <axis>
     	 	<z>1.0</z>
@@ -1396,7 +1396,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp1path</object-name>
-		<property>/instrumentation/ndfull/route/wp[1]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[1]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1411,7 +1411,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp2path</object-name>
-		<property>/instrumentation/ndfull/route/wp[2]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[2]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1426,7 +1426,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp3path</object-name>
-		<property>/instrumentation/ndfull/route/wp[3]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[3]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1441,7 +1441,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp4path</object-name>
-		<property>/instrumentation/ndfull/route/wp[4]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[4]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1456,7 +1456,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp5path</object-name>
-		<property>/instrumentation/ndfull/route/wp[5]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[5]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1471,7 +1471,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp6path</object-name>
-		<property>/instrumentation/ndfull/route/wp[6]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[6]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1486,7 +1486,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp7path</object-name>
-		<property>/instrumentation/ndfull/route/wp[7]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[7]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1501,7 +1501,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp8path</object-name>
-		<property>/instrumentation/ndfull/route/wp[8]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[8]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1516,7 +1516,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp9path</object-name>
-		<property>/instrumentation/ndfull/route/wp[9]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[9]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1531,7 +1531,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>wp10path</object-name>
-		<property>/instrumentation/ndfull/route/wp[10]/bearing-deg</property>
+		<property>instrumentation/ndfull/route/wp[10]/bearing-deg</property>
 		<axis>
 			<x>1</x>
 			<y>0</y>
@@ -1547,7 +1547,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp1path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[1]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[1]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1558,7 +1558,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp2path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[2]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[2]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1569,7 +1569,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp3path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[3]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[3]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1580,7 +1580,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp4path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[4]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[4]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1591,7 +1591,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp5path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[5]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[5]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1602,7 +1602,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp6path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[6]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[6]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1613,7 +1613,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp7path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[7]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[7]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1624,7 +1624,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp8path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[8]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[8]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1635,7 +1635,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp9path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[9]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[9]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>
@@ -1646,7 +1646,7 @@
 <animation>
    	<type>textranslate</type>
    	<object-name>wp10path</object-name>
-   	<property>/instrumentation/ndfull/route/wp[10]/line-length</property>
+   	<property>instrumentation/ndfull/route/wp[10]/line-length</property>
    	<factor>0.0015</factor>
      <axis>
      	<x>0.0</x>

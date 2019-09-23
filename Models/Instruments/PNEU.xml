@@ -42,7 +42,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.0f°</format>
-		<property>/controls/pneumatic/temp/hyd-sys2-elec</property>
+		<property>controls/pneumatic/temp/hyd-sys2-elec</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -62,7 +62,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.0f°</format>
-		<property>/controls/pneumatic/temp/hyd-sys3-elec</property>
+		<property>controls/pneumatic/temp/hyd-sys3-elec</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -82,7 +82,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.0f°</format>
-		<property>/controls/pneumatic/temp/hyd-sys0-eng</property>
+		<property>controls/pneumatic/temp/hyd-sys0-eng</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -102,7 +102,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.0f°</format>
-		<property>/controls/pneumatic/temp/hyd-sys1-eng</property>
+		<property>controls/pneumatic/temp/hyd-sys1-eng</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -122,7 +122,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.0f°</format>
-		<property>/controls/pneumatic/temp/fuel-pump-left</property>
+		<property>controls/pneumatic/temp/fuel-pump-left</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -142,7 +142,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.0f°</format>
-		<property>/controls/pneumatic/temp/fuel-pump-center</property>
+		<property>controls/pneumatic/temp/fuel-pump-center</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>
@@ -162,7 +162,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.0f°</format>
-		<property>/controls/pneumatic/temp/fuel-pump-right</property>
+		<property>controls/pneumatic/temp/fuel-pump-right</property>
 		<font>courier-bold.txf</font>
 		<character-size>0.01</character-size>
 		<character-aspect-ratio type="double">1.5</character-aspect-ratio>

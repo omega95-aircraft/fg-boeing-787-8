@@ -10,9 +10,12 @@
         <object-name>shadow</object-name>
         <type>select</type>
         <condition>
-        <not>
-            <property>/sim/rendering/rembrandt/enabled</property>
-        </not>
+          <and>
+              <not>
+                  <property>sim/rendering/rembrandt/enabled</property>
+              </not>
+              <property>sim/model/shadow-enabled</property>
+          </and>
         </condition>
     </animation>
 
@@ -26,7 +29,7 @@
     <animation>
         <type>translate</type>
         <object-name>shadow</object-name>
-        <property>/controls/lighting/shad-light-alt</property>
+        <property>controls/lighting/shad-light-alt</property>
         <factor>0.301</factor>
         <axis>
             <x>0</x>
@@ -38,7 +41,7 @@
     <animation>
         <type>rotate</type>
         <object-name>shadow</object-name>
-        <property>/orientation/roll-deg</property>
+        <property>orientation/roll-deg</property>
         <center>
             <x>0</x>
             <y>0</y>
@@ -54,7 +57,7 @@
     <animation>
         <type>rotate</type>
         <object-name>shadow</object-name>
-        <property>/orientation/pitch-deg</property>
+        <property>orientation/pitch-deg</property>
         <center>
             <x>0</x>
             <y>0</y>

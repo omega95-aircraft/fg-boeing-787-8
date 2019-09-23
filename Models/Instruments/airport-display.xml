@@ -20,17 +20,17 @@
    			<transformations>
 				<transformation>
 				 	<type>rotation</type>
-				 	<property>/orientation/heading-deg</property>
+				 	<property>orientation/heading-deg</property>
 				 	<scale>-1</scale>
 				</transformation>	
 				<transformation>
      				<type>x-shift</type>
-     				<property>/instrumentation/ndfull/airport/xoffset</property>
+     				<property>instrumentation/ndfull/airport/xoffset</property>
      				<scale>200</scale>
     			</transformation>	
 				<transformation>
      				<type>y-shift</type>
-     				<property>/instrumentation/ndfull/airport/yoffset</property>
+     				<property>instrumentation/ndfull/airport/yoffset</property>
      				<scale>200</scale>
     			</transformation>
 			</transformations>

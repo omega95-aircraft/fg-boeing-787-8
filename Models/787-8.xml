@@ -105,9 +105,11 @@
 <!-- Livery Select -->
 
     <nasal>
-        <load>
+        <load><![CDATA[
+   var remote_aircraft_node = cmdarg ();
+   remote_aircraft_node.getNode ("sim/model/shadow-enabled").setBoolValue (0);
    var livery_update = aircraft.livery_update.new("Aircraft/787-8/Models/Liveries");
-        </load>
+        ]]></load>
 
         <unload>
             livery_update.stop();
@@ -1212,7 +1214,7 @@
 <animation>
   <type>rotate</type>
   <object-name>lhobaileron</object-name>
-  <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
+  <property>fdm/jsbsim/fcs/aileron-fbw-output</property>
   <factor>20</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1230,7 +1232,7 @@
 <animation>
   <type>rotate</type>
   <object-name>lhibaileron</object-name>
-  <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
+  <property>fdm/jsbsim/fcs/aileron-fbw-output</property>
   <factor>10</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1310,7 +1312,7 @@
 <animation>
   <type>rotate</type>
   <object-name>rhobaileron</object-name>
-  <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
+  <property>fdm/jsbsim/fcs/aileron-fbw-output</property>
   <factor>-20</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1328,7 +1330,7 @@
 <animation>
   <type>rotate</type>
   <object-name>rhibaileron</object-name>
-  <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
+  <property>fdm/jsbsim/fcs/aileron-fbw-output</property>
   <factor>-10</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1545,7 +1547,7 @@
 <animation>
   <type>rotate</type>
   <object-name>lhelevator</object-name>
-  <property>/fdm/jsbsim/fcs/elevator-fbw-output</property>
+  <property>fdm/jsbsim/fcs/elevator-fbw-output</property>
   <factor>20</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1563,7 +1565,7 @@
 <animation>
   <type>rotate</type>
   <object-name>rhelevator</object-name>
-  <property>/fdm/jsbsim/fcs/elevator-fbw-output</property>
+  <property>fdm/jsbsim/fcs/elevator-fbw-output</property>
   <factor>20</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1582,7 +1584,7 @@
   <type>rotate</type>
   <object-name>rudder</object-name>
   <object-name>lightedrudder</object-name>
-  <property>/fdm/jsbsim/fcs/rudder-fbw-output</property>
+  <property>fdm/jsbsim/fcs/rudder-fbw-output</property>
   <factor>-20</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1602,7 +1604,7 @@
   <object-name>NoseGear</object-name>
   <object-name>taxilight</object-name>
   <object-name>noselanding</object-name>
-  <property>/fdm/jsbsim/fcs/rudder-fbw-output</property>
+  <property>fdm/jsbsim/fcs/rudder-fbw-output</property>
   <factor>60</factor>
   <offset-deg>0</offset-deg>
   <center>
@@ -1876,7 +1878,7 @@
 <animation>
   <type>rotate</type>
   <object-name>lhobspoilerb</object-name>
-  <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
+  <property>fdm/jsbsim/fcs/aileron-fbw-output</property>
   <interpolation>
     <entry>
       <ind>-1</ind>
@@ -1988,7 +1990,7 @@
 <animation>
   <type>rotate</type>
   <object-name>rhobspoilerb</object-name>
-  <property>/fdm/jsbsim/fcs/aileron-fbw-output</property>
+  <property>fdm/jsbsim/fcs/aileron-fbw-output</property>
   <interpolation>
     <entry>
       <ind>-1</ind>
@@ -2381,7 +2383,7 @@
 	</and>
 	<and>
 		<equals>
-			<property>/controls/jettison/lnozzle</property>
+			<property>controls/jettison/lnozzle</property>
 			<value>1</value>
 		</equals>
 	</and>
@@ -2405,7 +2407,7 @@
 	</and>
 	<and>
 		<equals>
-			<property>/controls/jettison/rnozzle</property>
+			<property>controls/jettison/rnozzle</property>
 			<value>1</value>
 		</equals>
 	</and>
@@ -2873,7 +2875,7 @@
 	<object-name>r.surge.smoke</object-name>
 	<condition>
 		<equals>
-			<property>/controls/surge/flash</property>
+			<property>controls/surge/flash</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -2922,7 +2924,7 @@
     <animation>
         <type>rotate</type>
         <object-name>wiper.l</object-name>
-        <property>/controls/wipers/degrees</property>
+        <property>controls/wipers/degrees</property>
 	<factor>1.4</factor>
 		<axis>
 			<x1-m>-24.5469</x1-m>
@@ -2937,7 +2939,7 @@
     <animation>
         <type>rotate</type>
         <object-name>wiper.r</object-name>
-        <property>/controls/wipers/degrees</property>
+        <property>controls/wipers/degrees</property>
 	<factor>-1.4</factor>
 		<axis>
 			<x1-m>-24.5469</x1-m>
@@ -2964,9 +2966,9 @@
 	<type>select</type>
 	<object-name>ground-lights</object-name>
 	<condition>
-		<property>/controls/lighting/landing-lights[0]</property>
+		<property>controls/lighting/landing-lights[0]</property>
 		<less-than>
-			<property>/position/altitude-agl-ft</property>
+			<property>position/altitude-agl-ft</property>
 			<value>500</value>
 		</less-than>
 	</condition>
@@ -2979,7 +2981,7 @@
 	<object-name>windows-light</object-name>
 	<condition>
 		<greater-than-equals>
-	        <property>/sim/time/sun-angle-rad</property>
+	        <property>sim/time/sun-angle-rad</property>
 	        <value>1.57</value>
      	</greater-than-equals>
 	</condition>
@@ -2991,7 +2993,7 @@
  <path>Aircraft/787-8/Models/Effects/fire.xml</path>
  <condition>
 	<equals>
-		<property>/controls/fires/fire/phase</property>
+		<property>controls/fires/fire/phase</property>
 		<value>fire</value>
 	</equals>
  </condition>
@@ -3009,11 +3011,11 @@
  <condition>
  	<or>
 	<equals>
-		<property>/controls/fires/fire/phase</property>
+		<property>controls/fires/fire/phase</property>
 		<value>smoke</value>
 	</equals>
 	<equals>
-		<property>/controls/fires/fire/phase</property>
+		<property>controls/fires/fire/phase</property>
 		<value>fire</value>
 	</equals>
 	</or>
@@ -3031,7 +3033,7 @@
  <path>Aircraft/787-8/Models/Effects/explode1.xml</path>
  <condition>
 	<equals>
-		<property>/controls/fires/fire/phase</property>
+		<property>controls/fires/fire/phase</property>
 		<value>explode</value>
 	</equals>
  </condition>
@@ -3048,7 +3050,7 @@
  <path>Aircraft/787-8/Models/Effects/fire.xml</path>
  <condition>
 	<equals>
-		<property>/controls/fires/fire[1]/phase</property>
+		<property>controls/fires/fire[1]/phase</property>
 		<value>fire</value>
 	</equals>
  </condition>
@@ -3066,11 +3068,11 @@
  <condition>
  	<or>
 	<equals>
-		<property>/controls/fires/fire[1]/phase</property>
+		<property>controls/fires/fire[1]/phase</property>
 		<value>smoke</value>
 	</equals>
 	<equals>
-		<property>/controls/fires/fire[1]/phase</property>
+		<property>controls/fires/fire[1]/phase</property>
 		<value>fire</value>
 	</equals>
 	</or>
@@ -3088,7 +3090,7 @@
  <path>Aircraft/787-8/Models/Effects/explode1.xml</path>
  <condition>
 	<equals>
-		<property>/controls/fires/fire[1]/phase</property>
+		<property>controls/fires/fire[1]/phase</property>
 		<value>explode</value>
 	</equals>
  </condition>
@@ -3105,7 +3107,7 @@
  <path>Aircraft/787-8/Models/Effects/ext.xml</path>
  <condition>
 	<equals>
-		<property>/controls/fires/fire/extinguish</property>
+		<property>controls/fires/fire/extinguish</property>
 		<value>1</value>
 	</equals>
  </condition>
@@ -3122,7 +3124,7 @@
  <path>Aircraft/787-8/Models/Effects/ext.xml</path>
  <condition>
 	<equals>
-		<property>/controls/fires/fire[1]/extinguish</property>
+		<property>controls/fires/fire[1]/extinguish</property>
 		<value>1</value>
 	</equals>
  </condition>
@@ -3141,7 +3143,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.ac</path>
 	<condition>
 		<equals>
-			<property>/services/fuel-truck/enable</property>
+			<property>services/fuel-truck/enable</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3152,7 +3154,7 @@
 	<object-name>fuel_pipe</object-name>
 	<condition>
 		<equals>
-			<property>/services/fuel-truck/connect</property>
+			<property>services/fuel-truck/connect</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3163,7 +3165,7 @@
 	<object-name>fuel_pipe_disconnected</object-name>
 	<condition>
 		<equals>
-			<property>/services/fuel-truck/connect</property>
+			<property>services/fuel-truck/connect</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -3175,7 +3177,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/De-Icing/volvo_deicing_truck.xml</path>
 	<condition>
 		<equals>
-			<property>/services/deicing_truck/enable</property>
+			<property>services/deicing_truck/enable</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3193,7 +3195,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM.xml</path>
 	<condition>
 		<equals>
-			<property>/services/catering/enable</property>
+			<property>services/catering/enable</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3205,7 +3207,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/Baggage/cargo_ramp.ac</path>
 	<condition>
 		<equals>
-			<property>/services/baggage/enable</property>
+			<property>services/baggage/enable</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3217,7 +3219,7 @@
 	<object-name>cargo_inside</object-name>
 	<condition>
 		<equals>
-			<property>/services/baggage/enable</property>
+			<property>services/baggage/enable</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3229,7 +3231,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/External-Power/ext-pwr-box.ac</path>
 	<condition>
 		<equals>
-			<property>/services/ext-pwr/enable</property>
+			<property>services/ext-pwr/enable</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3242,7 +3244,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/Chokes/choke_nose.ac</path>
 	<condition>
 		<equals>
-			<property>/services/chokes/nose</property>
+			<property>services/chokes/nose</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3253,7 +3255,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/Chokes/choke_left.ac</path>
 	<condition>
 		<equals>
-			<property>/services/chokes/left</property>
+			<property>services/chokes/left</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -3264,7 +3266,7 @@
 	<path>Aircraft/787-8/Models/Ground/Services/Chokes/choke_right.ac</path>
 	<condition>
 		<equals>
-			<property>/services/chokes/right</property>
+			<property>services/chokes/right</property>
 			<value>1</value>
 		</equals>
 	</condition>

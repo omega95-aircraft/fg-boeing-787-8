@@ -75,7 +75,7 @@
 		<object-name>gear_0_stuck</object-name>
 		<condition>
 			<less-than>
-				<property>/controls/gear-failures/gear[0]/stuck-pos</property>
+				<property>controls/gear-failures/gear[0]/stuck-pos</property>
 				<value>99</value>
 			</less-than>
 		</condition>
@@ -86,7 +86,7 @@
 		<object-name>gear_1_stuck</object-name>
 		<condition>
 			<less-than>
-				<property>/controls/gear-failures/gear[1]/stuck-pos</property>
+				<property>controls/gear-failures/gear[1]/stuck-pos</property>
 				<value>99</value>
 			</less-than>
 		</condition>
@@ -97,7 +97,7 @@
 		<object-name>gear_2_stuck</object-name>
 		<condition>
 			<less-than>
-				<property>/controls/gear-failures/gear[2]/stuck-pos</property>
+				<property>controls/gear-failures/gear[2]/stuck-pos</property>
 				<value>99</value>
 			</less-than>
 		</condition>
@@ -108,7 +108,7 @@
 		<object-name>gear_0_burst</object-name>
 		<condition>
 			<equals>
-				<property>/controls/gear-failures/gear[0]/burst</property>
+				<property>controls/gear-failures/gear[0]/burst</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -119,7 +119,7 @@
 		<object-name>gear_1_burst</object-name>
 		<condition>
 			<equals>
-				<property>/controls/gear-failures/gear[1]/burst</property>
+				<property>controls/gear-failures/gear[1]/burst</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -130,7 +130,7 @@
 		<object-name>gear_2_burst</object-name>
 		<condition>
 			<equals>
-				<property>/controls/gear-failures/gear[2]/burst</property>
+				<property>controls/gear-failures/gear[2]/burst</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -141,7 +141,7 @@
 		<object-name>gear_0_break</object-name>
 		<condition>
 			<equals>
-				<property>/controls/gear-failures/gear[0]/break</property>
+				<property>controls/gear-failures/gear[0]/break</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -152,7 +152,7 @@
 		<object-name>gear_1_break</object-name>
 		<condition>
 			<equals>
-				<property>/controls/gear-failures/gear[1]/break</property>
+				<property>controls/gear-failures/gear[1]/break</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -163,7 +163,7 @@
 		<object-name>gear_2_break</object-name>
 		<condition>
 			<equals>
-				<property>/controls/gear-failures/gear[2]/break</property>
+				<property>controls/gear-failures/gear[2]/break</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -190,7 +190,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[1]/compression-ft</property>
+		<property>fdm/jsbsim/gear/unit[1]/compression-ft</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -238,7 +238,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[1]/dynamic_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit[1]/dynamic_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -262,7 +262,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[1]/static_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit[1]/static_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -286,7 +286,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[1]/rolling_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit[1]/rolling_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -334,7 +334,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[2]/compression-ft</property>
+		<property>fdm/jsbsim/gear/unit[2]/compression-ft</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -382,7 +382,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[2]/dynamic_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit[2]/dynamic_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -406,7 +406,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[2]/static_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit[2]/static_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -430,7 +430,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit[2]/rolling_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit[2]/rolling_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -478,7 +478,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit/compression-ft</property>
+		<property>fdm/jsbsim/gear/unit/compression-ft</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -526,7 +526,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit/dynamic_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit/dynamic_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -550,7 +550,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit/static_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit/static_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -574,7 +574,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/fdm/jsbsim/gear/unit/rolling_friction_coeff</property>
+		<property>fdm/jsbsim/gear/unit/rolling_friction_coeff</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>

@@ -11,7 +11,7 @@
         <type>select</type>
         <condition>
         <not>
-            <property>/sim/rendering/rembrandt/enabled</property>
+            <property>sim/rendering/rembrandt/enabled</property>
         </not>
         </condition>
     </animation>
@@ -20,7 +20,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>landing-lights</object-name>
-	<property>/controls/lighting/shad-light-alt</property>
+	<property>controls/lighting/shad-light-alt</property>
 	<factor>0.301</factor>
     <axis>
     	<x>0</x>
@@ -32,7 +32,7 @@
 <animation>
 	<type>translate</type>
 	<object-name>landing-lights</object-name>
-	<property>/controls/lighting/shad-light-alt</property>
+	<property>controls/lighting/shad-light-alt</property>
 	<factor>0.8</factor>
     <axis>
     	<x>-1</x>
@@ -44,7 +44,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>landing-lights</object-name>
-	<property>/orientation/roll-deg</property>
+	<property>orientation/roll-deg</property>
 	<center>
     	<x>0</x>
     	<y>0</y>
@@ -60,7 +60,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>landing-lights</object-name>
-	<property>/orientation/pitch-deg</property>
+	<property>orientation/pitch-deg</property>
 	<center>
     	<x>0</x>
     	<y>0</y>
@@ -87,7 +87,7 @@
  <animation>
   <type>scale</type>
   <object-name>landing-lights</object-name>
-  <property>/controls/lighting/ground-scale-factor</property>
+  <property>controls/lighting/ground-scale-factor</property>
   <x-min>1.0</x-min>
   <y-min>1.0</y-min>
   <z-min>1.0</z-min>
