@@ -52,7 +52,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/page</property>
+		<property>controls/cdu[1]/display/page</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -77,7 +77,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/input</property>
+		<property>controls/cdu[1]/input</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -102,7 +102,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l1-label</property>
+		<property>controls/cdu[1]/display/l1-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -124,7 +124,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l2-label</property>
+		<property>controls/cdu[1]/display/l2-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -146,7 +146,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l3-label</property>
+		<property>controls/cdu[1]/display/l3-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -168,7 +168,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l4-label</property>
+		<property>controls/cdu[1]/display/l4-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -190,7 +190,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l5-label</property>
+		<property>controls/cdu[1]/display/l5-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -212,7 +212,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l6-label</property>
+		<property>controls/cdu[1]/display/l6-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -234,7 +234,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l7-label</property>
+		<property>controls/cdu[1]/display/l7-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -259,7 +259,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r1-label</property>
+		<property>controls/cdu[1]/display/r1-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -281,7 +281,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r2-label</property>
+		<property>controls/cdu[1]/display/r2-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -303,7 +303,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r3-label</property>
+		<property>controls/cdu[1]/display/r3-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -325,7 +325,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r4-label</property>
+		<property>controls/cdu[1]/display/r4-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -347,7 +347,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r5-label</property>
+		<property>controls/cdu[1]/display/r5-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -369,7 +369,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r6-label</property>
+		<property>controls/cdu[1]/display/r6-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -391,7 +391,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r7-label</property>
+		<property>controls/cdu[1]/display/r7-label</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -416,7 +416,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l1</property>
+		<property>controls/cdu[1]/display/l1</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -438,7 +438,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l2</property>
+		<property>controls/cdu[1]/display/l2</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -460,7 +460,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l3</property>
+		<property>controls/cdu[1]/display/l3</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -482,7 +482,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l4</property>
+		<property>controls/cdu[1]/display/l4</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -504,7 +504,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l5</property>
+		<property>controls/cdu[1]/display/l5</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -526,7 +526,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l6</property>
+		<property>controls/cdu[1]/display/l6</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -548,7 +548,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/l7</property>
+		<property>controls/cdu[1]/display/l7</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -573,7 +573,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r1</property>
+		<property>controls/cdu[1]/display/r1</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -595,7 +595,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r2</property>
+		<property>controls/cdu[1]/display/r2</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -617,7 +617,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r3</property>
+		<property>controls/cdu[1]/display/r3</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -639,7 +639,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r4</property>
+		<property>controls/cdu[1]/display/r4</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -661,7 +661,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r5</property>
+		<property>controls/cdu[1]/display/r5</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -683,7 +683,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r6</property>
+		<property>controls/cdu[1]/display/r6</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -705,7 +705,7 @@
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
-		<property>/controls/cdu[1]/display/r7</property>
+		<property>controls/cdu[1]/display/r7</property>
   <truncate type="bool">false</truncate>
   <font type="string">Helvetica.txf</font>
   <draw-text type="bool">true</draw-text>
@@ -1109,7 +1109,7 @@
 			<repeatable type="bool">true</repeatable>
             <binding>
 				<command>property-adjust</command>
-				<property>/controls/cdu[1]/route-manager/page</property>
+				<property>controls/cdu[1]/route-manager/page</property>
 				<step type="double">1</step>
 				<max>30</max>
 			</binding>
@@ -1124,7 +1124,7 @@
 			<repeatable type="bool">true</repeatable>
             <binding>
 				<command>property-adjust</command>
-				<property>/controls/cdu[1]/route-manager/page</property>
+				<property>controls/cdu[1]/route-manager/page</property>
 				<step type="double">-1</step>
 				<min>1</min>
 			</binding>
@@ -1589,7 +1589,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/search/input</property>
+	<property>instrumentation/fmcHelp[1]/search/input</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1614,7 +1614,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[0]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[0]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1639,7 +1639,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[1]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[1]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1664,7 +1664,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[2]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[2]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1689,7 +1689,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[3]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[3]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1714,7 +1714,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[4]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[4]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1739,7 +1739,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[5]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[5]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1764,7 +1764,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[6]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[6]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1789,7 +1789,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[7]/string</property>
+	<property>instrumentation/fmcHelp[1]/disp[7]/string</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1853,7 +1853,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[0]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[0]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1878,7 +1878,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[1]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[1]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1903,7 +1903,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[2]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[2]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1928,7 +1928,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[3]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[3]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1953,7 +1953,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[4]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[4]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -1978,7 +1978,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[5]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[5]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -2003,7 +2003,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[6]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[6]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>
@@ -2028,7 +2028,7 @@
 	<axis-alignment>xy-plane</axis-alignment>
 	<type type="string">text-value</type>
 	<format type="string">%s</format>
-	<property>/instrumentation/fmcHelp[1]/disp[7]/desc</property>
+	<property>instrumentation/fmcHelp[1]/disp[7]/desc</property>
 	<truncate type="bool">false</truncate>
 	<font type="string">Helvetica.txf</font>
 	<draw-text type="bool">true</draw-text>

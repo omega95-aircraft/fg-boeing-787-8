@@ -304,3 +304,29 @@ setlistener("controls/gear/gear-down", func
   props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
   }
  });
+
+
+# wingflexer bug workaround (written by Andreas Z)
+var D_param_0 = getprop('/sim/systems/wingflexer/params/D');
+var D_param_1 = 10 * D_param_0;
+
+var disable_wingflexer = func{
+    setprop('/sim/systems/wingflexer/params/D',D_param_1);
+    var simtime = getprop('/sim/time/elapsed-sec');
+    logprint(3,'disable_wingflexer: Set parameter D to '~D_param_1~' at '~simtime~' sec.');
+}
+var enable_wingflexer = func{
+    setprop('/sim/systems/wingflexer/params/D',D_param_0);
+    var simtime = getprop('/sim/time/elapsed-sec');
+    logprint(3,'enable_wingflexer: Set parameter D to '~D_param_0~' at '~simtime~' sec.');
+}
+disable_wingflexer();
+setlistener("/sim/signals/fdm-initialized",func{
+  var todo_when_sim_is_ready = func{
+      enable_wingflexer();
+  }
+  var sim_ready_tmr = maketimer( 14.0, todo_when_sim_is_ready);
+  sim_ready_tmr.singleShot = 1;
+  sim_ready_tmr.start();
+},0,0);
+

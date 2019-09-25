@@ -9,7 +9,7 @@
 		<object-name>cam</object-name>
 		<condition>
 			<greater-than-equals>
-				<property>/systems/electrical/outputs/efis</property>
+				<property>systems/electrical/outputs/efis</property>
 				<value>9</value>
 			</greater-than-equals>
 		</condition>
@@ -38,7 +38,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
-				<property>/controls/mfd-cam/view</property>
+				<property>controls/mfd-cam/view</property>
 				<value>tail</value>
 			</binding>
 		</action>
@@ -52,7 +52,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
-				<property>/controls/mfd-cam/view</property>
+				<property>controls/mfd-cam/view</property>
 				<value>gear</value>
 			</binding>
 		</action>
@@ -66,7 +66,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-cycle</command>
-				<property>/controls/mfd-cam/view</property>
+				<property>controls/mfd-cam/view</property>
 				<value>lwing</value>
 			</binding>
 		</action>
@@ -97,7 +97,7 @@
 		<object-name>gearcam_active</object-name>
 		<object-name>leftwing_active</object-name>
 		<object-name>rightwing_active</object-name>
-		<property>/sim/model/door-positions/cam_menu/position-norm</property>
+		<property>sim/model/door-positions/cam_menu/position-norm</property>
 		<factor>0.418</factor>
 		<axis>
 			<y>-1</y>
@@ -109,7 +109,7 @@
 		<object-name>tailcam_active</object-name>
 		<condition>
 			<equals>
-				<property>/controls/mfd-cam/view</property>
+				<property>controls/mfd-cam/view</property>
 				<value>tail</value>
 			</equals>
 		</condition>
@@ -120,7 +120,7 @@
 		<object-name>gearcam_active</object-name>
 		<condition>
 			<equals>
-				<property>/controls/mfd-cam/view</property>
+				<property>controls/mfd-cam/view</property>
 				<value>gear</value>
 			</equals>
 		</condition>
@@ -131,7 +131,7 @@
 		<object-name>leftwing_active</object-name>
 		<condition>
 			<equals>
-				<property>/controls/mfd-cam/view</property>
+				<property>controls/mfd-cam/view</property>
 				<value>lwing</value>
 			</equals>
 		</condition>
@@ -142,7 +142,7 @@
 		<object-name>rightwing_active</object-name>
 		<condition>
 			<equals>
-				<property>/controls/mfd-cam/view</property>
+				<property>controls/mfd-cam/view</property>
 				<value>rwing</value>
 			</equals>
 		</condition>

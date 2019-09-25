@@ -20,7 +20,7 @@ Contrail particle system by Lauri Peltonen A.K.A. Zan
 
 	<condition>
 		 <less-than-equals>
-			 <property>/environment/temperature-degc</property>
+			 <property>environment/temperature-degc</property>
 			 <value>-36</value>
 		 </less-than-equals>
 	</condition>
@@ -37,7 +37,7 @@ Contrail particle system by Lauri Peltonen A.K.A. Zan
 		 <phi-min-deg>-15</phi-min-deg>
 		 <phi-max-deg>15</phi-max-deg>
 		 <speed>
-                	 <property>/sim/model/contrail/spread</property>
+                	 <property>sim/model/contrail/spread</property>
 			 <spread>5</spread>
 		 </speed>
 		 <rotation-speed>
@@ -52,7 +52,7 @@ Contrail particle system by Lauri Peltonen A.K.A. Zan
 	 
 	 <counter>
 		 <particles-per-sec>
-                         <property>/sim/model/contrail/particles-per-second</property>
+                         <property>sim/model/contrail/particles-per-second</property>
 			 <spread>15</spread>
 		 </particles-per-sec>
 	 </counter>
@@ -72,11 +72,11 @@ Contrail particle system by Lauri Peltonen A.K.A. Zan
 					 <value>1</value>
 				 </blue>
 				 <alpha>
-					 <property>/sim/model/contrail/density</property>
+					 <property>sim/model/contrail/density</property>
 				 </alpha>
 			 </color>
 			 <size>
-				 <property>/sim/model/contrail/start-size</property>
+				 <property>sim/model/contrail/start-size</property>
 			 </size>
 		 </start>
 		 <end>
@@ -95,11 +95,11 @@ Contrail particle system by Lauri Peltonen A.K.A. Zan
 				 </alpha>
 			 </color>
 			 <size>
-                               <property>/sim/model/contrail/maximum-size</property>
+                               <property>sim/model/contrail/maximum-size</property>
 			 </size>
 		 </end>
 		 <life-sec>
-			<property>/sim/model/contrail/dissipation-time</property>
+			<property>sim/model/contrail/dissipation-time</property>
 <!--			 <value>100.0</value> -->
 		 </life-sec>
 		 <mass-kg>0.00001</mass-kg>
